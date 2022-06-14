@@ -2,12 +2,12 @@
 In this section, we discuss the steps required to reproduce our key findings reported in the paper. Please check the hardware section in [functionality](./FUNCTIONALITY.md). We will use Unicorn offline to for reproducibility.
 
 ## How to use Unicorn
-Unicorn is used for performing tasks such as performance optimization and performance debugging in offline and online modes. 
+Unicorn is used for performing tasks such as performance optimization and performance debugging in offline and online modes.
 
-- **Offline mode:** In the offline mode, Unicorn can be run on any device that uses previously measured configurations. 
-- **Online mode:** In the online mode, the measurements are performed from ```NVIDIA Jetson Xavier```, ```NVIDIA Jetson TX2```, and ```NVIDIA Jetson TX1``` devices directly while the experiments are running. To collect measurements from these devices ```sudo``` privilege is required as it requires setting a device to a new configuration before measurement. 
+- **Offline mode:** In the offline mode, Unicorn can be run on any device that uses previously measured configurations.
+- **Online mode:** In the online mode, the measurements are performed from ```NVIDIA Jetson Xavier```, ```NVIDIA Jetson TX2```, and ```NVIDIA Jetson TX1``` devices directly while the experiments are running. To collect measurements from these devices ```sudo``` privilege is required as it requires setting a device to a new configuration before measurement.
 
-In both offline and online modes, Unicorn can be used for debugging and optimization for objectives such as latency (```inference_time```) and energy (```total_energy_consumption```). Unicorn has been implemented on six software systems such as DEEPSTREAM (```Deepstream```), XCEPTION (```Image```), BERT (```NLP```), DEEPSPEECH (```Speech```), X264 (```x264```), and SQLITE (```sqlite```). 
+In both offline and online modes, Unicorn can be used for debugging and optimization for objectives such as latency (```inference_time```) and energy (```total_energy_consumption```). Unicorn has been implemented on six software systems such as DEEPSTREAM (```Deepstream```), XCEPTION (```Image```), BERT (```NLP```), DEEPSPEECH (```Speech```), X264 (```x264```), and SQLITE (```sqlite```).
 
 ## Setup
 
@@ -25,7 +25,7 @@ You can get them here: <https://docs.docker.com/desktop/mac/install/>.
     ```
 
 2. Next, build the artifact with `docker-compose`. From the repository root, run:
-   
+
    ```sh
    docker-compose up --build --detach
    ```
@@ -107,7 +107,7 @@ Transfer output will be saved to the ```./data/measurement/output/transfer_exp.c
 # Online mode experiments
 
 ## Video run of the example in the online mode
-An example run of Unicorn for an ```energy``` fault in the online mode is shown here. 
+An example run of Unicorn for an ```energy``` fault in the online mode is shown here.
 
 
 https://user-images.githubusercontent.com/12802456/155047680-a40a2f42-7553-448b-b7c1-559509c152b8.mp4
@@ -132,14 +132,14 @@ Once logged in into the device please use the following commands to run the expe
 ```
 cd unicorn
 python3 ./services/run_service.py Image
-``` 
+```
 Please wait until the status shows the flask app is running on http://127.0.0.1/5000
 
 Now run the following two commands to run the debugging experiment and plot the results from the other terminal:
 ```
 sudo su
-for b in {0..7}; do python3 ./tests/run_unicorn_debug.py -o total_energy_consumption -s Image -k Xavier -m online -i $b ; done 
-for b in {8..14}; do python3 ./tests/run_unicorn_debug.py -o total_energy_consumption -s Image -k Xavier -m online -i $b ; done 
+for b in {0..7}; do python3 ./tests/run_unicorn_debug.py -o total_energy_consumption -s Image -k Xavier -m online -i $b ; done
+for b in {8..14}; do python3 ./tests/run_unicorn_debug.py -o total_energy_consumption -s Image -k Xavier -m online -i $b ; done
 for b in {15..21}; do python3 ./tests/run_unicorn_debug.py -o total_energy_consumption -s Image -k Xavier -m online -i $b ; done
 for b in {22..28}; do python3 ./tests/run_unicorn_debug.py -o total_energy_consumption -s Image -k Xavier -m online -i $b ; done
 python3 ./tests/run_debug_metrics.py -o total_energy_consumption -s Image -k Xavier -e debug
@@ -149,6 +149,7 @@ To avoid running 11.6 Hours (approx.) experiments, each bug can be run by passin
 python3 ./tests/run_unicorn_debug.py -o total_energy_consumption -s Image -k Xavier -m online -i 0
 ```
 This will take roughly 0.4 hours/bug. If you wish to run optimization and transfer learning experiments in the online mode, please let us know. We need to allow access to ```Nvidia Jetson TX2``` device for that purpose.
+
 ## Optional (Additional) Experiments
 We believe the above experiments are sufficient to support our claims. However, if you want to run additional experiments using Unicorn please use the following commands.
 
@@ -156,11 +157,10 @@ We believe the above experiments are sufficient to support our claims. However, 
 For debugging ```latency``` faults in ```NVIDIA Jetson TX2``` please use the following commands:
 ```
 docker-compose exec unicorn python ./tests/run_unicorn_debug.py -o inference_time -s Image -k TX2 -m offline
-``` 
-## Steps to reproduce Figure 16 (b) results 
+```
+## Steps to reproduce Figure 16 (b) results
 For ```energy``` optimization in ```NVIDIA Jetson TX2``` please use the following commands.
 ```
 docker-compose exec unicorn python ./tests/run_unicorn_optimization.py -o total_energy_consumption -s Image -k TX2 -m offline
 docker-compose exec unicorn python ./tests/run_baseline_optimization.py -o total_energy_consumption -s Image -k TX2 -m offline -b smac
 ```
-
