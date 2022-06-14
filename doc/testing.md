@@ -2,11 +2,17 @@
 
 ## Hardware
 
-CPU: Broadcom BCM2711, Quad-Core-Cortex-A72 (ARM Version 8), 64-Bit-SoC (System-on-a-Chip) @ 1,5 GHz
+Desktop:
 
-CACHES: 32kB data + 48kB instruction L1 cache per core, 1MB L2 cache
+- Intel Core i7-8700K CPU @ 3.50 GHz x 12
+- 32 GB DDR4 RAM @ 3280MHz
+- NVIDIA GeForce GTX 1080
 
-MEMORY: 4 GB LPDDR4-2400-SDRAM
+Macbook:
+
+- Apple M1 CPU @ 3.20 GHz x 4
+- 16 GB LPDDR-DDR4X RAM @ 4266 MHz
+- Apple M1 GPU
 
 ## Ziel der Reproduktion
 
@@ -18,8 +24,12 @@ MEMORY: 4 GB LPDDR4-2400-SDRAM
 
 Bei diesem Experiment wird Tabelle 2 (Energieverbrauch für `Xception`) reproduziert.
 
-
+![tabelle 2](assets/20220614120254.png)
 
 ```sh
 docker-compose exec unicorn python ./tests/run_unicorn_debug.py -o total_energy_consumption -s Image -k Xavier -m offline
+docker-compose exec unicorn python ./tests/run_baseline_debug.py -o total_energy_consumption -s Image -k Xavier -m offline -b cbi
+docker-compose exec unicorn python ./tests/run_baseline_debug.py -o total_energy_consumption -s Image -k Xavier -m offline -b encore
+docker-compose exec unicorn python ./tests/run_baseline_debug.py -o total_energy_consumption -s Image -k Xavier -m offline -b bugdoc
+docker-compose exec unicorn python ./tests/run_debug_metrics.py -o total_energy_consumption -s Image -k Xavier -e debug
 ```
