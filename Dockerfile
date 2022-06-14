@@ -1,6 +1,6 @@
-FROM python:3.6.9
+FROM python:3.8
 
-RUN apt-get update && DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends openjdk-11-jdk graphviz-dev libblas3 liblapack3 liblapack-dev libblas-dev python3-scipy
+RUN apt-get update && DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends openjdk-11-jdk graphviz-dev
 
 #----- Set JAVA environment variable -----
 ENV JAVA_HOME=/usr/lib/jvm/java-11-openjdk-amd64

@@ -1,7 +1,9 @@
 # Unicorn reproducibility
+
 In this section, we discuss the steps required to reproduce our key findings reported in the paper. Please check the hardware section in [functionality](./FUNCTIONALITY.md). We will use Unicorn offline to for reproducibility.
 
 ## How to use Unicorn
+
 Unicorn is used for performing tasks such as performance optimization and performance debugging in offline and online modes.
 
 - **Offline mode:** In the offline mode, Unicorn can be run on any device that uses previously measured configurations.
@@ -62,7 +64,7 @@ You can get them here: <https://docs.docker.com/desktop/mac/install/>.
     Creating unicorn ... done
    ```
 
-##  Key claims
+## Key claims
 
 We reproduce results for the following three key claims reported in our paper:
 
@@ -75,67 +77,80 @@ We reproduce results for the following three key claims reported in our paper:
 For each of the above claims, we will compare our results with the baselines reported in the paper. Instructions to run the baselines can be found in [baselines](./BASELINES.md).
 
 # Offline mode experiments
+
 ## Steps to reproduce Table 2 energy results for ```Xception``` (Experiment time ~90mins)
+
 Here, the reported energy faults, initial data and ground truths are stored in the corresponding directories. The complete experiment on all 29 of the energy faults can be run with the following commands:
 
 ```
 docker-compose exec unicorn python ./tests/run_unicorn_debug.py -o total_energy_consumption -s Image -k Xavier -m offline
-docker-compose exec unicorn python ./tests/run_unicorn_debug.py -o total_energy_consumption -s Image -k Xavier -m offline -b cbi
-docker-compose exec unicorn python ./tests/run_unicorn_debug.py -o total_energy_consumption -s Image -k Xavier -m offline -b encore
-docker-compose exec unicorn python ./tests/run_unicorn_debug.py -o total_energy_consumption -s Image -k Xavier -m offline -b bugdoc
+docker-compose exec unicorn python ./tests/run_baseline_debug.py -o total_energy_consumption -s Image -k Xavier -m offline -b cbi
+docker-compose exec unicorn python ./tests/run_baseline_debug.py -o total_energy_consumption -s Image -k Xavier -m offline -b encore
+docker-compose exec unicorn python ./tests/run_baseline_debug.py -o total_energy_consumption -s Image -k Xavier -m offline -b bugdoc
 docker-compose exec unicorn python ./tests/run_debug_metrics.py -o total_energy_consumption -s Image -k Xavier -e debug
 ```
-Debugging output will be saved to the ```./data/measurement/output/debug_exp.csv``` and the final script will generate plots for gain and number of samples required to achieve that gain that will be saved as ```./data/measurement/output/debug_gain.pdf``` and  ```./data/measurement/output/debug_num_samples.pdf```, respectively.
+
+Debugging output will be saved to the ```./data/measurement/output/debug_exp.csv``` and the final script will generate plots for gain and number of samples required to achieve that gain that will be saved as ```./data/measurement/output/debug_gain.pdf``` and ```./data/measurement/output/debug_num_samples.pdf```, respectively.
 
 ## Steps to reproduce Figure 16 (a) results (Experiment time ~90mins)
+
 Please use the following commands to reproduce this step:
+
 ```
 docker-compose exec unicorn python ./tests/run_unicorn_optimization.py -o inference_time -s Image -k TX2 -m offline
 docker-compose exec unicorn python ./tests/run_baseline_optimization.py -o inference_time -s Image -k TX2 -m offline -b smac
 ```
+
 Once the experiments are over, the output for Unicorn and SMAC will be directly saved to ```./data/measurement/output/unicorn_opt.pdf``` and ```./data/measurement/output/smac_opt.pdf```, respectively.
 
 ## Steps to reproduce Figure 18 results (Experiment time ~8mins)
+
 Please use the following commands to reproduce this step:
+
 ```
 docker-compose exec unicorn python ./tests/run_unicorn_transferability.py -o inference_time -s Image -k Xavier -m offline
 docker-compose exec unicorn python ./tests/run_debug_metrics.py -o inference_time -s Image -k TX2 -e transfer
 ```
-Transfer output will be saved to the ```./data/measurement/output/transfer_exp.csv``` and the final script will generate plots for gain and number of samples required to achieve that gain that will be saved as ```./data/measurement/output/transfer_gain.pdf``` and  ```./data/measurement/output/transfer_num_samples.pdf```, respectively.
 
+Transfer output will be saved to the ```./data/measurement/output/transfer_exp.csv``` and the final script will generate plots for gain and number of samples required to achieve that gain that will be saved as ```./data/measurement/output/transfer_gain.pdf``` and  ```./data/measurement/output/transfer_num_samples.pdf```, respectively.
 
 # Online mode experiments
 
 ## Video run of the example in the online mode
+
 An example run of Unicorn for an ```energy``` fault in the online mode is shown here.
 
-
-https://user-images.githubusercontent.com/12802456/155047680-a40a2f42-7553-448b-b7c1-559509c152b8.mp4
-
+<https://user-images.githubusercontent.com/12802456/155047680-a40a2f42-7553-448b-b7c1-559509c152b8.mp4>
 
 ## Steps to reproduce Table 2 energy results for ```Xception``` (Experiment time ~11.6 hours (0.4 hours/Bug))
 
 Fro two terminals please use the following commands to access the ```Nvidia Jetson Xavier``` device:
+
 ```
 git clone https://github.com/softsys4ai/unicorn.git
 chmod 400 ~/unicorn/etc/key
 ssh -i ~/unicorn/etc/key nvidia@34.125.91.37
 ssh -p 2200 nvidia@localhost
 ```
+
 Use the following credentials for the device:
+
 ```
 user: nvidia
 password: nvidia
 ```
 
 Once logged in into the device please use the following commands to run the experiments from one terminal:
+
 ```
 cd unicorn
 python3 ./services/run_service.py Image
 ```
-Please wait until the status shows the flask app is running on http://127.0.0.1/5000
+
+Please wait until the status shows the flask app is running on <http://127.0.0.1/5000>
 
 Now run the following two commands to run the debugging experiment and plot the results from the other terminal:
+
 ```
 sudo su
 for b in {0..7}; do python3 ./tests/run_unicorn_debug.py -o total_energy_consumption -s Image -k Xavier -m online -i $b ; done
@@ -144,22 +159,31 @@ for b in {15..21}; do python3 ./tests/run_unicorn_debug.py -o total_energy_consu
 for b in {22..28}; do python3 ./tests/run_unicorn_debug.py -o total_energy_consumption -s Image -k Xavier -m online -i $b ; done
 python3 ./tests/run_debug_metrics.py -o total_energy_consumption -s Image -k Xavier -e debug
 ```
+
 To avoid running 11.6 Hours (approx.) experiments, each bug can be run by passing the bug_id. There are 29 energy bugs of Image on Xavier. So, bug_id 0 - 28 can be passed. For example, to debug bug_id = 0, please use the following command:
+
 ```
 python3 ./tests/run_unicorn_debug.py -o total_energy_consumption -s Image -k Xavier -m online -i 0
 ```
+
 This will take roughly 0.4 hours/bug. If you wish to run optimization and transfer learning experiments in the online mode, please let us know. We need to allow access to ```Nvidia Jetson TX2``` device for that purpose.
 
 ## Optional (Additional) Experiments
+
 We believe the above experiments are sufficient to support our claims. However, if you want to run additional experiments using Unicorn please use the following commands.
 
 ## Steps to reproduce Table 2 latency results for ```Xception```
+
 For debugging ```latency``` faults in ```NVIDIA Jetson TX2``` please use the following commands:
+
 ```
 docker-compose exec unicorn python ./tests/run_unicorn_debug.py -o inference_time -s Image -k TX2 -m offline
 ```
+
 ## Steps to reproduce Figure 16 (b) results
+
 For ```energy``` optimization in ```NVIDIA Jetson TX2``` please use the following commands.
+
 ```
 docker-compose exec unicorn python ./tests/run_unicorn_optimization.py -o total_energy_consumption -s Image -k TX2 -m offline
 docker-compose exec unicorn python ./tests/run_baseline_optimization.py -o total_energy_consumption -s Image -k TX2 -m offline -b smac
