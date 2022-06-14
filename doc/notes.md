@@ -76,3 +76,121 @@
     4. Das Performance-Modell wird inkrement geupdated um die dahinterliegende kausale Struktur abzubilden
     5.
 - Schritte 3 und 4 wiederholen sich, bis das Budget (z.B. Zeit) überschritten  oder die gleiche Konfiguration mehrfach gewählt wurde
+
+![causal performance model](assets/20220613132214.png)
+
+### Stufe 1
+
+- Unicorn ermöglicht
+  - Performance Debugging
+  - Optimierung
+  - Tuning
+- es können die Fragen beantworten:
+  - welche Konfigurationsoption ist für die Performanceprobleme verantwortlich
+  - welche sind wichtige Optionen und deren Einfluss auf die Performance der Software?
+  - wie lässt sich ein Qualitätsmerkmal optimieren bzw. ein Tradeoff zwischen mehreren Qualitätsmerkmalen auf zuverlässige und nachvollziehbare Weise herstellen?
+  - wie lässt sich Nachvollziehen, welche Optionen und mögliche Interaktionen am meisten für die Performanceeinbrüche verantwortlich sind?
+
+### Stufe 2
+
+- Unicorn verwendet *Fast Causal Inference* (FCI) um kausale Zusammenhänge zu finden
+- FCI wurde gewählt, weil
+  - es berücksichtigt die Existenz von unbeobachteten Störfaktoren
+  - erlaubt Variablen unterschiedlicher Typen
+- jede Konfiguration wird mehrfach gemessen und der Median ermittelt
+- um die kausalen Zusammenhänge zu erlernen gibt es 3 Schritte:
+    1. Bilden eines vollständigen Graphen unter Berücksichtigung von Constraints (z.B: keine Verbindungen zwischen Konfigurationen)
+    2. Entfernen von Kanten zwischen statistisch unabhängigen Knoten
+    3. Orientierung der Kanten
+
+    ![causal model learning](assets/20220613133117.png)
+
+#### Orientierung von ungerichteten Kanten
+
+- es entsteht ein partieller Abstammungsgraph (*partial ancestral graph*) mit folgenden Kanten:
+  - X -> Y: X verursacht Y
+  - X <-> Y: es gibt ungemessene Störfaktoren zwischen X und Y
+  - X o-> Y: entweder X verursacht Y oder es gibt ungemessene Störfaktoren die sowohl X als auch Y verursachen
+  - X o-o Y: entweder X verusacht Y, Y verursacht X oder es gibt ungemessene Störfaktoren, die sowohl X als auch Y verursachen
+- der Kreis bedeutet, dass möglicherweise eine Pfeilspitze vorliegen könnte (oder auch nicht)
+
+### Auflösen partiell gerichteter Kanten
+
+- es müssen die ungewissen Kantenenden (also die Kreise) aufgelöst werden
+- dafür wird die Entropie untersucht
+
+### Iteratives Sampeln (Active Learning)
+
+- nun wird die nächste Konfiguration zum Messen ausgewählt
+- dafür wird zunächst der Effekt der Konfigurationsoptionen auf die Optimierungs-Tasks ermittelt
+- dieser Einfluss wird als Heuristik herangezogen, um die nächste Systemkonfiguration zu bestimmen
+- es werden die Konfigurationesoptionen gewählt die einen größeren kausalen Zusammenhang besitzen, da diese meist einen größeren Einfluss auf die Performance haben und man dadurch mehr über den Einfluss auf die Performance des Systems lernen kann
+
+- aus dem kausalen Graphen werden kausale Pfade extrahiert und geranked entsprechend ihrem durchschnittlichen kausalen Einfluss auf Latenz und Energieverbrauch
+
+- ein kausaler Pfad ist ein gerichteter Pfad von einer Konfigurationsoption oder einem Systemereginis zu einer nicht-funktionalen Anforderung (z.B. Durchsatz oder Energieverbrauch)
+- für das Finden solcher Pfade verwendet man Backtracking bis man bei einem Knoten ankommt, der keine eingehenden Kanten besitzt
+- dabei entstehen bei Abzweigungen jeweils eigene Pfade
+
+- die kausalen Pfade werden nach dem Einfluss von Änderungen an einem Knoten auf die Nachfolgeknoten im Pfad geranked
+
+### Udpaten des kausalen Performance-Modells
+
+- in jeder Iteration wird das Modell inkrementell geupdated
+
+### Abschätzen der Anfrage des Nutzers
+
+- aus dem gerlernten kausalen Performance-Modell wird eine quantitative Abschätzung der vom Nutzer gestellten Anfrage durchgeführt
+- außerdem wird dem Nutzer Feedback zu unbeantwortbaren Fragen gegeben, damit der Nutzer dem System notwendige Informationen mitteilen kann
+
+## Case Study
+
+- Szenario: Entwickler wechselt von NVIDIA TX1 zu TX2 und bemerkt eine 4 mal schlechtere Latenz; der Grund sind falsche Konfigurationen (1 Kompileroption, 4 Hardwareoptionen)
+
+- Unicorn wird verglichen mit:
+  - der Empfehlung im NVIDIa-Forum
+  - BugDoc
+  - SMAC
+
+- Unicorn ist besser als BugDoc und SMAC, da frühzeitig unrelevante Konfigurationsoptionen als irrelevant erkannt werden
+- relevante Konfigurationen haben einen hohen *averace casual effect* (ACE) in der Tabelle (letzte Spalte)
+
+![beispiel](assets/20220613140527.png)
+
+## Evaluation
+
+- es wurden 6 konfigurierbare Systeme getestet:
+  - eine Video Analytics Pipeline
+  - drei Deep-Learning-Systeme (für Bilder, gesprochene Sprache und NLP)
+  - ein Video Encoder
+  - eine Datenbank
+- diese Systeme wurden auf 3 Hardwarekomponenten getestet:
+  - NVIDIA TX1 und TX2
+  - Xavier
+
+![testsysteme](assets/20220613142311.png)
+
+- damit die Ergebnise repliziert werden können wurden manche Parameter festgesetzt (z.B. dynamische Spannung und Frequenz)
+
+- Unicorn wird für Performance Debugging und Reparatur sowieo Performance Optimierung evaluiert
+- Unicorn wird dabei verglichen mit:
+  - CBI (statistische Methode die einen Feature Selection Algorithmus verwendet)
+  - DD (Methode die die Differenz zwischen Paaren von Konfigurationen minimiert)
+  - EnCore (verwendet Korrelationsfinformationen um Fehlkonfigurationen zu finden)
+  - BugDoc (eine Fehlersuchmethode, die Rückschlüsse auf die Grundursachen ableitet und kurz gefasste Erklärungen für Fehler liefert unter Verwendung von Entscheidungsbäumen)
+  - SMAC (ein sequentieller modellbasierter Auto-Tuning-Ansatz)
+  - PESMO (ein multikriterieller Bayes'scher Optimierungsansatz)
+
+- als Evaluationsmetriken werden verwendet:
+  - Accuracy (wie nah liegt die Ausgabe an der Ground Truth?)
+    - gewichteter Jaccard-Koeffizient zwischen vorhergesagter und tatsächlichen Fehlerursachen
+    - $accuracy = \frac{\sum_{ACE} (A \cap B)}{\sum_{ACE} (A \cup B)}$ wobei A die empfohlene Konfiguration ist und B die Konfiguration ist, die das Problem beheben würde
+    - Intuition: die Parameter mit dem größten *average causal effect* sollten am wichtigsten sein
+  - Precision (welcher Anteil der Ausgabe entspricht der Ground Truth)
+  - Recall (welcher Anteil an Fehlerursachen wurde richtig erkannt?)
+  - Gain (um wie viel hat sich das System verbessert?)
+    - $\Delta_{gain} = \frac{NFP_{FAULT} - NFP_{NOFAULT}}{NFP_{FAULT}}$
+  - Error (entspricht Pareto-Front aber in mehr als 2 Dimensionen)
+  - Zeit (in Stunden) bis ein Fix vorgeschlagen wird
+
+![precition und recall](assets/20220613144046.png)

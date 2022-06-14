@@ -1,5 +1,6 @@
 # Unicorn functionality
-In this section, we introduce Unicorn with a walkthrough example. Initially we will get to familiarize with the directory structure used in this repository. 
+
+In this section, we introduce Unicorn with a walkthrough example. Initially we will get to familiarize with the directory structure used in this repository.
 
 ## Structure
 
@@ -7,7 +8,7 @@ In this section, we introduce Unicorn with a walkthrough example. Initially we w
 unicorn
    |-- artifact (contains documentations)
    |-- causallearn (contains third party code to recover causal structure)
-   |-- data 
+   |-- data
       |--bug (contains bugs, ground truths and measurements)
          |--multi (contains multi-objective bugs for software in different hardware)
          |--single (contains single-objective bugs for software in different hardware)
@@ -23,19 +24,24 @@ unicorn
     |--tests (contains necessary code to run and test unicorn)
     |--utils (contains necessary scripts to set hardware configuration)
 ```
-## Hardware 
-The offline version can be run from any devices while the online version needs to be run from ```NVIDIA Jetson TX2``` and ```NVIDIA Jetson Xavier```. However, we believe testing the offline version is sufficient to determine Unicorn's functionality. 
+
+## Hardware
+
+The offline version can be run from any devices while the online version needs to be run from ```NVIDIA Jetson TX2``` and ```NVIDIA Jetson Xavier```. However, we believe testing the offline version is sufficient to determine Unicorn's functionality.
 
 We used the following hardware specifications for offline mode.
-``` 
+
+```
 **offline mode**
 -----------------------------------------------------------------------------------------
-Processor: Intel Core i7-8700 CPU @ 3.20GHz × 12 
+Processor: Intel Core i7-8700 CPU @ 3.20GHz × 12
 Memory: 31.2 GB
 OS: Ubuntu 18.04 LTS 64-bit
 ```
+
 For online mode we used the following setup.
-``` 
+
+```
 **NVIDIA Jetson Xavier**
 -----------------------------------------------------------------------------------------
 Processor: 6-core Carmel ARM v8.2 64-bit CPU, 8MB L2 + 4MB L3
@@ -46,7 +52,7 @@ OS: Ubuntu 20.04 64-bit 85.3 GB/s
 
 **NVIDIA Jetson TX2**
 -----------------------------------------------------------------------------------------
-Processor: Dual-core NVIDIA Denver 2 64-bit CPU and quad-core Arm Cortex-A57 
+Processor: Dual-core NVIDIA Denver 2 64-bit CPU and quad-core Arm Cortex-A57
 GPU: NVIDIA Pascal architecture with 256 NVIDIA CUDA cores
 Memory: 4 GB 128-bit LPDDR4 51.2 GB/s
 Jetpack: 4.3
@@ -54,20 +60,24 @@ OS: Ubuntu 20.04 64-bit
 ```
 
 ## Video run of the example
-An example run of Unicorn for an ```energy``` fault is shown here. 
+
+An example run of Unicorn for an ```energy``` fault is shown here.
 
 _Note: Printing charts outputs are disabled in the trial run video. Instead, output is piped to STDOUT._
 
-https://user-images.githubusercontent.com/1433964/152039788-23bbc9a6-a8e8-495b-a647-c4c1dc0747a1.mp4
-
+<https://user-images.githubusercontent.com/1433964/152039788-23bbc9a6-a8e8-495b-a647-c4c1dc0747a1.mp4>
 
 ## Functionality testing
+
 Once the pre-requisites are installed clone the repo and navigate to the root directory using the following:
+
 ```
 git clone https://github.com/softsys4ai/unicorn.git
 cd unicorn
 ```
+
 Consider a performance developer encounters a non-functional ```energy``` fault for ```Xception``` in ```NVIDIA Jetson Xavier``` as the following:
+
 ```
 **Example Bug** (Bug ID: 0)
 ------------------------------------------------------------------------------------------
@@ -99,16 +109,19 @@ kernel.cpu_time_max_percent      1.000000e+02
 kernel.sched_time_avg_ms         1.000000e+03
 total_energy_consumption         1.500357e+05
 ```
+
 The reported ```energy``` value for the performance fault is over ```150000 millijoules```. To resolve the fault, the developer queries Unicorn to determine the root cause and expects to achieve a ```80% or more``` improvement as a fix to this fault. The developer is also interested to know the root causes of failure. The developer's query is hardcoded in ```line 58``` in ```./tests/run_unicorn_debug.py```  as the following:
+
 ```
 query = 0.8
-``` 
+```
+
 The fault must be in the appropriate bug directory to run Unicorn for this fault with the current version. Therefore, we put the fault in ```./data/bug/single/Xavier/Image/Xavier_Image_total_energy_consumption.csv``` in the beginning. Unicorn needs to be passed  the ```index``` of the bug (row number) before running. To see what arguments are needed to run debugging with Unicorn please use the following:
 
 ```
 docker-compose exec unicorn python ./tests/run_unicorn_debug.py -h
 Usage: %python3 run_unicorn_debug.py -o [objectives] -d [init_data] -s [software] -k [hardware] -m [mode] -i [bug_index]
-    
+
 
 Options:
   -h, --help  show this help message and exit
@@ -119,14 +132,19 @@ Options:
   -i BUG_INDEX, --bug_index=BUG_INDEX bug_index
 
 ```
+
 Here, objective type is ```total_energy_consumption```, software is ```Image```, hardware is ```Xavier```, mode is ```offline```, and bug_index is ```0```. Therefore, we need to use the following command.
+
 ```
 docker-compose exec unicorn python ./tests/run_unicorn_debug.py -o total_energy_consumption -s Image -k Xavier -m offline -i 0
-``` 
-Let us look into different steps involved in Unicorn for resolving the fault. 
+```
+
+Let us look into different steps involved in Unicorn for resolving the fault.
 
 ### Learn causal performance model
+
 Once the above command is run we should see similar output while Unicorn is running. We have an warning as we have 25 samples at this point and the number of features (configuration options and system events) are higher than 25. At this point we can safely ignore this warning.
+
 ```
 initializing CausalModel class
 /home/pjamshid/unicorn/causallearn/search/ConstraintBased/FCI.py:792: UserWarning: The number of features is much larger than the sample size!
@@ -168,18 +186,22 @@ Finishing BK Orientation.
 Starting BK Orientation.
 Finishing BK Orientation.
 ```
-Unicorn initially builds a causal graph with the initial samples located in ```./data/initial/Xavier/Image/Xavier_Image_initial.csv``` usingthe causal graph discovery algorithm FCI (indicated by ```Finishing Fast Adjacency Search```). Then, Unicorn imposes constraints on the discovered causal structure as background knowledge (BK) to remove incoming edges to any configuration options node and outgoing edges from any performance objective node to any other nodes indicated by the ```BK Orientation``` messages.  
 
-At this stage the causal graph has some undecided edges which are later resolved and the following causal graph is discovered in the first iteration. 
+Unicorn initially builds a causal graph with the initial samples located in ```./data/initial/Xavier/Image/Xavier_Image_initial.csv``` usingthe causal graph discovery algorithm FCI (indicated by ```Finishing Fast Adjacency Search```). Then, Unicorn imposes constraints on the discovered causal structure as background knowledge (BK) to remove incoming edges to any configuration options node and outgoing edges from any performance objective node to any other nodes indicated by the ```BK Orientation``` messages.
+
+At this stage the causal graph has some undecided edges which are later resolved and the following causal graph is discovered in the first iteration.
 
 ![graph_iter_1 png](https://user-images.githubusercontent.com/12802456/151999773-bce9cc41-bb4f-4d99-bfca-5fbda2b07b57.png)
 
 ### Iterative sampling
+
 After the causal graph is discovered we identify the causal paths. A causal path starts from a performance objective node and ends in a configuration option. For example, the causal paths for ```total_energy_consumption``` from the causal graph obatined in the first iteration are below.
+
 ```
 [['total_energy_consumption', 'core_freq'], ['total_energy_consumption', 'num_cores'], ['total_energy_consumption', 'kernel.max_pids'], ['total_energy_consumption', 'vm.drop_caches'], ['total_energy_consumption', 'kernel.sched_nr_migrate'], ['total_energy_consumption', 'emc_freq']]
 ```
-Once the causal paths are identified we select the top K paths using their average causal effect. For this software system we set ```K=25```. Since, the number of causal paths obtained from the causal graph is less than 25 we select all the paths to consider in the later stages. Now, we compute the individual treatment effect for each path by setting each option in the path to its allowable values and determine for what value of an option provides the maximum treatment effect to resolve this bug. In this case, we observe that ```emc_freq = 2.133000e+09``` has the highest individual treatment effect in the path ```['total_energy_consumption', 'emc_freq']```. Therefore, we perform an intervention by changing ```emc_freq = 2.133000e+09``` in the performance fault configuration and select for measurement. 
+
+Once the causal paths are identified we select the top K paths using their average causal effect. For this software system we set ```K=25```. Since, the number of causal paths obtained from the causal graph is less than 25 we select all the paths to consider in the later stages. Now, we compute the individual treatment effect for each path by setting each option in the path to its allowable values and determine for what value of an option provides the maximum treatment effect to resolve this bug. In this case, we observe that ```emc_freq = 2.133000e+09``` has the highest individual treatment effect in the path ```['total_energy_consumption', 'emc_freq']```. Therefore, we perform an intervention by changing ```emc_freq = 2.133000e+09``` in the performance fault configuration and select for measurement.
 
 ```
 memory_growth                    5.000000e-01
@@ -209,12 +231,17 @@ kernel.sched_nr_migrate          1.280000e+02
 kernel.cpu_time_max_percent      1.000000e+02
 kernel.sched_time_avg_ms         1.000000e+03
 ```
+
 ### Update causal performance model
+
 In this stage, we measure the recommended configuration to determine whether it resolves the fault. Here,
+
 ```
 Recommended Config Objective Value 65084
 ```
+
 Since, this configuration does not resolve developers query to improve ```energy``` by ```80% or more``` we proceed to the next iteration and update the causal graph with the new configuration.
+
 ```
 --------------------------------------------------
 /home/pjamshid/unicorn/causallearn/search/ConstraintBased/FCI.py:792: UserWarning: The number of features is much larger than the sample size!
@@ -259,8 +286,9 @@ Starting BK Orientation.
 Finishing BK Orientation.
 X45 --> X49
 
-``` 
-Causal graph discovered in iteration 2 is updated after adding the recommended configuration. Here, we see an impact of adding the recommended confiuration that changes the causal graph in previous iteration. 
+```
+
+Causal graph discovered in iteration 2 is updated after adding the recommended configuration. Here, we see an impact of adding the recommended confiuration that changes the causal graph in previous iteration.
 ![graph_iter_2 png](https://user-images.githubusercontent.com/12802456/151996491-ddca8174-6e08-4d12-a5ce-0c2fba0e002d.png)
 After the graph is obtained we repeat the steps of causal path discovery, computing path causal effects and iterative sampling until the fault is resolved.
 
@@ -300,12 +328,13 @@ Number of Samples Required 23
 ```
 
 ### Evaluation
-Here, the gain is ```((150035 - 24748)/150035) * 100% = 83%```. Therefore, it satisfies the user query to improve performance fault by ```80%```. Unicorn required 23 additional samples to resolve the fault. 
+
+Here, the gain is ```((150035 - 24748)/150035) * 100% = 83%```. Therefore, it satisfies the user query to improve performance fault by ```80%```. Unicorn required 23 additional samples to resolve the fault.
 
 We also measure accuracy, precision and recall of the recommended fix by comparison with the ground truth fix that is given below:
 
 ```
-memory_growth                    5.000000e-01          
+memory_growth                    5.000000e-01
 logical_devices                  2.000000e+00
 core_freq                        2.265600e+06
 gpu_freq                         2.688000e+05
@@ -339,7 +368,7 @@ Let us compare them side by side to see what options are changed and what are th
 ```
                                   Bug        Ground truth     Unicorn
 --------------------------------------------------------------------------
-memory_growth                 5.000000e-01   5.000000e-01   5.000000e-01      
+memory_growth                 5.000000e-01   5.000000e-01   5.000000e-01
 logical_devices               2.000000e+00   2.000000e+00   2.000000e+00
 core_freq*                    2.188800e+06   2.265600e+06   2.265600e+06
 gpu_freq                      2.688000e+05   2.688000e+05   2.688000e+05
@@ -367,9 +396,5 @@ kernel.cpu_time_max_percent   1.000000e+02   1.000000e+02   1.000000e+02
 kernel.sched_time_avg_ms      1.000000e+03   1.000000e+03   1.000000e+03
 total_energy_consumption*     1.500357e+05   2.474800e+04   2.474800e+04
 ```
+
 Here, the root causes are ```core_freq```, ```emc_freq```, ```num_cores```, and ```kernel.max_pids``` (indicated by ```*```). Here, Unicorn is able to find each of the root causes. Therefore, Unicorn achieves ```100%``` accuracy, precision and recall for this non-functional energy fault.
-
-
-
-
-
