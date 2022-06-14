@@ -1,0 +1,1713 @@
+initializing CausalModel class
+Starting Fast Adjacency Search.
+Finishing Fast Adjacency Search.
+Starting Fast Adjacency Search.
+X2 --- X7 because it was forbidden by background background_knowledge.
+X2 --- X26 because it was forbidden by background background_knowledge.
+X3 --- X4 because it was forbidden by background background_knowledge.
+X3 --- X5 because it was forbidden by background background_knowledge.
+X3 --- X17 because it was forbidden by background background_knowledge.
+X4 --- X12 because it was forbidden by background background_knowledge.
+X4 --- X17 because it was forbidden by background background_knowledge.
+X7 --- X14 because it was forbidden by background background_knowledge.
+X9 --- X15 because it was forbidden by background background_knowledge.
+X9 --- X18 because it was forbidden by background background_knowledge.
+X9 --- X20 because it was forbidden by background background_knowledge.
+X10 --- X15 because it was forbidden by background background_knowledge.
+X10 --- X20 because it was forbidden by background background_knowledge.
+X10 --- X21 because it was forbidden by background background_knowledge.
+X12 --- X26 because it was forbidden by background background_knowledge.
+X13 --- X16 because it was forbidden by background background_knowledge.
+X13 --- X23 because it was forbidden by background background_knowledge.
+X14 --- X26 because it was forbidden by background background_knowledge.
+X15 --- X18 because it was forbidden by background background_knowledge.
+X16 --- X23 because it was forbidden by background background_knowledge.
+X17 --- X19 because it was forbidden by background background_knowledge.
+X18 --- X20 because it was forbidden by background background_knowledge.
+X19 --- X22 because it was forbidden by background background_knowledge.
+X21 --- X26 because it was forbidden by background background_knowledge.
+Finishing Fast Adjacency Search.
+Starting BK Orientation.
+Finishing BK Orientation.
+Starting BK Orientation.
+Finishing BK Orientation.
+--------------------------------------------------------------
+Connections discovered by the causal graph
+[('logical_devices', 'sched_sched_wakeup_new'), ('emc_freq', 'L1-dcache-load-misses'), ('kernel.sched_nr_migrate', 'branch-loads'), ('vm.swappiness', 'context-switches'), ('migrations', 'L1-dcache-stores'), ('num_cores', 'raw_syscalls_sys_enter'), ('logical_devices', 'sched_sched_overutilized'), ('cache-misses', 'sched_sched_stat_runtime'), ('vm.swappiness', 'branch-load-misses'), ('vm.drop_caches', 'raw_syscalls_sys_enter'), ('minor-faults', 'L1-dcache-load-misses'), ('core_freq', 'total_energy_consumption'), ('kernel.max_pids', 'branch-load-misses'), ('emc_freq', 'total_energy_consumption'), ('logical_devices', 'total_energy_consumption'), ('emc_freq', 'total_energy_consumption'), ('kernel.sched_nr_migrate', 'total_energy_consumption'), ('vm.swappiness', 'total_energy_consumption'), ('migrations', 'total_energy_consumption'), ('num_cores', 'total_energy_consumption'), ('logical_devices', 'total_energy_consumption')]
+--------------------------------------------------------------
+initializing CausalModel class
+Starting Fast Adjacency Search.
+Finishing Fast Adjacency Search.
+Starting Fast Adjacency Search.
+X2 --- X7 because it was forbidden by background background_knowledge.
+X2 --- X26 because it was forbidden by background background_knowledge.
+X3 --- X4 because it was forbidden by background background_knowledge.
+X3 --- X5 because it was forbidden by background background_knowledge.
+X3 --- X17 because it was forbidden by background background_knowledge.
+X4 --- X12 because it was forbidden by background background_knowledge.
+X4 --- X17 because it was forbidden by background background_knowledge.
+X7 --- X14 because it was forbidden by background background_knowledge.
+X9 --- X15 because it was forbidden by background background_knowledge.
+X9 --- X18 because it was forbidden by background background_knowledge.
+X9 --- X20 because it was forbidden by background background_knowledge.
+X10 --- X15 because it was forbidden by background background_knowledge.
+X10 --- X20 because it was forbidden by background background_knowledge.
+X10 --- X21 because it was forbidden by background background_knowledge.
+X12 --- X26 because it was forbidden by background background_knowledge.
+X13 --- X16 because it was forbidden by background background_knowledge.
+X13 --- X23 because it was forbidden by background background_knowledge.
+X14 --- X26 because it was forbidden by background background_knowledge.
+X15 --- X18 because it was forbidden by background background_knowledge.
+X16 --- X23 because it was forbidden by background background_knowledge.
+X17 --- X19 because it was forbidden by background background_knowledge.
+X18 --- X20 because it was forbidden by background background_knowledge.
+X19 --- X22 because it was forbidden by background background_knowledge.
+X21 --- X26 because it was forbidden by background background_knowledge.
+Finishing Fast Adjacency Search.
+Starting BK Orientation.
+Finishing BK Orientation.
+Starting BK Orientation.
+Finishing BK Orientation.
+--------------------------------------------------------------
+Connections discovered by the causal graph
+[('logical_devices', 'sched_sched_wakeup_new'), ('emc_freq', 'L1-dcache-load-misses'), ('kernel.sched_nr_migrate', 'branch-loads'), ('vm.swappiness', 'context-switches'), ('migrations', 'L1-dcache-stores'), ('num_cores', 'raw_syscalls_sys_enter'), ('logical_devices', 'sched_sched_overutilized'), ('cache-misses', 'sched_sched_stat_runtime'), ('vm.swappiness', 'branch-load-misses'), ('vm.drop_caches', 'raw_syscalls_sys_enter'), ('minor-faults', 'L1-dcache-load-misses'), ('core_freq', 'total_energy_consumption'), ('kernel.max_pids', 'branch-load-misses'), ('emc_freq', 'total_energy_consumption'), ('logical_devices', 'total_energy_consumption'), ('emc_freq', 'total_energy_consumption'), ('kernel.sched_nr_migrate', 'total_energy_consumption'), ('vm.swappiness', 'total_energy_consumption'), ('migrations', 'total_energy_consumption'), ('num_cores', 'total_energy_consumption'), ('logical_devices', 'total_energy_consumption')]
+--------------------------------------------------------------
+--------------------------------------------------
+BUG ID:  0
+--------------------------------------------------
+[['total_energy_consumption', 'core_freq'], ['total_energy_consumption', 'emc_freq'], ['total_energy_consumption', 'logical_devices'], ['total_energy_consumption', 'emc_freq'], ['total_energy_consumption', 'kernel.sched_nr_migrate'], ['total_energy_consumption', 'vm.swappiness'], ['total_energy_consumption', 'migrations'], ['total_energy_consumption', 'num_cores'], ['total_energy_consumption', 'logical_devices']]
+--------------------------------------------------
+--------------------------------------------------
+             Recommended Configuration            
+memory_growth                    5.000000e-01
+logical_devices                  2.000000e+00
+core_freq                        2.188800e+06
+gpu_freq                         2.688000e+05
+emc_freq                         2.133000e+09
+num_cores                        2.000000e+00
+scheduler.policy                 0.000000e+00
+vm.swappiness                    1.000000e+02
+vm.vfs_cache_pressure            5.000000e+02
+vm.dirty_background_ratio        8.000000e+01
+vm.drop_caches                   0.000000e+00
+vm.nr_hugepages                  1.000000e+00
+vm.overcommit_ratio              5.000000e+01
+vm.overcommit_memory             1.000000e+00
+vm.overcommit_hugepages          2.000000e+00
+kernel.sched_child_runs_first    1.000000e+00
+kernel.sched_rt_runtime_us       9.500000e+05
+vm.dirty_bytes                   3.000000e+01
+vm.dirty_background_bytes        6.000000e+01
+vm.dirty_ratio                   5.000000e+01
+swap_memory                      1.000000e+00
+kernel.max_pids                  3.276800e+04
+kernel.sched_latency_ns          2.400000e+07
+kernel.sched_nr_migrate          1.280000e+02
+kernel.cpu_time_max_percent      1.000000e+02
+kernel.sched_time_avg_ms         1.000000e+03
+Name: 0, dtype: float64
+--------------------------------------------------
+--------------------------------------------------
+--------------------------------------------------
++++++++++++++++++++++Bug++++++++++++++++++++++++++
+Recommended Config Objective Value 74095
+--------------------------------------------------
+Starting Fast Adjacency Search.
+Finishing Fast Adjacency Search.
+Starting Fast Adjacency Search.
+X2 --- X7 because it was forbidden by background background_knowledge.
+X2 --- X26 because it was forbidden by background background_knowledge.
+X3 --- X5 because it was forbidden by background background_knowledge.
+X3 --- X17 because it was forbidden by background background_knowledge.
+X4 --- X7 because it was forbidden by background background_knowledge.
+X4 --- X12 because it was forbidden by background background_knowledge.
+X4 --- X17 because it was forbidden by background background_knowledge.
+X4 --- X19 because it was forbidden by background background_knowledge.
+X6 --- X10 because it was forbidden by background background_knowledge.
+X7 --- X14 because it was forbidden by background background_knowledge.
+X9 --- X15 because it was forbidden by background background_knowledge.
+X9 --- X18 because it was forbidden by background background_knowledge.
+X10 --- X15 because it was forbidden by background background_knowledge.
+X10 --- X20 because it was forbidden by background background_knowledge.
+X10 --- X21 because it was forbidden by background background_knowledge.
+X11 --- X14 because it was forbidden by background background_knowledge.
+X12 --- X17 because it was forbidden by background background_knowledge.
+X12 --- X19 because it was forbidden by background background_knowledge.
+X12 --- X26 because it was forbidden by background background_knowledge.
+X13 --- X16 because it was forbidden by background background_knowledge.
+X13 --- X23 because it was forbidden by background background_knowledge.
+X14 --- X26 because it was forbidden by background background_knowledge.
+X15 --- X18 because it was forbidden by background background_knowledge.
+X16 --- X23 because it was forbidden by background background_knowledge.
+X17 --- X19 because it was forbidden by background background_knowledge.
+X18 --- X20 because it was forbidden by background background_knowledge.
+X19 --- X22 because it was forbidden by background background_knowledge.
+X19 --- X24 because it was forbidden by background background_knowledge.
+Finishing Fast Adjacency Search.
+Starting BK Orientation.
+Finishing BK Orientation.
+Starting BK Orientation.
+Finishing BK Orientation.
+--------------------------------------------------------------
+Connections discovered by the causal graph
+[('logical_devices', 'sched_sched_wakeup_new'), ('emc_freq', 'L1-dcache-load-misses'), ('kernel.sched_nr_migrate', 'branch-loads'), ('vm.swappiness', 'context-switches'), ('vm.vfs_cache_pressure', 'sched_sched_wakeup'), ('migrations', 'L1-dcache-stores'), ('num_cores', 'raw_syscalls_sys_enter'), ('logical_devices', 'sched_sched_overutilized'), ('gpu_freq', 'branch-misses'), ('vm.swappiness', 'branch-load-misses'), ('vm.dirty_background_ratio', 'minor-faults'), ('cache-misses', 'sched_sched_stat_runtime'), ('vm.overcommit_ratio', 'instructions'), ('vm.drop_caches', 'raw_syscalls_sys_enter'), ('core_freq', 'total_energy_consumption'), ('kernel.max_pids', 'branch-load-misses'), ('logical_devices', 'total_energy_consumption'), ('emc_freq', 'total_energy_consumption'), ('kernel.sched_nr_migrate', 'total_energy_consumption'), ('vm.swappiness', 'total_energy_consumption'), ('vm.vfs_cache_pressure', 'total_energy_consumption'), ('migrations', 'total_energy_consumption'), ('num_cores', 'total_energy_consumption'), ('logical_devices', 'total_energy_consumption')]
+--------------------------------------------------------------
+[['total_energy_consumption', 'core_freq'], ['total_energy_consumption', 'emc_freq'], ['total_energy_consumption', 'logical_devices'], ['total_energy_consumption', 'emc_freq'], ['total_energy_consumption', 'kernel.sched_nr_migrate'], ['total_energy_consumption', 'vm.swappiness'], ['total_energy_consumption', 'migrations'], ['total_energy_consumption', 'num_cores'], ['total_energy_consumption', 'logical_devices']]
+--------------------------------------------------
+--------------------------------------------------
+             Recommended Configuration            
+memory_growth                    5.000000e-01
+logical_devices                  2.000000e+00
+core_freq                        2.188800e+06
+gpu_freq                         2.688000e+05
+emc_freq                         2.133000e+09
+num_cores                        2.000000e+00
+scheduler.policy                 0.000000e+00
+vm.swappiness                    1.000000e+02
+vm.vfs_cache_pressure            5.000000e+02
+vm.dirty_background_ratio        8.000000e+01
+vm.drop_caches                   0.000000e+00
+vm.nr_hugepages                  1.000000e+00
+vm.overcommit_ratio              5.000000e+01
+vm.overcommit_memory             1.000000e+00
+vm.overcommit_hugepages          2.000000e+00
+kernel.sched_child_runs_first    1.000000e+00
+kernel.sched_rt_runtime_us       9.500000e+05
+vm.dirty_bytes                   3.000000e+01
+vm.dirty_background_bytes        6.000000e+01
+vm.dirty_ratio                   5.000000e+01
+swap_memory                      1.000000e+00
+kernel.max_pids                  3.276800e+04
+kernel.sched_latency_ns          2.400000e+07
+kernel.sched_nr_migrate          1.280000e+02
+kernel.cpu_time_max_percent      1.000000e+02
+kernel.sched_time_avg_ms         1.000000e+03
+Name: 0, dtype: float64
+--------------------------------------------------
+--------------------------------------------------
+--------------------------------------------------
++++++++++++++++++++++Bug++++++++++++++++++++++++++
+Recommended Config Objective Value 65084
+--------------------------------------------------
+Starting Fast Adjacency Search.
+Finishing Fast Adjacency Search.
+Starting Fast Adjacency Search.
+X3 --- X5 because it was forbidden by background background_knowledge.
+X4 --- X7 because it was forbidden by background background_knowledge.
+X4 --- X12 because it was forbidden by background background_knowledge.
+X4 --- X17 because it was forbidden by background background_knowledge.
+X4 --- X19 because it was forbidden by background background_knowledge.
+X4 --- X26 because it was forbidden by background background_knowledge.
+X5 --- X11 because it was forbidden by background background_knowledge.
+X5 --- X25 because it was forbidden by background background_knowledge.
+X6 --- X10 because it was forbidden by background background_knowledge.
+X7 --- X14 because it was forbidden by background background_knowledge.
+X9 --- X15 because it was forbidden by background background_knowledge.
+X9 --- X18 because it was forbidden by background background_knowledge.
+X10 --- X20 because it was forbidden by background background_knowledge.
+X10 --- X21 because it was forbidden by background background_knowledge.
+X11 --- X14 because it was forbidden by background background_knowledge.
+X12 --- X17 because it was forbidden by background background_knowledge.
+X12 --- X19 because it was forbidden by background background_knowledge.
+X12 --- X24 because it was forbidden by background background_knowledge.
+X12 --- X26 because it was forbidden by background background_knowledge.
+X13 --- X23 because it was forbidden by background background_knowledge.
+X14 --- X26 because it was forbidden by background background_knowledge.
+X16 --- X23 because it was forbidden by background background_knowledge.
+X17 --- X19 because it was forbidden by background background_knowledge.
+X18 --- X20 because it was forbidden by background background_knowledge.
+X19 --- X22 because it was forbidden by background background_knowledge.
+X19 --- X24 because it was forbidden by background background_knowledge.
+Finishing Fast Adjacency Search.
+Starting BK Orientation.
+Finishing BK Orientation.
+Starting BK Orientation.
+Finishing BK Orientation.
+X45 --> X49
+--------------------------------------------------------------
+Connections discovered by the causal graph
+[('logical_devices', 'sched_sched_wakeup_new'), ('emc_freq', 'L1-dcache-load-misses'), ('gpu_freq', 'total_energy_consumption'), ('kernel.sched_nr_migrate', 'branch-loads'), ('migrations', 'L1-dcache-stores'), ('num_cores', 'raw_syscalls_sys_enter'), ('logical_devices', 'sched_sched_overutilized'), ('gpu_freq', 'branch-misses'), ('vm.swappiness', 'branch-load-misses'), ('cache-misses', 'sched_sched_stat_runtime'), ('L1-dcache-load-misses', 'total_energy_consumption'), ('vm.overcommit_ratio', 'instructions'), ('kernel.sched_rt_runtime_us', 'major-faults'), ('core_freq', 'total_energy_consumption'), ('kernel.max_pids', 'branch-load-misses'), ('logical_devices', 'total_energy_consumption'), ('emc_freq', 'total_energy_consumption'), ('gpu_freq', 'total_energy_consumption'), ('kernel.sched_nr_migrate', 'total_energy_consumption'), ('migrations', 'total_energy_consumption'), ('num_cores', 'total_energy_consumption'), ('logical_devices', 'total_energy_consumption')]
+--------------------------------------------------------------
+[['total_energy_consumption', 'core_freq'], ['total_energy_consumption', 'emc_freq'], ['total_energy_consumption', 'logical_devices'], ['total_energy_consumption', 'emc_freq'], ['total_energy_consumption', 'kernel.sched_nr_migrate'], ['total_energy_consumption', 'vm.swappiness'], ['total_energy_consumption', 'migrations'], ['total_energy_consumption', 'num_cores'], ['total_energy_consumption', 'logical_devices']]
+--------------------------------------------------
+--------------------------------------------------
+             Recommended Configuration            
+memory_growth                    5.000000e-01
+logical_devices                  2.000000e+00
+core_freq                        2.188800e+06
+gpu_freq                         2.688000e+05
+emc_freq                         1.866000e+09
+num_cores                        2.000000e+00
+scheduler.policy                 0.000000e+00
+vm.swappiness                    1.000000e+02
+vm.vfs_cache_pressure            5.000000e+02
+vm.dirty_background_ratio        8.000000e+01
+vm.drop_caches                   0.000000e+00
+vm.nr_hugepages                  1.000000e+00
+vm.overcommit_ratio              5.000000e+01
+vm.overcommit_memory             1.000000e+00
+vm.overcommit_hugepages          2.000000e+00
+kernel.sched_child_runs_first    1.000000e+00
+kernel.sched_rt_runtime_us       9.500000e+05
+vm.dirty_bytes                   3.000000e+01
+vm.dirty_background_bytes        6.000000e+01
+vm.dirty_ratio                   5.000000e+01
+swap_memory                      1.000000e+00
+kernel.max_pids                  3.276800e+04
+kernel.sched_latency_ns          2.400000e+07
+kernel.sched_nr_migrate          1.280000e+02
+kernel.cpu_time_max_percent      1.000000e+02
+kernel.sched_time_avg_ms         1.000000e+03
+Name: 0, dtype: float64
+--------------------------------------------------
+--------------------------------------------------
+--------------------------------------------------
++++++++++++++++++++++Bug++++++++++++++++++++++++++
+Recommended Config Objective Value 72709
+--------------------------------------------------
+Starting Fast Adjacency Search.
+Finishing Fast Adjacency Search.
+Starting Fast Adjacency Search.
+X3 --- X5 because it was forbidden by background background_knowledge.
+X4 --- X7 because it was forbidden by background background_knowledge.
+X4 --- X12 because it was forbidden by background background_knowledge.
+X4 --- X17 because it was forbidden by background background_knowledge.
+X4 --- X19 because it was forbidden by background background_knowledge.
+X4 --- X26 because it was forbidden by background background_knowledge.
+X5 --- X11 because it was forbidden by background background_knowledge.
+X5 --- X25 because it was forbidden by background background_knowledge.
+X6 --- X10 because it was forbidden by background background_knowledge.
+X9 --- X15 because it was forbidden by background background_knowledge.
+X10 --- X20 because it was forbidden by background background_knowledge.
+X10 --- X21 because it was forbidden by background background_knowledge.
+X11 --- X14 because it was forbidden by background background_knowledge.
+X12 --- X17 because it was forbidden by background background_knowledge.
+X12 --- X19 because it was forbidden by background background_knowledge.
+X12 --- X24 because it was forbidden by background background_knowledge.
+X12 --- X26 because it was forbidden by background background_knowledge.
+X13 --- X23 because it was forbidden by background background_knowledge.
+X14 --- X25 because it was forbidden by background background_knowledge.
+X16 --- X23 because it was forbidden by background background_knowledge.
+X16 --- X25 because it was forbidden by background background_knowledge.
+X17 --- X19 because it was forbidden by background background_knowledge.
+X18 --- X20 because it was forbidden by background background_knowledge.
+X19 --- X22 because it was forbidden by background background_knowledge.
+X19 --- X24 because it was forbidden by background background_knowledge.
+Finishing Fast Adjacency Search.
+Starting BK Orientation.
+Finishing BK Orientation.
+Starting BK Orientation.
+Finishing BK Orientation.
+X45 --> X49
+--------------------------------------------------------------
+Connections discovered by the causal graph
+[('logical_devices', 'sched_sched_wakeup_new'), ('emc_freq', 'L1-dcache-load-misses'), ('gpu_freq', 'total_energy_consumption'), ('kernel.sched_nr_migrate', 'branch-loads'), ('vm.swappiness', 'context-switches'), ('migrations', 'L1-dcache-stores'), ('num_cores', 'raw_syscalls_sys_enter'), ('logical_devices', 'sched_sched_overutilized'), ('cache-misses', 'sched_sched_stat_runtime'), ('vm.swappiness', 'branch-load-misses'), ('L1-dcache-load-misses', 'total_energy_consumption'), ('vm.overcommit_ratio', 'instructions'), ('kernel.sched_rt_runtime_us', 'major-faults'), ('core_freq', 'total_energy_consumption'), ('kernel.max_pids', 'branch-load-misses'), ('logical_devices', 'total_energy_consumption'), ('emc_freq', 'total_energy_consumption'), ('gpu_freq', 'total_energy_consumption'), ('kernel.sched_nr_migrate', 'total_energy_consumption'), ('vm.swappiness', 'total_energy_consumption'), ('migrations', 'total_energy_consumption'), ('num_cores', 'total_energy_consumption')]
+--------------------------------------------------------------
+[['total_energy_consumption', 'core_freq'], ['total_energy_consumption', 'emc_freq'], ['total_energy_consumption', 'logical_devices'], ['total_energy_consumption', 'emc_freq'], ['total_energy_consumption', 'kernel.sched_nr_migrate'], ['total_energy_consumption', 'vm.swappiness'], ['total_energy_consumption', 'migrations'], ['total_energy_consumption', 'num_cores'], ['total_energy_consumption', 'logical_devices']]
+--------------------------------------------------
+--------------------------------------------------
+             Recommended Configuration            
+memory_growth                    5.000000e-01
+logical_devices                  2.000000e+00
+core_freq                        2.188800e+06
+gpu_freq                         2.688000e+05
+emc_freq                         2.133000e+09
+num_cores                        2.000000e+00
+scheduler.policy                 0.000000e+00
+vm.swappiness                    1.000000e+02
+vm.vfs_cache_pressure            5.000000e+02
+vm.dirty_background_ratio        8.000000e+01
+vm.drop_caches                   0.000000e+00
+vm.nr_hugepages                  1.000000e+00
+vm.overcommit_ratio              5.000000e+01
+vm.overcommit_memory             1.000000e+00
+vm.overcommit_hugepages          2.000000e+00
+kernel.sched_child_runs_first    1.000000e+00
+kernel.sched_rt_runtime_us       9.500000e+05
+vm.dirty_bytes                   3.000000e+01
+vm.dirty_background_bytes        6.000000e+01
+vm.dirty_ratio                   5.000000e+01
+swap_memory                      1.000000e+00
+kernel.max_pids                  3.276800e+04
+kernel.sched_latency_ns          2.400000e+07
+kernel.sched_nr_migrate          1.280000e+02
+kernel.cpu_time_max_percent      1.000000e+02
+kernel.sched_time_avg_ms         1.000000e+03
+Name: 0, dtype: float64
+--------------------------------------------------
+--------------------------------------------------
+--------------------------------------------------
++++++++++++++++++++++Bug++++++++++++++++++++++++++
+Recommended Config Objective Value 50458
+--------------------------------------------------
+Starting Fast Adjacency Search.
+Finishing Fast Adjacency Search.
+Starting Fast Adjacency Search.
+X1 --- X13 because it was forbidden by background background_knowledge.
+X2 --- X25 because it was forbidden by background background_knowledge.
+X3 --- X5 because it was forbidden by background background_knowledge.
+X3 --- X12 because it was forbidden by background background_knowledge.
+X4 --- X7 because it was forbidden by background background_knowledge.
+X4 --- X12 because it was forbidden by background background_knowledge.
+X4 --- X17 because it was forbidden by background background_knowledge.
+X4 --- X19 because it was forbidden by background background_knowledge.
+X4 --- X26 because it was forbidden by background background_knowledge.
+X5 --- X11 because it was forbidden by background background_knowledge.
+X5 --- X20 because it was forbidden by background background_knowledge.
+X5 --- X25 because it was forbidden by background background_knowledge.
+X6 --- X10 because it was forbidden by background background_knowledge.
+X7 --- X13 because it was forbidden by background background_knowledge.
+X7 --- X15 because it was forbidden by background background_knowledge.
+X9 --- X15 because it was forbidden by background background_knowledge.
+X9 --- X23 because it was forbidden by background background_knowledge.
+X10 --- X20 because it was forbidden by background background_knowledge.
+X10 --- X21 because it was forbidden by background background_knowledge.
+X11 --- X14 because it was forbidden by background background_knowledge.
+X11 --- X25 because it was forbidden by background background_knowledge.
+X12 --- X17 because it was forbidden by background background_knowledge.
+X12 --- X19 because it was forbidden by background background_knowledge.
+X12 --- X24 because it was forbidden by background background_knowledge.
+X12 --- X26 because it was forbidden by background background_knowledge.
+X13 --- X23 because it was forbidden by background background_knowledge.
+X14 --- X25 because it was forbidden by background background_knowledge.
+X16 --- X23 because it was forbidden by background background_knowledge.
+X16 --- X25 because it was forbidden by background background_knowledge.
+X17 --- X19 because it was forbidden by background background_knowledge.
+X18 --- X20 because it was forbidden by background background_knowledge.
+X19 --- X22 because it was forbidden by background background_knowledge.
+X19 --- X24 because it was forbidden by background background_knowledge.
+Finishing Fast Adjacency Search.
+Starting BK Orientation.
+Finishing BK Orientation.
+Starting BK Orientation.
+Finishing BK Orientation.
+X45 --> X49
+--------------------------------------------------------------
+Connections discovered by the causal graph
+[('logical_devices', 'sched_sched_wakeup_new'), ('emc_freq', 'L1-dcache-load-misses'), ('gpu_freq', 'total_energy_consumption'), ('kernel.sched_nr_migrate', 'branch-loads'), ('vm.swappiness', 'context-switches'), ('num_cores', 'raw_syscalls_sys_enter'), ('logical_devices', 'sched_sched_overutilized'), ('cache-misses', 'sched_sched_stat_runtime'), ('vm.swappiness', 'branch-load-misses'), ('L1-dcache-load-misses', 'total_energy_consumption'), ('vm.overcommit_ratio', 'instructions'), ('core_freq', 'total_energy_consumption'), ('L1-dcache-stores', 'migrations'), ('logical_devices', 'total_energy_consumption'), ('emc_freq', 'total_energy_consumption'), ('gpu_freq', 'total_energy_consumption'), ('kernel.sched_nr_migrate', 'total_energy_consumption'), ('vm.swappiness', 'total_energy_consumption'), ('num_cores', 'total_energy_consumption')]
+--------------------------------------------------------------
+[['total_energy_consumption', 'core_freq'], ['total_energy_consumption', 'emc_freq'], ['total_energy_consumption', 'logical_devices'], ['total_energy_consumption', 'emc_freq'], ['total_energy_consumption', 'kernel.sched_nr_migrate'], ['total_energy_consumption', 'vm.swappiness'], ['total_energy_consumption', 'migrations'], ['total_energy_consumption', 'num_cores'], ['total_energy_consumption', 'logical_devices']]
+--------------------------------------------------
+--------------------------------------------------
+             Recommended Configuration            
+memory_growth                    5.000000e-01
+logical_devices                  2.000000e+00
+core_freq                        2.112000e+06
+gpu_freq                         2.688000e+05
+emc_freq                         2.133000e+09
+num_cores                        2.000000e+00
+scheduler.policy                 0.000000e+00
+vm.swappiness                    1.000000e+02
+vm.vfs_cache_pressure            5.000000e+02
+vm.dirty_background_ratio        8.000000e+01
+vm.drop_caches                   0.000000e+00
+vm.nr_hugepages                  1.000000e+00
+vm.overcommit_ratio              5.000000e+01
+vm.overcommit_memory             1.000000e+00
+vm.overcommit_hugepages          2.000000e+00
+kernel.sched_child_runs_first    1.000000e+00
+kernel.sched_rt_runtime_us       9.500000e+05
+vm.dirty_bytes                   3.000000e+01
+vm.dirty_background_bytes        6.000000e+01
+vm.dirty_ratio                   5.000000e+01
+swap_memory                      1.000000e+00
+kernel.max_pids                  3.276800e+04
+kernel.sched_latency_ns          2.400000e+07
+kernel.sched_nr_migrate          1.280000e+02
+kernel.cpu_time_max_percent      1.000000e+02
+kernel.sched_time_avg_ms         1.000000e+03
+Name: 0, dtype: float64
+--------------------------------------------------
+--------------------------------------------------
+--------------------------------------------------
++++++++++++++++++++++Bug++++++++++++++++++++++++++
+Recommended Config Objective Value 69311
+--------------------------------------------------
+Starting Fast Adjacency Search.
+Finishing Fast Adjacency Search.
+Starting Fast Adjacency Search.
+X1 --- X13 because it was forbidden by background background_knowledge.
+X2 --- X14 because it was forbidden by background background_knowledge.
+X2 --- X25 because it was forbidden by background background_knowledge.
+X3 --- X5 because it was forbidden by background background_knowledge.
+X3 --- X12 because it was forbidden by background background_knowledge.
+X4 --- X7 because it was forbidden by background background_knowledge.
+X4 --- X12 because it was forbidden by background background_knowledge.
+X4 --- X17 because it was forbidden by background background_knowledge.
+X4 --- X19 because it was forbidden by background background_knowledge.
+X4 --- X21 because it was forbidden by background background_knowledge.
+X4 --- X23 because it was forbidden by background background_knowledge.
+X4 --- X24 because it was forbidden by background background_knowledge.
+X4 --- X26 because it was forbidden by background background_knowledge.
+X5 --- X11 because it was forbidden by background background_knowledge.
+X5 --- X18 because it was forbidden by background background_knowledge.
+X5 --- X20 because it was forbidden by background background_knowledge.
+X5 --- X25 because it was forbidden by background background_knowledge.
+X6 --- X10 because it was forbidden by background background_knowledge.
+X7 --- X13 because it was forbidden by background background_knowledge.
+X7 --- X15 because it was forbidden by background background_knowledge.
+X9 --- X15 because it was forbidden by background background_knowledge.
+X9 --- X23 because it was forbidden by background background_knowledge.
+X10 --- X20 because it was forbidden by background background_knowledge.
+X10 --- X21 because it was forbidden by background background_knowledge.
+X11 --- X13 because it was forbidden by background background_knowledge.
+X11 --- X14 because it was forbidden by background background_knowledge.
+X11 --- X25 because it was forbidden by background background_knowledge.
+X12 --- X17 because it was forbidden by background background_knowledge.
+X12 --- X19 because it was forbidden by background background_knowledge.
+X12 --- X24 because it was forbidden by background background_knowledge.
+X12 --- X26 because it was forbidden by background background_knowledge.
+X13 --- X23 because it was forbidden by background background_knowledge.
+X14 --- X25 because it was forbidden by background background_knowledge.
+X16 --- X23 because it was forbidden by background background_knowledge.
+X16 --- X25 because it was forbidden by background background_knowledge.
+X17 --- X19 because it was forbidden by background background_knowledge.
+X18 --- X20 because it was forbidden by background background_knowledge.
+X19 --- X22 because it was forbidden by background background_knowledge.
+X19 --- X24 because it was forbidden by background background_knowledge.
+Finishing Fast Adjacency Search.
+Starting BK Orientation.
+Finishing BK Orientation.
+Starting BK Orientation.
+Finishing BK Orientation.
+--------------------------------------------------------------
+Connections discovered by the causal graph
+[('logical_devices', 'sched_sched_wakeup_new'), ('sched_sched_switch', 'sched_sched_load_avg_cpu'), ('gpu_freq', 'total_energy_consumption'), ('kernel.sched_nr_migrate', 'branch-loads'), ('vm.swappiness', 'context-switches'), ('kernel.cpu_time_max_percent', 'major-faults'), ('num_cores', 'raw_syscalls_sys_enter'), ('kernel.max_pids', 'L1-dcache-stores'), ('logical_devices', 'sched_sched_overutilized'), ('gpu_freq', 'branch-misses'), ('vm.swappiness', 'branch-load-misses'), ('cache-misses', 'sched_sched_stat_runtime'), ('L1-dcache-load-misses', 'total_energy_consumption'), ('scheduler.policy', 'minor-faults'), ('kernel.sched_rt_runtime_us', 'major-faults'), ('sched_sched_process_wait', 'migrations'), ('logical_devices', 'total_energy_consumption'), ('sched_sched_switch', 'total_energy_consumption'), ('gpu_freq', 'total_energy_consumption'), ('kernel.sched_nr_migrate', 'total_energy_consumption'), ('vm.swappiness', 'total_energy_consumption'), ('kernel.cpu_time_max_percent', 'total_energy_consumption'), ('num_cores', 'total_energy_consumption'), ('kernel.max_pids', 'total_energy_consumption')]
+--------------------------------------------------------------
+[['total_energy_consumption', 'core_freq'], ['total_energy_consumption', 'emc_freq'], ['total_energy_consumption', 'logical_devices'], ['total_energy_consumption', 'emc_freq'], ['total_energy_consumption', 'kernel.sched_nr_migrate'], ['total_energy_consumption', 'vm.swappiness'], ['total_energy_consumption', 'migrations'], ['total_energy_consumption', 'num_cores'], ['total_energy_consumption', 'logical_devices']]
+--------------------------------------------------
+--------------------------------------------------
+             Recommended Configuration            
+memory_growth                    5.000000e-01
+logical_devices                  2.000000e+00
+core_freq                        1.958400e+06
+gpu_freq                         2.688000e+05
+emc_freq                         2.133000e+09
+num_cores                        2.000000e+00
+scheduler.policy                 0.000000e+00
+vm.swappiness                    1.000000e+02
+vm.vfs_cache_pressure            5.000000e+02
+vm.dirty_background_ratio        8.000000e+01
+vm.drop_caches                   0.000000e+00
+vm.nr_hugepages                  1.000000e+00
+vm.overcommit_ratio              5.000000e+01
+vm.overcommit_memory             1.000000e+00
+vm.overcommit_hugepages          2.000000e+00
+kernel.sched_child_runs_first    1.000000e+00
+kernel.sched_rt_runtime_us       9.500000e+05
+vm.dirty_bytes                   3.000000e+01
+vm.dirty_background_bytes        6.000000e+01
+vm.dirty_ratio                   5.000000e+01
+swap_memory                      1.000000e+00
+kernel.max_pids                  3.276800e+04
+kernel.sched_latency_ns          2.400000e+07
+kernel.sched_nr_migrate          1.280000e+02
+kernel.cpu_time_max_percent      1.000000e+02
+kernel.sched_time_avg_ms         1.000000e+03
+Name: 0, dtype: float64
+--------------------------------------------------
+--------------------------------------------------
+--------------------------------------------------
++++++++++++++++++++++Bug++++++++++++++++++++++++++
+Recommended Config Objective Value 75071
+--------------------------------------------------
+Starting Fast Adjacency Search.
+Finishing Fast Adjacency Search.
+Starting Fast Adjacency Search.
+X1 --- X13 because it was forbidden by background background_knowledge.
+X2 --- X14 because it was forbidden by background background_knowledge.
+X2 --- X25 because it was forbidden by background background_knowledge.
+X3 --- X5 because it was forbidden by background background_knowledge.
+X3 --- X12 because it was forbidden by background background_knowledge.
+X4 --- X7 because it was forbidden by background background_knowledge.
+X4 --- X12 because it was forbidden by background background_knowledge.
+X4 --- X17 because it was forbidden by background background_knowledge.
+X4 --- X19 because it was forbidden by background background_knowledge.
+X4 --- X21 because it was forbidden by background background_knowledge.
+X4 --- X23 because it was forbidden by background background_knowledge.
+X4 --- X24 because it was forbidden by background background_knowledge.
+X4 --- X26 because it was forbidden by background background_knowledge.
+X5 --- X8 because it was forbidden by background background_knowledge.
+X5 --- X10 because it was forbidden by background background_knowledge.
+X5 --- X11 because it was forbidden by background background_knowledge.
+X5 --- X12 because it was forbidden by background background_knowledge.
+X5 --- X18 because it was forbidden by background background_knowledge.
+X5 --- X20 because it was forbidden by background background_knowledge.
+X5 --- X25 because it was forbidden by background background_knowledge.
+X6 --- X10 because it was forbidden by background background_knowledge.
+X7 --- X13 because it was forbidden by background background_knowledge.
+X7 --- X15 because it was forbidden by background background_knowledge.
+X9 --- X15 because it was forbidden by background background_knowledge.
+X9 --- X23 because it was forbidden by background background_knowledge.
+X10 --- X20 because it was forbidden by background background_knowledge.
+X10 --- X21 because it was forbidden by background background_knowledge.
+X11 --- X12 because it was forbidden by background background_knowledge.
+X11 --- X13 because it was forbidden by background background_knowledge.
+X11 --- X14 because it was forbidden by background background_knowledge.
+X11 --- X18 because it was forbidden by background background_knowledge.
+X11 --- X25 because it was forbidden by background background_knowledge.
+X12 --- X17 because it was forbidden by background background_knowledge.
+X12 --- X19 because it was forbidden by background background_knowledge.
+X12 --- X24 because it was forbidden by background background_knowledge.
+X12 --- X26 because it was forbidden by background background_knowledge.
+X13 --- X23 because it was forbidden by background background_knowledge.
+X14 --- X16 because it was forbidden by background background_knowledge.
+X14 --- X25 because it was forbidden by background background_knowledge.
+X16 --- X18 because it was forbidden by background background_knowledge.
+X16 --- X23 because it was forbidden by background background_knowledge.
+X16 --- X25 because it was forbidden by background background_knowledge.
+X17 --- X19 because it was forbidden by background background_knowledge.
+X18 --- X20 because it was forbidden by background background_knowledge.
+X19 --- X22 because it was forbidden by background background_knowledge.
+X19 --- X24 because it was forbidden by background background_knowledge.
+Finishing Fast Adjacency Search.
+Starting BK Orientation.
+Finishing BK Orientation.
+Starting BK Orientation.
+Finishing BK Orientation.
+--------------------------------------------------------------
+Connections discovered by the causal graph
+[('logical_devices', 'sched_sched_wakeup_new'), ('gpu_freq', 'total_energy_consumption'), ('kernel.sched_nr_migrate', 'branch-loads'), ('vm.swappiness', 'context-switches'), ('scheduler.policy', 'sched_sched_overutilized'), ('num_cores', 'raw_syscalls_sys_enter'), ('logical_devices', 'sched_sched_overutilized'), ('cache-misses', 'sched_sched_stat_runtime'), ('vm.swappiness', 'branch-load-misses'), ('L1-dcache-load-misses', 'total_energy_consumption'), ('vm.overcommit_ratio', 'instructions'), ('scheduler.policy', 'minor-faults'), ('vm.drop_caches', 'sched_sched_switch'), ('L1-dcache-stores', 'migrations'), ('kernel.max_pids', 'branch-load-misses'), ('sched_sched_process_wait', 'migrations'), ('logical_devices', 'total_energy_consumption'), ('gpu_freq', 'total_energy_consumption'), ('kernel.sched_nr_migrate', 'total_energy_consumption'), ('vm.swappiness', 'total_energy_consumption'), ('scheduler.policy', 'total_energy_consumption'), ('num_cores', 'total_energy_consumption'), ('logical_devices', 'total_energy_consumption'), ('cache-misses', 'total_energy_consumption')]
+--------------------------------------------------------------
+[['total_energy_consumption', 'core_freq'], ['total_energy_consumption', 'emc_freq'], ['total_energy_consumption', 'logical_devices'], ['total_energy_consumption', 'emc_freq'], ['total_energy_consumption', 'kernel.sched_nr_migrate'], ['total_energy_consumption', 'vm.swappiness'], ['total_energy_consumption', 'migrations'], ['total_energy_consumption', 'num_cores'], ['total_energy_consumption', 'logical_devices']]
+--------------------------------------------------
+--------------------------------------------------
+             Recommended Configuration            
+memory_growth                    5.000000e-01
+logical_devices                  2.000000e+00
+core_freq                        1.958400e+06
+gpu_freq                         2.688000e+05
+emc_freq                         2.133000e+09
+num_cores                        2.000000e+00
+scheduler.policy                 0.000000e+00
+vm.swappiness                    1.000000e+02
+vm.vfs_cache_pressure            5.000000e+02
+vm.dirty_background_ratio        8.000000e+01
+vm.drop_caches                   0.000000e+00
+vm.nr_hugepages                  1.000000e+00
+vm.overcommit_ratio              5.000000e+01
+vm.overcommit_memory             1.000000e+00
+vm.overcommit_hugepages          2.000000e+00
+kernel.sched_child_runs_first    1.000000e+00
+kernel.sched_rt_runtime_us       9.500000e+05
+vm.dirty_bytes                   3.000000e+01
+vm.dirty_background_bytes        6.000000e+01
+vm.dirty_ratio                   5.000000e+01
+swap_memory                      1.000000e+00
+kernel.max_pids                  3.276800e+04
+kernel.sched_latency_ns          2.400000e+07
+kernel.sched_nr_migrate          2.560000e+02
+kernel.cpu_time_max_percent      1.000000e+02
+kernel.sched_time_avg_ms         1.000000e+03
+Name: 0, dtype: float64
+--------------------------------------------------
+--------------------------------------------------
+--------------------------------------------------
++++++++++++++++++++++Bug++++++++++++++++++++++++++
+Recommended Config Objective Value 49749
+--------------------------------------------------
+Starting Fast Adjacency Search.
+Finishing Fast Adjacency Search.
+Starting Fast Adjacency Search.
+X1 --- X3 because it was forbidden by background background_knowledge.
+X1 --- X13 because it was forbidden by background background_knowledge.
+X2 --- X14 because it was forbidden by background background_knowledge.
+X2 --- X25 because it was forbidden by background background_knowledge.
+X3 --- X5 because it was forbidden by background background_knowledge.
+X3 --- X12 because it was forbidden by background background_knowledge.
+X4 --- X7 because it was forbidden by background background_knowledge.
+X4 --- X10 because it was forbidden by background background_knowledge.
+X4 --- X12 because it was forbidden by background background_knowledge.
+X4 --- X17 because it was forbidden by background background_knowledge.
+X4 --- X19 because it was forbidden by background background_knowledge.
+X4 --- X21 because it was forbidden by background background_knowledge.
+X4 --- X23 because it was forbidden by background background_knowledge.
+X4 --- X24 because it was forbidden by background background_knowledge.
+X4 --- X26 because it was forbidden by background background_knowledge.
+X5 --- X8 because it was forbidden by background background_knowledge.
+X5 --- X10 because it was forbidden by background background_knowledge.
+X5 --- X11 because it was forbidden by background background_knowledge.
+X5 --- X12 because it was forbidden by background background_knowledge.
+X5 --- X18 because it was forbidden by background background_knowledge.
+X5 --- X20 because it was forbidden by background background_knowledge.
+X5 --- X25 because it was forbidden by background background_knowledge.
+X6 --- X10 because it was forbidden by background background_knowledge.
+X6 --- X21 because it was forbidden by background background_knowledge.
+X7 --- X13 because it was forbidden by background background_knowledge.
+X7 --- X15 because it was forbidden by background background_knowledge.
+X7 --- X26 because it was forbidden by background background_knowledge.
+X8 --- X26 because it was forbidden by background background_knowledge.
+X9 --- X15 because it was forbidden by background background_knowledge.
+X9 --- X23 because it was forbidden by background background_knowledge.
+X10 --- X12 because it was forbidden by background background_knowledge.
+X10 --- X20 because it was forbidden by background background_knowledge.
+X10 --- X21 because it was forbidden by background background_knowledge.
+X11 --- X12 because it was forbidden by background background_knowledge.
+X11 --- X13 because it was forbidden by background background_knowledge.
+X11 --- X14 because it was forbidden by background background_knowledge.
+X11 --- X18 because it was forbidden by background background_knowledge.
+X11 --- X25 because it was forbidden by background background_knowledge.
+X12 --- X17 because it was forbidden by background background_knowledge.
+X12 --- X19 because it was forbidden by background background_knowledge.
+X12 --- X24 because it was forbidden by background background_knowledge.
+X12 --- X26 because it was forbidden by background background_knowledge.
+X13 --- X23 because it was forbidden by background background_knowledge.
+X14 --- X16 because it was forbidden by background background_knowledge.
+X14 --- X25 because it was forbidden by background background_knowledge.
+X16 --- X18 because it was forbidden by background background_knowledge.
+X16 --- X23 because it was forbidden by background background_knowledge.
+X16 --- X25 because it was forbidden by background background_knowledge.
+X17 --- X19 because it was forbidden by background background_knowledge.
+X18 --- X20 because it was forbidden by background background_knowledge.
+X19 --- X22 because it was forbidden by background background_knowledge.
+X19 --- X24 because it was forbidden by background background_knowledge.
+Finishing Fast Adjacency Search.
+Starting BK Orientation.
+Finishing BK Orientation.
+Starting BK Orientation.
+Finishing BK Orientation.
+--------------------------------------------------------------
+Connections discovered by the causal graph
+[('logical_devices', 'sched_sched_wakeup_new'), ('sched_sched_wakeup', 'sched_sched_stat_runtime'), ('sched_sched_switch', 'sched_sched_load_avg_cpu'), ('gpu_freq', 'total_energy_consumption'), ('kernel.sched_nr_migrate', 'branch-loads'), ('vm.swappiness', 'context-switches'), ('num_cores', 'raw_syscalls_sys_enter'), ('kernel.max_pids', 'L1-dcache-stores'), ('cache-misses', 'sched_sched_stat_runtime'), ('vm.swappiness', 'branch-load-misses'), ('L1-dcache-load-misses', 'total_energy_consumption'), ('kernel.sched_rt_runtime_us', 'major-faults'), ('sched_sched_overutilized', 'sched_sched_load_avg_cpu'), ('sched_sched_process_wait', 'migrations'), ('branch-misses', 'L1-dcache-loads'), ('logical_devices', 'total_energy_consumption'), ('sched_sched_wakeup', 'total_energy_consumption'), ('sched_sched_switch', 'total_energy_consumption'), ('gpu_freq', 'total_energy_consumption'), ('kernel.sched_nr_migrate', 'total_energy_consumption'), ('vm.swappiness', 'total_energy_consumption'), ('num_cores', 'total_energy_consumption')]
+--------------------------------------------------------------
+[['total_energy_consumption', 'core_freq'], ['total_energy_consumption', 'emc_freq'], ['total_energy_consumption', 'logical_devices'], ['total_energy_consumption', 'emc_freq'], ['total_energy_consumption', 'kernel.sched_nr_migrate'], ['total_energy_consumption', 'vm.swappiness'], ['total_energy_consumption', 'migrations'], ['total_energy_consumption', 'num_cores'], ['total_energy_consumption', 'logical_devices']]
+--------------------------------------------------
+--------------------------------------------------
+             Recommended Configuration            
+memory_growth                    5.000000e-01
+logical_devices                  2.000000e+00
+core_freq                        1.958400e+06
+gpu_freq                         2.688000e+05
+emc_freq                         2.133000e+09
+num_cores                        2.000000e+00
+scheduler.policy                 0.000000e+00
+vm.swappiness                    1.000000e+02
+vm.vfs_cache_pressure            5.000000e+02
+vm.dirty_background_ratio        8.000000e+01
+vm.drop_caches                   0.000000e+00
+vm.nr_hugepages                  1.000000e+00
+vm.overcommit_ratio              5.000000e+01
+vm.overcommit_memory             1.000000e+00
+vm.overcommit_hugepages          2.000000e+00
+kernel.sched_child_runs_first    1.000000e+00
+kernel.sched_rt_runtime_us       9.500000e+05
+vm.dirty_bytes                   3.000000e+01
+vm.dirty_background_bytes        6.000000e+01
+vm.dirty_ratio                   5.000000e+01
+swap_memory                      1.000000e+00
+kernel.max_pids                  3.276800e+04
+kernel.sched_latency_ns          2.400000e+07
+kernel.sched_nr_migrate          2.560000e+02
+kernel.cpu_time_max_percent      1.000000e+02
+kernel.sched_time_avg_ms         1.000000e+03
+Name: 0, dtype: float64
+--------------------------------------------------
+--------------------------------------------------
+--------------------------------------------------
++++++++++++++++++++++Bug++++++++++++++++++++++++++
+Recommended Config Objective Value 46697
+--------------------------------------------------
+Starting Fast Adjacency Search.
+Finishing Fast Adjacency Search.
+Starting Fast Adjacency Search.
+X1 --- X3 because it was forbidden by background background_knowledge.
+X1 --- X13 because it was forbidden by background background_knowledge.
+X2 --- X14 because it was forbidden by background background_knowledge.
+X2 --- X21 because it was forbidden by background background_knowledge.
+X2 --- X25 because it was forbidden by background background_knowledge.
+X3 --- X5 because it was forbidden by background background_knowledge.
+X3 --- X10 because it was forbidden by background background_knowledge.
+X3 --- X12 because it was forbidden by background background_knowledge.
+X3 --- X18 because it was forbidden by background background_knowledge.
+X3 --- X25 because it was forbidden by background background_knowledge.
+X4 --- X7 because it was forbidden by background background_knowledge.
+X4 --- X8 because it was forbidden by background background_knowledge.
+X4 --- X10 because it was forbidden by background background_knowledge.
+X4 --- X11 because it was forbidden by background background_knowledge.
+X4 --- X12 because it was forbidden by background background_knowledge.
+X4 --- X17 because it was forbidden by background background_knowledge.
+X4 --- X19 because it was forbidden by background background_knowledge.
+X4 --- X21 because it was forbidden by background background_knowledge.
+X4 --- X23 because it was forbidden by background background_knowledge.
+X4 --- X26 because it was forbidden by background background_knowledge.
+X5 --- X8 because it was forbidden by background background_knowledge.
+X5 --- X10 because it was forbidden by background background_knowledge.
+X5 --- X11 because it was forbidden by background background_knowledge.
+X5 --- X12 because it was forbidden by background background_knowledge.
+X5 --- X18 because it was forbidden by background background_knowledge.
+X5 --- X20 because it was forbidden by background background_knowledge.
+X5 --- X25 because it was forbidden by background background_knowledge.
+X6 --- X10 because it was forbidden by background background_knowledge.
+X6 --- X16 because it was forbidden by background background_knowledge.
+X6 --- X19 because it was forbidden by background background_knowledge.
+X6 --- X21 because it was forbidden by background background_knowledge.
+X7 --- X13 because it was forbidden by background background_knowledge.
+X7 --- X15 because it was forbidden by background background_knowledge.
+X7 --- X26 because it was forbidden by background background_knowledge.
+X8 --- X26 because it was forbidden by background background_knowledge.
+X9 --- X15 because it was forbidden by background background_knowledge.
+X9 --- X23 because it was forbidden by background background_knowledge.
+X10 --- X12 because it was forbidden by background background_knowledge.
+X10 --- X19 because it was forbidden by background background_knowledge.
+X10 --- X20 because it was forbidden by background background_knowledge.
+X10 --- X21 because it was forbidden by background background_knowledge.
+X11 --- X12 because it was forbidden by background background_knowledge.
+X11 --- X13 because it was forbidden by background background_knowledge.
+X11 --- X14 because it was forbidden by background background_knowledge.
+X11 --- X16 because it was forbidden by background background_knowledge.
+X11 --- X18 because it was forbidden by background background_knowledge.
+X11 --- X20 because it was forbidden by background background_knowledge.
+X11 --- X25 because it was forbidden by background background_knowledge.
+X12 --- X17 because it was forbidden by background background_knowledge.
+X12 --- X19 because it was forbidden by background background_knowledge.
+X12 --- X24 because it was forbidden by background background_knowledge.
+X12 --- X26 because it was forbidden by background background_knowledge.
+X14 --- X16 because it was forbidden by background background_knowledge.
+X14 --- X18 because it was forbidden by background background_knowledge.
+X14 --- X25 because it was forbidden by background background_knowledge.
+X15 --- X25 because it was forbidden by background background_knowledge.
+X16 --- X18 because it was forbidden by background background_knowledge.
+X16 --- X23 because it was forbidden by background background_knowledge.
+X16 --- X25 because it was forbidden by background background_knowledge.
+X17 --- X19 because it was forbidden by background background_knowledge.
+X18 --- X20 because it was forbidden by background background_knowledge.
+X19 --- X22 because it was forbidden by background background_knowledge.
+X19 --- X24 because it was forbidden by background background_knowledge.
+X23 --- X25 because it was forbidden by background background_knowledge.
+Finishing Fast Adjacency Search.
+Starting BK Orientation.
+Finishing BK Orientation.
+Starting BK Orientation.
+Finishing BK Orientation.
+--------------------------------------------------------------
+Connections discovered by the causal graph
+[('logical_devices', 'sched_sched_wakeup_new'), ('sched_sched_wakeup', 'sched_sched_stat_runtime'), ('sched_sched_switch', 'sched_sched_load_avg_cpu'), ('kernel.sched_nr_migrate', 'branch-loads'), ('context-switches', 'branch-misses'), ('num_cores', 'raw_syscalls_sys_enter'), ('migrations', 'sched_sched_process_wait'), ('cache-misses', 'sched_sched_stat_runtime'), ('vm.swappiness', 'branch-load-misses'), ('L1-dcache-load-misses', 'total_energy_consumption'), ('sched_sched_overutilized', 'sched_sched_load_avg_cpu'), ('kernel.max_pids', 'L1-dcache-stores'), ('migrations', 'sched_sched_wakeup_new'), ('logical_devices', 'total_energy_consumption'), ('sched_sched_wakeup', 'total_energy_consumption'), ('sched_sched_switch', 'total_energy_consumption'), ('kernel.sched_nr_migrate', 'total_energy_consumption'), ('context-switches', 'total_energy_consumption'), ('num_cores', 'total_energy_consumption')]
+--------------------------------------------------------------
+[['total_energy_consumption', 'core_freq'], ['total_energy_consumption', 'emc_freq'], ['total_energy_consumption', 'logical_devices'], ['total_energy_consumption', 'emc_freq'], ['total_energy_consumption', 'kernel.sched_nr_migrate'], ['total_energy_consumption', 'vm.swappiness'], ['total_energy_consumption', 'migrations'], ['total_energy_consumption', 'num_cores'], ['total_energy_consumption', 'logical_devices']]
+--------------------------------------------------
+--------------------------------------------------
+             Recommended Configuration            
+memory_growth                    5.000000e-01
+logical_devices                  2.000000e+00
+core_freq                        1.958400e+06
+gpu_freq                         2.688000e+05
+emc_freq                         2.133000e+09
+num_cores                        2.000000e+00
+scheduler.policy                 0.000000e+00
+vm.swappiness                    1.000000e+02
+vm.vfs_cache_pressure            5.000000e+02
+vm.dirty_background_ratio        8.000000e+01
+vm.drop_caches                   0.000000e+00
+vm.nr_hugepages                  1.000000e+00
+vm.overcommit_ratio              5.000000e+01
+vm.overcommit_memory             1.000000e+00
+vm.overcommit_hugepages          2.000000e+00
+kernel.sched_child_runs_first    1.000000e+00
+kernel.sched_rt_runtime_us       9.500000e+05
+vm.dirty_bytes                   3.000000e+01
+vm.dirty_background_bytes        6.000000e+01
+vm.dirty_ratio                   5.000000e+01
+swap_memory                      1.000000e+00
+kernel.max_pids                  3.276800e+04
+kernel.sched_latency_ns          2.400000e+07
+kernel.sched_nr_migrate          2.560000e+02
+kernel.cpu_time_max_percent      1.000000e+02
+kernel.sched_time_avg_ms         1.000000e+03
+Name: 0, dtype: float64
+--------------------------------------------------
+--------------------------------------------------
+--------------------------------------------------
++++++++++++++++++++++Bug++++++++++++++++++++++++++
+Recommended Config Objective Value 47547
+--------------------------------------------------
+Starting Fast Adjacency Search.
+Finishing Fast Adjacency Search.
+Starting Fast Adjacency Search.
+X1 --- X3 because it was forbidden by background background_knowledge.
+X1 --- X13 because it was forbidden by background background_knowledge.
+X2 --- X5 because it was forbidden by background background_knowledge.
+X2 --- X11 because it was forbidden by background background_knowledge.
+X2 --- X14 because it was forbidden by background background_knowledge.
+X2 --- X21 because it was forbidden by background background_knowledge.
+X2 --- X25 because it was forbidden by background background_knowledge.
+X3 --- X5 because it was forbidden by background background_knowledge.
+X3 --- X10 because it was forbidden by background background_knowledge.
+X3 --- X12 because it was forbidden by background background_knowledge.
+X3 --- X16 because it was forbidden by background background_knowledge.
+X3 --- X18 because it was forbidden by background background_knowledge.
+X3 --- X25 because it was forbidden by background background_knowledge.
+X4 --- X7 because it was forbidden by background background_knowledge.
+X4 --- X8 because it was forbidden by background background_knowledge.
+X4 --- X10 because it was forbidden by background background_knowledge.
+X4 --- X11 because it was forbidden by background background_knowledge.
+X4 --- X12 because it was forbidden by background background_knowledge.
+X4 --- X17 because it was forbidden by background background_knowledge.
+X4 --- X19 because it was forbidden by background background_knowledge.
+X4 --- X21 because it was forbidden by background background_knowledge.
+X4 --- X23 because it was forbidden by background background_knowledge.
+X4 --- X26 because it was forbidden by background background_knowledge.
+X5 --- X8 because it was forbidden by background background_knowledge.
+X5 --- X10 because it was forbidden by background background_knowledge.
+X5 --- X11 because it was forbidden by background background_knowledge.
+X5 --- X12 because it was forbidden by background background_knowledge.
+X5 --- X14 because it was forbidden by background background_knowledge.
+X5 --- X18 because it was forbidden by background background_knowledge.
+X5 --- X20 because it was forbidden by background background_knowledge.
+X5 --- X22 because it was forbidden by background background_knowledge.
+X5 --- X25 because it was forbidden by background background_knowledge.
+X6 --- X10 because it was forbidden by background background_knowledge.
+X6 --- X16 because it was forbidden by background background_knowledge.
+X6 --- X19 because it was forbidden by background background_knowledge.
+X6 --- X21 because it was forbidden by background background_knowledge.
+X7 --- X13 because it was forbidden by background background_knowledge.
+X7 --- X15 because it was forbidden by background background_knowledge.
+X7 --- X26 because it was forbidden by background background_knowledge.
+X8 --- X11 because it was forbidden by background background_knowledge.
+X8 --- X26 because it was forbidden by background background_knowledge.
+X9 --- X15 because it was forbidden by background background_knowledge.
+X9 --- X23 because it was forbidden by background background_knowledge.
+X10 --- X12 because it was forbidden by background background_knowledge.
+X10 --- X19 because it was forbidden by background background_knowledge.
+X10 --- X20 because it was forbidden by background background_knowledge.
+X10 --- X21 because it was forbidden by background background_knowledge.
+X11 --- X12 because it was forbidden by background background_knowledge.
+X11 --- X13 because it was forbidden by background background_knowledge.
+X11 --- X14 because it was forbidden by background background_knowledge.
+X11 --- X16 because it was forbidden by background background_knowledge.
+X11 --- X18 because it was forbidden by background background_knowledge.
+X11 --- X20 because it was forbidden by background background_knowledge.
+X11 --- X21 because it was forbidden by background background_knowledge.
+X11 --- X25 because it was forbidden by background background_knowledge.
+X12 --- X17 because it was forbidden by background background_knowledge.
+X12 --- X19 because it was forbidden by background background_knowledge.
+X12 --- X24 because it was forbidden by background background_knowledge.
+X12 --- X26 because it was forbidden by background background_knowledge.
+X14 --- X16 because it was forbidden by background background_knowledge.
+X14 --- X18 because it was forbidden by background background_knowledge.
+X14 --- X25 because it was forbidden by background background_knowledge.
+X15 --- X25 because it was forbidden by background background_knowledge.
+X16 --- X18 because it was forbidden by background background_knowledge.
+X16 --- X23 because it was forbidden by background background_knowledge.
+X16 --- X25 because it was forbidden by background background_knowledge.
+X16 --- X26 because it was forbidden by background background_knowledge.
+X17 --- X19 because it was forbidden by background background_knowledge.
+X18 --- X20 because it was forbidden by background background_knowledge.
+X19 --- X22 because it was forbidden by background background_knowledge.
+X19 --- X24 because it was forbidden by background background_knowledge.
+X20 --- X21 because it was forbidden by background background_knowledge.
+X23 --- X25 because it was forbidden by background background_knowledge.
+Finishing Fast Adjacency Search.
+Starting BK Orientation.
+Finishing BK Orientation.
+Starting BK Orientation.
+Finishing BK Orientation.
+--------------------------------------------------------------
+Connections discovered by the causal graph
+[('logical_devices', 'sched_sched_wakeup_new'), ('sched_sched_wakeup', 'sched_sched_stat_runtime'), ('sched_sched_switch', 'sched_sched_load_avg_cpu'), ('gpu_freq', 'total_energy_consumption'), ('context-switches', 'branch-misses'), ('scheduler.policy', 'cache-misses'), ('num_cores', 'raw_syscalls_sys_enter'), ('migrations', 'sched_sched_process_wait'), ('vm.swappiness', 'branch-load-misses'), ('L1-dcache-load-misses', 'total_energy_consumption'), ('sched_sched_overutilized', 'sched_sched_load_avg_cpu'), ('kernel.max_pids', 'L1-dcache-stores'), ('migrations', 'sched_sched_wakeup_new'), ('logical_devices', 'total_energy_consumption'), ('sched_sched_wakeup', 'total_energy_consumption'), ('sched_sched_switch', 'total_energy_consumption'), ('gpu_freq', 'total_energy_consumption'), ('context-switches', 'total_energy_consumption'), ('scheduler.policy', 'total_energy_consumption')]
+--------------------------------------------------------------
+[['total_energy_consumption', 'core_freq'], ['total_energy_consumption', 'emc_freq'], ['total_energy_consumption', 'logical_devices'], ['total_energy_consumption', 'emc_freq'], ['total_energy_consumption', 'kernel.sched_nr_migrate'], ['total_energy_consumption', 'vm.swappiness'], ['total_energy_consumption', 'migrations'], ['total_energy_consumption', 'num_cores'], ['total_energy_consumption', 'logical_devices']]
+--------------------------------------------------
+--------------------------------------------------
+             Recommended Configuration            
+memory_growth                    5.000000e-01
+logical_devices                  2.000000e+00
+core_freq                        1.958400e+06
+gpu_freq                         2.688000e+05
+emc_freq                         2.133000e+09
+num_cores                        2.000000e+00
+scheduler.policy                 0.000000e+00
+vm.swappiness                    1.000000e+02
+vm.vfs_cache_pressure            5.000000e+02
+vm.dirty_background_ratio        8.000000e+01
+vm.drop_caches                   0.000000e+00
+vm.nr_hugepages                  1.000000e+00
+vm.overcommit_ratio              5.000000e+01
+vm.overcommit_memory             1.000000e+00
+vm.overcommit_hugepages          2.000000e+00
+kernel.sched_child_runs_first    1.000000e+00
+kernel.sched_rt_runtime_us       9.500000e+05
+vm.dirty_bytes                   3.000000e+01
+vm.dirty_background_bytes        6.000000e+01
+vm.dirty_ratio                   5.000000e+01
+swap_memory                      1.000000e+00
+kernel.max_pids                  3.276800e+04
+kernel.sched_latency_ns          2.400000e+07
+kernel.sched_nr_migrate          2.560000e+02
+kernel.cpu_time_max_percent      1.000000e+02
+kernel.sched_time_avg_ms         1.000000e+03
+Name: 0, dtype: float64
+--------------------------------------------------
+--------------------------------------------------
+--------------------------------------------------
++++++++++++++++++++++Bug++++++++++++++++++++++++++
+Recommended Config Objective Value 83847
+--------------------------------------------------
+Starting Fast Adjacency Search.
+Finishing Fast Adjacency Search.
+X10 --> X21
+Starting Fast Adjacency Search.
+X1 --- X3 because it was forbidden by background background_knowledge.
+X1 --- X13 because it was forbidden by background background_knowledge.
+X2 --- X5 because it was forbidden by background background_knowledge.
+X2 --- X11 because it was forbidden by background background_knowledge.
+X2 --- X14 because it was forbidden by background background_knowledge.
+X2 --- X21 because it was forbidden by background background_knowledge.
+X2 --- X25 because it was forbidden by background background_knowledge.
+X3 --- X5 because it was forbidden by background background_knowledge.
+X3 --- X6 because it was forbidden by background background_knowledge.
+X3 --- X10 because it was forbidden by background background_knowledge.
+X3 --- X12 because it was forbidden by background background_knowledge.
+X3 --- X16 because it was forbidden by background background_knowledge.
+X3 --- X18 because it was forbidden by background background_knowledge.
+X3 --- X25 because it was forbidden by background background_knowledge.
+X4 --- X7 because it was forbidden by background background_knowledge.
+X4 --- X8 because it was forbidden by background background_knowledge.
+X4 --- X9 because it was forbidden by background background_knowledge.
+X4 --- X10 because it was forbidden by background background_knowledge.
+X4 --- X11 because it was forbidden by background background_knowledge.
+X4 --- X12 because it was forbidden by background background_knowledge.
+X4 --- X15 because it was forbidden by background background_knowledge.
+X4 --- X17 because it was forbidden by background background_knowledge.
+X4 --- X19 because it was forbidden by background background_knowledge.
+X4 --- X21 because it was forbidden by background background_knowledge.
+X4 --- X23 because it was forbidden by background background_knowledge.
+X4 --- X26 because it was forbidden by background background_knowledge.
+X5 --- X8 because it was forbidden by background background_knowledge.
+X5 --- X10 because it was forbidden by background background_knowledge.
+X5 --- X11 because it was forbidden by background background_knowledge.
+X5 --- X12 because it was forbidden by background background_knowledge.
+X5 --- X14 because it was forbidden by background background_knowledge.
+X5 --- X18 because it was forbidden by background background_knowledge.
+X5 --- X20 because it was forbidden by background background_knowledge.
+X5 --- X21 because it was forbidden by background background_knowledge.
+X5 --- X22 because it was forbidden by background background_knowledge.
+X5 --- X25 because it was forbidden by background background_knowledge.
+X6 --- X10 because it was forbidden by background background_knowledge.
+X6 --- X16 because it was forbidden by background background_knowledge.
+X6 --- X19 because it was forbidden by background background_knowledge.
+X6 --- X21 because it was forbidden by background background_knowledge.
+X7 --- X13 because it was forbidden by background background_knowledge.
+X7 --- X15 because it was forbidden by background background_knowledge.
+X7 --- X26 because it was forbidden by background background_knowledge.
+X8 --- X11 because it was forbidden by background background_knowledge.
+X8 --- X26 because it was forbidden by background background_knowledge.
+X9 --- X14 because it was forbidden by background background_knowledge.
+X9 --- X15 because it was forbidden by background background_knowledge.
+X9 --- X17 because it was forbidden by background background_knowledge.
+X9 --- X23 because it was forbidden by background background_knowledge.
+X10 --- X12 because it was forbidden by background background_knowledge.
+X10 --- X19 because it was forbidden by background background_knowledge.
+X10 --- X20 because it was forbidden by background background_knowledge.
+X10 --- X21 because it was forbidden by background background_knowledge.
+X11 --- X12 because it was forbidden by background background_knowledge.
+X11 --- X13 because it was forbidden by background background_knowledge.
+X11 --- X14 because it was forbidden by background background_knowledge.
+X11 --- X16 because it was forbidden by background background_knowledge.
+X11 --- X18 because it was forbidden by background background_knowledge.
+X11 --- X20 because it was forbidden by background background_knowledge.
+X11 --- X21 because it was forbidden by background background_knowledge.
+X11 --- X25 because it was forbidden by background background_knowledge.
+X12 --- X17 because it was forbidden by background background_knowledge.
+X12 --- X19 because it was forbidden by background background_knowledge.
+X12 --- X24 because it was forbidden by background background_knowledge.
+X12 --- X26 because it was forbidden by background background_knowledge.
+X13 --- X14 because it was forbidden by background background_knowledge.
+X13 --- X15 because it was forbidden by background background_knowledge.
+X13 --- X19 because it was forbidden by background background_knowledge.
+X14 --- X16 because it was forbidden by background background_knowledge.
+X14 --- X18 because it was forbidden by background background_knowledge.
+X14 --- X25 because it was forbidden by background background_knowledge.
+X15 --- X25 because it was forbidden by background background_knowledge.
+X16 --- X18 because it was forbidden by background background_knowledge.
+X16 --- X23 because it was forbidden by background background_knowledge.
+X16 --- X25 because it was forbidden by background background_knowledge.
+X16 --- X26 because it was forbidden by background background_knowledge.
+X17 --- X19 because it was forbidden by background background_knowledge.
+X18 --- X20 because it was forbidden by background background_knowledge.
+X19 --- X22 because it was forbidden by background background_knowledge.
+X19 --- X24 because it was forbidden by background background_knowledge.
+X20 --- X21 because it was forbidden by background background_knowledge.
+X23 --- X25 because it was forbidden by background background_knowledge.
+Finishing Fast Adjacency Search.
+Starting BK Orientation.
+Finishing BK Orientation.
+Starting BK Orientation.
+Finishing BK Orientation.
+--------------------------------------------------------------
+Connections discovered by the causal graph
+[('sched_sched_wakeup', 'L1-dcache-loads'), ('sched_sched_switch', 'sched_sched_load_avg_cpu'), ('sched_sched_wakeup', 'sched_sched_stat_runtime'), ('context-switches', 'branch-misses'), ('num_cores', 'raw_syscalls_sys_enter'), ('migrations', 'sched_sched_process_wait'), ('kernel.max_pids', 'L1-dcache-stores'), ('vm.swappiness', 'branch-load-misses'), ('raw_syscalls_sys_exit', 'sched_sched_wakeup_new'), ('sched_sched_overutilized', 'sched_sched_load_avg_cpu'), ('L1-dcache-load-misses', 'branch-misses'), ('migrations', 'sched_sched_wakeup_new'), ('sched_sched_wakeup', 'total_energy_consumption'), ('sched_sched_switch', 'total_energy_consumption'), ('sched_sched_wakeup', 'total_energy_consumption'), ('context-switches', 'total_energy_consumption'), ('num_cores', 'total_energy_consumption'), ('migrations', 'total_energy_consumption')]
+--------------------------------------------------------------
+[['total_energy_consumption', 'core_freq'], ['total_energy_consumption', 'emc_freq'], ['total_energy_consumption', 'logical_devices'], ['total_energy_consumption', 'emc_freq'], ['total_energy_consumption', 'kernel.sched_nr_migrate'], ['total_energy_consumption', 'vm.swappiness'], ['total_energy_consumption', 'migrations'], ['total_energy_consumption', 'num_cores'], ['total_energy_consumption', 'logical_devices']]
+--------------------------------------------------
+--------------------------------------------------
+             Recommended Configuration            
+memory_growth                    5.000000e-01
+logical_devices                  2.000000e+00
+core_freq                        1.958400e+06
+gpu_freq                         2.688000e+05
+emc_freq                         2.133000e+09
+num_cores                        2.000000e+00
+scheduler.policy                 0.000000e+00
+vm.swappiness                    1.000000e+02
+vm.vfs_cache_pressure            5.000000e+02
+vm.dirty_background_ratio        8.000000e+01
+vm.drop_caches                   0.000000e+00
+vm.nr_hugepages                  1.000000e+00
+vm.overcommit_ratio              5.000000e+01
+vm.overcommit_memory             1.000000e+00
+vm.overcommit_hugepages          2.000000e+00
+kernel.sched_child_runs_first    1.000000e+00
+kernel.sched_rt_runtime_us       9.500000e+05
+vm.dirty_bytes                   3.000000e+01
+vm.dirty_background_bytes        6.000000e+01
+vm.dirty_ratio                   5.000000e+01
+swap_memory                      1.000000e+00
+kernel.max_pids                  3.276800e+04
+kernel.sched_latency_ns          2.400000e+07
+kernel.sched_nr_migrate          2.560000e+02
+kernel.cpu_time_max_percent      1.000000e+02
+kernel.sched_time_avg_ms         1.000000e+03
+Name: 0, dtype: float64
+--------------------------------------------------
+--------------------------------------------------
+--------------------------------------------------
++++++++++++++++++++++Bug++++++++++++++++++++++++++
+Recommended Config Objective Value 67867
+--------------------------------------------------
+Starting Fast Adjacency Search.
+Finishing Fast Adjacency Search.
+X10 --> X21
+Starting Fast Adjacency Search.
+X1 --- X3 because it was forbidden by background background_knowledge.
+X1 --- X6 because it was forbidden by background background_knowledge.
+X1 --- X13 because it was forbidden by background background_knowledge.
+X1 --- X25 because it was forbidden by background background_knowledge.
+X2 --- X5 because it was forbidden by background background_knowledge.
+X2 --- X11 because it was forbidden by background background_knowledge.
+X2 --- X14 because it was forbidden by background background_knowledge.
+X2 --- X21 because it was forbidden by background background_knowledge.
+X2 --- X25 because it was forbidden by background background_knowledge.
+X3 --- X5 because it was forbidden by background background_knowledge.
+X3 --- X6 because it was forbidden by background background_knowledge.
+X3 --- X10 because it was forbidden by background background_knowledge.
+X3 --- X12 because it was forbidden by background background_knowledge.
+X3 --- X16 because it was forbidden by background background_knowledge.
+X3 --- X18 because it was forbidden by background background_knowledge.
+X3 --- X25 because it was forbidden by background background_knowledge.
+X4 --- X7 because it was forbidden by background background_knowledge.
+X4 --- X8 because it was forbidden by background background_knowledge.
+X4 --- X9 because it was forbidden by background background_knowledge.
+X4 --- X10 because it was forbidden by background background_knowledge.
+X4 --- X11 because it was forbidden by background background_knowledge.
+X4 --- X12 because it was forbidden by background background_knowledge.
+X4 --- X15 because it was forbidden by background background_knowledge.
+X4 --- X16 because it was forbidden by background background_knowledge.
+X4 --- X17 because it was forbidden by background background_knowledge.
+X4 --- X19 because it was forbidden by background background_knowledge.
+X4 --- X21 because it was forbidden by background background_knowledge.
+X4 --- X23 because it was forbidden by background background_knowledge.
+X4 --- X25 because it was forbidden by background background_knowledge.
+X4 --- X26 because it was forbidden by background background_knowledge.
+X5 --- X8 because it was forbidden by background background_knowledge.
+X5 --- X10 because it was forbidden by background background_knowledge.
+X5 --- X11 because it was forbidden by background background_knowledge.
+X5 --- X12 because it was forbidden by background background_knowledge.
+X5 --- X14 because it was forbidden by background background_knowledge.
+X5 --- X18 because it was forbidden by background background_knowledge.
+X5 --- X19 because it was forbidden by background background_knowledge.
+X5 --- X20 because it was forbidden by background background_knowledge.
+X5 --- X21 because it was forbidden by background background_knowledge.
+X5 --- X22 because it was forbidden by background background_knowledge.
+X5 --- X25 because it was forbidden by background background_knowledge.
+X6 --- X10 because it was forbidden by background background_knowledge.
+X6 --- X16 because it was forbidden by background background_knowledge.
+X6 --- X19 because it was forbidden by background background_knowledge.
+X6 --- X21 because it was forbidden by background background_knowledge.
+X7 --- X13 because it was forbidden by background background_knowledge.
+X7 --- X15 because it was forbidden by background background_knowledge.
+X7 --- X26 because it was forbidden by background background_knowledge.
+X8 --- X11 because it was forbidden by background background_knowledge.
+X8 --- X26 because it was forbidden by background background_knowledge.
+X9 --- X14 because it was forbidden by background background_knowledge.
+X9 --- X15 because it was forbidden by background background_knowledge.
+X9 --- X17 because it was forbidden by background background_knowledge.
+X9 --- X23 because it was forbidden by background background_knowledge.
+X9 --- X25 because it was forbidden by background background_knowledge.
+X10 --- X12 because it was forbidden by background background_knowledge.
+X10 --- X19 because it was forbidden by background background_knowledge.
+X10 --- X20 because it was forbidden by background background_knowledge.
+X10 --- X21 because it was forbidden by background background_knowledge.
+X11 --- X12 because it was forbidden by background background_knowledge.
+X11 --- X13 because it was forbidden by background background_knowledge.
+X11 --- X14 because it was forbidden by background background_knowledge.
+X11 --- X16 because it was forbidden by background background_knowledge.
+X11 --- X18 because it was forbidden by background background_knowledge.
+X11 --- X20 because it was forbidden by background background_knowledge.
+X11 --- X21 because it was forbidden by background background_knowledge.
+X11 --- X25 because it was forbidden by background background_knowledge.
+X12 --- X16 because it was forbidden by background background_knowledge.
+X12 --- X17 because it was forbidden by background background_knowledge.
+X12 --- X19 because it was forbidden by background background_knowledge.
+X12 --- X26 because it was forbidden by background background_knowledge.
+X13 --- X14 because it was forbidden by background background_knowledge.
+X13 --- X15 because it was forbidden by background background_knowledge.
+X13 --- X19 because it was forbidden by background background_knowledge.
+X14 --- X16 because it was forbidden by background background_knowledge.
+X14 --- X18 because it was forbidden by background background_knowledge.
+X14 --- X25 because it was forbidden by background background_knowledge.
+X15 --- X25 because it was forbidden by background background_knowledge.
+X16 --- X18 because it was forbidden by background background_knowledge.
+X16 --- X23 because it was forbidden by background background_knowledge.
+X16 --- X25 because it was forbidden by background background_knowledge.
+X16 --- X26 because it was forbidden by background background_knowledge.
+X17 --- X19 because it was forbidden by background background_knowledge.
+X18 --- X20 because it was forbidden by background background_knowledge.
+X19 --- X22 because it was forbidden by background background_knowledge.
+X19 --- X24 because it was forbidden by background background_knowledge.
+X20 --- X21 because it was forbidden by background background_knowledge.
+X21 --- X25 because it was forbidden by background background_knowledge.
+X23 --- X25 because it was forbidden by background background_knowledge.
+Finishing Fast Adjacency Search.
+Starting BK Orientation.
+Finishing BK Orientation.
+Starting BK Orientation.
+Finishing BK Orientation.
+--------------------------------------------------------------
+Connections discovered by the causal graph
+[('sched_sched_wakeup', 'sched_sched_stat_runtime'), ('sched_sched_switch', 'sched_sched_load_avg_cpu'), ('context-switches', 'branch-misses'), ('cache-misses', 'total_energy_consumption'), ('num_cores', 'raw_syscalls_sys_enter'), ('migrations', 'sched_sched_process_wait'), ('vm.swappiness', 'branch-load-misses'), ('L1-dcache-load-misses', 'total_energy_consumption'), ('sched_sched_overutilized', 'sched_sched_load_avg_cpu'), ('core_freq', 'total_energy_consumption'), ('L1-dcache-loads', 'sched_sched_process_wait'), ('L1-dcache-load-misses', 'branch-misses'), ('migrations', 'sched_sched_wakeup_new'), ('sched_sched_wakeup', 'total_energy_consumption'), ('sched_sched_switch', 'total_energy_consumption'), ('context-switches', 'total_energy_consumption'), ('cache-misses', 'total_energy_consumption'), ('num_cores', 'total_energy_consumption'), ('migrations', 'total_energy_consumption')]
+--------------------------------------------------------------
+[['total_energy_consumption', 'core_freq'], ['total_energy_consumption', 'emc_freq'], ['total_energy_consumption', 'logical_devices'], ['total_energy_consumption', 'emc_freq'], ['total_energy_consumption', 'kernel.sched_nr_migrate'], ['total_energy_consumption', 'vm.swappiness'], ['total_energy_consumption', 'migrations'], ['total_energy_consumption', 'num_cores'], ['total_energy_consumption', 'logical_devices']]
+--------------------------------------------------
+--------------------------------------------------
+             Recommended Configuration            
+memory_growth                    5.000000e-01
+logical_devices                  2.000000e+00
+core_freq                        1.958400e+06
+gpu_freq                         2.688000e+05
+emc_freq                         1.331200e+09
+num_cores                        2.000000e+00
+scheduler.policy                 0.000000e+00
+vm.swappiness                    1.000000e+02
+vm.vfs_cache_pressure            5.000000e+02
+vm.dirty_background_ratio        8.000000e+01
+vm.drop_caches                   0.000000e+00
+vm.nr_hugepages                  1.000000e+00
+vm.overcommit_ratio              5.000000e+01
+vm.overcommit_memory             1.000000e+00
+vm.overcommit_hugepages          2.000000e+00
+kernel.sched_child_runs_first    1.000000e+00
+kernel.sched_rt_runtime_us       9.500000e+05
+vm.dirty_bytes                   3.000000e+01
+vm.dirty_background_bytes        6.000000e+01
+vm.dirty_ratio                   5.000000e+01
+swap_memory                      1.000000e+00
+kernel.max_pids                  3.276800e+04
+kernel.sched_latency_ns          2.400000e+07
+kernel.sched_nr_migrate          2.560000e+02
+kernel.cpu_time_max_percent      1.000000e+02
+kernel.sched_time_avg_ms         1.000000e+03
+Name: 0, dtype: float64
+--------------------------------------------------
+--------------------------------------------------
+--------------------------------------------------
++++++++++++++++++++++Bug++++++++++++++++++++++++++
+Recommended Config Objective Value 49305
+--------------------------------------------------
+Starting Fast Adjacency Search.
+Finishing Fast Adjacency Search.
+X10 --> X21
+Starting Fast Adjacency Search.
+X1 --- X3 because it was forbidden by background background_knowledge.
+X1 --- X6 because it was forbidden by background background_knowledge.
+X1 --- X13 because it was forbidden by background background_knowledge.
+X1 --- X14 because it was forbidden by background background_knowledge.
+X1 --- X18 because it was forbidden by background background_knowledge.
+X1 --- X19 because it was forbidden by background background_knowledge.
+X1 --- X25 because it was forbidden by background background_knowledge.
+X2 --- X5 because it was forbidden by background background_knowledge.
+X2 --- X11 because it was forbidden by background background_knowledge.
+X2 --- X14 because it was forbidden by background background_knowledge.
+X2 --- X21 because it was forbidden by background background_knowledge.
+X2 --- X25 because it was forbidden by background background_knowledge.
+X3 --- X5 because it was forbidden by background background_knowledge.
+X3 --- X6 because it was forbidden by background background_knowledge.
+X3 --- X10 because it was forbidden by background background_knowledge.
+X3 --- X12 because it was forbidden by background background_knowledge.
+X3 --- X16 because it was forbidden by background background_knowledge.
+X3 --- X18 because it was forbidden by background background_knowledge.
+X3 --- X25 because it was forbidden by background background_knowledge.
+X3 --- X26 because it was forbidden by background background_knowledge.
+X4 --- X7 because it was forbidden by background background_knowledge.
+X4 --- X8 because it was forbidden by background background_knowledge.
+X4 --- X9 because it was forbidden by background background_knowledge.
+X4 --- X10 because it was forbidden by background background_knowledge.
+X4 --- X11 because it was forbidden by background background_knowledge.
+X4 --- X12 because it was forbidden by background background_knowledge.
+X4 --- X15 because it was forbidden by background background_knowledge.
+X4 --- X16 because it was forbidden by background background_knowledge.
+X4 --- X17 because it was forbidden by background background_knowledge.
+X4 --- X19 because it was forbidden by background background_knowledge.
+X4 --- X21 because it was forbidden by background background_knowledge.
+X4 --- X23 because it was forbidden by background background_knowledge.
+X4 --- X25 because it was forbidden by background background_knowledge.
+X4 --- X26 because it was forbidden by background background_knowledge.
+X5 --- X8 because it was forbidden by background background_knowledge.
+X5 --- X10 because it was forbidden by background background_knowledge.
+X5 --- X11 because it was forbidden by background background_knowledge.
+X5 --- X12 because it was forbidden by background background_knowledge.
+X5 --- X14 because it was forbidden by background background_knowledge.
+X5 --- X18 because it was forbidden by background background_knowledge.
+X5 --- X19 because it was forbidden by background background_knowledge.
+X5 --- X20 because it was forbidden by background background_knowledge.
+X5 --- X21 because it was forbidden by background background_knowledge.
+X5 --- X22 because it was forbidden by background background_knowledge.
+X5 --- X25 because it was forbidden by background background_knowledge.
+X6 --- X10 because it was forbidden by background background_knowledge.
+X6 --- X13 because it was forbidden by background background_knowledge.
+X6 --- X16 because it was forbidden by background background_knowledge.
+X6 --- X19 because it was forbidden by background background_knowledge.
+X6 --- X21 because it was forbidden by background background_knowledge.
+X6 --- X22 because it was forbidden by background background_knowledge.
+X7 --- X13 because it was forbidden by background background_knowledge.
+X7 --- X15 because it was forbidden by background background_knowledge.
+X7 --- X19 because it was forbidden by background background_knowledge.
+X7 --- X26 because it was forbidden by background background_knowledge.
+X8 --- X11 because it was forbidden by background background_knowledge.
+X8 --- X26 because it was forbidden by background background_knowledge.
+X9 --- X14 because it was forbidden by background background_knowledge.
+X9 --- X15 because it was forbidden by background background_knowledge.
+X9 --- X17 because it was forbidden by background background_knowledge.
+X9 --- X23 because it was forbidden by background background_knowledge.
+X9 --- X25 because it was forbidden by background background_knowledge.
+X10 --- X11 because it was forbidden by background background_knowledge.
+X10 --- X12 because it was forbidden by background background_knowledge.
+X10 --- X19 because it was forbidden by background background_knowledge.
+X10 --- X20 because it was forbidden by background background_knowledge.
+X10 --- X21 because it was forbidden by background background_knowledge.
+X11 --- X12 because it was forbidden by background background_knowledge.
+X11 --- X13 because it was forbidden by background background_knowledge.
+X11 --- X14 because it was forbidden by background background_knowledge.
+X11 --- X16 because it was forbidden by background background_knowledge.
+X11 --- X17 because it was forbidden by background background_knowledge.
+X11 --- X18 because it was forbidden by background background_knowledge.
+X11 --- X19 because it was forbidden by background background_knowledge.
+X11 --- X20 because it was forbidden by background background_knowledge.
+X11 --- X21 because it was forbidden by background background_knowledge.
+X11 --- X22 because it was forbidden by background background_knowledge.
+X11 --- X25 because it was forbidden by background background_knowledge.
+X12 --- X16 because it was forbidden by background background_knowledge.
+X12 --- X17 because it was forbidden by background background_knowledge.
+X12 --- X19 because it was forbidden by background background_knowledge.
+X12 --- X26 because it was forbidden by background background_knowledge.
+X13 --- X14 because it was forbidden by background background_knowledge.
+X13 --- X15 because it was forbidden by background background_knowledge.
+X13 --- X19 because it was forbidden by background background_knowledge.
+X14 --- X16 because it was forbidden by background background_knowledge.
+X14 --- X18 because it was forbidden by background background_knowledge.
+X14 --- X21 because it was forbidden by background background_knowledge.
+X14 --- X25 because it was forbidden by background background_knowledge.
+X15 --- X25 because it was forbidden by background background_knowledge.
+X16 --- X18 because it was forbidden by background background_knowledge.
+X16 --- X23 because it was forbidden by background background_knowledge.
+X16 --- X25 because it was forbidden by background background_knowledge.
+X16 --- X26 because it was forbidden by background background_knowledge.
+X17 --- X19 because it was forbidden by background background_knowledge.
+X18 --- X20 because it was forbidden by background background_knowledge.
+X18 --- X26 because it was forbidden by background background_knowledge.
+X19 --- X22 because it was forbidden by background background_knowledge.
+X19 --- X24 because it was forbidden by background background_knowledge.
+X19 --- X26 because it was forbidden by background background_knowledge.
+X20 --- X21 because it was forbidden by background background_knowledge.
+X21 --- X25 because it was forbidden by background background_knowledge.
+X23 --- X25 because it was forbidden by background background_knowledge.
+Finishing Fast Adjacency Search.
+Starting BK Orientation.
+Finishing BK Orientation.
+Starting BK Orientation.
+Finishing BK Orientation.
+--------------------------------------------------------------
+Connections discovered by the causal graph
+[('sched_sched_wakeup', 'sched_sched_stat_runtime'), ('sched_sched_switch', 'sched_sched_load_avg_cpu'), ('branch-misses', 'L1-dcache-load-misses'), ('context-switches', 'branch-misses'), ('cycles', 'L1-dcache-load-misses'), ('cache-misses', 'total_energy_consumption'), ('num_cores', 'raw_syscalls_sys_enter'), ('migrations', 'sched_sched_process_wait'), ('vm.swappiness', 'branch-load-misses'), ('sched_sched_overutilized', 'sched_sched_load_avg_cpu'), ('core_freq', 'total_energy_consumption'), ('L1-dcache-loads', 'sched_sched_process_wait'), ('kernel.max_pids', 'L1-dcache-stores'), ('sched_sched_wakeup', 'total_energy_consumption'), ('sched_sched_switch', 'total_energy_consumption'), ('branch-misses', 'total_energy_consumption'), ('context-switches', 'total_energy_consumption'), ('cycles', 'total_energy_consumption'), ('cache-misses', 'total_energy_consumption')]
+--------------------------------------------------------------
+[['total_energy_consumption', 'core_freq'], ['total_energy_consumption', 'emc_freq'], ['total_energy_consumption', 'logical_devices'], ['total_energy_consumption', 'emc_freq'], ['total_energy_consumption', 'kernel.sched_nr_migrate'], ['total_energy_consumption', 'vm.swappiness'], ['total_energy_consumption', 'migrations'], ['total_energy_consumption', 'num_cores'], ['total_energy_consumption', 'logical_devices']]
+--------------------------------------------------
+--------------------------------------------------
+             Recommended Configuration            
+memory_growth                    5.000000e-01
+logical_devices                  2.000000e+00
+core_freq                        1.958400e+06
+gpu_freq                         2.688000e+05
+emc_freq                         1.331200e+09
+num_cores                        2.000000e+00
+scheduler.policy                 0.000000e+00
+vm.swappiness                    1.000000e+02
+vm.vfs_cache_pressure            5.000000e+02
+vm.dirty_background_ratio        8.000000e+01
+vm.drop_caches                   0.000000e+00
+vm.nr_hugepages                  1.000000e+00
+vm.overcommit_ratio              5.000000e+01
+vm.overcommit_memory             1.000000e+00
+vm.overcommit_hugepages          2.000000e+00
+kernel.sched_child_runs_first    1.000000e+00
+kernel.sched_rt_runtime_us       9.500000e+05
+vm.dirty_bytes                   3.000000e+01
+vm.dirty_background_bytes        6.000000e+01
+vm.dirty_ratio                   5.000000e+01
+swap_memory                      1.000000e+00
+kernel.max_pids                  3.276800e+04
+kernel.sched_latency_ns          2.400000e+07
+kernel.sched_nr_migrate          2.560000e+02
+kernel.cpu_time_max_percent      1.000000e+02
+kernel.sched_time_avg_ms         1.000000e+03
+Name: 0, dtype: float64
+--------------------------------------------------
+--------------------------------------------------
+--------------------------------------------------
++++++++++++++++++++++Bug++++++++++++++++++++++++++
+Recommended Config Objective Value 58731
+--------------------------------------------------
+Starting Fast Adjacency Search.
+Finishing Fast Adjacency Search.
+X4 --> X17
+X10 --> X21
+X11 --> X14
+X17 --> X19
+X35 --> X37
+Starting Fast Adjacency Search.
+X1 --- X3 because it was forbidden by background background_knowledge.
+X1 --- X6 because it was forbidden by background background_knowledge.
+X1 --- X9 because it was forbidden by background background_knowledge.
+X1 --- X13 because it was forbidden by background background_knowledge.
+X1 --- X14 because it was forbidden by background background_knowledge.
+X1 --- X18 because it was forbidden by background background_knowledge.
+X1 --- X19 because it was forbidden by background background_knowledge.
+X1 --- X22 because it was forbidden by background background_knowledge.
+X1 --- X25 because it was forbidden by background background_knowledge.
+X2 --- X5 because it was forbidden by background background_knowledge.
+X2 --- X11 because it was forbidden by background background_knowledge.
+X2 --- X14 because it was forbidden by background background_knowledge.
+X2 --- X16 because it was forbidden by background background_knowledge.
+X2 --- X21 because it was forbidden by background background_knowledge.
+X2 --- X25 because it was forbidden by background background_knowledge.
+X3 --- X5 because it was forbidden by background background_knowledge.
+X3 --- X6 because it was forbidden by background background_knowledge.
+X3 --- X10 because it was forbidden by background background_knowledge.
+X3 --- X12 because it was forbidden by background background_knowledge.
+X3 --- X16 because it was forbidden by background background_knowledge.
+X3 --- X18 because it was forbidden by background background_knowledge.
+X3 --- X25 because it was forbidden by background background_knowledge.
+X3 --- X26 because it was forbidden by background background_knowledge.
+X4 --- X7 because it was forbidden by background background_knowledge.
+X4 --- X8 because it was forbidden by background background_knowledge.
+X4 --- X9 because it was forbidden by background background_knowledge.
+X4 --- X10 because it was forbidden by background background_knowledge.
+X4 --- X11 because it was forbidden by background background_knowledge.
+X4 --- X12 because it was forbidden by background background_knowledge.
+X4 --- X15 because it was forbidden by background background_knowledge.
+X4 --- X16 because it was forbidden by background background_knowledge.
+X4 --- X17 because it was forbidden by background background_knowledge.
+X4 --- X18 because it was forbidden by background background_knowledge.
+X4 --- X19 because it was forbidden by background background_knowledge.
+X4 --- X20 because it was forbidden by background background_knowledge.
+X4 --- X21 because it was forbidden by background background_knowledge.
+X4 --- X22 because it was forbidden by background background_knowledge.
+X4 --- X23 because it was forbidden by background background_knowledge.
+X4 --- X25 because it was forbidden by background background_knowledge.
+X4 --- X26 because it was forbidden by background background_knowledge.
+X5 --- X8 because it was forbidden by background background_knowledge.
+X5 --- X10 because it was forbidden by background background_knowledge.
+X5 --- X11 because it was forbidden by background background_knowledge.
+X5 --- X12 because it was forbidden by background background_knowledge.
+X5 --- X14 because it was forbidden by background background_knowledge.
+X5 --- X18 because it was forbidden by background background_knowledge.
+X5 --- X19 because it was forbidden by background background_knowledge.
+X5 --- X20 because it was forbidden by background background_knowledge.
+X5 --- X21 because it was forbidden by background background_knowledge.
+X5 --- X22 because it was forbidden by background background_knowledge.
+X5 --- X25 because it was forbidden by background background_knowledge.
+X6 --- X10 because it was forbidden by background background_knowledge.
+X6 --- X13 because it was forbidden by background background_knowledge.
+X6 --- X14 because it was forbidden by background background_knowledge.
+X6 --- X16 because it was forbidden by background background_knowledge.
+X6 --- X19 because it was forbidden by background background_knowledge.
+X6 --- X21 because it was forbidden by background background_knowledge.
+X6 --- X22 because it was forbidden by background background_knowledge.
+X7 --- X13 because it was forbidden by background background_knowledge.
+X7 --- X15 because it was forbidden by background background_knowledge.
+X7 --- X17 because it was forbidden by background background_knowledge.
+X7 --- X19 because it was forbidden by background background_knowledge.
+X7 --- X22 because it was forbidden by background background_knowledge.
+X7 --- X26 because it was forbidden by background background_knowledge.
+X8 --- X9 because it was forbidden by background background_knowledge.
+X8 --- X11 because it was forbidden by background background_knowledge.
+X8 --- X22 because it was forbidden by background background_knowledge.
+X8 --- X26 because it was forbidden by background background_knowledge.
+X9 --- X14 because it was forbidden by background background_knowledge.
+X9 --- X15 because it was forbidden by background background_knowledge.
+X9 --- X17 because it was forbidden by background background_knowledge.
+X9 --- X23 because it was forbidden by background background_knowledge.
+X9 --- X25 because it was forbidden by background background_knowledge.
+X9 --- X26 because it was forbidden by background background_knowledge.
+X10 --- X11 because it was forbidden by background background_knowledge.
+X10 --- X12 because it was forbidden by background background_knowledge.
+X10 --- X19 because it was forbidden by background background_knowledge.
+X10 --- X20 because it was forbidden by background background_knowledge.
+X10 --- X21 because it was forbidden by background background_knowledge.
+X11 --- X12 because it was forbidden by background background_knowledge.
+X11 --- X13 because it was forbidden by background background_knowledge.
+X11 --- X14 because it was forbidden by background background_knowledge.
+X11 --- X16 because it was forbidden by background background_knowledge.
+X11 --- X17 because it was forbidden by background background_knowledge.
+X11 --- X18 because it was forbidden by background background_knowledge.
+X11 --- X19 because it was forbidden by background background_knowledge.
+X11 --- X20 because it was forbidden by background background_knowledge.
+X11 --- X21 because it was forbidden by background background_knowledge.
+X11 --- X22 because it was forbidden by background background_knowledge.
+X11 --- X25 because it was forbidden by background background_knowledge.
+X12 --- X16 because it was forbidden by background background_knowledge.
+X12 --- X17 because it was forbidden by background background_knowledge.
+X12 --- X19 because it was forbidden by background background_knowledge.
+X12 --- X26 because it was forbidden by background background_knowledge.
+X13 --- X14 because it was forbidden by background background_knowledge.
+X13 --- X15 because it was forbidden by background background_knowledge.
+X13 --- X17 because it was forbidden by background background_knowledge.
+X13 --- X19 because it was forbidden by background background_knowledge.
+X14 --- X16 because it was forbidden by background background_knowledge.
+X14 --- X18 because it was forbidden by background background_knowledge.
+X14 --- X21 because it was forbidden by background background_knowledge.
+X14 --- X25 because it was forbidden by background background_knowledge.
+X15 --- X25 because it was forbidden by background background_knowledge.
+X16 --- X18 because it was forbidden by background background_knowledge.
+X16 --- X23 because it was forbidden by background background_knowledge.
+X16 --- X25 because it was forbidden by background background_knowledge.
+X16 --- X26 because it was forbidden by background background_knowledge.
+X17 --- X19 because it was forbidden by background background_knowledge.
+X17 --- X21 because it was forbidden by background background_knowledge.
+X17 --- X26 because it was forbidden by background background_knowledge.
+X18 --- X20 because it was forbidden by background background_knowledge.
+X18 --- X26 because it was forbidden by background background_knowledge.
+X19 --- X22 because it was forbidden by background background_knowledge.
+X19 --- X26 because it was forbidden by background background_knowledge.
+X20 --- X21 because it was forbidden by background background_knowledge.
+X21 --- X25 because it was forbidden by background background_knowledge.
+X23 --- X25 because it was forbidden by background background_knowledge.
+Finishing Fast Adjacency Search.
+Starting BK Orientation.
+Finishing BK Orientation.
+Starting BK Orientation.
+Finishing BK Orientation.
+X35 --> X37
+X45 --> X49
+--------------------------------------------------------------
+Connections discovered by the causal graph
+[('sched_sched_wakeup', 'sched_sched_stat_runtime'), ('sched_sched_switch', 'sched_sched_load_avg_cpu'), ('branch-misses', 'L1-dcache-load-misses'), ('context-switches', 'branch-misses'), ('cycles', 'L1-dcache-load-misses'), ('cache-misses', 'total_energy_consumption'), ('num_cores', 'raw_syscalls_sys_enter'), ('migrations', 'sched_sched_process_wait'), ('vm.swappiness', 'branch-load-misses'), ('vm.dirty_background_ratio', 'minor-faults'), ('L1-dcache-load-misses', 'total_energy_consumption'), ('sched_sched_overutilized', 'sched_sched_load_avg_cpu'), ('kernel.max_pids', 'L1-dcache-stores'), ('sched_sched_wakeup', 'total_energy_consumption'), ('sched_sched_switch', 'total_energy_consumption'), ('branch-misses', 'total_energy_consumption'), ('context-switches', 'total_energy_consumption'), ('cycles', 'total_energy_consumption'), ('cache-misses', 'total_energy_consumption')]
+--------------------------------------------------------------
+[['total_energy_consumption', 'core_freq'], ['total_energy_consumption', 'emc_freq'], ['total_energy_consumption', 'logical_devices'], ['total_energy_consumption', 'emc_freq'], ['total_energy_consumption', 'kernel.sched_nr_migrate'], ['total_energy_consumption', 'vm.swappiness'], ['total_energy_consumption', 'migrations'], ['total_energy_consumption', 'num_cores'], ['total_energy_consumption', 'logical_devices']]
+--------------------------------------------------
+--------------------------------------------------
+             Recommended Configuration            
+memory_growth                    5.000000e-01
+logical_devices                  2.000000e+00
+core_freq                        1.958400e+06
+gpu_freq                         2.688000e+05
+emc_freq                         1.331200e+09
+num_cores                        4.000000e+00
+scheduler.policy                 0.000000e+00
+vm.swappiness                    1.000000e+02
+vm.vfs_cache_pressure            5.000000e+02
+vm.dirty_background_ratio        8.000000e+01
+vm.drop_caches                   0.000000e+00
+vm.nr_hugepages                  1.000000e+00
+vm.overcommit_ratio              5.000000e+01
+vm.overcommit_memory             1.000000e+00
+vm.overcommit_hugepages          2.000000e+00
+kernel.sched_child_runs_first    1.000000e+00
+kernel.sched_rt_runtime_us       9.500000e+05
+vm.dirty_bytes                   3.000000e+01
+vm.dirty_background_bytes        6.000000e+01
+vm.dirty_ratio                   5.000000e+01
+swap_memory                      1.000000e+00
+kernel.max_pids                  3.276800e+04
+kernel.sched_latency_ns          2.400000e+07
+kernel.sched_nr_migrate          2.560000e+02
+kernel.cpu_time_max_percent      1.000000e+02
+kernel.sched_time_avg_ms         1.000000e+03
+Name: 0, dtype: float64
+--------------------------------------------------
+--------------------------------------------------
+--------------------------------------------------
++++++++++++++++++++++Bug++++++++++++++++++++++++++
+Recommended Config Objective Value 43272
+--------------------------------------------------
+Starting Fast Adjacency Search.
+Finishing Fast Adjacency Search.
+X4 --> X17
+X11 --> X14
+X17 --> X19
+X35 --> X37
+Starting Fast Adjacency Search.
+X1 --- X3 because it was forbidden by background background_knowledge.
+X1 --- X9 because it was forbidden by background background_knowledge.
+X1 --- X13 because it was forbidden by background background_knowledge.
+X1 --- X14 because it was forbidden by background background_knowledge.
+X1 --- X18 because it was forbidden by background background_knowledge.
+X1 --- X19 because it was forbidden by background background_knowledge.
+X1 --- X22 because it was forbidden by background background_knowledge.
+X1 --- X25 because it was forbidden by background background_knowledge.
+X2 --- X5 because it was forbidden by background background_knowledge.
+X2 --- X10 because it was forbidden by background background_knowledge.
+X2 --- X11 because it was forbidden by background background_knowledge.
+X2 --- X14 because it was forbidden by background background_knowledge.
+X2 --- X16 because it was forbidden by background background_knowledge.
+X2 --- X18 because it was forbidden by background background_knowledge.
+X2 --- X19 because it was forbidden by background background_knowledge.
+X2 --- X21 because it was forbidden by background background_knowledge.
+X2 --- X25 because it was forbidden by background background_knowledge.
+X3 --- X5 because it was forbidden by background background_knowledge.
+X3 --- X6 because it was forbidden by background background_knowledge.
+X3 --- X10 because it was forbidden by background background_knowledge.
+X3 --- X12 because it was forbidden by background background_knowledge.
+X3 --- X16 because it was forbidden by background background_knowledge.
+X3 --- X18 because it was forbidden by background background_knowledge.
+X3 --- X25 because it was forbidden by background background_knowledge.
+X3 --- X26 because it was forbidden by background background_knowledge.
+X4 --- X7 because it was forbidden by background background_knowledge.
+X4 --- X8 because it was forbidden by background background_knowledge.
+X4 --- X9 because it was forbidden by background background_knowledge.
+X4 --- X10 because it was forbidden by background background_knowledge.
+X4 --- X11 because it was forbidden by background background_knowledge.
+X4 --- X12 because it was forbidden by background background_knowledge.
+X4 --- X15 because it was forbidden by background background_knowledge.
+X4 --- X16 because it was forbidden by background background_knowledge.
+X4 --- X17 because it was forbidden by background background_knowledge.
+X4 --- X18 because it was forbidden by background background_knowledge.
+X4 --- X19 because it was forbidden by background background_knowledge.
+X4 --- X20 because it was forbidden by background background_knowledge.
+X4 --- X21 because it was forbidden by background background_knowledge.
+X4 --- X22 because it was forbidden by background background_knowledge.
+X4 --- X23 because it was forbidden by background background_knowledge.
+X4 --- X25 because it was forbidden by background background_knowledge.
+X4 --- X26 because it was forbidden by background background_knowledge.
+X5 --- X8 because it was forbidden by background background_knowledge.
+X5 --- X10 because it was forbidden by background background_knowledge.
+X5 --- X11 because it was forbidden by background background_knowledge.
+X5 --- X12 because it was forbidden by background background_knowledge.
+X5 --- X14 because it was forbidden by background background_knowledge.
+X5 --- X18 because it was forbidden by background background_knowledge.
+X5 --- X19 because it was forbidden by background background_knowledge.
+X5 --- X20 because it was forbidden by background background_knowledge.
+X5 --- X21 because it was forbidden by background background_knowledge.
+X5 --- X22 because it was forbidden by background background_knowledge.
+X5 --- X25 because it was forbidden by background background_knowledge.
+X6 --- X10 because it was forbidden by background background_knowledge.
+X6 --- X16 because it was forbidden by background background_knowledge.
+X6 --- X19 because it was forbidden by background background_knowledge.
+X6 --- X21 because it was forbidden by background background_knowledge.
+X7 --- X13 because it was forbidden by background background_knowledge.
+X7 --- X15 because it was forbidden by background background_knowledge.
+X7 --- X17 because it was forbidden by background background_knowledge.
+X7 --- X19 because it was forbidden by background background_knowledge.
+X7 --- X22 because it was forbidden by background background_knowledge.
+X7 --- X26 because it was forbidden by background background_knowledge.
+X8 --- X9 because it was forbidden by background background_knowledge.
+X8 --- X11 because it was forbidden by background background_knowledge.
+X8 --- X22 because it was forbidden by background background_knowledge.
+X8 --- X26 because it was forbidden by background background_knowledge.
+X9 --- X14 because it was forbidden by background background_knowledge.
+X9 --- X15 because it was forbidden by background background_knowledge.
+X9 --- X16 because it was forbidden by background background_knowledge.
+X9 --- X17 because it was forbidden by background background_knowledge.
+X9 --- X23 because it was forbidden by background background_knowledge.
+X9 --- X25 because it was forbidden by background background_knowledge.
+X9 --- X26 because it was forbidden by background background_knowledge.
+X10 --- X11 because it was forbidden by background background_knowledge.
+X10 --- X12 because it was forbidden by background background_knowledge.
+X10 --- X19 because it was forbidden by background background_knowledge.
+X10 --- X20 because it was forbidden by background background_knowledge.
+X10 --- X21 because it was forbidden by background background_knowledge.
+X11 --- X12 because it was forbidden by background background_knowledge.
+X11 --- X13 because it was forbidden by background background_knowledge.
+X11 --- X14 because it was forbidden by background background_knowledge.
+X11 --- X16 because it was forbidden by background background_knowledge.
+X11 --- X17 because it was forbidden by background background_knowledge.
+X11 --- X18 because it was forbidden by background background_knowledge.
+X11 --- X19 because it was forbidden by background background_knowledge.
+X11 --- X20 because it was forbidden by background background_knowledge.
+X11 --- X21 because it was forbidden by background background_knowledge.
+X11 --- X22 because it was forbidden by background background_knowledge.
+X11 --- X25 because it was forbidden by background background_knowledge.
+X12 --- X16 because it was forbidden by background background_knowledge.
+X12 --- X17 because it was forbidden by background background_knowledge.
+X12 --- X19 because it was forbidden by background background_knowledge.
+X12 --- X26 because it was forbidden by background background_knowledge.
+X13 --- X14 because it was forbidden by background background_knowledge.
+X13 --- X15 because it was forbidden by background background_knowledge.
+X13 --- X17 because it was forbidden by background background_knowledge.
+X13 --- X19 because it was forbidden by background background_knowledge.
+X14 --- X16 because it was forbidden by background background_knowledge.
+X14 --- X18 because it was forbidden by background background_knowledge.
+X14 --- X21 because it was forbidden by background background_knowledge.
+X14 --- X25 because it was forbidden by background background_knowledge.
+X15 --- X25 because it was forbidden by background background_knowledge.
+X16 --- X18 because it was forbidden by background background_knowledge.
+X16 --- X23 because it was forbidden by background background_knowledge.
+X16 --- X25 because it was forbidden by background background_knowledge.
+X16 --- X26 because it was forbidden by background background_knowledge.
+X17 --- X19 because it was forbidden by background background_knowledge.
+X17 --- X21 because it was forbidden by background background_knowledge.
+X17 --- X26 because it was forbidden by background background_knowledge.
+X18 --- X20 because it was forbidden by background background_knowledge.
+X18 --- X26 because it was forbidden by background background_knowledge.
+X19 --- X22 because it was forbidden by background background_knowledge.
+X19 --- X26 because it was forbidden by background background_knowledge.
+X20 --- X21 because it was forbidden by background background_knowledge.
+X21 --- X25 because it was forbidden by background background_knowledge.
+X23 --- X25 because it was forbidden by background background_knowledge.
+Finishing Fast Adjacency Search.
+Starting BK Orientation.
+Finishing BK Orientation.
+Starting BK Orientation.
+Finishing BK Orientation.
+X35 --> X37
+--------------------------------------------------------------
+Connections discovered by the causal graph
+[('sched_sched_wakeup', 'sched_sched_stat_runtime'), ('sched_sched_switch', 'sched_sched_load_avg_cpu'), ('branch-misses', 'L1-dcache-load-misses'), ('context-switches', 'branch-misses'), ('cycles', 'L1-dcache-load-misses'), ('migrations', 'sched_sched_process_wait'), ('vm.swappiness', 'branch-load-misses'), ('vm.dirty_background_ratio', 'minor-faults'), ('cache-misses', 'raw_syscalls_sys_exit'), ('branch-loads', 'raw_syscalls_sys_enter'), ('sched_sched_overutilized', 'sched_sched_load_avg_cpu'), ('core_freq', 'total_energy_consumption'), ('kernel.max_pids', 'L1-dcache-stores'), ('sched_sched_wakeup', 'total_energy_consumption'), ('sched_sched_switch', 'total_energy_consumption'), ('branch-misses', 'total_energy_consumption'), ('context-switches', 'total_energy_consumption'), ('cycles', 'total_energy_consumption'), ('migrations', 'total_energy_consumption')]
+--------------------------------------------------------------
+[['total_energy_consumption', 'core_freq'], ['total_energy_consumption', 'emc_freq'], ['total_energy_consumption', 'logical_devices'], ['total_energy_consumption', 'emc_freq'], ['total_energy_consumption', 'kernel.sched_nr_migrate'], ['total_energy_consumption', 'vm.swappiness'], ['total_energy_consumption', 'migrations'], ['total_energy_consumption', 'num_cores'], ['total_energy_consumption', 'logical_devices']]
+--------------------------------------------------
+--------------------------------------------------
+             Recommended Configuration            
+memory_growth                    5.000000e-01
+logical_devices                  2.000000e+00
+core_freq                        1.958400e+06
+gpu_freq                         2.688000e+05
+emc_freq                         1.331200e+09
+num_cores                        4.000000e+00
+scheduler.policy                 0.000000e+00
+vm.swappiness                    1.000000e+02
+vm.vfs_cache_pressure            5.000000e+02
+vm.dirty_background_ratio        8.000000e+01
+vm.drop_caches                   0.000000e+00
+vm.nr_hugepages                  1.000000e+00
+vm.overcommit_ratio              5.000000e+01
+vm.overcommit_memory             1.000000e+00
+vm.overcommit_hugepages          2.000000e+00
+kernel.sched_child_runs_first    1.000000e+00
+kernel.sched_rt_runtime_us       9.500000e+05
+vm.dirty_bytes                   3.000000e+01
+vm.dirty_background_bytes        6.000000e+01
+vm.dirty_ratio                   5.000000e+01
+swap_memory                      1.000000e+00
+kernel.max_pids                  3.276800e+04
+kernel.sched_latency_ns          2.400000e+07
+kernel.sched_nr_migrate          2.560000e+02
+kernel.cpu_time_max_percent      1.000000e+02
+kernel.sched_time_avg_ms         1.000000e+03
+Name: 0, dtype: float64
+--------------------------------------------------
+--------------------------------------------------
+--------------------------------------------------
++++++++++++++++++++++Bug++++++++++++++++++++++++++
+Recommended Config Objective Value 59345
+--------------------------------------------------
+Starting Fast Adjacency Search.

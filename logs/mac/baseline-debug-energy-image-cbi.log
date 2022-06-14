@@ -1,0 +1,1914 @@
+initializing DebuggingBaselines class
+[STATUS]: Starting CBI
+++++++++++++++++++++++++++++++++++++++++++++++++++
+Recommended Fix
+(memory_growth                           0.5
+logical_devices                           1
+core_freq                           2265600
+gpu_freq                            2112000
+emc_freq                         2133000000
+num_cores                                 4
+scheduler.policy                          0
+vm.swappiness                            60
+vm.vfs_cache_pressure                   100
+vm.dirty_background_ratio                10
+vm.drop_caches                            0
+vm.nr_hugepages                           1
+vm.overcommit_ratio                      60
+vm.overcommit_memory                      1
+vm.overcommit_hugepages                   1
+kernel.sched_child_runs_first             0
+kernel.sched_rt_runtime_us           500000
+vm.dirty_bytes                           30
+vm.dirty_background_bytes                60
+vm.dirty_ratio                           50
+swap_memory                               1
+kernel.max_pids                       65536
+kernel.sched_latency_ns            24000000
+kernel.sched_nr_migrate                 128
+kernel.cpu_time_max_percent              50
+kernel.sched_time_avg_ms               1000
+dtype: object, 0)
+Recommended Fix value 0    66930
+Name: total_energy_consumption, dtype: int64
+++++++++++++++++++++++++++++++++++++++++++++++++++
+++++++++++++++++++++++++++++++++++++++++++++++++++
+Bug
+core_freq                        2.188800e+06
+gpu_freq                         2.688000e+05
+emc_freq                         6.000000e+08
+num_cores                        2.000000e+00
+memory_growth                    5.000000e-01
+logical_devices                  2.000000e+00
+scheduler.policy                 0.000000e+00
+vm.swappiness                    1.000000e+02
+vm.vfs_cache_pressure            5.000000e+02
+vm.dirty_background_ratio        8.000000e+01
+vm.drop_caches                   0.000000e+00
+vm.nr_hugepages                  1.000000e+00
+vm.overcommit_ratio              5.000000e+01
+vm.overcommit_memory             1.000000e+00
+vm.overcommit_hugepages          2.000000e+00
+kernel.sched_child_runs_first    1.000000e+00
+kernel.sched_rt_runtime_us       9.500000e+05
+vm.dirty_bytes                   3.000000e+01
+vm.dirty_background_bytes        6.000000e+01
+vm.dirty_ratio                   5.000000e+01
+swap_memory                      1.000000e+00
+kernel.max_pids                  3.276800e+04
+kernel.sched_latency_ns          2.400000e+07
+kernel.sched_nr_migrate          1.280000e+02
+kernel.cpu_time_max_percent      1.000000e+02
+kernel.sched_time_avg_ms         1.000000e+03
+inference_time                   4.012014e+01
+total_energy_consumption         1.500357e+05
+Name: 0, dtype: float64
+++++++++++++++++++++++++++++++++++++++++++++++++++
+initializing DebuggingBaselines class
+[STATUS]: Starting CBI
+++++++++++++++++++++++++++++++++++++++++++++++++++
+Recommended Fix
+(memory_growth                           0.5
+logical_devices                           2
+core_freq                           2265600
+gpu_freq                            2112000
+emc_freq                         1866000000
+num_cores                                 4
+scheduler.policy                          1
+vm.swappiness                            60
+vm.vfs_cache_pressure                   500
+vm.dirty_background_ratio                10
+vm.drop_caches                            0
+vm.nr_hugepages                           1
+vm.overcommit_ratio                      60
+vm.overcommit_memory                      1
+vm.overcommit_hugepages                   2
+kernel.sched_child_runs_first             1
+kernel.sched_rt_runtime_us           500000
+vm.dirty_bytes                           30
+vm.dirty_background_bytes                60
+vm.dirty_ratio                           50
+swap_memory                               1
+kernel.max_pids                       65536
+kernel.sched_latency_ns            24000000
+kernel.sched_nr_migrate                 128
+kernel.cpu_time_max_percent              50
+kernel.sched_time_avg_ms               2000
+dtype: object, 0)
+Recommended Fix value 1    66875
+Name: total_energy_consumption, dtype: int64
+++++++++++++++++++++++++++++++++++++++++++++++++++
+++++++++++++++++++++++++++++++++++++++++++++++++++
+Bug
+core_freq                        1.881600e+06
+gpu_freq                         1.190400e+06
+emc_freq                         2.133000e+09
+num_cores                        3.000000e+00
+memory_growth                    9.000000e-01
+logical_devices                  1.000000e+00
+scheduler.policy                 0.000000e+00
+vm.swappiness                    6.000000e+01
+vm.vfs_cache_pressure            1.000000e+02
+vm.dirty_background_ratio        8.000000e+01
+vm.drop_caches                   3.000000e+00
+vm.nr_hugepages                  2.000000e+00
+vm.overcommit_ratio              5.000000e+01
+vm.overcommit_memory             1.000000e+00
+vm.overcommit_hugepages          2.000000e+00
+kernel.sched_child_runs_first    1.000000e+00
+kernel.sched_rt_runtime_us       5.000000e+05
+vm.dirty_bytes                   6.000000e+01
+vm.dirty_background_bytes        6.000000e+01
+vm.dirty_ratio                   5.000000e+00
+swap_memory                      4.000000e+00
+kernel.max_pids                  6.553600e+04
+kernel.sched_latency_ns          2.400000e+07
+kernel.sched_nr_migrate          2.560000e+02
+kernel.cpu_time_max_percent      1.000000e+02
+kernel.sched_time_avg_ms         2.000000e+03
+inference_time                   3.713291e+01
+total_energy_consumption         1.643630e+05
+Name: 1, dtype: float64
+++++++++++++++++++++++++++++++++++++++++++++++++++
+initializing DebuggingBaselines class
+[STATUS]: Starting CBI
+++++++++++++++++++++++++++++++++++++++++++++++++++
+Recommended Fix
+(memory_growth                           0.5
+logical_devices                           1
+core_freq                           2265600
+gpu_freq                            2112000
+emc_freq                         1866000000
+num_cores                                 4
+scheduler.policy                          0
+vm.swappiness                            60
+vm.vfs_cache_pressure                   100
+vm.dirty_background_ratio                10
+vm.drop_caches                            0
+vm.nr_hugepages                           1
+vm.overcommit_ratio                      60
+vm.overcommit_memory                      1
+vm.overcommit_hugepages                   2
+kernel.sched_child_runs_first             0
+kernel.sched_rt_runtime_us           500000
+vm.dirty_bytes                           30
+vm.dirty_background_bytes                60
+vm.dirty_ratio                           50
+swap_memory                               1
+kernel.max_pids                       65536
+kernel.sched_latency_ns            24000000
+kernel.sched_nr_migrate                 128
+kernel.cpu_time_max_percent              50
+kernel.sched_time_avg_ms               1000
+dtype: object, 0)
+Recommended Fix value 2    65515
+Name: total_energy_consumption, dtype: int64
+++++++++++++++++++++++++++++++++++++++++++++++++++
+++++++++++++++++++++++++++++++++++++++++++++++++++
+Bug
+core_freq                        1.344000e+06
+gpu_freq                         1.267200e+06
+emc_freq                         8.000000e+08
+num_cores                        4.000000e+00
+memory_growth                    5.000000e-01
+logical_devices                  2.000000e+00
+scheduler.policy                 0.000000e+00
+vm.swappiness                    6.000000e+01
+vm.vfs_cache_pressure            5.000000e+02
+vm.dirty_background_ratio        1.000000e+01
+vm.drop_caches                   3.000000e+00
+vm.nr_hugepages                  1.000000e+00
+vm.overcommit_ratio              5.000000e+01
+vm.overcommit_memory             0.000000e+00
+vm.overcommit_hugepages          2.000000e+00
+kernel.sched_child_runs_first    1.000000e+00
+kernel.sched_rt_runtime_us       9.500000e+05
+vm.dirty_bytes                   6.000000e+01
+vm.dirty_background_bytes        6.000000e+01
+vm.dirty_ratio                   5.000000e+00
+swap_memory                      4.000000e+00
+kernel.max_pids                  6.553600e+04
+kernel.sched_latency_ns          2.400000e+07
+kernel.sched_nr_migrate          1.280000e+02
+kernel.cpu_time_max_percent      5.000000e+01
+kernel.sched_time_avg_ms         1.000000e+03
+inference_time                   3.698147e+01
+total_energy_consumption         1.561456e+05
+Name: 2, dtype: float64
+++++++++++++++++++++++++++++++++++++++++++++++++++
+initializing DebuggingBaselines class
+[STATUS]: Starting CBI
+++++++++++++++++++++++++++++++++++++++++++++++++++
+Recommended Fix
+(memory_growth                           0.5
+logical_devices                           1
+core_freq                           2265600
+gpu_freq                            2112000
+emc_freq                         1866000000
+num_cores                                 2
+scheduler.policy                          0
+vm.swappiness                            60
+vm.vfs_cache_pressure                   500
+vm.dirty_background_ratio                10
+vm.drop_caches                            0
+vm.nr_hugepages                           1
+vm.overcommit_ratio                      60
+vm.overcommit_memory                      1
+vm.overcommit_hugepages                   1
+kernel.sched_child_runs_first             0
+kernel.sched_rt_runtime_us           500000
+vm.dirty_bytes                           30
+vm.dirty_background_bytes                60
+vm.dirty_ratio                           50
+swap_memory                               1
+kernel.max_pids                       65536
+kernel.sched_latency_ns            24000000
+kernel.sched_nr_migrate                 256
+kernel.cpu_time_max_percent              50
+kernel.sched_time_avg_ms               2000
+dtype: object, 0)
+Recommended Fix value 3    75100
+Name: total_energy_consumption, dtype: int64
+++++++++++++++++++++++++++++++++++++++++++++++++++
+++++++++++++++++++++++++++++++++++++++++++++++++++
+Bug
+core_freq                        1.152000e+05
+gpu_freq                         1.113600e+06
+emc_freq                         2.040000e+08
+num_cores                        2.000000e+00
+memory_growth                    5.000000e-01
+logical_devices                  2.000000e+00
+scheduler.policy                 0.000000e+00
+vm.swappiness                    1.000000e+02
+vm.vfs_cache_pressure            1.000000e+02
+vm.dirty_background_ratio        1.000000e+01
+vm.drop_caches                   3.000000e+00
+vm.nr_hugepages                  2.000000e+00
+vm.overcommit_ratio              6.000000e+01
+vm.overcommit_memory             0.000000e+00
+vm.overcommit_hugepages          2.000000e+00
+kernel.sched_child_runs_first    1.000000e+00
+kernel.sched_rt_runtime_us       9.500000e+05
+vm.dirty_bytes                   6.000000e+01
+vm.dirty_background_bytes        6.000000e+01
+vm.dirty_ratio                   5.000000e+00
+swap_memory                      1.000000e+00
+kernel.max_pids                  6.553600e+04
+kernel.sched_latency_ns          2.400000e+07
+kernel.sched_nr_migrate          2.560000e+02
+kernel.cpu_time_max_percent      5.000000e+01
+kernel.sched_time_avg_ms         1.000000e+03
+inference_time                   3.803372e+01
+total_energy_consumption         1.729807e+05
+Name: 3, dtype: float64
+++++++++++++++++++++++++++++++++++++++++++++++++++
+initializing DebuggingBaselines class
+[STATUS]: Starting CBI
+++++++++++++++++++++++++++++++++++++++++++++++++++
+Recommended Fix
+(memory_growth                           0.5
+logical_devices                           1
+core_freq                           2265600
+gpu_freq                            2112000
+emc_freq                         1866000000
+num_cores                                 4
+scheduler.policy                          1
+vm.swappiness                            60
+vm.vfs_cache_pressure                   500
+vm.dirty_background_ratio                10
+vm.drop_caches                            0
+vm.nr_hugepages                           1
+vm.overcommit_ratio                      60
+vm.overcommit_memory                      1
+vm.overcommit_hugepages                   1
+kernel.sched_child_runs_first             0
+kernel.sched_rt_runtime_us           500000
+vm.dirty_bytes                           60
+vm.dirty_background_bytes                60
+vm.dirty_ratio                           50
+swap_memory                               1
+kernel.max_pids                       65536
+kernel.sched_latency_ns            24000000
+kernel.sched_nr_migrate                 128
+kernel.cpu_time_max_percent              50
+kernel.sched_time_avg_ms               2000
+dtype: object, 0)
+Recommended Fix value 4    67435
+Name: total_energy_consumption, dtype: int64
+++++++++++++++++++++++++++++++++++++++++++++++++++
+++++++++++++++++++++++++++++++++++++++++++++++++++
+Bug
+core_freq                        2.265600e+06
+gpu_freq                         2.688000e+05
+emc_freq                         1.065600e+09
+num_cores                        3.000000e+00
+memory_growth                    9.000000e-01
+logical_devices                  2.000000e+00
+scheduler.policy                 0.000000e+00
+vm.swappiness                    6.000000e+01
+vm.vfs_cache_pressure            1.000000e+02
+vm.dirty_background_ratio        1.000000e+01
+vm.drop_caches                   3.000000e+00
+vm.nr_hugepages                  1.000000e+00
+vm.overcommit_ratio              5.000000e+01
+vm.overcommit_memory             0.000000e+00
+vm.overcommit_hugepages          2.000000e+00
+kernel.sched_child_runs_first    1.000000e+00
+kernel.sched_rt_runtime_us       9.500000e+05
+vm.dirty_bytes                   6.000000e+01
+vm.dirty_background_bytes        3.000000e+01
+vm.dirty_ratio                   5.000000e+00
+swap_memory                      4.000000e+00
+kernel.max_pids                  3.276800e+04
+kernel.sched_latency_ns          2.400000e+07
+kernel.sched_nr_migrate          2.560000e+02
+kernel.cpu_time_max_percent      1.000000e+02
+kernel.sched_time_avg_ms         2.000000e+03
+inference_time                   3.799615e+01
+total_energy_consumption         1.612360e+05
+Name: 4, dtype: float64
+++++++++++++++++++++++++++++++++++++++++++++++++++
+initializing DebuggingBaselines class
+[STATUS]: Starting CBI
+++++++++++++++++++++++++++++++++++++++++++++++++++
+Recommended Fix
+(memory_growth                           0.5
+logical_devices                           1
+core_freq                           2265600
+gpu_freq                            2112000
+emc_freq                         1866000000
+num_cores                                 4
+scheduler.policy                          0
+vm.swappiness                            60
+vm.vfs_cache_pressure                   100
+vm.dirty_background_ratio                10
+vm.drop_caches                            0
+vm.nr_hugepages                           1
+vm.overcommit_ratio                      60
+vm.overcommit_memory                      1
+vm.overcommit_hugepages                   2
+kernel.sched_child_runs_first             0
+kernel.sched_rt_runtime_us           500000
+vm.dirty_bytes                           30
+vm.dirty_background_bytes                60
+vm.dirty_ratio                           50
+swap_memory                               1
+kernel.max_pids                       65536
+kernel.sched_latency_ns            24000000
+kernel.sched_nr_migrate                 128
+kernel.cpu_time_max_percent              50
+kernel.sched_time_avg_ms               1000
+dtype: object, 0)
+Recommended Fix value 5    65818
+Name: total_energy_consumption, dtype: int64
+++++++++++++++++++++++++++++++++++++++++++++++++++
+++++++++++++++++++++++++++++++++++++++++++++++++++
+Bug
+core_freq                        2.265600e+06
+gpu_freq                         1.728000e+06
+emc_freq                         2.040000e+08
+num_cores                        2.000000e+00
+memory_growth                    5.000000e-01
+logical_devices                  2.000000e+00
+scheduler.policy                 0.000000e+00
+vm.swappiness                    1.000000e+02
+vm.vfs_cache_pressure            5.000000e+02
+vm.dirty_background_ratio        8.000000e+01
+vm.drop_caches                   0.000000e+00
+vm.nr_hugepages                  2.000000e+00
+vm.overcommit_ratio              6.000000e+01
+vm.overcommit_memory             0.000000e+00
+vm.overcommit_hugepages          1.000000e+00
+kernel.sched_child_runs_first    0.000000e+00
+kernel.sched_rt_runtime_us       5.000000e+05
+vm.dirty_bytes                   3.000000e+01
+vm.dirty_background_bytes        3.000000e+01
+vm.dirty_ratio                   5.000000e+00
+swap_memory                      4.000000e+00
+kernel.max_pids                  3.276800e+04
+kernel.sched_latency_ns          2.400000e+07
+kernel.sched_nr_migrate          2.560000e+02
+kernel.cpu_time_max_percent      1.000000e+02
+kernel.sched_time_avg_ms         1.000000e+03
+inference_time                   3.503192e+01
+total_energy_consumption         1.564901e+05
+Name: 5, dtype: float64
+++++++++++++++++++++++++++++++++++++++++++++++++++
+initializing DebuggingBaselines class
+[STATUS]: Starting CBI
+++++++++++++++++++++++++++++++++++++++++++++++++++
+Recommended Fix
+(memory_growth                           0.5
+logical_devices                           1
+core_freq                           2265600
+gpu_freq                            2112000
+emc_freq                         1866000000
+num_cores                                 2
+scheduler.policy                          0
+vm.swappiness                            60
+vm.vfs_cache_pressure                   500
+vm.dirty_background_ratio                10
+vm.drop_caches                            0
+vm.nr_hugepages                           1
+vm.overcommit_ratio                      60
+vm.overcommit_memory                      1
+vm.overcommit_hugepages                   1
+kernel.sched_child_runs_first             0
+kernel.sched_rt_runtime_us           500000
+vm.dirty_bytes                           30
+vm.dirty_background_bytes                60
+vm.dirty_ratio                           50
+swap_memory                               1
+kernel.max_pids                       65536
+kernel.sched_latency_ns            24000000
+kernel.sched_nr_migrate                 256
+kernel.cpu_time_max_percent              50
+kernel.sched_time_avg_ms               2000
+dtype: object, 0)
+Recommended Fix value 6    73373
+Name: total_energy_consumption, dtype: int64
+++++++++++++++++++++++++++++++++++++++++++++++++++
+++++++++++++++++++++++++++++++++++++++++++++++++++
+Bug
+core_freq                        1.113600e+06
+gpu_freq                         1.420800e+06
+emc_freq                         6.000000e+08
+num_cores                        3.000000e+00
+memory_growth                    9.000000e-01
+logical_devices                  2.000000e+00
+scheduler.policy                 0.000000e+00
+vm.swappiness                    1.000000e+02
+vm.vfs_cache_pressure            1.000000e+02
+vm.dirty_background_ratio        8.000000e+01
+vm.drop_caches                   3.000000e+00
+vm.nr_hugepages                  2.000000e+00
+vm.overcommit_ratio              5.000000e+01
+vm.overcommit_memory             0.000000e+00
+vm.overcommit_hugepages          1.000000e+00
+kernel.sched_child_runs_first    1.000000e+00
+kernel.sched_rt_runtime_us       9.500000e+05
+vm.dirty_bytes                   3.000000e+01
+vm.dirty_background_bytes        3.000000e+01
+vm.dirty_ratio                   5.000000e+01
+swap_memory                      4.000000e+00
+kernel.max_pids                  3.276800e+04
+kernel.sched_latency_ns          9.600000e+07
+kernel.sched_nr_migrate          1.280000e+02
+kernel.cpu_time_max_percent      5.000000e+01
+kernel.sched_time_avg_ms         1.000000e+03
+inference_time                   3.707986e+01
+total_energy_consumption         1.716020e+05
+Name: 6, dtype: float64
+++++++++++++++++++++++++++++++++++++++++++++++++++
+initializing DebuggingBaselines class
+[STATUS]: Starting CBI
+++++++++++++++++++++++++++++++++++++++++++++++++++
+Recommended Fix
+(memory_growth                           0.5
+logical_devices                           1
+core_freq                           2265600
+gpu_freq                            2112000
+emc_freq                         2133000000
+num_cores                                 4
+scheduler.policy                          0
+vm.swappiness                           100
+vm.vfs_cache_pressure                   100
+vm.dirty_background_ratio                10
+vm.drop_caches                            0
+vm.nr_hugepages                           1
+vm.overcommit_ratio                      60
+vm.overcommit_memory                      1
+vm.overcommit_hugepages                   1
+kernel.sched_child_runs_first             0
+kernel.sched_rt_runtime_us           500000
+vm.dirty_bytes                           60
+vm.dirty_background_bytes                60
+vm.dirty_ratio                           50
+swap_memory                               1
+kernel.max_pids                       65536
+kernel.sched_latency_ns            96000000
+kernel.sched_nr_migrate                 128
+kernel.cpu_time_max_percent              50
+kernel.sched_time_avg_ms               1000
+dtype: object, 0)
+Recommended Fix value 7    55028
+Name: total_energy_consumption, dtype: int64
+++++++++++++++++++++++++++++++++++++++++++++++++++
+++++++++++++++++++++++++++++++++++++++++++++++++++
+Bug
+core_freq                        7.296000e+05
+gpu_freq                         2.265600e+06
+emc_freq                         8.000000e+08
+num_cores                        4.000000e+00
+memory_growth                    5.000000e-01
+logical_devices                  1.000000e+00
+scheduler.policy                 0.000000e+00
+vm.swappiness                    1.000000e+02
+vm.vfs_cache_pressure            1.000000e+02
+vm.dirty_background_ratio        1.000000e+01
+vm.drop_caches                   3.000000e+00
+vm.nr_hugepages                  2.000000e+00
+vm.overcommit_ratio              6.000000e+01
+vm.overcommit_memory             0.000000e+00
+vm.overcommit_hugepages          2.000000e+00
+kernel.sched_child_runs_first    0.000000e+00
+kernel.sched_rt_runtime_us       9.500000e+05
+vm.dirty_bytes                   6.000000e+01
+vm.dirty_background_bytes        3.000000e+01
+vm.dirty_ratio                   5.000000e+01
+swap_memory                      1.000000e+00
+kernel.max_pids                  6.553600e+04
+kernel.sched_latency_ns          9.600000e+07
+kernel.sched_nr_migrate          2.560000e+02
+kernel.cpu_time_max_percent      1.000000e+02
+kernel.sched_time_avg_ms         1.000000e+03
+inference_time                   4.020354e+01
+total_energy_consumption         1.404698e+05
+Name: 7, dtype: float64
+++++++++++++++++++++++++++++++++++++++++++++++++++
+initializing DebuggingBaselines class
+[STATUS]: Starting CBI
+++++++++++++++++++++++++++++++++++++++++++++++++++
+Recommended Fix
+(memory_growth                           0.5
+logical_devices                           1
+core_freq                           2265600
+gpu_freq                            2112000
+emc_freq                         1866000000
+num_cores                                 4
+scheduler.policy                          1
+vm.swappiness                            60
+vm.vfs_cache_pressure                   500
+vm.dirty_background_ratio                10
+vm.drop_caches                            0
+vm.nr_hugepages                           1
+vm.overcommit_ratio                      60
+vm.overcommit_memory                      1
+vm.overcommit_hugepages                   1
+kernel.sched_child_runs_first             0
+kernel.sched_rt_runtime_us           500000
+vm.dirty_bytes                           60
+vm.dirty_background_bytes                60
+vm.dirty_ratio                           50
+swap_memory                               1
+kernel.max_pids                       65536
+kernel.sched_latency_ns            24000000
+kernel.sched_nr_migrate                 128
+kernel.cpu_time_max_percent              50
+kernel.sched_time_avg_ms               2000
+dtype: object, 0)
+Recommended Fix value 8    69233
+Name: total_energy_consumption, dtype: int64
+++++++++++++++++++++++++++++++++++++++++++++++++++
+++++++++++++++++++++++++++++++++++++++++++++++++++
+Bug
+core_freq                        1.920000e+05
+gpu_freq                         8.832000e+05
+emc_freq                         8.000000e+08
+num_cores                        2.000000e+00
+memory_growth                    9.000000e-01
+logical_devices                  2.000000e+00
+scheduler.policy                 0.000000e+00
+vm.swappiness                    6.000000e+01
+vm.vfs_cache_pressure            1.000000e+02
+vm.dirty_background_ratio        8.000000e+01
+vm.drop_caches                   3.000000e+00
+vm.nr_hugepages                  2.000000e+00
+vm.overcommit_ratio              6.000000e+01
+vm.overcommit_memory             1.000000e+00
+vm.overcommit_hugepages          2.000000e+00
+kernel.sched_child_runs_first    1.000000e+00
+kernel.sched_rt_runtime_us       9.500000e+05
+vm.dirty_bytes                   3.000000e+01
+vm.dirty_background_bytes        6.000000e+01
+vm.dirty_ratio                   5.000000e+00
+swap_memory                      4.000000e+00
+kernel.max_pids                  6.553600e+04
+kernel.sched_latency_ns          2.400000e+07
+kernel.sched_nr_migrate          1.280000e+02
+kernel.cpu_time_max_percent      5.000000e+01
+kernel.sched_time_avg_ms         2.000000e+03
+inference_time                   3.460398e+01
+total_energy_consumption         1.620474e+05
+Name: 8, dtype: float64
+++++++++++++++++++++++++++++++++++++++++++++++++++
+initializing DebuggingBaselines class
+[STATUS]: Starting CBI
+++++++++++++++++++++++++++++++++++++++++++++++++++
+Recommended Fix
+(memory_growth                           0.5
+logical_devices                           1
+core_freq                           2265600
+gpu_freq                            2112000
+emc_freq                         1866000000
+num_cores                                 2
+scheduler.policy                          0
+vm.swappiness                            60
+vm.vfs_cache_pressure                   500
+vm.dirty_background_ratio                10
+vm.drop_caches                            0
+vm.nr_hugepages                           1
+vm.overcommit_ratio                      60
+vm.overcommit_memory                      1
+vm.overcommit_hugepages                   2
+kernel.sched_child_runs_first             1
+kernel.sched_rt_runtime_us           500000
+vm.dirty_bytes                           30
+vm.dirty_background_bytes                60
+vm.dirty_ratio                           50
+swap_memory                               1
+kernel.max_pids                       65536
+kernel.sched_latency_ns            24000000
+kernel.sched_nr_migrate                 128
+kernel.cpu_time_max_percent              50
+kernel.sched_time_avg_ms               2000
+dtype: object, 0)
+Recommended Fix value 9    73837
+Name: total_energy_consumption, dtype: int64
+++++++++++++++++++++++++++++++++++++++++++++++++++
+++++++++++++++++++++++++++++++++++++++++++++++++++
+Bug
+core_freq                        4.224000e+05
+gpu_freq                         3.456000e+05
+emc_freq                         1.065600e+09
+num_cores                        2.000000e+00
+memory_growth                    9.000000e-01
+logical_devices                  2.000000e+00
+scheduler.policy                 0.000000e+00
+vm.swappiness                    6.000000e+01
+vm.vfs_cache_pressure            1.000000e+02
+vm.dirty_background_ratio        8.000000e+01
+vm.drop_caches                   3.000000e+00
+vm.nr_hugepages                  2.000000e+00
+vm.overcommit_ratio              6.000000e+01
+vm.overcommit_memory             1.000000e+00
+vm.overcommit_hugepages          1.000000e+00
+kernel.sched_child_runs_first    1.000000e+00
+kernel.sched_rt_runtime_us       9.500000e+05
+vm.dirty_bytes                   6.000000e+01
+vm.dirty_background_bytes        6.000000e+01
+vm.dirty_ratio                   5.000000e+00
+swap_memory                      1.000000e+00
+kernel.max_pids                  6.553600e+04
+kernel.sched_latency_ns          2.400000e+07
+kernel.sched_nr_migrate          1.280000e+02
+kernel.cpu_time_max_percent      5.000000e+01
+kernel.sched_time_avg_ms         1.000000e+03
+inference_time                   1.469837e+01
+total_energy_consumption         1.696746e+05
+Name: 9, dtype: float64
+++++++++++++++++++++++++++++++++++++++++++++++++++
+initializing DebuggingBaselines class
+[STATUS]: Starting CBI
+++++++++++++++++++++++++++++++++++++++++++++++++++
+Recommended Fix
+(memory_growth                           0.5
+logical_devices                           1
+core_freq                           2265600
+gpu_freq                            2112000
+emc_freq                         2133000000
+num_cores                                 4
+scheduler.policy                          0
+vm.swappiness                            60
+vm.vfs_cache_pressure                   100
+vm.dirty_background_ratio                10
+vm.drop_caches                            0
+vm.nr_hugepages                           1
+vm.overcommit_ratio                      60
+vm.overcommit_memory                      1
+vm.overcommit_hugepages                   1
+kernel.sched_child_runs_first             0
+kernel.sched_rt_runtime_us           500000
+vm.dirty_bytes                           30
+vm.dirty_background_bytes                60
+vm.dirty_ratio                           50
+swap_memory                               1
+kernel.max_pids                       65536
+kernel.sched_latency_ns            24000000
+kernel.sched_nr_migrate                 128
+kernel.cpu_time_max_percent              50
+kernel.sched_time_avg_ms               1000
+dtype: object, 0)
+Recommended Fix value 10    61252
+Name: total_energy_consumption, dtype: int64
+++++++++++++++++++++++++++++++++++++++++++++++++++
+++++++++++++++++++++++++++++++++++++++++++++++++++
+Bug
+core_freq                        7.296000e+05
+gpu_freq                         1.728000e+06
+emc_freq                         4.080000e+08
+num_cores                        1.000000e+00
+memory_growth                    5.000000e-01
+logical_devices                  2.000000e+00
+scheduler.policy                 1.000000e+00
+vm.swappiness                    1.000000e+02
+vm.vfs_cache_pressure            5.000000e+02
+vm.dirty_background_ratio        1.000000e+01
+vm.drop_caches                   3.000000e+00
+vm.nr_hugepages                  1.000000e+00
+vm.overcommit_ratio              6.000000e+01
+vm.overcommit_memory             1.000000e+00
+vm.overcommit_hugepages          1.000000e+00
+kernel.sched_child_runs_first    0.000000e+00
+kernel.sched_rt_runtime_us       9.500000e+05
+vm.dirty_bytes                   6.000000e+01
+vm.dirty_background_bytes        6.000000e+01
+vm.dirty_ratio                   5.000000e+01
+swap_memory                      4.000000e+00
+kernel.max_pids                  6.553600e+04
+kernel.sched_latency_ns          9.600000e+07
+kernel.sched_nr_migrate          1.280000e+02
+kernel.cpu_time_max_percent      5.000000e+01
+kernel.sched_time_avg_ms         2.000000e+03
+inference_time                   1.193519e+01
+total_energy_consumption         1.527738e+05
+Name: 10, dtype: float64
+++++++++++++++++++++++++++++++++++++++++++++++++++
+initializing DebuggingBaselines class
+[STATUS]: Starting CBI
+++++++++++++++++++++++++++++++++++++++++++++++++++
+Recommended Fix
+(memory_growth                           0.5
+logical_devices                           1
+core_freq                           2265600
+gpu_freq                            2112000
+emc_freq                         1866000000
+num_cores                                 4
+scheduler.policy                          1
+vm.swappiness                            60
+vm.vfs_cache_pressure                   500
+vm.dirty_background_ratio                10
+vm.drop_caches                            0
+vm.nr_hugepages                           1
+vm.overcommit_ratio                      60
+vm.overcommit_memory                      1
+vm.overcommit_hugepages                   1
+kernel.sched_child_runs_first             0
+kernel.sched_rt_runtime_us           500000
+vm.dirty_bytes                           60
+vm.dirty_background_bytes                60
+vm.dirty_ratio                           50
+swap_memory                               1
+kernel.max_pids                       65536
+kernel.sched_latency_ns            24000000
+kernel.sched_nr_migrate                 128
+kernel.cpu_time_max_percent              50
+kernel.sched_time_avg_ms               2000
+dtype: object, 0)
+Recommended Fix value 11    67813
+Name: total_energy_consumption, dtype: int64
+++++++++++++++++++++++++++++++++++++++++++++++++++
+++++++++++++++++++++++++++++++++++++++++++++++++++
+Bug
+core_freq                        9.600000e+05
+gpu_freq                         2.112000e+06
+emc_freq                         1.866000e+09
+num_cores                        2.000000e+00
+memory_growth                    5.000000e-01
+logical_devices                  1.000000e+00
+scheduler.policy                 1.000000e+00
+vm.swappiness                    6.000000e+01
+vm.vfs_cache_pressure            1.000000e+02
+vm.dirty_background_ratio        1.000000e+01
+vm.drop_caches                   0.000000e+00
+vm.nr_hugepages                  1.000000e+00
+vm.overcommit_ratio              6.000000e+01
+vm.overcommit_memory             0.000000e+00
+vm.overcommit_hugepages          2.000000e+00
+kernel.sched_child_runs_first    1.000000e+00
+kernel.sched_rt_runtime_us       9.500000e+05
+vm.dirty_bytes                   6.000000e+01
+vm.dirty_background_bytes        3.000000e+01
+vm.dirty_ratio                   5.000000e+01
+swap_memory                      4.000000e+00
+kernel.max_pids                  6.553600e+04
+kernel.sched_latency_ns          9.600000e+07
+kernel.sched_nr_migrate          2.560000e+02
+kernel.cpu_time_max_percent      1.000000e+02
+kernel.sched_time_avg_ms         1.000000e+03
+inference_time                   1.829364e+01
+total_energy_consumption         1.619874e+05
+Name: 11, dtype: float64
+++++++++++++++++++++++++++++++++++++++++++++++++++
+initializing DebuggingBaselines class
+[STATUS]: Starting CBI
+++++++++++++++++++++++++++++++++++++++++++++++++++
+Recommended Fix
+(memory_growth                           0.5
+logical_devices                           1
+core_freq                           2265600
+gpu_freq                            2112000
+emc_freq                         1866000000
+num_cores                                 2
+scheduler.policy                          0
+vm.swappiness                            60
+vm.vfs_cache_pressure                   500
+vm.dirty_background_ratio                10
+vm.drop_caches                            0
+vm.nr_hugepages                           1
+vm.overcommit_ratio                      60
+vm.overcommit_memory                      1
+vm.overcommit_hugepages                   2
+kernel.sched_child_runs_first             0
+kernel.sched_rt_runtime_us           500000
+vm.dirty_bytes                           30
+vm.dirty_background_bytes                60
+vm.dirty_ratio                           50
+swap_memory                               1
+kernel.max_pids                       65536
+kernel.sched_latency_ns            24000000
+kernel.sched_nr_migrate                 128
+kernel.cpu_time_max_percent              50
+kernel.sched_time_avg_ms               2000
+dtype: object, 0)
+Recommended Fix value 12    70849
+Name: total_energy_consumption, dtype: int64
+++++++++++++++++++++++++++++++++++++++++++++++++++
+++++++++++++++++++++++++++++++++++++++++++++++++++
+Bug
+core_freq                        1.036800e+06
+gpu_freq                         4.224000e+05
+emc_freq                         6.656000e+08
+num_cores                        2.000000e+00
+memory_growth                    9.000000e-01
+logical_devices                  2.000000e+00
+scheduler.policy                 0.000000e+00
+vm.swappiness                    1.000000e+02
+vm.vfs_cache_pressure            5.000000e+02
+vm.dirty_background_ratio        1.000000e+01
+vm.drop_caches                   3.000000e+00
+vm.nr_hugepages                  2.000000e+00
+vm.overcommit_ratio              6.000000e+01
+vm.overcommit_memory             1.000000e+00
+vm.overcommit_hugepages          2.000000e+00
+kernel.sched_child_runs_first    1.000000e+00
+kernel.sched_rt_runtime_us       9.500000e+05
+vm.dirty_bytes                   6.000000e+01
+vm.dirty_background_bytes        3.000000e+01
+vm.dirty_ratio                   5.000000e+00
+swap_memory                      1.000000e+00
+kernel.max_pids                  6.553600e+04
+kernel.sched_latency_ns          2.400000e+07
+kernel.sched_nr_migrate          2.560000e+02
+kernel.cpu_time_max_percent      5.000000e+01
+kernel.sched_time_avg_ms         2.000000e+03
+inference_time                   1.219436e+01
+total_energy_consumption         1.690468e+05
+Name: 12, dtype: float64
+++++++++++++++++++++++++++++++++++++++++++++++++++
+initializing DebuggingBaselines class
+[STATUS]: Starting CBI
+++++++++++++++++++++++++++++++++++++++++++++++++++
+Recommended Fix
+(memory_growth                           0.5
+logical_devices                           1
+core_freq                           2265600
+gpu_freq                            2112000
+emc_freq                         1866000000
+num_cores                                 4
+scheduler.policy                          0
+vm.swappiness                           100
+vm.vfs_cache_pressure                   100
+vm.dirty_background_ratio                10
+vm.drop_caches                            0
+vm.nr_hugepages                           1
+vm.overcommit_ratio                      60
+vm.overcommit_memory                      1
+vm.overcommit_hugepages                   1
+kernel.sched_child_runs_first             0
+kernel.sched_rt_runtime_us           500000
+vm.dirty_bytes                           60
+vm.dirty_background_bytes                60
+vm.dirty_ratio                           50
+swap_memory                               1
+kernel.max_pids                       65536
+kernel.sched_latency_ns            96000000
+kernel.sched_nr_migrate                 128
+kernel.cpu_time_max_percent              50
+kernel.sched_time_avg_ms               1000
+dtype: object, 0)
+Recommended Fix value 13    63151
+Name: total_energy_consumption, dtype: int64
+++++++++++++++++++++++++++++++++++++++++++++++++++
+++++++++++++++++++++++++++++++++++++++++++++++++++
+Bug
+core_freq                        7.296000e+05
+gpu_freq                         1.190400e+06
+emc_freq                         2.133000e+09
+num_cores                        2.000000e+00
+memory_growth                    9.000000e-01
+logical_devices                  1.000000e+00
+scheduler.policy                 0.000000e+00
+vm.swappiness                    6.000000e+01
+vm.vfs_cache_pressure            5.000000e+02
+vm.dirty_background_ratio        1.000000e+01
+vm.drop_caches                   3.000000e+00
+vm.nr_hugepages                  2.000000e+00
+vm.overcommit_ratio              6.000000e+01
+vm.overcommit_memory             0.000000e+00
+vm.overcommit_hugepages          2.000000e+00
+kernel.sched_child_runs_first    1.000000e+00
+kernel.sched_rt_runtime_us       5.000000e+05
+vm.dirty_bytes                   3.000000e+01
+vm.dirty_background_bytes        6.000000e+01
+vm.dirty_ratio                   5.000000e+01
+swap_memory                      1.000000e+00
+kernel.max_pids                  6.553600e+04
+kernel.sched_latency_ns          2.400000e+07
+kernel.sched_nr_migrate          2.560000e+02
+kernel.cpu_time_max_percent      1.000000e+02
+kernel.sched_time_avg_ms         2.000000e+03
+inference_time                   2.135934e+01
+total_energy_consumption         1.441233e+05
+Name: 13, dtype: float64
+++++++++++++++++++++++++++++++++++++++++++++++++++
+initializing DebuggingBaselines class
+[STATUS]: Starting CBI
+++++++++++++++++++++++++++++++++++++++++++++++++++
+Recommended Fix
+(memory_growth                           0.5
+logical_devices                           1
+core_freq                           2265600
+gpu_freq                            2112000
+emc_freq                         1866000000
+num_cores                                 4
+scheduler.policy                          1
+vm.swappiness                           100
+vm.vfs_cache_pressure                   100
+vm.dirty_background_ratio                10
+vm.drop_caches                            0
+vm.nr_hugepages                           1
+vm.overcommit_ratio                      60
+vm.overcommit_memory                      1
+vm.overcommit_hugepages                   1
+kernel.sched_child_runs_first             0
+kernel.sched_rt_runtime_us           500000
+vm.dirty_bytes                           60
+vm.dirty_background_bytes                60
+vm.dirty_ratio                           50
+swap_memory                               1
+kernel.max_pids                       32768
+kernel.sched_latency_ns            96000000
+kernel.sched_nr_migrate                 128
+kernel.cpu_time_max_percent              50
+kernel.sched_time_avg_ms               1000
+dtype: object, 0)
+Recommended Fix value 14    63337
+Name: total_energy_consumption, dtype: int64
+++++++++++++++++++++++++++++++++++++++++++++++++++
+++++++++++++++++++++++++++++++++++++++++++++++++++
+Bug
+core_freq                        9.600000e+05
+gpu_freq                         5.760000e+05
+emc_freq                         2.133000e+09
+num_cores                        2.000000e+00
+memory_growth                    9.000000e-01
+logical_devices                  2.000000e+00
+scheduler.policy                 0.000000e+00
+vm.swappiness                    1.000000e+02
+vm.vfs_cache_pressure            5.000000e+02
+vm.dirty_background_ratio        1.000000e+01
+vm.drop_caches                   3.000000e+00
+vm.nr_hugepages                  2.000000e+00
+vm.overcommit_ratio              6.000000e+01
+vm.overcommit_memory             0.000000e+00
+vm.overcommit_hugepages          1.000000e+00
+kernel.sched_child_runs_first    0.000000e+00
+kernel.sched_rt_runtime_us       9.500000e+05
+vm.dirty_bytes                   6.000000e+01
+vm.dirty_background_bytes        3.000000e+01
+vm.dirty_ratio                   5.000000e+00
+swap_memory                      1.000000e+00
+kernel.max_pids                  6.553600e+04
+kernel.sched_latency_ns          9.600000e+07
+kernel.sched_nr_migrate          1.280000e+02
+kernel.cpu_time_max_percent      1.000000e+02
+kernel.sched_time_avg_ms         2.000000e+03
+inference_time                   1.817423e+01
+total_energy_consumption         1.417477e+05
+Name: 14, dtype: float64
+++++++++++++++++++++++++++++++++++++++++++++++++++
+initializing DebuggingBaselines class
+[STATUS]: Starting CBI
+++++++++++++++++++++++++++++++++++++++++++++++++++
+Recommended Fix
+(memory_growth                           0.5
+logical_devices                           1
+core_freq                           2265600
+gpu_freq                            2112000
+emc_freq                         2133000000
+num_cores                                 4
+scheduler.policy                          0
+vm.swappiness                           100
+vm.vfs_cache_pressure                   100
+vm.dirty_background_ratio                10
+vm.drop_caches                            0
+vm.nr_hugepages                           1
+vm.overcommit_ratio                      60
+vm.overcommit_memory                      1
+vm.overcommit_hugepages                   1
+kernel.sched_child_runs_first             0
+kernel.sched_rt_runtime_us           500000
+vm.dirty_bytes                           30
+vm.dirty_background_bytes                60
+vm.dirty_ratio                           50
+swap_memory                               1
+kernel.max_pids                       65536
+kernel.sched_latency_ns            24000000
+kernel.sched_nr_migrate                 128
+kernel.cpu_time_max_percent              50
+kernel.sched_time_avg_ms               1000
+dtype: object, 0)
+Recommended Fix value 15    64876
+Name: total_energy_consumption, dtype: int64
+++++++++++++++++++++++++++++++++++++++++++++++++++
+++++++++++++++++++++++++++++++++++++++++++++++++++
+Bug
+core_freq                        1.036800e+06
+gpu_freq                         1.152000e+05
+emc_freq                         6.656000e+08
+num_cores                        4.000000e+00
+memory_growth                    9.000000e-01
+logical_devices                  2.000000e+00
+scheduler.policy                 0.000000e+00
+vm.swappiness                    1.000000e+02
+vm.vfs_cache_pressure            5.000000e+02
+vm.dirty_background_ratio        1.000000e+01
+vm.drop_caches                   0.000000e+00
+vm.nr_hugepages                  1.000000e+00
+vm.overcommit_ratio              5.000000e+01
+vm.overcommit_memory             0.000000e+00
+vm.overcommit_hugepages          1.000000e+00
+kernel.sched_child_runs_first    0.000000e+00
+kernel.sched_rt_runtime_us       5.000000e+05
+vm.dirty_bytes                   6.000000e+01
+vm.dirty_background_bytes        6.000000e+01
+vm.dirty_ratio                   5.000000e+00
+swap_memory                      4.000000e+00
+kernel.max_pids                  3.276800e+04
+kernel.sched_latency_ns          2.400000e+07
+kernel.sched_nr_migrate          1.280000e+02
+kernel.cpu_time_max_percent      1.000000e+02
+kernel.sched_time_avg_ms         1.000000e+03
+inference_time                   2.158126e+01
+total_energy_consumption         1.489601e+05
+Name: 15, dtype: float64
+++++++++++++++++++++++++++++++++++++++++++++++++++
+initializing DebuggingBaselines class
+[STATUS]: Starting CBI
+++++++++++++++++++++++++++++++++++++++++++++++++++
+Recommended Fix
+(memory_growth                           0.5
+logical_devices                           1
+core_freq                           2265600
+gpu_freq                            2112000
+emc_freq                         1866000000
+num_cores                                 4
+scheduler.policy                          1
+vm.swappiness                           100
+vm.vfs_cache_pressure                   100
+vm.dirty_background_ratio                10
+vm.drop_caches                            0
+vm.nr_hugepages                           1
+vm.overcommit_ratio                      60
+vm.overcommit_memory                      1
+vm.overcommit_hugepages                   1
+kernel.sched_child_runs_first             0
+kernel.sched_rt_runtime_us           500000
+vm.dirty_bytes                           60
+vm.dirty_background_bytes                60
+vm.dirty_ratio                           50
+swap_memory                               1
+kernel.max_pids                       32768
+kernel.sched_latency_ns            96000000
+kernel.sched_nr_migrate                 128
+kernel.cpu_time_max_percent              50
+kernel.sched_time_avg_ms               1000
+dtype: object, 0)
+Recommended Fix value 16    56721
+Name: total_energy_consumption, dtype: int64
+++++++++++++++++++++++++++++++++++++++++++++++++++
+++++++++++++++++++++++++++++++++++++++++++++++++++
+Bug
+core_freq                        1.113600e+06
+gpu_freq                         1.113600e+06
+emc_freq                         2.040000e+08
+num_cores                        4.000000e+00
+memory_growth                    9.000000e-01
+logical_devices                  1.000000e+00
+scheduler.policy                 0.000000e+00
+vm.swappiness                    1.000000e+02
+vm.vfs_cache_pressure            5.000000e+02
+vm.dirty_background_ratio        8.000000e+01
+vm.drop_caches                   0.000000e+00
+vm.nr_hugepages                  2.000000e+00
+vm.overcommit_ratio              6.000000e+01
+vm.overcommit_memory             0.000000e+00
+vm.overcommit_hugepages          1.000000e+00
+kernel.sched_child_runs_first    0.000000e+00
+kernel.sched_rt_runtime_us       5.000000e+05
+vm.dirty_bytes                   3.000000e+01
+vm.dirty_background_bytes        3.000000e+01
+vm.dirty_ratio                   5.000000e+00
+swap_memory                      4.000000e+00
+kernel.max_pids                  3.276800e+04
+kernel.sched_latency_ns          2.400000e+07
+kernel.sched_nr_migrate          2.560000e+02
+kernel.cpu_time_max_percent      1.000000e+02
+kernel.sched_time_avg_ms         1.000000e+03
+inference_time                   1.544744e+01
+total_energy_consumption         1.428265e+05
+Name: 16, dtype: float64
+++++++++++++++++++++++++++++++++++++++++++++++++++
+initializing DebuggingBaselines class
+[STATUS]: Starting CBI
+++++++++++++++++++++++++++++++++++++++++++++++++++
+Recommended Fix
+(memory_growth                           0.5
+logical_devices                           1
+core_freq                           2265600
+gpu_freq                            2112000
+emc_freq                         1866000000
+num_cores                                 4
+scheduler.policy                          0
+vm.swappiness                            60
+vm.vfs_cache_pressure                   100
+vm.dirty_background_ratio                10
+vm.drop_caches                            0
+vm.nr_hugepages                           1
+vm.overcommit_ratio                      60
+vm.overcommit_memory                      1
+vm.overcommit_hugepages                   2
+kernel.sched_child_runs_first             0
+kernel.sched_rt_runtime_us           500000
+vm.dirty_bytes                           30
+vm.dirty_background_bytes                60
+vm.dirty_ratio                           50
+swap_memory                               1
+kernel.max_pids                       65536
+kernel.sched_latency_ns            24000000
+kernel.sched_nr_migrate                 128
+kernel.cpu_time_max_percent              50
+kernel.sched_time_avg_ms               1000
+dtype: object, 0)
+Recommended Fix value 17    68363
+Name: total_energy_consumption, dtype: int64
+++++++++++++++++++++++++++++++++++++++++++++++++++
+++++++++++++++++++++++++++++++++++++++++++++++++++
+Bug
+core_freq                        1.497600e+06
+gpu_freq                         4.992000e+05
+emc_freq                         1.331200e+09
+num_cores                        3.000000e+00
+memory_growth                    9.000000e-01
+logical_devices                  2.000000e+00
+scheduler.policy                 1.000000e+00
+vm.swappiness                    1.000000e+02
+vm.vfs_cache_pressure            1.000000e+02
+vm.dirty_background_ratio        8.000000e+01
+vm.drop_caches                   3.000000e+00
+vm.nr_hugepages                  2.000000e+00
+vm.overcommit_ratio              6.000000e+01
+vm.overcommit_memory             1.000000e+00
+vm.overcommit_hugepages          2.000000e+00
+kernel.sched_child_runs_first    0.000000e+00
+kernel.sched_rt_runtime_us       5.000000e+05
+vm.dirty_bytes                   6.000000e+01
+vm.dirty_background_bytes        3.000000e+01
+vm.dirty_ratio                   5.000000e+00
+swap_memory                      4.000000e+00
+kernel.max_pids                  3.276800e+04
+kernel.sched_latency_ns          9.600000e+07
+kernel.sched_nr_migrate          2.560000e+02
+kernel.cpu_time_max_percent      1.000000e+02
+kernel.sched_time_avg_ms         1.000000e+03
+inference_time                   2.245657e+01
+total_energy_consumption         1.559212e+05
+Name: 17, dtype: float64
+++++++++++++++++++++++++++++++++++++++++++++++++++
+initializing DebuggingBaselines class
+[STATUS]: Starting CBI
+++++++++++++++++++++++++++++++++++++++++++++++++++
+Recommended Fix
+(memory_growth                           0.5
+logical_devices                           1
+core_freq                           2265600
+gpu_freq                            2112000
+emc_freq                         1866000000
+num_cores                                 2
+scheduler.policy                          0
+vm.swappiness                            60
+vm.vfs_cache_pressure                   500
+vm.dirty_background_ratio                10
+vm.drop_caches                            0
+vm.nr_hugepages                           1
+vm.overcommit_ratio                      60
+vm.overcommit_memory                      1
+vm.overcommit_hugepages                   1
+kernel.sched_child_runs_first             0
+kernel.sched_rt_runtime_us           500000
+vm.dirty_bytes                           30
+vm.dirty_background_bytes                60
+vm.dirty_ratio                           50
+swap_memory                               1
+kernel.max_pids                       65536
+kernel.sched_latency_ns            24000000
+kernel.sched_nr_migrate                 256
+kernel.cpu_time_max_percent              50
+kernel.sched_time_avg_ms               2000
+dtype: object, 0)
+Recommended Fix value 18    71675
+Name: total_energy_consumption, dtype: int64
+++++++++++++++++++++++++++++++++++++++++++++++++++
+++++++++++++++++++++++++++++++++++++++++++++++++++
+Bug
+core_freq                        2.688000e+05
+gpu_freq                         2.188800e+06
+emc_freq                         1.866000e+09
+num_cores                        1.000000e+00
+memory_growth                    5.000000e-01
+logical_devices                  2.000000e+00
+scheduler.policy                 0.000000e+00
+vm.swappiness                    1.000000e+02
+vm.vfs_cache_pressure            5.000000e+02
+vm.dirty_background_ratio        8.000000e+01
+vm.drop_caches                   3.000000e+00
+vm.nr_hugepages                  2.000000e+00
+vm.overcommit_ratio              5.000000e+01
+vm.overcommit_memory             0.000000e+00
+vm.overcommit_hugepages          2.000000e+00
+kernel.sched_child_runs_first    0.000000e+00
+kernel.sched_rt_runtime_us       9.500000e+05
+vm.dirty_bytes                   6.000000e+01
+vm.dirty_background_bytes        6.000000e+01
+vm.dirty_ratio                   5.000000e+00
+swap_memory                      1.000000e+00
+kernel.max_pids                  3.276800e+04
+kernel.sched_latency_ns          2.400000e+07
+kernel.sched_nr_migrate          1.280000e+02
+kernel.cpu_time_max_percent      1.000000e+02
+kernel.sched_time_avg_ms         1.000000e+03
+inference_time                   1.803501e+01
+total_energy_consumption         1.740832e+05
+Name: 18, dtype: float64
+++++++++++++++++++++++++++++++++++++++++++++++++++
+initializing DebuggingBaselines class
+[STATUS]: Starting CBI
+++++++++++++++++++++++++++++++++++++++++++++++++++
+Recommended Fix
+(memory_growth                           0.5
+logical_devices                           1
+core_freq                           2265600
+gpu_freq                            2112000
+emc_freq                         1866000000
+num_cores                                 4
+scheduler.policy                          0
+vm.swappiness                           100
+vm.vfs_cache_pressure                   100
+vm.dirty_background_ratio                10
+vm.drop_caches                            0
+vm.nr_hugepages                           1
+vm.overcommit_ratio                      60
+vm.overcommit_memory                      1
+vm.overcommit_hugepages                   1
+kernel.sched_child_runs_first             0
+kernel.sched_rt_runtime_us           500000
+vm.dirty_bytes                           60
+vm.dirty_background_bytes                60
+vm.dirty_ratio                           50
+swap_memory                               1
+kernel.max_pids                       65536
+kernel.sched_latency_ns            96000000
+kernel.sched_nr_migrate                 128
+kernel.cpu_time_max_percent              50
+kernel.sched_time_avg_ms               1000
+dtype: object, 0)
+Recommended Fix value 19    57518
+Name: total_energy_consumption, dtype: int64
+++++++++++++++++++++++++++++++++++++++++++++++++++
+++++++++++++++++++++++++++++++++++++++++++++++++++
+Bug
+core_freq                        1.036800e+06
+gpu_freq                         1.958400e+06
+emc_freq                         1.331200e+09
+num_cores                        1.000000e+00
+memory_growth                    9.000000e-01
+logical_devices                  1.000000e+00
+scheduler.policy                 1.000000e+00
+vm.swappiness                    1.000000e+02
+vm.vfs_cache_pressure            5.000000e+02
+vm.dirty_background_ratio        8.000000e+01
+vm.drop_caches                   0.000000e+00
+vm.nr_hugepages                  2.000000e+00
+vm.overcommit_ratio              5.000000e+01
+vm.overcommit_memory             0.000000e+00
+vm.overcommit_hugepages          1.000000e+00
+kernel.sched_child_runs_first    0.000000e+00
+kernel.sched_rt_runtime_us       9.500000e+05
+vm.dirty_bytes                   6.000000e+01
+vm.dirty_background_bytes        6.000000e+01
+vm.dirty_ratio                   5.000000e+01
+swap_memory                      4.000000e+00
+kernel.max_pids                  3.276800e+04
+kernel.sched_latency_ns          9.600000e+07
+kernel.sched_nr_migrate          2.560000e+02
+kernel.cpu_time_max_percent      1.000000e+02
+kernel.sched_time_avg_ms         2.000000e+03
+inference_time                   1.680355e+01
+total_energy_consumption         1.446579e+05
+Name: 19, dtype: float64
+++++++++++++++++++++++++++++++++++++++++++++++++++
+initializing DebuggingBaselines class
+[STATUS]: Starting CBI
+++++++++++++++++++++++++++++++++++++++++++++++++++
+Recommended Fix
+(memory_growth                           0.5
+logical_devices                           1
+core_freq                           2265600
+gpu_freq                            2112000
+emc_freq                         1866000000
+num_cores                                 4
+scheduler.policy                          0
+vm.swappiness                           100
+vm.vfs_cache_pressure                   100
+vm.dirty_background_ratio                10
+vm.drop_caches                            0
+vm.nr_hugepages                           1
+vm.overcommit_ratio                      60
+vm.overcommit_memory                      1
+vm.overcommit_hugepages                   1
+kernel.sched_child_runs_first             0
+kernel.sched_rt_runtime_us           500000
+vm.dirty_bytes                           60
+vm.dirty_background_bytes                60
+vm.dirty_ratio                           50
+swap_memory                               1
+kernel.max_pids                       65536
+kernel.sched_latency_ns            96000000
+kernel.sched_nr_migrate                 128
+kernel.cpu_time_max_percent              50
+kernel.sched_time_avg_ms               1000
+dtype: object, 0)
+Recommended Fix value 20    64396
+Name: total_energy_consumption, dtype: int64
+++++++++++++++++++++++++++++++++++++++++++++++++++
+++++++++++++++++++++++++++++++++++++++++++++++++++
+Bug
+core_freq                        2.112000e+06
+gpu_freq                         1.190400e+06
+emc_freq                         4.080000e+08
+num_cores                        1.000000e+00
+memory_growth                    5.000000e-01
+logical_devices                  2.000000e+00
+scheduler.policy                 1.000000e+00
+vm.swappiness                    1.000000e+02
+vm.vfs_cache_pressure            5.000000e+02
+vm.dirty_background_ratio        8.000000e+01
+vm.drop_caches                   0.000000e+00
+vm.nr_hugepages                  2.000000e+00
+vm.overcommit_ratio              5.000000e+01
+vm.overcommit_memory             1.000000e+00
+vm.overcommit_hugepages          1.000000e+00
+kernel.sched_child_runs_first    0.000000e+00
+kernel.sched_rt_runtime_us       9.500000e+05
+vm.dirty_bytes                   3.000000e+01
+vm.dirty_background_bytes        3.000000e+01
+vm.dirty_ratio                   5.000000e+01
+swap_memory                      4.000000e+00
+kernel.max_pids                  3.276800e+04
+kernel.sched_latency_ns          9.600000e+07
+kernel.sched_nr_migrate          1.280000e+02
+kernel.cpu_time_max_percent      1.000000e+02
+kernel.sched_time_avg_ms         2.000000e+03
+inference_time                   2.397696e+01
+total_energy_consumption         1.438037e+05
+Name: 20, dtype: float64
+++++++++++++++++++++++++++++++++++++++++++++++++++
+initializing DebuggingBaselines class
+[STATUS]: Starting CBI
+++++++++++++++++++++++++++++++++++++++++++++++++++
+Recommended Fix
+(memory_growth                           0.5
+logical_devices                           2
+core_freq                           2265600
+gpu_freq                            2112000
+emc_freq                         1866000000
+num_cores                                 4
+scheduler.policy                          1
+vm.swappiness                            60
+vm.vfs_cache_pressure                   500
+vm.dirty_background_ratio                10
+vm.drop_caches                            0
+vm.nr_hugepages                           1
+vm.overcommit_ratio                      60
+vm.overcommit_memory                      1
+vm.overcommit_hugepages                   2
+kernel.sched_child_runs_first             1
+kernel.sched_rt_runtime_us           500000
+vm.dirty_bytes                           30
+vm.dirty_background_bytes                60
+vm.dirty_ratio                           50
+swap_memory                               1
+kernel.max_pids                       65536
+kernel.sched_latency_ns            24000000
+kernel.sched_nr_migrate                 128
+kernel.cpu_time_max_percent              50
+kernel.sched_time_avg_ms               2000
+dtype: object, 0)
+Recommended Fix value 21    68254
+Name: total_energy_consumption, dtype: int64
+++++++++++++++++++++++++++++++++++++++++++++++++++
+++++++++++++++++++++++++++++++++++++++++++++++++++
+Bug
+core_freq                        1.651200e+06
+gpu_freq                         1.420800e+06
+emc_freq                         1.331200e+09
+num_cores                        4.000000e+00
+memory_growth                    5.000000e-01
+logical_devices                  2.000000e+00
+scheduler.policy                 1.000000e+00
+vm.swappiness                    1.000000e+02
+vm.vfs_cache_pressure            1.000000e+02
+vm.dirty_background_ratio        8.000000e+01
+vm.drop_caches                   3.000000e+00
+vm.nr_hugepages                  2.000000e+00
+vm.overcommit_ratio              5.000000e+01
+vm.overcommit_memory             0.000000e+00
+vm.overcommit_hugepages          2.000000e+00
+kernel.sched_child_runs_first    1.000000e+00
+kernel.sched_rt_runtime_us       5.000000e+05
+vm.dirty_bytes                   6.000000e+01
+vm.dirty_background_bytes        6.000000e+01
+vm.dirty_ratio                   5.000000e+01
+swap_memory                      1.000000e+00
+kernel.max_pids                  6.553600e+04
+kernel.sched_latency_ns          2.400000e+07
+kernel.sched_nr_migrate          1.280000e+02
+kernel.cpu_time_max_percent      5.000000e+01
+kernel.sched_time_avg_ms         1.000000e+03
+inference_time                   1.735840e+01
+total_energy_consumption         1.656259e+05
+Name: 21, dtype: float64
+++++++++++++++++++++++++++++++++++++++++++++++++++
+initializing DebuggingBaselines class
+[STATUS]: Starting CBI
+++++++++++++++++++++++++++++++++++++++++++++++++++
+Recommended Fix
+(memory_growth                           0.5
+logical_devices                           1
+core_freq                           2265600
+gpu_freq                            2112000
+emc_freq                         1866000000
+num_cores                                 4
+scheduler.policy                          0
+vm.swappiness                            60
+vm.vfs_cache_pressure                   100
+vm.dirty_background_ratio                10
+vm.drop_caches                            0
+vm.nr_hugepages                           1
+vm.overcommit_ratio                      60
+vm.overcommit_memory                      1
+vm.overcommit_hugepages                   2
+kernel.sched_child_runs_first             0
+kernel.sched_rt_runtime_us           500000
+vm.dirty_bytes                           30
+vm.dirty_background_bytes                60
+vm.dirty_ratio                           50
+swap_memory                               1
+kernel.max_pids                       65536
+kernel.sched_latency_ns            24000000
+kernel.sched_nr_migrate                 128
+kernel.cpu_time_max_percent              50
+kernel.sched_time_avg_ms               1000
+dtype: object, 0)
+Recommended Fix value 22    62471
+Name: total_energy_consumption, dtype: int64
+++++++++++++++++++++++++++++++++++++++++++++++++++
+++++++++++++++++++++++++++++++++++++++++++++++++++
+Bug
+core_freq                        1.267200e+06
+gpu_freq                         3.456000e+05
+emc_freq                         4.080000e+08
+num_cores                        1.000000e+00
+memory_growth                    5.000000e-01
+logical_devices                  2.000000e+00
+scheduler.policy                 0.000000e+00
+vm.swappiness                    1.000000e+02
+vm.vfs_cache_pressure            1.000000e+02
+vm.dirty_background_ratio        1.000000e+01
+vm.drop_caches                   3.000000e+00
+vm.nr_hugepages                  1.000000e+00
+vm.overcommit_ratio              6.000000e+01
+vm.overcommit_memory             0.000000e+00
+vm.overcommit_hugepages          1.000000e+00
+kernel.sched_child_runs_first    1.000000e+00
+kernel.sched_rt_runtime_us       9.500000e+05
+vm.dirty_bytes                   3.000000e+01
+vm.dirty_background_bytes        6.000000e+01
+vm.dirty_ratio                   5.000000e+00
+swap_memory                      4.000000e+00
+kernel.max_pids                  3.276800e+04
+kernel.sched_latency_ns          2.400000e+07
+kernel.sched_nr_migrate          2.560000e+02
+kernel.cpu_time_max_percent      5.000000e+01
+kernel.sched_time_avg_ms         2.000000e+03
+inference_time                   1.459849e+01
+total_energy_consumption         1.559997e+05
+Name: 22, dtype: float64
+++++++++++++++++++++++++++++++++++++++++++++++++++
+initializing DebuggingBaselines class
+[STATUS]: Starting CBI
+++++++++++++++++++++++++++++++++++++++++++++++++++
+Recommended Fix
+(memory_growth                           0.5
+logical_devices                           2
+core_freq                           2265600
+gpu_freq                            2112000
+emc_freq                         1866000000
+num_cores                                 4
+scheduler.policy                          1
+vm.swappiness                            60
+vm.vfs_cache_pressure                   500
+vm.dirty_background_ratio                10
+vm.drop_caches                            0
+vm.nr_hugepages                           1
+vm.overcommit_ratio                      60
+vm.overcommit_memory                      1
+vm.overcommit_hugepages                   2
+kernel.sched_child_runs_first             1
+kernel.sched_rt_runtime_us           500000
+vm.dirty_bytes                           30
+vm.dirty_background_bytes                60
+vm.dirty_ratio                           50
+swap_memory                               1
+kernel.max_pids                       65536
+kernel.sched_latency_ns            24000000
+kernel.sched_nr_migrate                 128
+kernel.cpu_time_max_percent              50
+kernel.sched_time_avg_ms               2000
+dtype: object, 0)
+Recommended Fix value 23    68920
+Name: total_energy_consumption, dtype: int64
+++++++++++++++++++++++++++++++++++++++++++++++++++
+++++++++++++++++++++++++++++++++++++++++++++++++++
+Bug
+core_freq                        8.064000e+05
+gpu_freq                         2.112000e+06
+emc_freq                         1.866000e+09
+num_cores                        1.000000e+00
+memory_growth                    9.000000e-01
+logical_devices                  1.000000e+00
+scheduler.policy                 0.000000e+00
+vm.swappiness                    6.000000e+01
+vm.vfs_cache_pressure            5.000000e+02
+vm.dirty_background_ratio        8.000000e+01
+vm.drop_caches                   3.000000e+00
+vm.nr_hugepages                  2.000000e+00
+vm.overcommit_ratio              6.000000e+01
+vm.overcommit_memory             0.000000e+00
+vm.overcommit_hugepages          1.000000e+00
+kernel.sched_child_runs_first    1.000000e+00
+kernel.sched_rt_runtime_us       9.500000e+05
+vm.dirty_bytes                   3.000000e+01
+vm.dirty_background_bytes        3.000000e+01
+vm.dirty_ratio                   5.000000e+01
+swap_memory                      4.000000e+00
+kernel.max_pids                  6.553600e+04
+kernel.sched_latency_ns          2.400000e+07
+kernel.sched_nr_migrate          1.280000e+02
+kernel.cpu_time_max_percent      1.000000e+02
+kernel.sched_time_avg_ms         2.000000e+03
+inference_time                   1.912633e+01
+total_energy_consumption         1.645331e+05
+Name: 23, dtype: float64
+++++++++++++++++++++++++++++++++++++++++++++++++++
+initializing DebuggingBaselines class
+[STATUS]: Starting CBI
+++++++++++++++++++++++++++++++++++++++++++++++++++
+Recommended Fix
+(memory_growth                           0.5
+logical_devices                           1
+core_freq                           2265600
+gpu_freq                            2112000
+emc_freq                         1866000000
+num_cores                                 4
+scheduler.policy                          0
+vm.swappiness                           100
+vm.vfs_cache_pressure                   100
+vm.dirty_background_ratio                10
+vm.drop_caches                            0
+vm.nr_hugepages                           1
+vm.overcommit_ratio                      60
+vm.overcommit_memory                      1
+vm.overcommit_hugepages                   1
+kernel.sched_child_runs_first             0
+kernel.sched_rt_runtime_us           500000
+vm.dirty_bytes                           60
+vm.dirty_background_bytes                60
+vm.dirty_ratio                           50
+swap_memory                               1
+kernel.max_pids                       65536
+kernel.sched_latency_ns            24000000
+kernel.sched_nr_migrate                 128
+kernel.cpu_time_max_percent             100
+kernel.sched_time_avg_ms               1000
+dtype: object, 0)
+Recommended Fix value 24    64919
+Name: total_energy_consumption, dtype: int64
+++++++++++++++++++++++++++++++++++++++++++++++++++
+++++++++++++++++++++++++++++++++++++++++++++++++++
+Bug
+core_freq                        2.035200e+06
+gpu_freq                         2.688000e+05
+emc_freq                         1.331200e+09
+num_cores                        2.000000e+00
+memory_growth                    9.000000e-01
+logical_devices                  1.000000e+00
+scheduler.policy                 0.000000e+00
+vm.swappiness                    6.000000e+01
+vm.vfs_cache_pressure            1.000000e+02
+vm.dirty_background_ratio        8.000000e+01
+vm.drop_caches                   0.000000e+00
+vm.nr_hugepages                  2.000000e+00
+vm.overcommit_ratio              5.000000e+01
+vm.overcommit_memory             1.000000e+00
+vm.overcommit_hugepages          1.000000e+00
+kernel.sched_child_runs_first    0.000000e+00
+kernel.sched_rt_runtime_us       5.000000e+05
+vm.dirty_bytes                   6.000000e+01
+vm.dirty_background_bytes        6.000000e+01
+vm.dirty_ratio                   5.000000e+01
+swap_memory                      1.000000e+00
+kernel.max_pids                  3.276800e+04
+kernel.sched_latency_ns          9.600000e+07
+kernel.sched_nr_migrate          1.280000e+02
+kernel.cpu_time_max_percent      5.000000e+01
+kernel.sched_time_avg_ms         2.000000e+03
+inference_time                   1.599446e+01
+total_energy_consumption         1.447103e+05
+Name: 24, dtype: float64
+++++++++++++++++++++++++++++++++++++++++++++++++++
+initializing DebuggingBaselines class
+[STATUS]: Starting CBI
+++++++++++++++++++++++++++++++++++++++++++++++++++
+Recommended Fix
+(memory_growth                           0.5
+logical_devices                           2
+core_freq                           2265600
+gpu_freq                            2112000
+emc_freq                         1866000000
+num_cores                                 4
+scheduler.policy                          1
+vm.swappiness                            60
+vm.vfs_cache_pressure                   500
+vm.dirty_background_ratio                10
+vm.drop_caches                            0
+vm.nr_hugepages                           1
+vm.overcommit_ratio                      60
+vm.overcommit_memory                      1
+vm.overcommit_hugepages                   2
+kernel.sched_child_runs_first             1
+kernel.sched_rt_runtime_us           500000
+vm.dirty_bytes                           30
+vm.dirty_background_bytes                60
+vm.dirty_ratio                           50
+swap_memory                               1
+kernel.max_pids                       65536
+kernel.sched_latency_ns            24000000
+kernel.sched_nr_migrate                 128
+kernel.cpu_time_max_percent              50
+kernel.sched_time_avg_ms               2000
+dtype: object, 0)
+Recommended Fix value 25    68499
+Name: total_energy_consumption, dtype: int64
+++++++++++++++++++++++++++++++++++++++++++++++++++
+++++++++++++++++++++++++++++++++++++++++++++++++++
+Bug
+core_freq                        2.112000e+06
+gpu_freq                         5.760000e+05
+emc_freq                         8.000000e+08
+num_cores                        4.000000e+00
+memory_growth                    9.000000e-01
+logical_devices                  2.000000e+00
+scheduler.policy                 0.000000e+00
+vm.swappiness                    6.000000e+01
+vm.vfs_cache_pressure            1.000000e+02
+vm.dirty_background_ratio        1.000000e+01
+vm.drop_caches                   0.000000e+00
+vm.nr_hugepages                  2.000000e+00
+vm.overcommit_ratio              6.000000e+01
+vm.overcommit_memory             1.000000e+00
+vm.overcommit_hugepages          2.000000e+00
+kernel.sched_child_runs_first    1.000000e+00
+kernel.sched_rt_runtime_us       9.500000e+05
+vm.dirty_bytes                   3.000000e+01
+vm.dirty_background_bytes        6.000000e+01
+vm.dirty_ratio                   5.000000e+01
+swap_memory                      1.000000e+00
+kernel.max_pids                  3.276800e+04
+kernel.sched_latency_ns          9.600000e+07
+kernel.sched_nr_migrate          2.560000e+02
+kernel.cpu_time_max_percent      5.000000e+01
+kernel.sched_time_avg_ms         1.000000e+03
+inference_time                   1.984620e+01
+total_energy_consumption         1.650427e+05
+Name: 25, dtype: float64
+++++++++++++++++++++++++++++++++++++++++++++++++++
+initializing DebuggingBaselines class
+[STATUS]: Starting CBI
+++++++++++++++++++++++++++++++++++++++++++++++++++
+Recommended Fix
+(memory_growth                           0.5
+logical_devices                           1
+core_freq                           2265600
+gpu_freq                            2112000
+emc_freq                         1866000000
+num_cores                                 4
+scheduler.policy                          0
+vm.swappiness                            60
+vm.vfs_cache_pressure                   100
+vm.dirty_background_ratio                10
+vm.drop_caches                            0
+vm.nr_hugepages                           1
+vm.overcommit_ratio                      60
+vm.overcommit_memory                      1
+vm.overcommit_hugepages                   2
+kernel.sched_child_runs_first             0
+kernel.sched_rt_runtime_us           500000
+vm.dirty_bytes                           30
+vm.dirty_background_bytes                60
+vm.dirty_ratio                           50
+swap_memory                               1
+kernel.max_pids                       65536
+kernel.sched_latency_ns            24000000
+kernel.sched_nr_migrate                 128
+kernel.cpu_time_max_percent              50
+kernel.sched_time_avg_ms               2000
+dtype: object, 0)
+Recommended Fix value 26    63045
+Name: total_energy_consumption, dtype: int64
+++++++++++++++++++++++++++++++++++++++++++++++++++
+++++++++++++++++++++++++++++++++++++++++++++++++++
+Bug
+core_freq                        8.064000e+05
+gpu_freq                         2.188800e+06
+emc_freq                         1.866000e+09
+num_cores                        2.000000e+00
+memory_growth                    5.000000e-01
+logical_devices                  2.000000e+00
+scheduler.policy                 0.000000e+00
+vm.swappiness                    6.000000e+01
+vm.vfs_cache_pressure            5.000000e+02
+vm.dirty_background_ratio        8.000000e+01
+vm.drop_caches                   3.000000e+00
+vm.nr_hugepages                  2.000000e+00
+vm.overcommit_ratio              5.000000e+01
+vm.overcommit_memory             1.000000e+00
+vm.overcommit_hugepages          2.000000e+00
+kernel.sched_child_runs_first    1.000000e+00
+kernel.sched_rt_runtime_us       9.500000e+05
+vm.dirty_bytes                   3.000000e+01
+vm.dirty_background_bytes        3.000000e+01
+vm.dirty_ratio                   5.000000e+00
+swap_memory                      1.000000e+00
+kernel.max_pids                  3.276800e+04
+kernel.sched_latency_ns          2.400000e+07
+kernel.sched_nr_migrate          1.280000e+02
+kernel.cpu_time_max_percent      5.000000e+01
+kernel.sched_time_avg_ms         2.000000e+03
+inference_time                   2.147543e+01
+total_energy_consumption         1.580184e+05
+Name: 26, dtype: float64
+++++++++++++++++++++++++++++++++++++++++++++++++++
+initializing DebuggingBaselines class
+[STATUS]: Starting CBI
+++++++++++++++++++++++++++++++++++++++++++++++++++
+Recommended Fix
+(memory_growth                           0.5
+logical_devices                           1
+core_freq                           2265600
+gpu_freq                            2112000
+emc_freq                         1866000000
+num_cores                                 4
+scheduler.policy                          0
+vm.swappiness                           100
+vm.vfs_cache_pressure                   100
+vm.dirty_background_ratio                10
+vm.drop_caches                            0
+vm.nr_hugepages                           1
+vm.overcommit_ratio                      60
+vm.overcommit_memory                      1
+vm.overcommit_hugepages                   1
+kernel.sched_child_runs_first             0
+kernel.sched_rt_runtime_us           500000
+vm.dirty_bytes                           60
+vm.dirty_background_bytes                60
+vm.dirty_ratio                           50
+swap_memory                               1
+kernel.max_pids                       65536
+kernel.sched_latency_ns            96000000
+kernel.sched_nr_migrate                 128
+kernel.cpu_time_max_percent              50
+kernel.sched_time_avg_ms               1000
+dtype: object, 0)
+Recommended Fix value 27    60751
+Name: total_energy_consumption, dtype: int64
+++++++++++++++++++++++++++++++++++++++++++++++++++
+++++++++++++++++++++++++++++++++++++++++++++++++++
+Bug
+core_freq                        1.267200e+06
+gpu_freq                         1.920000e+05
+emc_freq                         1.331200e+09
+num_cores                        1.000000e+00
+memory_growth                    5.000000e-01
+logical_devices                  1.000000e+00
+scheduler.policy                 1.000000e+00
+vm.swappiness                    6.000000e+01
+vm.vfs_cache_pressure            1.000000e+02
+vm.dirty_background_ratio        1.000000e+01
+vm.drop_caches                   0.000000e+00
+vm.nr_hugepages                  1.000000e+00
+vm.overcommit_ratio              6.000000e+01
+vm.overcommit_memory             0.000000e+00
+vm.overcommit_hugepages          1.000000e+00
+kernel.sched_child_runs_first    0.000000e+00
+kernel.sched_rt_runtime_us       9.500000e+05
+vm.dirty_bytes                   6.000000e+01
+vm.dirty_background_bytes        6.000000e+01
+vm.dirty_ratio                   5.000000e+00
+swap_memory                      4.000000e+00
+kernel.max_pids                  6.553600e+04
+kernel.sched_latency_ns          9.600000e+07
+kernel.sched_nr_migrate          2.560000e+02
+kernel.cpu_time_max_percent      1.000000e+02
+kernel.sched_time_avg_ms         1.000000e+03
+inference_time                   2.096374e+01
+total_energy_consumption         1.442625e+05
+Name: 27, dtype: float64
+++++++++++++++++++++++++++++++++++++++++++++++++++
+initializing DebuggingBaselines class
+[STATUS]: Starting CBI
+++++++++++++++++++++++++++++++++++++++++++++++++++
+Recommended Fix
+(memory_growth                           0.5
+logical_devices                           1
+core_freq                           2265600
+gpu_freq                            2112000
+emc_freq                         1866000000
+num_cores                                 4
+scheduler.policy                          1
+vm.swappiness                           100
+vm.vfs_cache_pressure                   100
+vm.dirty_background_ratio                10
+vm.drop_caches                            0
+vm.nr_hugepages                           1
+vm.overcommit_ratio                      60
+vm.overcommit_memory                      1
+vm.overcommit_hugepages                   1
+kernel.sched_child_runs_first             0
+kernel.sched_rt_runtime_us           500000
+vm.dirty_bytes                           60
+vm.dirty_background_bytes                60
+vm.dirty_ratio                           50
+swap_memory                               1
+kernel.max_pids                       32768
+kernel.sched_latency_ns            96000000
+kernel.sched_nr_migrate                 128
+kernel.cpu_time_max_percent              50
+kernel.sched_time_avg_ms               1000
+dtype: object, 0)
+Recommended Fix value 28    59293
+Name: total_energy_consumption, dtype: int64
+++++++++++++++++++++++++++++++++++++++++++++++++++
+++++++++++++++++++++++++++++++++++++++++++++++++++
+Bug
+core_freq                        1.651200e+06
+gpu_freq                         1.651200e+06
+emc_freq                         8.000000e+08
+num_cores                        2.000000e+00
+memory_growth                    5.000000e-01
+logical_devices                  1.000000e+00
+scheduler.policy                 1.000000e+00
+vm.swappiness                    1.000000e+02
+vm.vfs_cache_pressure            5.000000e+02
+vm.dirty_background_ratio        8.000000e+01
+vm.drop_caches                   3.000000e+00
+vm.nr_hugepages                  1.000000e+00
+vm.overcommit_ratio              5.000000e+01
+vm.overcommit_memory             1.000000e+00
+vm.overcommit_hugepages          2.000000e+00
+kernel.sched_child_runs_first    0.000000e+00
+kernel.sched_rt_runtime_us       5.000000e+05
+vm.dirty_bytes                   3.000000e+01
+vm.dirty_background_bytes        6.000000e+01
+vm.dirty_ratio                   5.000000e+00
+swap_memory                      1.000000e+00
+kernel.max_pids                  3.276800e+04
+kernel.sched_latency_ns          2.400000e+07
+kernel.sched_nr_migrate          2.560000e+02
+kernel.cpu_time_max_percent      5.000000e+01
+kernel.sched_time_avg_ms         1.000000e+03
+inference_time                   1.618297e+01
+total_energy_consumption         1.414016e+05
+Name: 28, dtype: float64
+++++++++++++++++++++++++++++++++++++++++++++++++++
