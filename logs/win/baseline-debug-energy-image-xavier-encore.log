@@ -1,0 +1,1943 @@
+initializing DebuggingBaselines class
+[STATUS]: Starting Encore
+Processing 2256 combinations | Sampling itemset size 2Processing 36087 combinations | Sampling itemset size 3Processing 528 combinations | Sampling itemset size 4
+++++++++++++++++++++++++++++++++++++++++++++++++++
+Recommended Fix
+memory_growth                           0.5
+logical_devices                           2
+core_freq                        2.1888e+06
+gpu_freq                             268800
+emc_freq                              6e+08
+num_cores                                 2
+scheduler.policy                          0
+vm.swappiness                           100
+vm.vfs_cache_pressure                   500
+vm.dirty_background_ratio                80
+vm.drop_caches                            0
+vm.nr_hugepages                           1
+vm.overcommit_ratio                      60
+vm.overcommit_memory                      1
+vm.overcommit_hugepages                   2
+kernel.sched_child_runs_first             1
+kernel.sched_rt_runtime_us           950000
+vm.dirty_bytes                           30
+vm.dirty_background_bytes                60
+vm.dirty_ratio                           50
+swap_memory                               1
+kernel.max_pids                       32768
+kernel.sched_latency_ns             2.4e+07
+kernel.sched_nr_migrate                 256
+kernel.cpu_time_max_percent             100
+kernel.sched_time_avg_ms               1000
+dtype: object
+Recommended Fix value 29    77628
+Name: total_energy_consumption, dtype: int64
+++++++++++++++++++++++++++++++++++++++++++++++++++
+++++++++++++++++++++++++++++++++++++++++++++++++++
+Bug
+core_freq                        2.188800e+06
+gpu_freq                         2.688000e+05
+emc_freq                         6.000000e+08
+num_cores                        2.000000e+00
+memory_growth                    5.000000e-01
+logical_devices                  2.000000e+00
+scheduler.policy                 0.000000e+00
+vm.swappiness                    1.000000e+02
+vm.vfs_cache_pressure            5.000000e+02
+vm.dirty_background_ratio        8.000000e+01
+vm.drop_caches                   0.000000e+00
+vm.nr_hugepages                  1.000000e+00
+vm.overcommit_ratio              5.000000e+01
+vm.overcommit_memory             1.000000e+00
+vm.overcommit_hugepages          2.000000e+00
+kernel.sched_child_runs_first    1.000000e+00
+kernel.sched_rt_runtime_us       9.500000e+05
+vm.dirty_bytes                   3.000000e+01
+vm.dirty_background_bytes        6.000000e+01
+vm.dirty_ratio                   5.000000e+01
+swap_memory                      1.000000e+00
+kernel.max_pids                  3.276800e+04
+kernel.sched_latency_ns          2.400000e+07
+kernel.sched_nr_migrate          1.280000e+02
+kernel.cpu_time_max_percent      1.000000e+02
+kernel.sched_time_avg_ms         1.000000e+03
+inference_time                   4.012014e+01
+total_energy_consumption         1.500357e+05
+Name: 0, dtype: float64
+++++++++++++++++++++++++++++++++++++++++++++++++++
+initializing DebuggingBaselines class
+[STATUS]: Starting Encore
+Processing 2256 combinations | Sampling itemset size 2Processing 36111 combinations | Sampling itemset size 3Processing 416 combinations | Sampling itemset size 4
+++++++++++++++++++++++++++++++++++++++++++++++++++
+Recommended Fix
+memory_growth                           0.9
+logical_devices                           1
+core_freq                        1.8816e+06
+gpu_freq                         1.1904e+06
+emc_freq                          2.133e+09
+num_cores                                 3
+scheduler.policy                          0
+vm.swappiness                            60
+vm.vfs_cache_pressure                   100
+vm.dirty_background_ratio                80
+vm.drop_caches                            3
+vm.nr_hugepages                           2
+vm.overcommit_ratio                      60
+vm.overcommit_memory                      1
+vm.overcommit_hugepages                   2
+kernel.sched_child_runs_first             1
+kernel.sched_rt_runtime_us           500000
+vm.dirty_bytes                           60
+vm.dirty_background_bytes                60
+vm.dirty_ratio                            5
+swap_memory                               4
+kernel.max_pids                       65536
+kernel.sched_latency_ns             2.4e+07
+kernel.sched_nr_migrate                 256
+kernel.cpu_time_max_percent             100
+kernel.sched_time_avg_ms               2000
+dtype: object
+Recommended Fix value 30    80743
+Name: total_energy_consumption, dtype: int64
+++++++++++++++++++++++++++++++++++++++++++++++++++
+++++++++++++++++++++++++++++++++++++++++++++++++++
+Bug
+core_freq                        1.881600e+06
+gpu_freq                         1.190400e+06
+emc_freq                         2.133000e+09
+num_cores                        3.000000e+00
+memory_growth                    9.000000e-01
+logical_devices                  1.000000e+00
+scheduler.policy                 0.000000e+00
+vm.swappiness                    6.000000e+01
+vm.vfs_cache_pressure            1.000000e+02
+vm.dirty_background_ratio        8.000000e+01
+vm.drop_caches                   3.000000e+00
+vm.nr_hugepages                  2.000000e+00
+vm.overcommit_ratio              5.000000e+01
+vm.overcommit_memory             1.000000e+00
+vm.overcommit_hugepages          2.000000e+00
+kernel.sched_child_runs_first    1.000000e+00
+kernel.sched_rt_runtime_us       5.000000e+05
+vm.dirty_bytes                   6.000000e+01
+vm.dirty_background_bytes        6.000000e+01
+vm.dirty_ratio                   5.000000e+00
+swap_memory                      4.000000e+00
+kernel.max_pids                  6.553600e+04
+kernel.sched_latency_ns          2.400000e+07
+kernel.sched_nr_migrate          2.560000e+02
+kernel.cpu_time_max_percent      1.000000e+02
+kernel.sched_time_avg_ms         2.000000e+03
+inference_time                   3.713291e+01
+total_energy_consumption         1.643630e+05
+Name: 1, dtype: float64
+++++++++++++++++++++++++++++++++++++++++++++++++++
+initializing DebuggingBaselines class
+[STATUS]: Starting Encore
+Processing 2256 combinations | Sampling itemset size 2Processing 36030 combinations | Sampling itemset size 3Processing 388 combinations | Sampling itemset size 4
+++++++++++++++++++++++++++++++++++++++++++++++++++
+Recommended Fix
+memory_growth                           0.5
+logical_devices                           2
+core_freq                         1.344e+06
+gpu_freq                         1.2672e+06
+emc_freq                              8e+08
+num_cores                                 4
+scheduler.policy                          0
+vm.swappiness                            60
+vm.vfs_cache_pressure                   500
+vm.dirty_background_ratio                10
+vm.drop_caches                            3
+vm.nr_hugepages                           1
+vm.overcommit_ratio                      50
+vm.overcommit_memory                      0
+vm.overcommit_hugepages                   2
+kernel.sched_child_runs_first             1
+kernel.sched_rt_runtime_us           950000
+vm.dirty_bytes                           60
+vm.dirty_background_bytes                60
+vm.dirty_ratio                            5
+swap_memory                               4
+kernel.max_pids                       65536
+kernel.sched_latency_ns             2.4e+07
+kernel.sched_nr_migrate                 128
+kernel.cpu_time_max_percent              50
+kernel.sched_time_avg_ms               1000
+dtype: object
+Recommended Fix value 31    78029
+Name: total_energy_consumption, dtype: int64
+++++++++++++++++++++++++++++++++++++++++++++++++++
+++++++++++++++++++++++++++++++++++++++++++++++++++
+Bug
+core_freq                        1.344000e+06
+gpu_freq                         1.267200e+06
+emc_freq                         8.000000e+08
+num_cores                        4.000000e+00
+memory_growth                    5.000000e-01
+logical_devices                  2.000000e+00
+scheduler.policy                 0.000000e+00
+vm.swappiness                    6.000000e+01
+vm.vfs_cache_pressure            5.000000e+02
+vm.dirty_background_ratio        1.000000e+01
+vm.drop_caches                   3.000000e+00
+vm.nr_hugepages                  1.000000e+00
+vm.overcommit_ratio              5.000000e+01
+vm.overcommit_memory             0.000000e+00
+vm.overcommit_hugepages          2.000000e+00
+kernel.sched_child_runs_first    1.000000e+00
+kernel.sched_rt_runtime_us       9.500000e+05
+vm.dirty_bytes                   6.000000e+01
+vm.dirty_background_bytes        6.000000e+01
+vm.dirty_ratio                   5.000000e+00
+swap_memory                      4.000000e+00
+kernel.max_pids                  6.553600e+04
+kernel.sched_latency_ns          2.400000e+07
+kernel.sched_nr_migrate          1.280000e+02
+kernel.cpu_time_max_percent      5.000000e+01
+kernel.sched_time_avg_ms         1.000000e+03
+inference_time                   3.698147e+01
+total_energy_consumption         1.561456e+05
+Name: 2, dtype: float64
+++++++++++++++++++++++++++++++++++++++++++++++++++
+initializing DebuggingBaselines class
+[STATUS]: Starting Encore
+Processing 2256 combinations | Sampling itemset size 2Processing 36636 combinations | Sampling itemset size 3Processing 452 combinations | Sampling itemset size 4
+++++++++++++++++++++++++++++++++++++++++++++++++++
+Recommended Fix
+memory_growth                           0.5
+logical_devices                           2
+core_freq                            115200
+gpu_freq                         1.1136e+06
+emc_freq                           2.04e+08
+num_cores                                 2
+scheduler.policy                          0
+vm.swappiness                           100
+vm.vfs_cache_pressure                   100
+vm.dirty_background_ratio                10
+vm.drop_caches                            3
+vm.nr_hugepages                           2
+vm.overcommit_ratio                      60
+vm.overcommit_memory                      0
+vm.overcommit_hugepages                   2
+kernel.sched_child_runs_first             1
+kernel.sched_rt_runtime_us           950000
+vm.dirty_bytes                           60
+vm.dirty_background_bytes                60
+vm.dirty_ratio                            5
+swap_memory                               1
+kernel.max_pids                       65536
+kernel.sched_latency_ns             2.4e+07
+kernel.sched_nr_migrate                 256
+kernel.cpu_time_max_percent              50
+kernel.sched_time_avg_ms               1000
+dtype: object
+Recommended Fix value 32    88122
+Name: total_energy_consumption, dtype: int64
+++++++++++++++++++++++++++++++++++++++++++++++++++
+++++++++++++++++++++++++++++++++++++++++++++++++++
+Bug
+core_freq                        1.152000e+05
+gpu_freq                         1.113600e+06
+emc_freq                         2.040000e+08
+num_cores                        2.000000e+00
+memory_growth                    5.000000e-01
+logical_devices                  2.000000e+00
+scheduler.policy                 0.000000e+00
+vm.swappiness                    1.000000e+02
+vm.vfs_cache_pressure            1.000000e+02
+vm.dirty_background_ratio        1.000000e+01
+vm.drop_caches                   3.000000e+00
+vm.nr_hugepages                  2.000000e+00
+vm.overcommit_ratio              6.000000e+01
+vm.overcommit_memory             0.000000e+00
+vm.overcommit_hugepages          2.000000e+00
+kernel.sched_child_runs_first    1.000000e+00
+kernel.sched_rt_runtime_us       9.500000e+05
+vm.dirty_bytes                   6.000000e+01
+vm.dirty_background_bytes        6.000000e+01
+vm.dirty_ratio                   5.000000e+00
+swap_memory                      1.000000e+00
+kernel.max_pids                  6.553600e+04
+kernel.sched_latency_ns          2.400000e+07
+kernel.sched_nr_migrate          2.560000e+02
+kernel.cpu_time_max_percent      5.000000e+01
+kernel.sched_time_avg_ms         1.000000e+03
+inference_time                   3.803372e+01
+total_energy_consumption         1.729807e+05
+Name: 3, dtype: float64
+++++++++++++++++++++++++++++++++++++++++++++++++++
+initializing DebuggingBaselines class
+[STATUS]: Starting Encore
+Processing 2256 combinations | Sampling itemset size 2Processing 36042 combinations | Sampling itemset size 3Processing 320 combinations | Sampling itemset size 4
+++++++++++++++++++++++++++++++++++++++++++++++++++
+Recommended Fix
+memory_growth                           0.9
+logical_devices                           2
+core_freq                        2.2656e+06
+gpu_freq                             268800
+emc_freq                         1.0656e+09
+num_cores                                 3
+scheduler.policy                          0
+vm.swappiness                            60
+vm.vfs_cache_pressure                   100
+vm.dirty_background_ratio                10
+vm.drop_caches                            3
+vm.nr_hugepages                           1
+vm.overcommit_ratio                      60
+vm.overcommit_memory                      0
+vm.overcommit_hugepages                   2
+kernel.sched_child_runs_first             1
+kernel.sched_rt_runtime_us           950000
+vm.dirty_bytes                           60
+vm.dirty_background_bytes                30
+vm.dirty_ratio                            5
+swap_memory                               4
+kernel.max_pids                       32768
+kernel.sched_latency_ns             2.4e+07
+kernel.sched_nr_migrate                 256
+kernel.cpu_time_max_percent             100
+kernel.sched_time_avg_ms               2000
+dtype: object
+Recommended Fix value 33    80428
+Name: total_energy_consumption, dtype: int64
+++++++++++++++++++++++++++++++++++++++++++++++++++
+++++++++++++++++++++++++++++++++++++++++++++++++++
+Bug
+core_freq                        2.265600e+06
+gpu_freq                         2.688000e+05
+emc_freq                         1.065600e+09
+num_cores                        3.000000e+00
+memory_growth                    9.000000e-01
+logical_devices                  2.000000e+00
+scheduler.policy                 0.000000e+00
+vm.swappiness                    6.000000e+01
+vm.vfs_cache_pressure            1.000000e+02
+vm.dirty_background_ratio        1.000000e+01
+vm.drop_caches                   3.000000e+00
+vm.nr_hugepages                  1.000000e+00
+vm.overcommit_ratio              5.000000e+01
+vm.overcommit_memory             0.000000e+00
+vm.overcommit_hugepages          2.000000e+00
+kernel.sched_child_runs_first    1.000000e+00
+kernel.sched_rt_runtime_us       9.500000e+05
+vm.dirty_bytes                   6.000000e+01
+vm.dirty_background_bytes        3.000000e+01
+vm.dirty_ratio                   5.000000e+00
+swap_memory                      4.000000e+00
+kernel.max_pids                  3.276800e+04
+kernel.sched_latency_ns          2.400000e+07
+kernel.sched_nr_migrate          2.560000e+02
+kernel.cpu_time_max_percent      1.000000e+02
+kernel.sched_time_avg_ms         2.000000e+03
+inference_time                   3.799615e+01
+total_energy_consumption         1.612360e+05
+Name: 4, dtype: float64
+++++++++++++++++++++++++++++++++++++++++++++++++++
+initializing DebuggingBaselines class
+[STATUS]: Starting Encore
+Processing 2256 combinations | Sampling itemset size 2Processing 36030 combinations | Sampling itemset size 3Processing 388 combinations | Sampling itemset size 4
+++++++++++++++++++++++++++++++++++++++++++++++++++
+Recommended Fix
+memory_growth                           0.5
+logical_devices                           2
+core_freq                        2.2656e+06
+gpu_freq                          1.728e+06
+emc_freq                           2.04e+08
+num_cores                                 2
+scheduler.policy                          0
+vm.swappiness                           100
+vm.vfs_cache_pressure                   500
+vm.dirty_background_ratio                10
+vm.drop_caches                            0
+vm.nr_hugepages                           2
+vm.overcommit_ratio                      60
+vm.overcommit_memory                      0
+vm.overcommit_hugepages                   1
+kernel.sched_child_runs_first             0
+kernel.sched_rt_runtime_us           500000
+vm.dirty_bytes                           30
+vm.dirty_background_bytes                30
+vm.dirty_ratio                            5
+swap_memory                               4
+kernel.max_pids                       32768
+kernel.sched_latency_ns             2.4e+07
+kernel.sched_nr_migrate                 256
+kernel.cpu_time_max_percent             100
+kernel.sched_time_avg_ms               1000
+dtype: object
+Recommended Fix value 34    78306
+Name: total_energy_consumption, dtype: int64
+++++++++++++++++++++++++++++++++++++++++++++++++++
+++++++++++++++++++++++++++++++++++++++++++++++++++
+Bug
+core_freq                        2.265600e+06
+gpu_freq                         1.728000e+06
+emc_freq                         2.040000e+08
+num_cores                        2.000000e+00
+memory_growth                    5.000000e-01
+logical_devices                  2.000000e+00
+scheduler.policy                 0.000000e+00
+vm.swappiness                    1.000000e+02
+vm.vfs_cache_pressure            5.000000e+02
+vm.dirty_background_ratio        8.000000e+01
+vm.drop_caches                   0.000000e+00
+vm.nr_hugepages                  2.000000e+00
+vm.overcommit_ratio              6.000000e+01
+vm.overcommit_memory             0.000000e+00
+vm.overcommit_hugepages          1.000000e+00
+kernel.sched_child_runs_first    0.000000e+00
+kernel.sched_rt_runtime_us       5.000000e+05
+vm.dirty_bytes                   3.000000e+01
+vm.dirty_background_bytes        3.000000e+01
+vm.dirty_ratio                   5.000000e+00
+swap_memory                      4.000000e+00
+kernel.max_pids                  3.276800e+04
+kernel.sched_latency_ns          2.400000e+07
+kernel.sched_nr_migrate          2.560000e+02
+kernel.cpu_time_max_percent      1.000000e+02
+kernel.sched_time_avg_ms         1.000000e+03
+inference_time                   3.503192e+01
+total_energy_consumption         1.564901e+05
+Name: 5, dtype: float64
+++++++++++++++++++++++++++++++++++++++++++++++++++
+initializing DebuggingBaselines class
+[STATUS]: Starting Encore
+Processing 2256 combinations | Sampling itemset size 2Processing 36636 combinations | Sampling itemset size 3Processing 452 combinations | Sampling itemset size 4
+++++++++++++++++++++++++++++++++++++++++++++++++++
+Recommended Fix
+memory_growth                           0.9
+logical_devices                           2
+core_freq                        1.1136e+06
+gpu_freq                         1.4208e+06
+emc_freq                              6e+08
+num_cores                                 3
+scheduler.policy                          0
+vm.swappiness                           100
+vm.vfs_cache_pressure                   100
+vm.dirty_background_ratio                10
+vm.drop_caches                            3
+vm.nr_hugepages                           2
+vm.overcommit_ratio                      50
+vm.overcommit_memory                      0
+vm.overcommit_hugepages                   1
+kernel.sched_child_runs_first             1
+kernel.sched_rt_runtime_us           950000
+vm.dirty_bytes                           30
+vm.dirty_background_bytes                30
+vm.dirty_ratio                            5
+swap_memory                               4
+kernel.max_pids                       32768
+kernel.sched_latency_ns             9.6e+07
+kernel.sched_nr_migrate                 128
+kernel.cpu_time_max_percent              50
+kernel.sched_time_avg_ms               1000
+dtype: object
+Recommended Fix value 35    86667
+Name: total_energy_consumption, dtype: int64
+++++++++++++++++++++++++++++++++++++++++++++++++++
+++++++++++++++++++++++++++++++++++++++++++++++++++
+Bug
+core_freq                        1.113600e+06
+gpu_freq                         1.420800e+06
+emc_freq                         6.000000e+08
+num_cores                        3.000000e+00
+memory_growth                    9.000000e-01
+logical_devices                  2.000000e+00
+scheduler.policy                 0.000000e+00
+vm.swappiness                    1.000000e+02
+vm.vfs_cache_pressure            1.000000e+02
+vm.dirty_background_ratio        8.000000e+01
+vm.drop_caches                   3.000000e+00
+vm.nr_hugepages                  2.000000e+00
+vm.overcommit_ratio              5.000000e+01
+vm.overcommit_memory             0.000000e+00
+vm.overcommit_hugepages          1.000000e+00
+kernel.sched_child_runs_first    1.000000e+00
+kernel.sched_rt_runtime_us       9.500000e+05
+vm.dirty_bytes                   3.000000e+01
+vm.dirty_background_bytes        3.000000e+01
+vm.dirty_ratio                   5.000000e+01
+swap_memory                      4.000000e+00
+kernel.max_pids                  3.276800e+04
+kernel.sched_latency_ns          9.600000e+07
+kernel.sched_nr_migrate          1.280000e+02
+kernel.cpu_time_max_percent      5.000000e+01
+kernel.sched_time_avg_ms         1.000000e+03
+inference_time                   3.707986e+01
+total_energy_consumption         1.716020e+05
+Name: 6, dtype: float64
+++++++++++++++++++++++++++++++++++++++++++++++++++
+initializing DebuggingBaselines class
+[STATUS]: Starting Encore
+Processing 2256 combinations | Sampling itemset size 2Processing 35874 combinations | Sampling itemset size 3Processing 808 combinations | Sampling itemset size 4
+++++++++++++++++++++++++++++++++++++++++++++++++++
+Recommended Fix
+memory_growth                           0.5
+logical_devices                           1
+core_freq                            729600
+gpu_freq                         2.2656e+06
+emc_freq                              8e+08
+num_cores                                 4
+scheduler.policy                          0
+vm.swappiness                           100
+vm.vfs_cache_pressure                   100
+vm.dirty_background_ratio                10
+vm.drop_caches                            3
+vm.nr_hugepages                           2
+vm.overcommit_ratio                      60
+vm.overcommit_memory                      1
+vm.overcommit_hugepages                   1
+kernel.sched_child_runs_first             0
+kernel.sched_rt_runtime_us           950000
+vm.dirty_bytes                           60
+vm.dirty_background_bytes                30
+vm.dirty_ratio                           50
+swap_memory                               1
+kernel.max_pids                       65536
+kernel.sched_latency_ns             9.6e+07
+kernel.sched_nr_migrate                 256
+kernel.cpu_time_max_percent             100
+kernel.sched_time_avg_ms               1000
+dtype: object
+Recommended Fix value 36    67589
+Name: total_energy_consumption, dtype: int64
+++++++++++++++++++++++++++++++++++++++++++++++++++
+++++++++++++++++++++++++++++++++++++++++++++++++++
+Bug
+core_freq                        7.296000e+05
+gpu_freq                         2.265600e+06
+emc_freq                         8.000000e+08
+num_cores                        4.000000e+00
+memory_growth                    5.000000e-01
+logical_devices                  1.000000e+00
+scheduler.policy                 0.000000e+00
+vm.swappiness                    1.000000e+02
+vm.vfs_cache_pressure            1.000000e+02
+vm.dirty_background_ratio        1.000000e+01
+vm.drop_caches                   3.000000e+00
+vm.nr_hugepages                  2.000000e+00
+vm.overcommit_ratio              6.000000e+01
+vm.overcommit_memory             0.000000e+00
+vm.overcommit_hugepages          2.000000e+00
+kernel.sched_child_runs_first    0.000000e+00
+kernel.sched_rt_runtime_us       9.500000e+05
+vm.dirty_bytes                   6.000000e+01
+vm.dirty_background_bytes        3.000000e+01
+vm.dirty_ratio                   5.000000e+01
+swap_memory                      1.000000e+00
+kernel.max_pids                  6.553600e+04
+kernel.sched_latency_ns          9.600000e+07
+kernel.sched_nr_migrate          2.560000e+02
+kernel.cpu_time_max_percent      1.000000e+02
+kernel.sched_time_avg_ms         1.000000e+03
+inference_time                   4.020354e+01
+total_energy_consumption         1.404698e+05
+Name: 7, dtype: float64
+++++++++++++++++++++++++++++++++++++++++++++++++++
+initializing DebuggingBaselines class
+[STATUS]: Starting Encore
+Processing 2256 combinations | Sampling itemset size 2Processing 36042 combinations | Sampling itemset size 3Processing 320 combinations | Sampling itemset size 4
+++++++++++++++++++++++++++++++++++++++++++++++++++
+Recommended Fix
+memory_growth                        0.9
+logical_devices                        2
+core_freq                         192000
+gpu_freq                          883200
+emc_freq                           8e+08
+num_cores                              2
+scheduler.policy                       0
+vm.swappiness                         60
+vm.vfs_cache_pressure                100
+vm.dirty_background_ratio             80
+vm.drop_caches                         3
+vm.nr_hugepages                        2
+vm.overcommit_ratio                   60
+vm.overcommit_memory                   1
+vm.overcommit_hugepages                2
+kernel.sched_child_runs_first          1
+kernel.sched_rt_runtime_us        950000
+vm.dirty_bytes                        30
+vm.dirty_background_bytes             60
+vm.dirty_ratio                         5
+swap_memory                            4
+kernel.max_pids                    65536
+kernel.sched_latency_ns          2.4e+07
+kernel.sched_nr_migrate              256
+kernel.cpu_time_max_percent           50
+kernel.sched_time_avg_ms            2000
+dtype: object
+Recommended Fix value 37    81806
+Name: total_energy_consumption, dtype: int64
+++++++++++++++++++++++++++++++++++++++++++++++++++
+++++++++++++++++++++++++++++++++++++++++++++++++++
+Bug
+core_freq                        1.920000e+05
+gpu_freq                         8.832000e+05
+emc_freq                         8.000000e+08
+num_cores                        2.000000e+00
+memory_growth                    9.000000e-01
+logical_devices                  2.000000e+00
+scheduler.policy                 0.000000e+00
+vm.swappiness                    6.000000e+01
+vm.vfs_cache_pressure            1.000000e+02
+vm.dirty_background_ratio        8.000000e+01
+vm.drop_caches                   3.000000e+00
+vm.nr_hugepages                  2.000000e+00
+vm.overcommit_ratio              6.000000e+01
+vm.overcommit_memory             1.000000e+00
+vm.overcommit_hugepages          2.000000e+00
+kernel.sched_child_runs_first    1.000000e+00
+kernel.sched_rt_runtime_us       9.500000e+05
+vm.dirty_bytes                   3.000000e+01
+vm.dirty_background_bytes        6.000000e+01
+vm.dirty_ratio                   5.000000e+00
+swap_memory                      4.000000e+00
+kernel.max_pids                  6.553600e+04
+kernel.sched_latency_ns          2.400000e+07
+kernel.sched_nr_migrate          1.280000e+02
+kernel.cpu_time_max_percent      5.000000e+01
+kernel.sched_time_avg_ms         2.000000e+03
+inference_time                   3.460398e+01
+total_energy_consumption         1.620474e+05
+Name: 8, dtype: float64
+++++++++++++++++++++++++++++++++++++++++++++++++++
+initializing DebuggingBaselines class
+[STATUS]: Starting Encore
+Processing 2256 combinations | Sampling itemset size 2Processing 36327 combinations | Sampling itemset size 3Processing 452 combinations | Sampling itemset size 4
+++++++++++++++++++++++++++++++++++++++++++++++++++
+Recommended Fix
+memory_growth                           0.9
+logical_devices                           2
+core_freq                            422400
+gpu_freq                             345600
+emc_freq                         1.0656e+09
+num_cores                                 2
+scheduler.policy                          0
+vm.swappiness                            60
+vm.vfs_cache_pressure                   100
+vm.dirty_background_ratio                10
+vm.drop_caches                            3
+vm.nr_hugepages                           2
+vm.overcommit_ratio                      60
+vm.overcommit_memory                      1
+vm.overcommit_hugepages                   1
+kernel.sched_child_runs_first             1
+kernel.sched_rt_runtime_us           950000
+vm.dirty_bytes                           60
+vm.dirty_background_bytes                60
+vm.dirty_ratio                            5
+swap_memory                               1
+kernel.max_pids                       65536
+kernel.sched_latency_ns             2.4e+07
+kernel.sched_nr_migrate                 128
+kernel.cpu_time_max_percent              50
+kernel.sched_time_avg_ms               1000
+dtype: object
+Recommended Fix value 38    86553
+Name: total_energy_consumption, dtype: int64
+++++++++++++++++++++++++++++++++++++++++++++++++++
+++++++++++++++++++++++++++++++++++++++++++++++++++
+Bug
+core_freq                        4.224000e+05
+gpu_freq                         3.456000e+05
+emc_freq                         1.065600e+09
+num_cores                        2.000000e+00
+memory_growth                    9.000000e-01
+logical_devices                  2.000000e+00
+scheduler.policy                 0.000000e+00
+vm.swappiness                    6.000000e+01
+vm.vfs_cache_pressure            1.000000e+02
+vm.dirty_background_ratio        8.000000e+01
+vm.drop_caches                   3.000000e+00
+vm.nr_hugepages                  2.000000e+00
+vm.overcommit_ratio              6.000000e+01
+vm.overcommit_memory             1.000000e+00
+vm.overcommit_hugepages          1.000000e+00
+kernel.sched_child_runs_first    1.000000e+00
+kernel.sched_rt_runtime_us       9.500000e+05
+vm.dirty_bytes                   6.000000e+01
+vm.dirty_background_bytes        6.000000e+01
+vm.dirty_ratio                   5.000000e+00
+swap_memory                      1.000000e+00
+kernel.max_pids                  6.553600e+04
+kernel.sched_latency_ns          2.400000e+07
+kernel.sched_nr_migrate          1.280000e+02
+kernel.cpu_time_max_percent      5.000000e+01
+kernel.sched_time_avg_ms         1.000000e+03
+inference_time                   1.469837e+01
+total_energy_consumption         1.696746e+05
+Name: 9, dtype: float64
+++++++++++++++++++++++++++++++++++++++++++++++++++
+initializing DebuggingBaselines class
+[STATUS]: Starting Encore
+Processing 2256 combinations | Sampling itemset size 2Processing 36153 combinations | Sampling itemset size 3Processing 528 combinations | Sampling itemset size 4
+++++++++++++++++++++++++++++++++++++++++++++++++++
+Recommended Fix
+memory_growth                          0.5
+logical_devices                          2
+core_freq                           729600
+gpu_freq                         1.728e+06
+emc_freq                          4.08e+08
+num_cores                                1
+scheduler.policy                         1
+vm.swappiness                          100
+vm.vfs_cache_pressure                  500
+vm.dirty_background_ratio               10
+vm.drop_caches                           3
+vm.nr_hugepages                          1
+vm.overcommit_ratio                     60
+vm.overcommit_memory                     1
+vm.overcommit_hugepages                  1
+kernel.sched_child_runs_first            0
+kernel.sched_rt_runtime_us          950000
+vm.dirty_bytes                          60
+vm.dirty_background_bytes               60
+vm.dirty_ratio                           5
+swap_memory                              4
+kernel.max_pids                      65536
+kernel.sched_latency_ns            9.6e+07
+kernel.sched_nr_migrate                128
+kernel.cpu_time_max_percent             50
+kernel.sched_time_avg_ms              2000
+dtype: object
+Recommended Fix value 39    74445
+Name: total_energy_consumption, dtype: int64
+++++++++++++++++++++++++++++++++++++++++++++++++++
+++++++++++++++++++++++++++++++++++++++++++++++++++
+Bug
+core_freq                        7.296000e+05
+gpu_freq                         1.728000e+06
+emc_freq                         4.080000e+08
+num_cores                        1.000000e+00
+memory_growth                    5.000000e-01
+logical_devices                  2.000000e+00
+scheduler.policy                 1.000000e+00
+vm.swappiness                    1.000000e+02
+vm.vfs_cache_pressure            5.000000e+02
+vm.dirty_background_ratio        1.000000e+01
+vm.drop_caches                   3.000000e+00
+vm.nr_hugepages                  1.000000e+00
+vm.overcommit_ratio              6.000000e+01
+vm.overcommit_memory             1.000000e+00
+vm.overcommit_hugepages          1.000000e+00
+kernel.sched_child_runs_first    0.000000e+00
+kernel.sched_rt_runtime_us       9.500000e+05
+vm.dirty_bytes                   6.000000e+01
+vm.dirty_background_bytes        6.000000e+01
+vm.dirty_ratio                   5.000000e+01
+swap_memory                      4.000000e+00
+kernel.max_pids                  6.553600e+04
+kernel.sched_latency_ns          9.600000e+07
+kernel.sched_nr_migrate          1.280000e+02
+kernel.cpu_time_max_percent      5.000000e+01
+kernel.sched_time_avg_ms         2.000000e+03
+inference_time                   1.193519e+01
+total_energy_consumption         1.527738e+05
+Name: 10, dtype: float64
+++++++++++++++++++++++++++++++++++++++++++++++++++
+initializing DebuggingBaselines class
+[STATUS]: Starting Encore
+Processing 2256 combinations | Sampling itemset size 2Processing 36042 combinations | Sampling itemset size 3Processing 320 combinations | Sampling itemset size 4
+++++++++++++++++++++++++++++++++++++++++++++++++++
+Recommended Fix
+memory_growth                          0.5
+logical_devices                          1
+core_freq                           960000
+gpu_freq                         2.112e+06
+emc_freq                         1.866e+09
+num_cores                                2
+scheduler.policy                         1
+vm.swappiness                           60
+vm.vfs_cache_pressure                  100
+vm.dirty_background_ratio               10
+vm.drop_caches                           0
+vm.nr_hugepages                          1
+vm.overcommit_ratio                     60
+vm.overcommit_memory                     0
+vm.overcommit_hugepages                  2
+kernel.sched_child_runs_first            1
+kernel.sched_rt_runtime_us          950000
+vm.dirty_bytes                          60
+vm.dirty_background_bytes               30
+vm.dirty_ratio                          50
+swap_memory                              4
+kernel.max_pids                      65536
+kernel.sched_latency_ns            9.6e+07
+kernel.sched_nr_migrate                256
+kernel.cpu_time_max_percent            100
+kernel.sched_time_avg_ms              1000
+dtype: object
+Recommended Fix value 40    80846
+Name: total_energy_consumption, dtype: int64
+++++++++++++++++++++++++++++++++++++++++++++++++++
+++++++++++++++++++++++++++++++++++++++++++++++++++
+Bug
+core_freq                        9.600000e+05
+gpu_freq                         2.112000e+06
+emc_freq                         1.866000e+09
+num_cores                        2.000000e+00
+memory_growth                    5.000000e-01
+logical_devices                  1.000000e+00
+scheduler.policy                 1.000000e+00
+vm.swappiness                    6.000000e+01
+vm.vfs_cache_pressure            1.000000e+02
+vm.dirty_background_ratio        1.000000e+01
+vm.drop_caches                   0.000000e+00
+vm.nr_hugepages                  1.000000e+00
+vm.overcommit_ratio              6.000000e+01
+vm.overcommit_memory             0.000000e+00
+vm.overcommit_hugepages          2.000000e+00
+kernel.sched_child_runs_first    1.000000e+00
+kernel.sched_rt_runtime_us       9.500000e+05
+vm.dirty_bytes                   6.000000e+01
+vm.dirty_background_bytes        3.000000e+01
+vm.dirty_ratio                   5.000000e+01
+swap_memory                      4.000000e+00
+kernel.max_pids                  6.553600e+04
+kernel.sched_latency_ns          9.600000e+07
+kernel.sched_nr_migrate          2.560000e+02
+kernel.cpu_time_max_percent      1.000000e+02
+kernel.sched_time_avg_ms         1.000000e+03
+inference_time                   1.829364e+01
+total_energy_consumption         1.619874e+05
+Name: 11, dtype: float64
+++++++++++++++++++++++++++++++++++++++++++++++++++
+initializing DebuggingBaselines class
+[STATUS]: Starting Encore
+Processing 2256 combinations | Sampling itemset size 2Processing 36240 combinations | Sampling itemset size 3Processing 444 combinations | Sampling itemset size 4
+++++++++++++++++++++++++++++++++++++++++++++++++++
+Recommended Fix
+memory_growth                           0.9
+logical_devices                           2
+core_freq                        1.0368e+06
+gpu_freq                             422400
+emc_freq                          6.656e+08
+num_cores                                 2
+scheduler.policy                          0
+vm.swappiness                           100
+vm.vfs_cache_pressure                   500
+vm.dirty_background_ratio                10
+vm.drop_caches                            3
+vm.nr_hugepages                           2
+vm.overcommit_ratio                      60
+vm.overcommit_memory                      1
+vm.overcommit_hugepages                   2
+kernel.sched_child_runs_first             1
+kernel.sched_rt_runtime_us           950000
+vm.dirty_bytes                           60
+vm.dirty_background_bytes                30
+vm.dirty_ratio                            5
+swap_memory                               1
+kernel.max_pids                       65536
+kernel.sched_latency_ns             2.4e+07
+kernel.sched_nr_migrate                 256
+kernel.cpu_time_max_percent              50
+kernel.sched_time_avg_ms               2000
+dtype: object
+Recommended Fix value 41    84423
+Name: total_energy_consumption, dtype: int64
+++++++++++++++++++++++++++++++++++++++++++++++++++
+++++++++++++++++++++++++++++++++++++++++++++++++++
+Bug
+core_freq                        1.036800e+06
+gpu_freq                         4.224000e+05
+emc_freq                         6.656000e+08
+num_cores                        2.000000e+00
+memory_growth                    9.000000e-01
+logical_devices                  2.000000e+00
+scheduler.policy                 0.000000e+00
+vm.swappiness                    1.000000e+02
+vm.vfs_cache_pressure            5.000000e+02
+vm.dirty_background_ratio        1.000000e+01
+vm.drop_caches                   3.000000e+00
+vm.nr_hugepages                  2.000000e+00
+vm.overcommit_ratio              6.000000e+01
+vm.overcommit_memory             1.000000e+00
+vm.overcommit_hugepages          2.000000e+00
+kernel.sched_child_runs_first    1.000000e+00
+kernel.sched_rt_runtime_us       9.500000e+05
+vm.dirty_bytes                   6.000000e+01
+vm.dirty_background_bytes        3.000000e+01
+vm.dirty_ratio                   5.000000e+00
+swap_memory                      1.000000e+00
+kernel.max_pids                  6.553600e+04
+kernel.sched_latency_ns          2.400000e+07
+kernel.sched_nr_migrate          2.560000e+02
+kernel.cpu_time_max_percent      5.000000e+01
+kernel.sched_time_avg_ms         2.000000e+03
+inference_time                   1.219436e+01
+total_energy_consumption         1.690468e+05
+Name: 12, dtype: float64
+++++++++++++++++++++++++++++++++++++++++++++++++++
+initializing DebuggingBaselines class
+[STATUS]: Starting Encore
+Processing 2256 combinations | Sampling itemset size 2Processing 35634 combinations | Sampling itemset size 3Processing 772 combinations | Sampling itemset size 4
+++++++++++++++++++++++++++++++++++++++++++++++++++
+Recommended Fix
+memory_growth                           0.9
+logical_devices                           1
+core_freq                            729600
+gpu_freq                         1.1904e+06
+emc_freq                          2.133e+09
+num_cores                                 2
+scheduler.policy                          0
+vm.swappiness                            60
+vm.vfs_cache_pressure                   500
+vm.dirty_background_ratio                10
+vm.drop_caches                            3
+vm.nr_hugepages                           2
+vm.overcommit_ratio                      60
+vm.overcommit_memory                      0
+vm.overcommit_hugepages                   2
+kernel.sched_child_runs_first             1
+kernel.sched_rt_runtime_us           500000
+vm.dirty_bytes                           30
+vm.dirty_background_bytes                60
+vm.dirty_ratio                           50
+swap_memory                               1
+kernel.max_pids                       65536
+kernel.sched_latency_ns             2.4e+07
+kernel.sched_nr_migrate                 256
+kernel.cpu_time_max_percent             100
+kernel.sched_time_avg_ms               2000
+dtype: object
+Recommended Fix value 42    73807
+Name: total_energy_consumption, dtype: int64
+++++++++++++++++++++++++++++++++++++++++++++++++++
+++++++++++++++++++++++++++++++++++++++++++++++++++
+Bug
+core_freq                        7.296000e+05
+gpu_freq                         1.190400e+06
+emc_freq                         2.133000e+09
+num_cores                        2.000000e+00
+memory_growth                    9.000000e-01
+logical_devices                  1.000000e+00
+scheduler.policy                 0.000000e+00
+vm.swappiness                    6.000000e+01
+vm.vfs_cache_pressure            5.000000e+02
+vm.dirty_background_ratio        1.000000e+01
+vm.drop_caches                   3.000000e+00
+vm.nr_hugepages                  2.000000e+00
+vm.overcommit_ratio              6.000000e+01
+vm.overcommit_memory             0.000000e+00
+vm.overcommit_hugepages          2.000000e+00
+kernel.sched_child_runs_first    1.000000e+00
+kernel.sched_rt_runtime_us       5.000000e+05
+vm.dirty_bytes                   3.000000e+01
+vm.dirty_background_bytes        6.000000e+01
+vm.dirty_ratio                   5.000000e+01
+swap_memory                      1.000000e+00
+kernel.max_pids                  6.553600e+04
+kernel.sched_latency_ns          2.400000e+07
+kernel.sched_nr_migrate          2.560000e+02
+kernel.cpu_time_max_percent      1.000000e+02
+kernel.sched_time_avg_ms         2.000000e+03
+inference_time                   2.135934e+01
+total_energy_consumption         1.441233e+05
+Name: 13, dtype: float64
+++++++++++++++++++++++++++++++++++++++++++++++++++
+initializing DebuggingBaselines class
+[STATUS]: Starting Encore
+Processing 2256 combinations | Sampling itemset size 2Processing 35472 combinations | Sampling itemset size 3Processing 628 combinations | Sampling itemset size 4
+++++++++++++++++++++++++++++++++++++++++++++++++++
+Recommended Fix
+memory_growth                          0.9
+logical_devices                          2
+core_freq                           960000
+gpu_freq                            576000
+emc_freq                         2.133e+09
+num_cores                                2
+scheduler.policy                         0
+vm.swappiness                          100
+vm.vfs_cache_pressure                  500
+vm.dirty_background_ratio               10
+vm.drop_caches                           3
+vm.nr_hugepages                          2
+vm.overcommit_ratio                     60
+vm.overcommit_memory                     0
+vm.overcommit_hugepages                  1
+kernel.sched_child_runs_first            0
+kernel.sched_rt_runtime_us          950000
+vm.dirty_bytes                          60
+vm.dirty_background_bytes               30
+vm.dirty_ratio                           5
+swap_memory                              1
+kernel.max_pids                      65536
+kernel.sched_latency_ns            9.6e+07
+kernel.sched_nr_migrate                256
+kernel.cpu_time_max_percent            100
+kernel.sched_time_avg_ms              2000
+dtype: object
+Recommended Fix value 43    73409
+Name: total_energy_consumption, dtype: int64
+++++++++++++++++++++++++++++++++++++++++++++++++++
+++++++++++++++++++++++++++++++++++++++++++++++++++
+Bug
+core_freq                        9.600000e+05
+gpu_freq                         5.760000e+05
+emc_freq                         2.133000e+09
+num_cores                        2.000000e+00
+memory_growth                    9.000000e-01
+logical_devices                  2.000000e+00
+scheduler.policy                 0.000000e+00
+vm.swappiness                    1.000000e+02
+vm.vfs_cache_pressure            5.000000e+02
+vm.dirty_background_ratio        1.000000e+01
+vm.drop_caches                   3.000000e+00
+vm.nr_hugepages                  2.000000e+00
+vm.overcommit_ratio              6.000000e+01
+vm.overcommit_memory             0.000000e+00
+vm.overcommit_hugepages          1.000000e+00
+kernel.sched_child_runs_first    0.000000e+00
+kernel.sched_rt_runtime_us       9.500000e+05
+vm.dirty_bytes                   6.000000e+01
+vm.dirty_background_bytes        3.000000e+01
+vm.dirty_ratio                   5.000000e+00
+swap_memory                      1.000000e+00
+kernel.max_pids                  6.553600e+04
+kernel.sched_latency_ns          9.600000e+07
+kernel.sched_nr_migrate          1.280000e+02
+kernel.cpu_time_max_percent      1.000000e+02
+kernel.sched_time_avg_ms         2.000000e+03
+inference_time                   1.817423e+01
+total_energy_consumption         1.417477e+05
+Name: 14, dtype: float64
+++++++++++++++++++++++++++++++++++++++++++++++++++
+initializing DebuggingBaselines class
+[STATUS]: Starting Encore
+Processing 2256 combinations | Sampling itemset size 2Processing 35901 combinations | Sampling itemset size 3Processing 528 combinations | Sampling itemset size 4
+++++++++++++++++++++++++++++++++++++++++++++++++++
+Recommended Fix
+memory_growth                           0.9
+logical_devices                           2
+core_freq                        1.0368e+06
+gpu_freq                             115200
+emc_freq                          6.656e+08
+num_cores                                 4
+scheduler.policy                          0
+vm.swappiness                           100
+vm.vfs_cache_pressure                   500
+vm.dirty_background_ratio                10
+vm.drop_caches                            0
+vm.nr_hugepages                           1
+vm.overcommit_ratio                      60
+vm.overcommit_memory                      0
+vm.overcommit_hugepages                   1
+kernel.sched_child_runs_first             0
+kernel.sched_rt_runtime_us           500000
+vm.dirty_bytes                           60
+vm.dirty_background_bytes                60
+vm.dirty_ratio                            5
+swap_memory                               4
+kernel.max_pids                       32768
+kernel.sched_latency_ns             2.4e+07
+kernel.sched_nr_migrate                 256
+kernel.cpu_time_max_percent             100
+kernel.sched_time_avg_ms               1000
+dtype: object
+Recommended Fix value 44    76021
+Name: total_energy_consumption, dtype: int64
+++++++++++++++++++++++++++++++++++++++++++++++++++
+++++++++++++++++++++++++++++++++++++++++++++++++++
+Bug
+core_freq                        1.036800e+06
+gpu_freq                         1.152000e+05
+emc_freq                         6.656000e+08
+num_cores                        4.000000e+00
+memory_growth                    9.000000e-01
+logical_devices                  2.000000e+00
+scheduler.policy                 0.000000e+00
+vm.swappiness                    1.000000e+02
+vm.vfs_cache_pressure            5.000000e+02
+vm.dirty_background_ratio        1.000000e+01
+vm.drop_caches                   0.000000e+00
+vm.nr_hugepages                  1.000000e+00
+vm.overcommit_ratio              5.000000e+01
+vm.overcommit_memory             0.000000e+00
+vm.overcommit_hugepages          1.000000e+00
+kernel.sched_child_runs_first    0.000000e+00
+kernel.sched_rt_runtime_us       5.000000e+05
+vm.dirty_bytes                   6.000000e+01
+vm.dirty_background_bytes        6.000000e+01
+vm.dirty_ratio                   5.000000e+00
+swap_memory                      4.000000e+00
+kernel.max_pids                  3.276800e+04
+kernel.sched_latency_ns          2.400000e+07
+kernel.sched_nr_migrate          1.280000e+02
+kernel.cpu_time_max_percent      1.000000e+02
+kernel.sched_time_avg_ms         1.000000e+03
+inference_time                   2.158126e+01
+total_energy_consumption         1.489601e+05
+Name: 15, dtype: float64
+++++++++++++++++++++++++++++++++++++++++++++++++++
+initializing DebuggingBaselines class
+[STATUS]: Starting Encore
+Processing 2256 combinations | Sampling itemset size 2Processing 35472 combinations | Sampling itemset size 3Processing 628 combinations | Sampling itemset size 4
+++++++++++++++++++++++++++++++++++++++++++++++++++
+Recommended Fix
+memory_growth                           0.9
+logical_devices                           1
+core_freq                        1.1136e+06
+gpu_freq                         1.1136e+06
+emc_freq                           2.04e+08
+num_cores                                 4
+scheduler.policy                          0
+vm.swappiness                           100
+vm.vfs_cache_pressure                   500
+vm.dirty_background_ratio                80
+vm.drop_caches                            0
+vm.nr_hugepages                           2
+vm.overcommit_ratio                      60
+vm.overcommit_memory                      0
+vm.overcommit_hugepages                   1
+kernel.sched_child_runs_first             0
+kernel.sched_rt_runtime_us           500000
+vm.dirty_bytes                           30
+vm.dirty_background_bytes                30
+vm.dirty_ratio                            5
+swap_memory                               4
+kernel.max_pids                       32768
+kernel.sched_latency_ns             2.4e+07
+kernel.sched_nr_migrate                 256
+kernel.cpu_time_max_percent             100
+kernel.sched_time_avg_ms               1000
+dtype: object
+Recommended Fix value 45    69236
+Name: total_energy_consumption, dtype: int64
+++++++++++++++++++++++++++++++++++++++++++++++++++
+++++++++++++++++++++++++++++++++++++++++++++++++++
+Bug
+core_freq                        1.113600e+06
+gpu_freq                         1.113600e+06
+emc_freq                         2.040000e+08
+num_cores                        4.000000e+00
+memory_growth                    9.000000e-01
+logical_devices                  1.000000e+00
+scheduler.policy                 0.000000e+00
+vm.swappiness                    1.000000e+02
+vm.vfs_cache_pressure            5.000000e+02
+vm.dirty_background_ratio        8.000000e+01
+vm.drop_caches                   0.000000e+00
+vm.nr_hugepages                  2.000000e+00
+vm.overcommit_ratio              6.000000e+01
+vm.overcommit_memory             0.000000e+00
+vm.overcommit_hugepages          1.000000e+00
+kernel.sched_child_runs_first    0.000000e+00
+kernel.sched_rt_runtime_us       5.000000e+05
+vm.dirty_bytes                   3.000000e+01
+vm.dirty_background_bytes        3.000000e+01
+vm.dirty_ratio                   5.000000e+00
+swap_memory                      4.000000e+00
+kernel.max_pids                  3.276800e+04
+kernel.sched_latency_ns          2.400000e+07
+kernel.sched_nr_migrate          2.560000e+02
+kernel.cpu_time_max_percent      1.000000e+02
+kernel.sched_time_avg_ms         1.000000e+03
+inference_time                   1.544744e+01
+total_energy_consumption         1.428265e+05
+Name: 16, dtype: float64
+++++++++++++++++++++++++++++++++++++++++++++++++++
+initializing DebuggingBaselines class
+[STATUS]: Starting Encore
+Processing 2256 combinations | Sampling itemset size 2Processing 36030 combinations | Sampling itemset size 3Processing 388 combinations | Sampling itemset size 4
+++++++++++++++++++++++++++++++++++++++++++++++++++
+Recommended Fix
+memory_growth                           0.9
+logical_devices                           2
+core_freq                        1.4976e+06
+gpu_freq                             499200
+emc_freq                         1.3312e+09
+num_cores                                 3
+scheduler.policy                          1
+vm.swappiness                           100
+vm.vfs_cache_pressure                   100
+vm.dirty_background_ratio                10
+vm.drop_caches                            3
+vm.nr_hugepages                           2
+vm.overcommit_ratio                      60
+vm.overcommit_memory                      1
+vm.overcommit_hugepages                   2
+kernel.sched_child_runs_first             0
+kernel.sched_rt_runtime_us           500000
+vm.dirty_bytes                           60
+vm.dirty_background_bytes                30
+vm.dirty_ratio                            5
+swap_memory                               4
+kernel.max_pids                       32768
+kernel.sched_latency_ns             9.6e+07
+kernel.sched_nr_migrate                 256
+kernel.cpu_time_max_percent             100
+kernel.sched_time_avg_ms               1000
+dtype: object
+Recommended Fix value 46    79878
+Name: total_energy_consumption, dtype: int64
+++++++++++++++++++++++++++++++++++++++++++++++++++
+++++++++++++++++++++++++++++++++++++++++++++++++++
+Bug
+core_freq                        1.497600e+06
+gpu_freq                         4.992000e+05
+emc_freq                         1.331200e+09
+num_cores                        3.000000e+00
+memory_growth                    9.000000e-01
+logical_devices                  2.000000e+00
+scheduler.policy                 1.000000e+00
+vm.swappiness                    1.000000e+02
+vm.vfs_cache_pressure            1.000000e+02
+vm.dirty_background_ratio        8.000000e+01
+vm.drop_caches                   3.000000e+00
+vm.nr_hugepages                  2.000000e+00
+vm.overcommit_ratio              6.000000e+01
+vm.overcommit_memory             1.000000e+00
+vm.overcommit_hugepages          2.000000e+00
+kernel.sched_child_runs_first    0.000000e+00
+kernel.sched_rt_runtime_us       5.000000e+05
+vm.dirty_bytes                   6.000000e+01
+vm.dirty_background_bytes        3.000000e+01
+vm.dirty_ratio                   5.000000e+00
+swap_memory                      4.000000e+00
+kernel.max_pids                  3.276800e+04
+kernel.sched_latency_ns          9.600000e+07
+kernel.sched_nr_migrate          2.560000e+02
+kernel.cpu_time_max_percent      1.000000e+02
+kernel.sched_time_avg_ms         1.000000e+03
+inference_time                   2.245657e+01
+total_energy_consumption         1.559212e+05
+Name: 17, dtype: float64
+++++++++++++++++++++++++++++++++++++++++++++++++++
+initializing DebuggingBaselines class
+[STATUS]: Starting Encore
+Processing 2256 combinations | Sampling itemset size 2Processing 36636 combinations | Sampling itemset size 3Processing 452 combinations | Sampling itemset size 4
+++++++++++++++++++++++++++++++++++++++++++++++++++
+Recommended Fix
+memory_growth                           0.5
+logical_devices                           2
+core_freq                            268800
+gpu_freq                         2.1888e+06
+emc_freq                          1.866e+09
+num_cores                                 1
+scheduler.policy                          0
+vm.swappiness                           100
+vm.vfs_cache_pressure                   500
+vm.dirty_background_ratio                10
+vm.drop_caches                            3
+vm.nr_hugepages                           2
+vm.overcommit_ratio                      50
+vm.overcommit_memory                      0
+vm.overcommit_hugepages                   2
+kernel.sched_child_runs_first             0
+kernel.sched_rt_runtime_us           950000
+vm.dirty_bytes                           60
+vm.dirty_background_bytes                60
+vm.dirty_ratio                            5
+swap_memory                               1
+kernel.max_pids                       32768
+kernel.sched_latency_ns             2.4e+07
+kernel.sched_nr_migrate                 128
+kernel.cpu_time_max_percent             100
+kernel.sched_time_avg_ms               1000
+dtype: object
+Recommended Fix value 47    86081
+Name: total_energy_consumption, dtype: int64
+++++++++++++++++++++++++++++++++++++++++++++++++++
+++++++++++++++++++++++++++++++++++++++++++++++++++
+Bug
+core_freq                        2.688000e+05
+gpu_freq                         2.188800e+06
+emc_freq                         1.866000e+09
+num_cores                        1.000000e+00
+memory_growth                    5.000000e-01
+logical_devices                  2.000000e+00
+scheduler.policy                 0.000000e+00
+vm.swappiness                    1.000000e+02
+vm.vfs_cache_pressure            5.000000e+02
+vm.dirty_background_ratio        8.000000e+01
+vm.drop_caches                   3.000000e+00
+vm.nr_hugepages                  2.000000e+00
+vm.overcommit_ratio              5.000000e+01
+vm.overcommit_memory             0.000000e+00
+vm.overcommit_hugepages          2.000000e+00
+kernel.sched_child_runs_first    0.000000e+00
+kernel.sched_rt_runtime_us       9.500000e+05
+vm.dirty_bytes                   6.000000e+01
+vm.dirty_background_bytes        6.000000e+01
+vm.dirty_ratio                   5.000000e+00
+swap_memory                      1.000000e+00
+kernel.max_pids                  3.276800e+04
+kernel.sched_latency_ns          2.400000e+07
+kernel.sched_nr_migrate          1.280000e+02
+kernel.cpu_time_max_percent      1.000000e+02
+kernel.sched_time_avg_ms         1.000000e+03
+inference_time                   1.803501e+01
+total_energy_consumption         1.740832e+05
+Name: 18, dtype: float64
+++++++++++++++++++++++++++++++++++++++++++++++++++
+initializing DebuggingBaselines class
+[STATUS]: Starting Encore
+Processing 2256 combinations | Sampling itemset size 2Processing 35634 combinations | Sampling itemset size 3Processing 772 combinations | Sampling itemset size 4
+++++++++++++++++++++++++++++++++++++++++++++++++++
+Recommended Fix
+memory_growth                           0.9
+logical_devices                           1
+core_freq                        1.0368e+06
+gpu_freq                         1.9584e+06
+emc_freq                         1.3312e+09
+num_cores                                 1
+scheduler.policy                          1
+vm.swappiness                           100
+vm.vfs_cache_pressure                   500
+vm.dirty_background_ratio                80
+vm.drop_caches                            0
+vm.nr_hugepages                           2
+vm.overcommit_ratio                      60
+vm.overcommit_memory                      0
+vm.overcommit_hugepages                   1
+kernel.sched_child_runs_first             0
+kernel.sched_rt_runtime_us           950000
+vm.dirty_bytes                           60
+vm.dirty_background_bytes                60
+vm.dirty_ratio                           50
+swap_memory                               4
+kernel.max_pids                       32768
+kernel.sched_latency_ns             9.6e+07
+kernel.sched_nr_migrate                 256
+kernel.cpu_time_max_percent             100
+kernel.sched_time_avg_ms               2000
+dtype: object
+Recommended Fix value 48    70170
+Name: total_energy_consumption, dtype: int64
+++++++++++++++++++++++++++++++++++++++++++++++++++
+++++++++++++++++++++++++++++++++++++++++++++++++++
+Bug
+core_freq                        1.036800e+06
+gpu_freq                         1.958400e+06
+emc_freq                         1.331200e+09
+num_cores                        1.000000e+00
+memory_growth                    9.000000e-01
+logical_devices                  1.000000e+00
+scheduler.policy                 1.000000e+00
+vm.swappiness                    1.000000e+02
+vm.vfs_cache_pressure            5.000000e+02
+vm.dirty_background_ratio        8.000000e+01
+vm.drop_caches                   0.000000e+00
+vm.nr_hugepages                  2.000000e+00
+vm.overcommit_ratio              5.000000e+01
+vm.overcommit_memory             0.000000e+00
+vm.overcommit_hugepages          1.000000e+00
+kernel.sched_child_runs_first    0.000000e+00
+kernel.sched_rt_runtime_us       9.500000e+05
+vm.dirty_bytes                   6.000000e+01
+vm.dirty_background_bytes        6.000000e+01
+vm.dirty_ratio                   5.000000e+01
+swap_memory                      4.000000e+00
+kernel.max_pids                  3.276800e+04
+kernel.sched_latency_ns          9.600000e+07
+kernel.sched_nr_migrate          2.560000e+02
+kernel.cpu_time_max_percent      1.000000e+02
+kernel.sched_time_avg_ms         2.000000e+03
+inference_time                   1.680355e+01
+total_energy_consumption         1.446579e+05
+Name: 19, dtype: float64
+++++++++++++++++++++++++++++++++++++++++++++++++++
+initializing DebuggingBaselines class
+[STATUS]: Starting Encore
+Processing 2256 combinations | Sampling itemset size 2Processing 35634 combinations | Sampling itemset size 3Processing 772 combinations | Sampling itemset size 4
+++++++++++++++++++++++++++++++++++++++++++++++++++
+Recommended Fix
+memory_growth                           0.5
+logical_devices                           2
+core_freq                         2.112e+06
+gpu_freq                         1.1904e+06
+emc_freq                           4.08e+08
+num_cores                                 1
+scheduler.policy                          1
+vm.swappiness                           100
+vm.vfs_cache_pressure                   500
+vm.dirty_background_ratio                80
+vm.drop_caches                            0
+vm.nr_hugepages                           2
+vm.overcommit_ratio                      60
+vm.overcommit_memory                      1
+vm.overcommit_hugepages                   1
+kernel.sched_child_runs_first             0
+kernel.sched_rt_runtime_us           950000
+vm.dirty_bytes                           30
+vm.dirty_background_bytes                30
+vm.dirty_ratio                           50
+swap_memory                               4
+kernel.max_pids                       32768
+kernel.sched_latency_ns             9.6e+07
+kernel.sched_nr_migrate                 256
+kernel.cpu_time_max_percent             100
+kernel.sched_time_avg_ms               2000
+dtype: object
+Recommended Fix value 49    74567
+Name: total_energy_consumption, dtype: int64
+++++++++++++++++++++++++++++++++++++++++++++++++++
+++++++++++++++++++++++++++++++++++++++++++++++++++
+Bug
+core_freq                        2.112000e+06
+gpu_freq                         1.190400e+06
+emc_freq                         4.080000e+08
+num_cores                        1.000000e+00
+memory_growth                    5.000000e-01
+logical_devices                  2.000000e+00
+scheduler.policy                 1.000000e+00
+vm.swappiness                    1.000000e+02
+vm.vfs_cache_pressure            5.000000e+02
+vm.dirty_background_ratio        8.000000e+01
+vm.drop_caches                   0.000000e+00
+vm.nr_hugepages                  2.000000e+00
+vm.overcommit_ratio              5.000000e+01
+vm.overcommit_memory             1.000000e+00
+vm.overcommit_hugepages          1.000000e+00
+kernel.sched_child_runs_first    0.000000e+00
+kernel.sched_rt_runtime_us       9.500000e+05
+vm.dirty_bytes                   3.000000e+01
+vm.dirty_background_bytes        3.000000e+01
+vm.dirty_ratio                   5.000000e+01
+swap_memory                      4.000000e+00
+kernel.max_pids                  3.276800e+04
+kernel.sched_latency_ns          9.600000e+07
+kernel.sched_nr_migrate          1.280000e+02
+kernel.cpu_time_max_percent      1.000000e+02
+kernel.sched_time_avg_ms         2.000000e+03
+inference_time                   2.397696e+01
+total_energy_consumption         1.438037e+05
+Name: 20, dtype: float64
+++++++++++++++++++++++++++++++++++++++++++++++++++
+initializing DebuggingBaselines class
+[STATUS]: Starting Encore
+Processing 2256 combinations | Sampling itemset size 2Processing 36111 combinations | Sampling itemset size 3Processing 416 combinations | Sampling itemset size 4
+++++++++++++++++++++++++++++++++++++++++++++++++++
+Recommended Fix
+memory_growth                           0.5
+logical_devices                           2
+core_freq                        1.6512e+06
+gpu_freq                         1.4208e+06
+emc_freq                         1.3312e+09
+num_cores                                 4
+scheduler.policy                          1
+vm.swappiness                           100
+vm.vfs_cache_pressure                   100
+vm.dirty_background_ratio                80
+vm.drop_caches                            3
+vm.nr_hugepages                           2
+vm.overcommit_ratio                      60
+vm.overcommit_memory                      0
+vm.overcommit_hugepages                   2
+kernel.sched_child_runs_first             1
+kernel.sched_rt_runtime_us           500000
+vm.dirty_bytes                           60
+vm.dirty_background_bytes                60
+vm.dirty_ratio                           50
+swap_memory                               1
+kernel.max_pids                       65536
+kernel.sched_latency_ns             2.4e+07
+kernel.sched_nr_migrate                 256
+kernel.cpu_time_max_percent              50
+kernel.sched_time_avg_ms               1000
+dtype: object
+Recommended Fix value 50    81940
+Name: total_energy_consumption, dtype: int64
+++++++++++++++++++++++++++++++++++++++++++++++++++
+++++++++++++++++++++++++++++++++++++++++++++++++++
+Bug
+core_freq                        1.651200e+06
+gpu_freq                         1.420800e+06
+emc_freq                         1.331200e+09
+num_cores                        4.000000e+00
+memory_growth                    5.000000e-01
+logical_devices                  2.000000e+00
+scheduler.policy                 1.000000e+00
+vm.swappiness                    1.000000e+02
+vm.vfs_cache_pressure            1.000000e+02
+vm.dirty_background_ratio        8.000000e+01
+vm.drop_caches                   3.000000e+00
+vm.nr_hugepages                  2.000000e+00
+vm.overcommit_ratio              5.000000e+01
+vm.overcommit_memory             0.000000e+00
+vm.overcommit_hugepages          2.000000e+00
+kernel.sched_child_runs_first    1.000000e+00
+kernel.sched_rt_runtime_us       5.000000e+05
+vm.dirty_bytes                   6.000000e+01
+vm.dirty_background_bytes        6.000000e+01
+vm.dirty_ratio                   5.000000e+01
+swap_memory                      1.000000e+00
+kernel.max_pids                  6.553600e+04
+kernel.sched_latency_ns          2.400000e+07
+kernel.sched_nr_migrate          1.280000e+02
+kernel.cpu_time_max_percent      5.000000e+01
+kernel.sched_time_avg_ms         1.000000e+03
+inference_time                   1.735840e+01
+total_energy_consumption         1.656259e+05
+Name: 21, dtype: float64
+++++++++++++++++++++++++++++++++++++++++++++++++++
+initializing DebuggingBaselines class
+[STATUS]: Starting Encore
+Processing 2256 combinations | Sampling itemset size 2Processing 36030 combinations | Sampling itemset size 3Processing 388 combinations | Sampling itemset size 4
+++++++++++++++++++++++++++++++++++++++++++++++++++
+Recommended Fix
+memory_growth                           0.5
+logical_devices                           2
+core_freq                        1.2672e+06
+gpu_freq                             345600
+emc_freq                           4.08e+08
+num_cores                                 1
+scheduler.policy                          0
+vm.swappiness                           100
+vm.vfs_cache_pressure                   100
+vm.dirty_background_ratio                10
+vm.drop_caches                            3
+vm.nr_hugepages                           1
+vm.overcommit_ratio                      60
+vm.overcommit_memory                      0
+vm.overcommit_hugepages                   1
+kernel.sched_child_runs_first             1
+kernel.sched_rt_runtime_us           950000
+vm.dirty_bytes                           30
+vm.dirty_background_bytes                60
+vm.dirty_ratio                            5
+swap_memory                               4
+kernel.max_pids                       32768
+kernel.sched_latency_ns             2.4e+07
+kernel.sched_nr_migrate                 256
+kernel.cpu_time_max_percent              50
+kernel.sched_time_avg_ms               2000
+dtype: object
+Recommended Fix value 51    75967
+Name: total_energy_consumption, dtype: int64
+++++++++++++++++++++++++++++++++++++++++++++++++++
+++++++++++++++++++++++++++++++++++++++++++++++++++
+Bug
+core_freq                        1.267200e+06
+gpu_freq                         3.456000e+05
+emc_freq                         4.080000e+08
+num_cores                        1.000000e+00
+memory_growth                    5.000000e-01
+logical_devices                  2.000000e+00
+scheduler.policy                 0.000000e+00
+vm.swappiness                    1.000000e+02
+vm.vfs_cache_pressure            1.000000e+02
+vm.dirty_background_ratio        1.000000e+01
+vm.drop_caches                   3.000000e+00
+vm.nr_hugepages                  1.000000e+00
+vm.overcommit_ratio              6.000000e+01
+vm.overcommit_memory             0.000000e+00
+vm.overcommit_hugepages          1.000000e+00
+kernel.sched_child_runs_first    1.000000e+00
+kernel.sched_rt_runtime_us       9.500000e+05
+vm.dirty_bytes                   3.000000e+01
+vm.dirty_background_bytes        6.000000e+01
+vm.dirty_ratio                   5.000000e+00
+swap_memory                      4.000000e+00
+kernel.max_pids                  3.276800e+04
+kernel.sched_latency_ns          2.400000e+07
+kernel.sched_nr_migrate          2.560000e+02
+kernel.cpu_time_max_percent      5.000000e+01
+kernel.sched_time_avg_ms         2.000000e+03
+inference_time                   1.459849e+01
+total_energy_consumption         1.559997e+05
+Name: 22, dtype: float64
+++++++++++++++++++++++++++++++++++++++++++++++++++
+initializing DebuggingBaselines class
+[STATUS]: Starting Encore
+Processing 2256 combinations | Sampling itemset size 2Processing 36111 combinations | Sampling itemset size 3Processing 416 combinations | Sampling itemset size 4
+++++++++++++++++++++++++++++++++++++++++++++++++++
+Recommended Fix
+memory_growth                          0.9
+logical_devices                          1
+core_freq                           806400
+gpu_freq                         2.112e+06
+emc_freq                         1.866e+09
+num_cores                                1
+scheduler.policy                         0
+vm.swappiness                           60
+vm.vfs_cache_pressure                  500
+vm.dirty_background_ratio               80
+vm.drop_caches                           3
+vm.nr_hugepages                          2
+vm.overcommit_ratio                     60
+vm.overcommit_memory                     0
+vm.overcommit_hugepages                  1
+kernel.sched_child_runs_first            1
+kernel.sched_rt_runtime_us          950000
+vm.dirty_bytes                          30
+vm.dirty_background_bytes               30
+vm.dirty_ratio                          50
+swap_memory                              4
+kernel.max_pids                      65536
+kernel.sched_latency_ns            2.4e+07
+kernel.sched_nr_migrate                256
+kernel.cpu_time_max_percent            100
+kernel.sched_time_avg_ms              2000
+dtype: object
+Recommended Fix value 52    82144
+Name: total_energy_consumption, dtype: int64
+++++++++++++++++++++++++++++++++++++++++++++++++++
+++++++++++++++++++++++++++++++++++++++++++++++++++
+Bug
+core_freq                        8.064000e+05
+gpu_freq                         2.112000e+06
+emc_freq                         1.866000e+09
+num_cores                        1.000000e+00
+memory_growth                    9.000000e-01
+logical_devices                  1.000000e+00
+scheduler.policy                 0.000000e+00
+vm.swappiness                    6.000000e+01
+vm.vfs_cache_pressure            5.000000e+02
+vm.dirty_background_ratio        8.000000e+01
+vm.drop_caches                   3.000000e+00
+vm.nr_hugepages                  2.000000e+00
+vm.overcommit_ratio              6.000000e+01
+vm.overcommit_memory             0.000000e+00
+vm.overcommit_hugepages          1.000000e+00
+kernel.sched_child_runs_first    1.000000e+00
+kernel.sched_rt_runtime_us       9.500000e+05
+vm.dirty_bytes                   3.000000e+01
+vm.dirty_background_bytes        3.000000e+01
+vm.dirty_ratio                   5.000000e+01
+swap_memory                      4.000000e+00
+kernel.max_pids                  6.553600e+04
+kernel.sched_latency_ns          2.400000e+07
+kernel.sched_nr_migrate          1.280000e+02
+kernel.cpu_time_max_percent      1.000000e+02
+kernel.sched_time_avg_ms         2.000000e+03
+inference_time                   1.912633e+01
+total_energy_consumption         1.645331e+05
+Name: 23, dtype: float64
+++++++++++++++++++++++++++++++++++++++++++++++++++
+initializing DebuggingBaselines class
+[STATUS]: Starting Encore
+Processing 2256 combinations | Sampling itemset size 2Processing 35229 combinations | Sampling itemset size 3Processing 592 combinations | Sampling itemset size 4
+++++++++++++++++++++++++++++++++++++++++++++++++++
+Recommended Fix
+memory_growth                           0.9
+logical_devices                           1
+core_freq                        2.0352e+06
+gpu_freq                             268800
+emc_freq                         1.3312e+09
+num_cores                                 2
+scheduler.policy                          0
+vm.swappiness                            60
+vm.vfs_cache_pressure                   100
+vm.dirty_background_ratio                80
+vm.drop_caches                            0
+vm.nr_hugepages                           2
+vm.overcommit_ratio                      60
+vm.overcommit_memory                      1
+vm.overcommit_hugepages                   1
+kernel.sched_child_runs_first             0
+kernel.sched_rt_runtime_us           500000
+vm.dirty_bytes                           60
+vm.dirty_background_bytes                60
+vm.dirty_ratio                           50
+swap_memory                               1
+kernel.max_pids                       32768
+kernel.sched_latency_ns             9.6e+07
+kernel.sched_nr_migrate                 256
+kernel.cpu_time_max_percent              50
+kernel.sched_time_avg_ms               2000
+dtype: object
+Recommended Fix value 53    75116
+Name: total_energy_consumption, dtype: int64
+++++++++++++++++++++++++++++++++++++++++++++++++++
+++++++++++++++++++++++++++++++++++++++++++++++++++
+Bug
+core_freq                        2.035200e+06
+gpu_freq                         2.688000e+05
+emc_freq                         1.331200e+09
+num_cores                        2.000000e+00
+memory_growth                    9.000000e-01
+logical_devices                  1.000000e+00
+scheduler.policy                 0.000000e+00
+vm.swappiness                    6.000000e+01
+vm.vfs_cache_pressure            1.000000e+02
+vm.dirty_background_ratio        8.000000e+01
+vm.drop_caches                   0.000000e+00
+vm.nr_hugepages                  2.000000e+00
+vm.overcommit_ratio              5.000000e+01
+vm.overcommit_memory             1.000000e+00
+vm.overcommit_hugepages          1.000000e+00
+kernel.sched_child_runs_first    0.000000e+00
+kernel.sched_rt_runtime_us       5.000000e+05
+vm.dirty_bytes                   6.000000e+01
+vm.dirty_background_bytes        6.000000e+01
+vm.dirty_ratio                   5.000000e+01
+swap_memory                      1.000000e+00
+kernel.max_pids                  3.276800e+04
+kernel.sched_latency_ns          9.600000e+07
+kernel.sched_nr_migrate          1.280000e+02
+kernel.cpu_time_max_percent      5.000000e+01
+kernel.sched_time_avg_ms         2.000000e+03
+inference_time                   1.599446e+01
+total_energy_consumption         1.447103e+05
+Name: 24, dtype: float64
+++++++++++++++++++++++++++++++++++++++++++++++++++
+initializing DebuggingBaselines class
+[STATUS]: Starting Encore
+Processing 2256 combinations | Sampling itemset size 2Processing 36111 combinations | Sampling itemset size 3Processing 416 combinations | Sampling itemset size 4
+++++++++++++++++++++++++++++++++++++++++++++++++++
+Recommended Fix
+memory_growth                          0.9
+logical_devices                          2
+core_freq                        2.112e+06
+gpu_freq                            576000
+emc_freq                             8e+08
+num_cores                                4
+scheduler.policy                         0
+vm.swappiness                           60
+vm.vfs_cache_pressure                  100
+vm.dirty_background_ratio               10
+vm.drop_caches                           0
+vm.nr_hugepages                          2
+vm.overcommit_ratio                     60
+vm.overcommit_memory                     1
+vm.overcommit_hugepages                  2
+kernel.sched_child_runs_first            1
+kernel.sched_rt_runtime_us          950000
+vm.dirty_bytes                          30
+vm.dirty_background_bytes               60
+vm.dirty_ratio                          50
+swap_memory                              1
+kernel.max_pids                      32768
+kernel.sched_latency_ns            9.6e+07
+kernel.sched_nr_migrate                256
+kernel.cpu_time_max_percent             50
+kernel.sched_time_avg_ms              1000
+dtype: object
+Recommended Fix value 54    81975
+Name: total_energy_consumption, dtype: int64
+++++++++++++++++++++++++++++++++++++++++++++++++++
+++++++++++++++++++++++++++++++++++++++++++++++++++
+Bug
+core_freq                        2.112000e+06
+gpu_freq                         5.760000e+05
+emc_freq                         8.000000e+08
+num_cores                        4.000000e+00
+memory_growth                    9.000000e-01
+logical_devices                  2.000000e+00
+scheduler.policy                 0.000000e+00
+vm.swappiness                    6.000000e+01
+vm.vfs_cache_pressure            1.000000e+02
+vm.dirty_background_ratio        1.000000e+01
+vm.drop_caches                   0.000000e+00
+vm.nr_hugepages                  2.000000e+00
+vm.overcommit_ratio              6.000000e+01
+vm.overcommit_memory             1.000000e+00
+vm.overcommit_hugepages          2.000000e+00
+kernel.sched_child_runs_first    1.000000e+00
+kernel.sched_rt_runtime_us       9.500000e+05
+vm.dirty_bytes                   3.000000e+01
+vm.dirty_background_bytes        6.000000e+01
+vm.dirty_ratio                   5.000000e+01
+swap_memory                      1.000000e+00
+kernel.max_pids                  3.276800e+04
+kernel.sched_latency_ns          9.600000e+07
+kernel.sched_nr_migrate          2.560000e+02
+kernel.cpu_time_max_percent      5.000000e+01
+kernel.sched_time_avg_ms         1.000000e+03
+inference_time                   1.984620e+01
+total_energy_consumption         1.650427e+05
+Name: 25, dtype: float64
+++++++++++++++++++++++++++++++++++++++++++++++++++
+initializing DebuggingBaselines class
+[STATUS]: Starting Encore
+Processing 2256 combinations | Sampling itemset size 2Processing 36159 combinations | Sampling itemset size 3Processing 492 combinations | Sampling itemset size 4
+++++++++++++++++++++++++++++++++++++++++++++++++++
+Recommended Fix
+memory_growth                           0.5
+logical_devices                           2
+core_freq                            806400
+gpu_freq                         2.1888e+06
+emc_freq                          1.866e+09
+num_cores                                 2
+scheduler.policy                          0
+vm.swappiness                            60
+vm.vfs_cache_pressure                   500
+vm.dirty_background_ratio                10
+vm.drop_caches                            3
+vm.nr_hugepages                           2
+vm.overcommit_ratio                      50
+vm.overcommit_memory                      1
+vm.overcommit_hugepages                   2
+kernel.sched_child_runs_first             1
+kernel.sched_rt_runtime_us           950000
+vm.dirty_bytes                           30
+vm.dirty_background_bytes                30
+vm.dirty_ratio                            5
+swap_memory                               1
+kernel.max_pids                       32768
+kernel.sched_latency_ns             2.4e+07
+kernel.sched_nr_migrate                 128
+kernel.cpu_time_max_percent              50
+kernel.sched_time_avg_ms               2000
+dtype: object
+Recommended Fix value 55    76794
+Name: total_energy_consumption, dtype: int64
+++++++++++++++++++++++++++++++++++++++++++++++++++
+++++++++++++++++++++++++++++++++++++++++++++++++++
+Bug
+core_freq                        8.064000e+05
+gpu_freq                         2.188800e+06
+emc_freq                         1.866000e+09
+num_cores                        2.000000e+00
+memory_growth                    5.000000e-01
+logical_devices                  2.000000e+00
+scheduler.policy                 0.000000e+00
+vm.swappiness                    6.000000e+01
+vm.vfs_cache_pressure            5.000000e+02
+vm.dirty_background_ratio        8.000000e+01
+vm.drop_caches                   3.000000e+00
+vm.nr_hugepages                  2.000000e+00
+vm.overcommit_ratio              5.000000e+01
+vm.overcommit_memory             1.000000e+00
+vm.overcommit_hugepages          2.000000e+00
+kernel.sched_child_runs_first    1.000000e+00
+kernel.sched_rt_runtime_us       9.500000e+05
+vm.dirty_bytes                   3.000000e+01
+vm.dirty_background_bytes        3.000000e+01
+vm.dirty_ratio                   5.000000e+00
+swap_memory                      1.000000e+00
+kernel.max_pids                  3.276800e+04
+kernel.sched_latency_ns          2.400000e+07
+kernel.sched_nr_migrate          1.280000e+02
+kernel.cpu_time_max_percent      5.000000e+01
+kernel.sched_time_avg_ms         2.000000e+03
+inference_time                   2.147543e+01
+total_energy_consumption         1.580184e+05
+Name: 26, dtype: float64
+++++++++++++++++++++++++++++++++++++++++++++++++++
+initializing DebuggingBaselines class
+[STATUS]: Starting Encore
+Processing 2256 combinations | Sampling itemset size 2Processing 35634 combinations | Sampling itemset size 3Processing 772 combinations | Sampling itemset size 4
+++++++++++++++++++++++++++++++++++++++++++++++++++
+Recommended Fix
+memory_growth                           0.5
+logical_devices                           1
+core_freq                        1.2672e+06
+gpu_freq                             192000
+emc_freq                         1.3312e+09
+num_cores                                 1
+scheduler.policy                          1
+vm.swappiness                            60
+vm.vfs_cache_pressure                   100
+vm.dirty_background_ratio                10
+vm.drop_caches                            0
+vm.nr_hugepages                           1
+vm.overcommit_ratio                      60
+vm.overcommit_memory                      0
+vm.overcommit_hugepages                   1
+kernel.sched_child_runs_first             0
+kernel.sched_rt_runtime_us           950000
+vm.dirty_bytes                           60
+vm.dirty_background_bytes                60
+vm.dirty_ratio                            5
+swap_memory                               4
+kernel.max_pids                       65536
+kernel.sched_latency_ns             9.6e+07
+kernel.sched_nr_migrate                 256
+kernel.cpu_time_max_percent             100
+kernel.sched_time_avg_ms               1000
+dtype: object
+Recommended Fix value 56    72238
+Name: total_energy_consumption, dtype: int64
+++++++++++++++++++++++++++++++++++++++++++++++++++
+++++++++++++++++++++++++++++++++++++++++++++++++++
+Bug
+core_freq                        1.267200e+06
+gpu_freq                         1.920000e+05
+emc_freq                         1.331200e+09
+num_cores                        1.000000e+00
+memory_growth                    5.000000e-01
+logical_devices                  1.000000e+00
+scheduler.policy                 1.000000e+00
+vm.swappiness                    6.000000e+01
+vm.vfs_cache_pressure            1.000000e+02
+vm.dirty_background_ratio        1.000000e+01
+vm.drop_caches                   0.000000e+00
+vm.nr_hugepages                  1.000000e+00
+vm.overcommit_ratio              6.000000e+01
+vm.overcommit_memory             0.000000e+00
+vm.overcommit_hugepages          1.000000e+00
+kernel.sched_child_runs_first    0.000000e+00
+kernel.sched_rt_runtime_us       9.500000e+05
+vm.dirty_bytes                   6.000000e+01
+vm.dirty_background_bytes        6.000000e+01
+vm.dirty_ratio                   5.000000e+00
+swap_memory                      4.000000e+00
+kernel.max_pids                  6.553600e+04
+kernel.sched_latency_ns          9.600000e+07
+kernel.sched_nr_migrate          2.560000e+02
+kernel.cpu_time_max_percent      1.000000e+02
+kernel.sched_time_avg_ms         1.000000e+03
+inference_time                   2.096374e+01
+total_energy_consumption         1.442625e+05
+Name: 27, dtype: float64
+++++++++++++++++++++++++++++++++++++++++++++++++++
+initializing DebuggingBaselines class
+[STATUS]: Starting Encore
+Processing 2256 combinations | Sampling itemset size 2Processing 35472 combinations | Sampling itemset size 3Processing 628 combinations | Sampling itemset size 4
+++++++++++++++++++++++++++++++++++++++++++++++++++
+Recommended Fix
+memory_growth                           0.5
+logical_devices                           1
+core_freq                        1.6512e+06
+gpu_freq                         1.6512e+06
+emc_freq                              8e+08
+num_cores                                 2
+scheduler.policy                          1
+vm.swappiness                           100
+vm.vfs_cache_pressure                   500
+vm.dirty_background_ratio                80
+vm.drop_caches                            3
+vm.nr_hugepages                           1
+vm.overcommit_ratio                      60
+vm.overcommit_memory                      1
+vm.overcommit_hugepages                   2
+kernel.sched_child_runs_first             0
+kernel.sched_rt_runtime_us           500000
+vm.dirty_bytes                           30
+vm.dirty_background_bytes                60
+vm.dirty_ratio                            5
+swap_memory                               1
+kernel.max_pids                       32768
+kernel.sched_latency_ns             2.4e+07
+kernel.sched_nr_migrate                 256
+kernel.cpu_time_max_percent              50
+kernel.sched_time_avg_ms               1000
+dtype: object
+Recommended Fix value 57    70637
+Name: total_energy_consumption, dtype: int64
+++++++++++++++++++++++++++++++++++++++++++++++++++
+++++++++++++++++++++++++++++++++++++++++++++++++++
+Bug
+core_freq                        1.651200e+06
+gpu_freq                         1.651200e+06
+emc_freq                         8.000000e+08
+num_cores                        2.000000e+00
+memory_growth                    5.000000e-01
+logical_devices                  1.000000e+00
+scheduler.policy                 1.000000e+00
+vm.swappiness                    1.000000e+02
+vm.vfs_cache_pressure            5.000000e+02
+vm.dirty_background_ratio        8.000000e+01
+vm.drop_caches                   3.000000e+00
+vm.nr_hugepages                  1.000000e+00
+vm.overcommit_ratio              5.000000e+01
+vm.overcommit_memory             1.000000e+00
+vm.overcommit_hugepages          2.000000e+00
+kernel.sched_child_runs_first    0.000000e+00
+kernel.sched_rt_runtime_us       5.000000e+05
+vm.dirty_bytes                   3.000000e+01
+vm.dirty_background_bytes        6.000000e+01
+vm.dirty_ratio                   5.000000e+00
+swap_memory                      1.000000e+00
+kernel.max_pids                  3.276800e+04
+kernel.sched_latency_ns          2.400000e+07
+kernel.sched_nr_migrate          2.560000e+02
+kernel.cpu_time_max_percent      5.000000e+01
+kernel.sched_time_avg_ms         1.000000e+03
+inference_time                   1.618297e+01
+total_energy_consumption         1.414016e+05
+Name: 28, dtype: float64
+++++++++++++++++++++++++++++++++++++++++++++++++++
