@@ -1,0 +1,68 @@
+%  \begin{table}[]
+%      \centering
+%      \caption{\small (RQ2) Efficiency of \tool in detecting and repairing the root-cause of multiple non-functional faults. Cells highlighted in \colorbox{blue!10}{green} indicate better performance and \colorbox[HTML]{FFCCC9}{red} indicate cases where the performance drops. Note: the results are reported for two kinds of faults in TX2: (1) faults in both latency and energy; and (2) faults in latency, energy, and heat dissipation.}
+%      \label{tab:rq2}
+%      \resizebox{\linewidth}{!}{
+%      \begin{tabular}{ll|rr|rr|rr|}
+%       &  & \multicolumn{1}{r|}{\rotatebox{90}{\tool}} & \rotatebox{90}{Default} & \multicolumn{1}{r|}{\rotatebox{90}{\tool}} & \rotatebox{90}{Default} & \multicolumn{1}{r|}{\rotatebox{90}{\tool}} & \multicolumn{1}{r|}{\rotatebox{90}{Default}} \bigstrut\\ \cline{3-8} 
+%       & Software & \multicolumn{2}{r|}{Accuracy} & \multicolumn{2}{r|}{Recall} & \multicolumn{2}{r|}{Precision} \bigstrut\\ \hlineB{2}
+%      \multicolumn{1}{l|}{\multirow{6.5}{*}{Latency and Energy}} & DNN Image & \cellcolor{blue!10}59 & 51 & \cellcolor{blue!10}44 & 35 & \cellcolor{blue!10}65 & 56 \bigstrut\\
+%      \multicolumn{1}{l|}{} & DNN   Speech & \cellcolor{blue!10}66 & 49 & \cellcolor{blue!10}51 & 43 & \cellcolor{blue!10}74 & 64 \bigstrut\\
+%      \multicolumn{1}{l|}{} & DNN NLP & \cellcolor{blue!10}56 & 53 & \cellcolor{blue!10}42 & \cellcolor{blue!10}42 & \cellcolor{blue!10}66 & 61 \bigstrut\\
+%      \multicolumn{1}{l|}{} & x264 & \cellcolor{blue!10}51 & 48 & \cellcolor{blue!10}55 & 33 & \cellcolor{blue!10}64 & 56 \bigstrut\\
+%      \multicolumn{1}{l|}{} & SQLite & \cellcolor{blue!10}60 & 51 & \cellcolor{blue!10}57 & 37 & \cellcolor{blue!10}72 & 57 \bigstrut\\ \hlineB{2}
+%      \multicolumn{1}{l|}{\multirow{3}{*}{All three}} & DNN Image & \cellcolor{blue!10}67 & 59 & \cellcolor{blue!10}69 & 60 & \cellcolor{blue!10}64 & 60 \bigstrut\\
+%      \multicolumn{1}{l|}{} & x264 & \cellcolor{blue!10}68 & 62 & \cellcolor{blue!10}79 & 56 & \cellcolor{blue!10}68 & 58 \bigstrut\\
+%      \multicolumn{1}{l|}{} & SQLite & \cellcolor{blue!10}79 & 63 & \cellcolor{blue!10}70 & 57 & \cellcolor{blue!10}84 & 63 \bigstrut\\ \hlineB{2}\multicolumn{1}{l}{}&\multicolumn{1}{l}{}&\multicolumn{1}{l}{}&\multicolumn{1}{l}{}&\multicolumn{1}{l}{}&\multicolumn{1}{l}{}&\multicolumn{1}{l}{}\bigstrut\\[-0.4cm]\hlineB{2}
+%      \multicolumn{1}{l}{\multirow{9.5}{*}{Latency and Energy}} & \multicolumn{1}{r|}{$\Delta_{gain}\longrightarrow$} & \multicolumn{2}{c|}{{Latency}} & \multicolumn{2}{c|}{{Energy}} & \multicolumn{2}{c|}{{Thermals}} \bigstrut\\ \hlineB{2} 
+    
+%      \multicolumn{1}{l|}{} & DNN Image & \cellcolor{blue!10}52 & \multicolumn{1}{l|}{33} & \multicolumn{1}{l}{\cellcolor{blue!10}37} & \multicolumn{1}{l|}{22} & \multicolumn{1}{l}{0} & \multicolumn{1}{l|}{0} \bigstrut\\
+    
+%      \multicolumn{1}{l|}{} & DNN   Speech & \multicolumn{1}{l}{\cellcolor{blue!10}60} & \multicolumn{1}{l|}{25} & \multicolumn{1}{l}{\cellcolor{blue!10}54} & \multicolumn{1}{l|}{17} & \multicolumn{1}{l}{0} & \multicolumn{1}{l|}{0} \bigstrut\\
+    
+%      \multicolumn{1}{l|}{} & DNN NLP & \multicolumn{1}{l}{\cellcolor{blue!10}49} & \multicolumn{1}{l|}{30} & \multicolumn{1}{l}{\cellcolor{blue!10}51} & \multicolumn{1}{l|}{17} & \multicolumn{1}{l}{0} & \multicolumn{1}{l|}{0} \bigstrut\\
+    
+%      \multicolumn{1}{l|}{} & x264 & \multicolumn{1}{l}{\cellcolor{blue!10}23} & \multicolumn{1}{l|}{2} & \multicolumn{1}{l}{\cellcolor{blue!10}12} & \multicolumn{1}{l|}{\cellcolor[HTML]{FFCCC9}-2} & \multicolumn{1}{l}{0} & \multicolumn{1}{l|}{\cellcolor[HTML]{FFCCC9}-1} \bigstrut\\
+    
+%      \multicolumn{1}{l|}{} & SQLite & \multicolumn{1}{l}{\cellcolor{blue!10}9} & \multicolumn{1}{l|}{6} & \multicolumn{1}{l}{\cellcolor{blue!10}11} & \multicolumn{1}{l|}{2} & \multicolumn{1}{l}{0} & \multicolumn{1}{l|}{\cellcolor[HTML]{FFCCC9}-1} \bigstrut\\ \hlineB{2}
+    
+%      \multicolumn{1}{l|}{\multirow{3}{*}{All three}} & DNN Image & \multicolumn{1}{l}{\cellcolor{blue!10}54} & \multicolumn{1}{l|}{29} & \multicolumn{1}{l}{\cellcolor{blue!10}31} & \multicolumn{1}{l|}{16} & \multicolumn{1}{l}{1} & \multicolumn{1}{l|}{1} \bigstrut\\
+    
+%      \multicolumn{1}{l|}{} & x264 & \multicolumn{1}{l}{\cellcolor{blue!10}18} & \multicolumn{1}{l|}{1} & \multicolumn{1}{l}{\cellcolor{blue!10}10} & \multicolumn{1}{l|}{\cellcolor[HTML]{FFCCC9}-1} & \multicolumn{1}{l}{1} & \multicolumn{1}{l|}{\cellcolor[HTML]{FFCCC9}-1} \bigstrut\\
+   
+%      \multicolumn{1}{l|}{} & SQLite & \multicolumn{1}{l}{\cellcolor{blue!10}6} & \multicolumn{1}{l|}{3} & \multicolumn{1}{l}{\cellcolor{blue!10}7} & \multicolumn{1}{l|}{2} & \multicolumn{1}{l}{1} & \multicolumn{1}{l|}{0} \bigstrut\\ \hlineB{2}
+%      \end{tabular}
+%      }
+%      \end{table}
+
+\begin{table*}[]
+    \centering
+    \caption{\small {Efficiency of \tool in detecting and repairing the root-cause of multiple non-functional faults: \textit{Energy, Latency}; and \textit{Energy, Latency, Heat}. Cells highlighted in \colorbox{blue!10}{green} indicate improvement over faults and \colorbox[HTML]{FFCCC9}{red} indicate deterioration. \tool achieves better performance overall and is much faster. Note: the results are reported for NVIDIA Jetson TX2.}}
+    \label{tab:rq2}
+    \footnotesize
+    \resizebox{\textwidth}{!}{
+        \begin{tabular}{@{}l@{}ll|llll|llll|llll|llll|llll|llll|ll|}
+            \clineB{4-29}{2}
+            &  &  & \multicolumn{4}{c|}{Accuracy} & \multicolumn{4}{c|}{Precision} & \multicolumn{4}{c|}{Recall} & \multicolumn{4}{c|}{Gain (Latency)} & \multicolumn{4}{c|}{Gain (Energy)} & \multicolumn{4}{c|}{Gain (Heat)} & \multicolumn{2}{c|}{Time$^\dagger$} \bigstrut\\ \clineB{4-29}{2}
+            % &  &  &  &  &  &  &  &  & \\[-1em]\clineB{4-29}{2} 
+            
+            &  &  & \rotatebox{90}{\bfseries\tool~} & \rotatebox{90}{\cbi} & \rotatebox{90}{\encore} & \rotatebox{90}{\bugdoc} & \rotatebox{90}{\bfseries\tool~} & \rotatebox{90}{\cbi} & \rotatebox{90}{\encore} & \rotatebox{90}{\bugdoc} & \rotatebox{90}{\bfseries\tool~} & \rotatebox{90}{\cbi} & \rotatebox{90}{\encore} & \rotatebox{90}{\bugdoc} & \rotatebox{90}{\bfseries\tool~} & \rotatebox{90}{\cbi} & \rotatebox{90}{\encore} & \rotatebox{90}{\bugdoc} & \rotatebox{90}{\bfseries\tool~} & \rotatebox{90}{\cbi} & \rotatebox{90}{\encore} & \rotatebox{90}{\bugdoc} & \rotatebox{90}{\bfseries\tool~} & \rotatebox{90}{\cbi} & \rotatebox{90}{\encore} & \rotatebox{90}{\bugdoc} & \rotatebox{90}{\bfseries\tool~} & \rotatebox{90}{Others} \\ \clineB{4-29}{2}
+            
+            \multicolumn{1}{l}{}&\multicolumn{1}{l}{}  & \multicolumn{1}{l}{} & \multicolumn{1}{l}{} & \multicolumn{1}{l}{} & \multicolumn{1}{l}{} & \multicolumn{1}{l}{} & \multicolumn{1}{l}{} & \multicolumn{1}{l}{} & \multicolumn{1}{l}{} \\[-0.9em]\hlineB{2}
+
+            & \multicolumn{1}{l|}{} & Image & \cellcolor{blue!10}\textbf{77} & 54 & 55 & 65 & \cellcolor{blue!10}\textbf{73} & 53 & 54 & 62 & \cellcolor{blue!10}\textbf{80} & 59 & 59 & 62 & \cellcolor{blue!10}\textbf{83} & 53 & 61 & 65 & \cellcolor{blue!10}\textbf{70} & 38 & 46 & 44 & \cellcolor{blue!10}\textbf{3} & 0 & 0 & 0 & \cellcolor{blue!10}\textbf{0.6} & 4 \\
+            & \multicolumn{1}{l|}{} & NLP & \cellcolor{blue!10}\textbf{70} & 51 & 56 & 65 & \cellcolor{blue!10}\textbf{71} & 42 & 56 & 63 & \cellcolor{blue!10}\textbf{66} & 59 & 62 & 65 & \cellcolor{blue!10}\textbf{68} & 53 & 59 & 61 & \cellcolor{blue!10}\textbf{60} & 41 & 27 & 48 & \cellcolor{blue!10}\textbf{5} & 0 & 0 & 1 & \cellcolor{blue!10}\textbf{0.2} & 4 \\
+            & \multicolumn{1}{l|}{} & Speech & \cellcolor{blue!10}\textbf{74} & 50 & 61 & 65 & \cellcolor{blue!10}\textbf{68} & 44 & 53 & 62 & \cellcolor{blue!10}\textbf{79} & 51 & 59 & 64 & \cellcolor{blue!10}\textbf{82} & 55 & 55 & 62 & \cellcolor{blue!10}\textbf{66} & 43 & 43 & 41 & \cellcolor{blue!10}\textbf{4} & \cellcolor[HTML]{FFCCC9}-2 & \cellcolor[HTML]{FFCCC9}-1 & \cellcolor[HTML]{FFCCC9}-1 & \cellcolor{blue!10}\textbf{0.7} & 4 \\
+            & \multicolumn{1}{l|}{} & x264 & \cellcolor{blue!10}\textbf{83} & 54 & 55 & 66 & \cellcolor{blue!10}\textbf{81} & 50 & 54 & 57 & \cellcolor{blue!10}\textbf{77} & 63 & 62 & 61 & \cellcolor{blue!10}\textbf{15} & 2 & 4 & 6 & \cellcolor{blue!10}\textbf{13} & 4 & 6 & 4 & \cellcolor{blue!10}\textbf{2} & \cellcolor[HTML]{FFCCC9}-3 & \cellcolor[HTML]{FFCCC9}-1 & 0 & \cellcolor{blue!10}\textbf{1.2} & 4 \\
+           \multirow{-5}{*}{\rotatebox{90}{Energy +}} & \multicolumn{1}{l|}{\multirow{-5}{*}{\rotatebox{90}{Latency}}} & SQLite & \cellcolor{blue!10}\textbf{84} & 51 & 58 & 68 & \cellcolor{blue!10}\textbf{80} & 43 & 55 & 62 & \cellcolor{blue!10}\textbf{84} & 57 & 63 & 65 & \cellcolor{blue!10}\textbf{11} & 5 & 4 & 5 & \cellcolor{blue!10}\textbf{14} & 3 & 8 & 8 & \cellcolor{blue!10}\textbf{2} & \cellcolor[HTML]{FFCCC9}-2 & 0 & \cellcolor[HTML]{FFCCC9}-1 & \cellcolor{blue!10}\textbf{0.5} & 4 \\ \hlineB{2}
+
+           \multicolumn{1}{l}{}&\multicolumn{1}{l}{}  & \multicolumn{1}{l}{} & \multicolumn{1}{l}{} & \multicolumn{1}{l}{} & \multicolumn{1}{l}{} & \multicolumn{1}{l}{} & \multicolumn{1}{l}{} & \multicolumn{1}{l}{} & \multicolumn{1}{l}{} \\[-0.95em]\hlineB{2}
+
+            & \multicolumn{1}{l|}{} & Image & \cellcolor{blue!10}\textbf{76} & 57 & 48 & 66 & \cellcolor{blue!10}\textbf{68} & 61 & 57 & 61 & \cellcolor{blue!10}\textbf{81} & 53 & 46 & 70 & \cellcolor{blue!10}\textbf{62} & 33 & 30 & 42 & \cellcolor{blue!10}\textbf{52} & 23 & 18 & 24 & \cellcolor{blue!10}\textbf{4} & 1 & 0 & 0 & \cellcolor{blue!10}\textbf{0.1} & 4 \\
+            & \multicolumn{1}{l|}{} & x264 & \cellcolor{blue!10}\textbf{80} & 59 & 47 & 54 & \cellcolor{blue!10}\textbf{76} & 61 & 56 & 63 & \cellcolor{blue!10}\textbf{81} & 56 & 46 & 51 & \cellcolor{blue!10}\textbf{12} & 2 & 1 & 2 & \cellcolor{blue!10}\textbf{15} & 4 & 2 & 4 & \cellcolor{blue!10}\textbf{4} & 1 & 0 & 1 & \cellcolor{blue!10}\textbf{0.1} & 4 \\
+           \multirow{-3}{*}{\rotatebox{90}{All}} & \multicolumn{1}{l|}{\multirow{-3}{*}{\rotatebox{90}{Three}}} & SQLite & \cellcolor{blue!10}\textbf{73} & 56 & 51 & 53 & \cellcolor{blue!10}\textbf{68} & 59 & 56 & 60 & \cellcolor{blue!10}\textbf{78} & 54 & 45 & 51 & \cellcolor{blue!10}\textbf{12} & 1 & 1 & 4 & \cellcolor{blue!10}\textbf{8} & 4 & 2 & 5 & \cellcolor{blue!10}\textbf{1} & 1 & \cellcolor[HTML]{FFCCC9}-1 & \cellcolor[HTML]{FFCCC9}-1 & \cellcolor{blue!10}\textbf{0.1} & 4 \\ \hlineB{2}
+           \multicolumn{10}{l}{$^\dagger$ Wallclock time in hours}\bigstrut
+           \end{tabular}
+    }
+\end{table*}
+    

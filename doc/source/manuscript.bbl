@@ -1,0 +1,661 @@
+\begin{thebibliography}{100}
+
+\bibitem{slowimag79:online}
+Slow image classification with tensorflow on {TX2}.
+\newblock In NVIDIA developer forums:
+  \url{https://forums.developer.nvidia.com/t/54307}, October 2017.
+
+\bibitem{code_transplant:online}
+Cuda performance issue on {TX2}.
+\newblock In NVIDIA developer forums:
+  \url{https://forums.developer.nvidia.com/t/50477}, June 2020.
+
+\bibitem{super_frustrated_power_perf:online}
+General performance problems.
+\newblock In NVIDIA developer forums:
+  \url{https://forums.developer.nvidia.com/t/111704}, February 2020.
+
+\bibitem{HighCPUu7:online}
+High {CPU} usage on jetson {TX2} with {GigE} fully loaded.
+\newblock In NVIDIA developer forums:
+  \url{https://forums.developer.nvidia.com/t/124381}, May 2020.
+
+\bibitem{DeepStream}
+Nvidia deepstream sdk.
+\newblock https://developer.nvidia.com/deepstream-sdk, 2021.
+
+\bibitem{SQLite}
+Sqlite database engine.
+\newblock https://www.sqlite.org/index.html, 2021.
+
+\bibitem{x264}
+X264 video encoder.
+\newblock https://www.videolan.org/developers/x264.html, 2021.
+
+\bibitem{ABDD:VISSOFT13}
+{\sc Alcocer, J. P.~S., Bergel, A., Ducasse, S., and Denker, M.}
+\newblock Performance evolution blueprint: Understanding the impact of software
+  evolution on performance.
+\newblock In {\em Proc. of Working Conference on Software Visualization
+  (VISSOFT)\/} (2013), IEEE, pp.~1--9.
+
+\bibitem{artho2011iterative}
+{\sc Artho, C.}
+\newblock Iterative delta debugging.
+\newblock {\em International Journal on Software Tools for Technology Transfer
+  13}, 3 (2011), 223--246.
+
+\bibitem{attariyan2012x}
+{\sc Attariyan, M., Chow, M., and Flinn, J.}
+\newblock X-ray: Automating root-cause diagnosis of performance anomalies in
+  production software.
+\newblock In {\em Presented as part of the 10th $\{$USENIX$\}$ Symposium on
+  Operating Systems Design and Implementation ($\{$OSDI$\}$ 12)\/} (2012),
+  pp.~307--320.
+
+\bibitem{attariyan2010automating}
+{\sc Attariyan, M., and Flinn, J.}
+\newblock Automating configuration troubleshooting with dynamic information
+  flow analysis.
+\newblock In {\em OSDI\/} (2010), vol.~10, pp.~1--14.
+
+\bibitem{baah2010causal}
+{\sc Baah, G.~K., Podgurski, A., and Harrold, M.~J.}
+\newblock Causal inference for statistical fault localization.
+\newblock In {\em Proceedings of the 19th international symposium on Software
+  testing and analysis\/} (2010), pp.~73--84.
+
+\bibitem{fb:config:outage}
+{\sc blames 'faulty configuration change' for nearly six-hour outage, F.}
+\newblock https://t.ly/Dy1s.
+
+\bibitem{bottou2013counterfactual}
+{\sc Bottou, L., Peters, J., Qui{\~n}onero-Candela, J., Charles, D.~X.,
+  Chickering, D.~M., Portugaly, E., Ray, D., Simard, P., and Snelson, E.}
+\newblock Counterfactual reasoning and learning systems: The example of
+  computational advertising.
+\newblock {\em The Journal of Machine Learning Research 14}, 1 (2013),
+  3207--3260.
+
+\bibitem{bryant2003computer}
+{\sc Bryant, R.~E., David~Richard, O., and David~Richard, O.}
+\newblock {\em Computer systems: a programmer's perspective}, vol.~2.
+\newblock 2003.
+
+\bibitem{chilimbi2009holmes}
+{\sc Chilimbi, T.~M., Liblit, B., Mehra, K., Nori, A.~V., and Vaswani, K.}
+\newblock Holmes: Effective statistical debugging via efficient path profiling.
+\newblock In {\em 2009 IEEE 31st International Conference on Software
+  Engineering\/} (2009), IEEE, pp.~34--44.
+
+\bibitem{chollet2017xception}
+{\sc Chollet, F.}
+\newblock Xception: Deep learning with depthwise separable convolutions.
+\newblock In {\em Proceedings of the IEEE conference on computer vision and
+  pattern recognition\/} (2017), pp.~1251--1258.
+
+\bibitem{amazon:config:outage}
+{\sc cloud outage was triggered by~configuration error, A.}
+\newblock
+  https://www.computerworld.com/article/2508335/amazon-cloud-outage-was-triggered-by-configuration-error.html.
+
+\bibitem{colombo2014order}
+{\sc Colombo, D., and Maathuis, M.~H.}
+\newblock Order-independent constraint-based causal structure learning.
+\newblock {\em The Journal of Machine Learning Research 15}, 1 (2014),
+  3741--3782.
+
+\bibitem{colombo2012learning}
+{\sc Colombo, D., Maathuis, M.~H., Kalisch, M., and Richardson, T.~S.}
+\newblock Learning high-dimensional directed acyclic graphs with latent and
+  selection variables.
+\newblock {\em The Annals of Statistics\/} (2012), 294--321.
+
+\bibitem{curtsinger2013stabilizer}
+{\sc Curtsinger, C., and Berger, E.~D.}
+\newblock Stabilizer: Statistically sound performance evaluation.
+\newblock {\em ACM SIGARCH Computer Architecture News 41}, 1 (2013), 219--228.
+
+\bibitem{curtsinger2015coz}
+{\sc Curtsinger, C., and Berger, E.~D.}
+\newblock Coz: Finding code that counts with causal profiling.
+\newblock In {\em Proceedings of the 25th Symposium on Operating Systems
+  Principles\/} (2015), pp.~184--197.
+
+\bibitem{devlin2018bert}
+{\sc Devlin, J., Chang, M.-W., Lee, K., and Toutanova, K.}
+\newblock Bert: Pre-training of deep bidirectional transformers for language
+  understanding.
+\newblock {\em arXiv preprint arXiv:1810.04805\/} (2018).
+
+\bibitem{ding2021generalizable}
+{\sc Ding, Y., Pervaiz, A., Carbin, M., and Hoffmann, H.}
+\newblock Generalizable and interpretable learning for configuration
+  extrapolation.
+\newblock In {\em Proceedings of the 29th ACM Joint Meeting on European
+  Software Engineering Conference and Symposium on the Foundations of Software
+  Engineering\/} (2021), pp.~728--740.
+
+\bibitem{EEM:FSE10}
+{\sc Elkhodary, A., Esfahani, N., and Malek, S.}
+\newblock Fusion: A framework for engineering self-tuning self-adaptive
+  software systems.
+\newblock In {\em Proc. Int'l Symp. Foundations of Software Engineering
+  (FSE)\/} (2010), ACM, pp.~7--16.
+
+\bibitem{EEM:TSE}
+{\sc Esfahani, N., Elkhodary, A., and Malek, S.}
+\newblock A learning-based framework for engineering feature-oriented
+  self-adaptive software systems.
+\newblock {\em IEEE Trans. Softw. Eng. (TSE) 39}, 11 (2013), 1467--1493.
+
+\bibitem{farahmand2019causal}
+{\sc Farahmand, S., O’Connor, C., Macoska, J.~A., and Zarringhalam, K.}
+\newblock Causal inference engine: a platform for directional gene set
+  enrichment analysis and inference of active transcriptional regulators.
+\newblock {\em Nucleic acids research 47}, 22 (2019), 11563--11573.
+
+\bibitem{fariha2020causality}
+{\sc Fariha, A., Nath, S., and Meliou, A.}
+\newblock Causality-guided adaptive interventional debugging.
+\newblock In {\em Proceedings of the 2020 ACM SIGMOD International Conference
+  on Management of Data\/} (2020), pp.~431--446.
+
+\bibitem{feyzi2019inforence}
+{\sc Feyzi, F., and Parsa, S.}
+\newblock Inforence: effective fault localization based on
+  information-theoretic analysis and statistical causal inference.
+\newblock {\em Frontiers of Computer Science 13}, 4 (2019), 735--759.
+
+\bibitem{FHM:FSE15}
+{\sc Filieri, A., Hoffmann, H., and Maggio, M.}
+\newblock Automated multi-objective control for self-adaptive software design.
+\newblock In {\em Proc. Int'l Symp. Foundations of Software Engineering
+  (FSE)\/} (2015), ACM, pp.~13--24.
+
+\bibitem{geiger2016causal}
+{\sc Geiger, P., Carata, L., and Sch{\"o}lkopf, B.}
+\newblock Causal models for debugging and control in cloud computing.
+\newblock {\em arXiv preprint arXiv 1603\/} (2016).
+
+\bibitem{glymour2019review}
+{\sc Glymour, C., Zhang, K., and Spirtes, P.}
+\newblock Review of causal discovery methods based on graphical models.
+\newblock {\em Frontiers in genetics 10\/} (2019), 524.
+
+\bibitem{grebhahn2019predicting}
+{\sc Grebhahn, A., Siegmund, N., and Apel, S.}
+\newblock Predicting performance of software configurations: There is no silver
+  bullet.
+\newblock {\em arXiv preprint arXiv:1911.12643\/} (2019).
+
+\bibitem{GSKA:SPPEXA}
+{\sc Grebhahn, A., Siegmund, N., K{\"o}stler, H., and Apel, S.}
+\newblock Performance prediction of multigrid-solver configurations.
+\newblock In {\em Software for Exascale Computing-SPPEXA 2013-2015}. Springer,
+  2016, pp.~69--88.
+
+\bibitem{gunawi2018fail}
+{\sc Gunawi, H.~S., et~al.}
+\newblock Fail-slow at scale: Evidence of hardware performance faults in large
+  production systems.
+\newblock {\em ACM Transactions on Storage (TOS) 14}, 3 (2018), 1--26.
+
+\bibitem{GCASW:ASE13}
+{\sc Guo, J., Czarnecki, K., Apel, S., Siegmund, N., and Wasowski, A.}
+\newblock Variability-aware performance prediction: A statistical learning
+  approach.
+\newblock In {\em Proc. Int'l Conf. Automated Software Engineering (ASE)\/}
+  (2013), IEEE.
+
+\bibitem{Halawa2017}
+{\sc Halawa, H., Abdelhafez, H.~A., Boktor, A., and Ripeanu, M.}
+\newblock {NVIDIA jetson platform characterization}.
+\newblock {\em Lect. Notes Comput. Sci. (including Subser. Lect. Notes Artif.
+  Intell. Lect. Notes Bioinformatics) 10417 LNCS\/} (2017), 92--105.
+
+\bibitem{halin2019test}
+{\sc Halin, A., Nuttinck, A., Acher, M., Devroey, X., Perrouin, G., and Baudry,
+  B.}
+\newblock Test them all, is it worth it? assessing configuration sampling on
+  the jhipster web development stack.
+\newblock {\em Empirical Software Engineering 24}, 2 (2019), 674--717.
+
+\bibitem{han2016empirical}
+{\sc Han, X., and Yu, T.}
+\newblock An empirical study on performance bugs for highly configurable
+  software systems.
+\newblock In {\em Proceedings of the 10th ACM/IEEE International Symposium on
+  Empirical Software Engineering and Measurement\/} (2016).
+
+\bibitem{han2018perflearner}
+{\sc Han, X., Yu, T., and Lo, D.}
+\newblock Perflearner: learning from bug reports to understand and generate
+  performance test frames.
+\newblock In {\em 2018 33rd IEEE/ACM International Conference on Automated
+  Software Engineering (ASE)\/} (2018).
+
+\bibitem{hannun2014deep}
+{\sc Hannun, A., Case, C., Casper, J., Catanzaro, B., Diamos, G., Elsen, E.,
+  Prenger, R., Satheesh, S., Sengupta, S., Coates, A., et~al.}
+\newblock Deep speech: Scaling up end-to-end speech recognition.
+\newblock {\em arXiv preprint arXiv:1412.5567\/} (2014).
+
+\bibitem{HPHL:ICSE15}
+{\sc Henard, C., Papadakis, M., Harman, M., and Le~Traon, Y.}
+\newblock Combining multi-objective search and constraint solving for
+  configuring large software product lines.
+\newblock In {\em Proc. Int'l Conf. Software Engineering (ICSE)\/} (2015),
+  IEEE, pp.~517--528.
+
+\bibitem{hernandez2016predictive}
+{\sc Hern{\'a}ndez-Lobato, D., Hernandez-Lobato, J., Shah, A., and Adams, R.}
+\newblock Predictive entropy search for multi-objective bayesian optimization.
+\newblock In {\em International Conference on Machine Learning\/} (2016),
+  pp.~1492--1501.
+
+\bibitem{HSCMAR:SIGPLAN}
+{\sc Hoffmann, H., Sidiroglou, S., Carbin, M., Misailovic, S., Agarwal, A., and
+  Rinard, M.}
+\newblock Dynamic knobs for responsive power-aware computing.
+\newblock In {\em In Proc. of Int'l Conference on Architectural Support for
+  Programming Languages and Operating Systems (ASPLOS)\/} (2011).
+
+\bibitem{H:AS}
+{\sc Hoos, H.~H.}
+\newblock Automated algorithm configuration and parameter tuning.
+\newblock In {\em Autonomous search}. Springer, 2011, pp.~37--71.
+
+\bibitem{H:CACM}
+{\sc Hoos, H.~H.}
+\newblock Programming by optimization.
+\newblock {\em Communications of the ACM 55}, 2 (2012), 70--80.
+
+\bibitem{hu2020automated}
+{\sc Hu, Y., Huang, G., and Huang, P.}
+\newblock Automated reasoning and detection of specious configuration in large
+  systems with symbolic execution.
+\newblock In {\em 14th $\{$USENIX$\}$ Symposium on Operating Systems Design and
+  Implementation ($\{$OSDI$\}$ 20)\/} (2020), pp.~719--734.
+
+\bibitem{hutter2011sequential}
+{\sc Hutter, F., Hoos, H.~H., and Leyton-Brown, K.}
+\newblock Sequential model-based optimization for general algorithm
+  configuration.
+\newblock In {\em International conference on learning and intelligent
+  optimization\/} (2011), Springer, pp.~507--523.
+
+\bibitem{iqbal_transfer_2019}
+{\sc Iqbal, M.~S., Kotthoff, L., and Jamshidi, P.}
+\newblock Transfer {Learning} for {Performance} {Modeling} of {Deep} {Neural}
+  {Network} {Systems}.
+\newblock In {\em {USENIX} {Conference} on {Operational} {Machine}
+  {Learning}\/} (Santa Clara, CA, 2019), USENIX Association.
+
+\bibitem{iqbal2020flexibo}
+{\sc Iqbal, M.~S., Su, J., Kotthoff, L., and Jamshidi, P.}
+\newblock Flexibo: Cost-aware multi-objective optimization of deep neural
+  networks.
+\newblock {\em arXiv preprint arXiv:2001.06588\/} (2020).
+
+\bibitem{JC:MASCOTS16}
+{\sc Jamshidi, P., and Casale, G.}
+\newblock An uncertainty-aware approach to optimal configuration of stream
+  processing systems.
+\newblock In {\em Proc. Int'l Symp. on Modeling, Analysis and Simulation of
+  Computer and Telecommunication Systems (MASCOTS)\/} (2016), IEEE.
+
+\bibitem{jamshidi2016uncertainty}
+{\sc Jamshidi, P., and Casale, G.}
+\newblock An uncertainty-aware approach to optimal configuration of stream
+  processing systems.
+\newblock In {\em 2016 IEEE 24th International Symposium on Modeling, Analysis
+  and Simulation of Computer and Telecommunication Systems (MASCOTS)\/} (2016),
+  IEEE, pp.~39--48.
+
+\bibitem{JGAP:CSMR13}
+{\sc Jamshidi, P., Ghafari, M., Ahmad, A., and Pahl, C.}
+\newblock A framework for classifying and comparing architecture-centric
+  software evolution research.
+\newblock In {\em Proc. of European Conference on Software Maintenance and
+  Reengineering (CSMR)\/} (2013), IEEE, pp.~305--314.
+
+\bibitem{JSVKPA:ASE17}
+{\sc Jamshidi, P., Siegmund, N., Velez, M., K\"{a}stner, C., Patel, A., and
+  Agarwal, Y.}
+\newblock Transfer learning for performance modeling of configurable systems:
+  An exploratory analysis.
+\newblock In {\em Proc. Int'l Conf. Automated Software Engineering (ASE)\/}
+  (2017), ACM.
+
+\bibitem{JVKS:FSE18}
+{\sc Jamshidi, P., Velez, M., K\"{a}stner, C., and Siegmund, N.}
+\newblock Learning to sample: Exploiting similarities across environments to
+  learn performance models for configurable systems.
+\newblock In {\em Proc. Int'l Symp. Foundations of Software Engineering
+  (FSE)\/} (2018), ACM.
+
+\bibitem{JVKSK:SEAMS17}
+{\sc Jamshidi, P., Velez, M., K\"{a}stner, C., Siegmund, N., and Kawthekar, P.}
+\newblock Transfer learning for improving model predictions in highly
+  configurable software.
+\newblock In {\em Proc. Int'l Symp. Soft. Engineering for Adaptive and
+  Self-Managing Systems (SEAMS)\/} (2017), IEEE.
+
+\bibitem{javidian2019transfer}
+{\sc Javidian, M.~A., Jamshidi, P., and Valtorta, M.}
+\newblock Transfer learning for performance modeling of configurable systems: A
+  causal analysis.
+\newblock {\em arXiv preprint arXiv:1902.10119\/} (2019).
+
+\bibitem{johnson2020causal}
+{\sc Johnson, B., Brun, Y., and Meliou, A.}
+\newblock Causal testing: Understanding defects’ root causes.
+\newblock In {\em Proceedings of the 2020 International Conference on Software
+  Engineering\/} (2020).
+
+\bibitem{kaltenecker2020interplay}
+{\sc Kaltenecker, C., Grebhahn, A., Siegmund, N., and Apel, S.}
+\newblock The interplay of sampling and machine learning for software
+  performance prediction.
+\newblock {\em IEEE Software\/} (2020).
+
+\bibitem{KK:WSR16}
+{\sc Kawthekar, P., and K{\"a}stner, C.}
+\newblock Sensitivity analysis for building evolving and \& adaptive robotic
+  software.
+\newblock In {\em Proceedings of the IJCAI Workshop on Autonomous Mobile
+  Service Robots (WSR)\/} (7 2016).
+
+\bibitem{kleppmann2017designing}
+{\sc Kleppmann, M.}
+\newblock {\em Designing data-intensive applications: The big ideas behind
+  reliable, scalable, and maintainable systems}.
+\newblock " O'Reilly Media, Inc.", 2017.
+
+\bibitem{Kocaoglu2017}
+{\sc Kocaoglu, M., Dimakis, A.~G., Vishwanath, S., and Hassibi, B.}
+\newblock Entropic causal inference.
+\newblock In {\em Proceedings of the Thirty-First AAAI Conference on Artificial
+  Intelligence\/} (2017), p.~1156–1162.
+
+\bibitem{Kocaoglu2020}
+{\sc Kocaoglu, M., Shakkottai, S., Dimakis, A., Caramanis, C., and Vishwanath,
+  S.}
+\newblock {Applications of Common Entropy for Causal Inference}.
+
+\bibitem{kolesnikov2019tradeoffs}
+{\sc Kolesnikov, S., Siegmund, N., K{\"a}stner, C., Grebhahn, A., and Apel, S.}
+\newblock Tradeoffs in modeling performance of highly configurable software
+  systems.
+\newblock {\em Software \& Systems Modeling 18}, 3 (2019), 2265--2283.
+
+\bibitem{krishna2017less}
+{\sc Krishna, R., Menzies, T., and Layman, L.}
+\newblock Less is more: Minimizing code reorganization using xtree.
+\newblock {\em Information and Software Technology 88\/} (2017), 53--66.
+
+\bibitem{li2020statically}
+{\sc Li, C., Wang, S., Hoffmann, H., and Lu, S.}
+\newblock Statically inferring performance properties of software
+  configurations.
+\newblock In {\em Proceedings of the Fifteenth European Conference on Computer
+  Systems\/} (2020), pp.~1--16.
+
+\bibitem{lourencco2020bugdoc}
+{\sc Louren{\c{c}}o, R., Freire, J., and Shasha, D.}
+\newblock Bugdoc: A system for debugging computational pipelines.
+\newblock In {\em Proceedings of the 2020 ACM SIGMOD International Conference
+  on Management of Data\/} (2020), pp.~2733--2736.
+
+\bibitem{maurer2015fail}
+{\sc Maurer, B.}
+\newblock Fail at scale: Reliability in the face of rapid change.
+\newblock {\em Queue 13}, 8 (2015), 30--46.
+
+\bibitem{mehta2020rex}
+{\sc Mehta, S., Bhagwan, R., Kumar, R., Bansal, C., Maddila, C., Ashok, B.,
+  Asthana, S., Bird, C., and Kumar, A.}
+\newblock Rex: Preventing bugs and misconfiguration in large services using
+  correlated change analysis.
+\newblock In {\em 17th $\{$USENIX$\}$ Symposium on Networked Systems Design and
+  Implementation\/} (2020).
+
+\bibitem{molyneaux2009art}
+{\sc Molyneaux, I.}
+\newblock The art of application performance testing: Help for programmers and
+  quality assurance.[sl]:" o’reilly media, 2009.
+
+\bibitem{muhlbauer2019accurate}
+{\sc M{\"u}hlbauer, S., Apel, S., and Siegmund, N.}
+\newblock Accurate modeling of performance histories for evolving software
+  systems.
+\newblock In {\em 2019 34th IEEE/ACM International Conference on Automated
+  Software Engineering (ASE)\/} (2019), IEEE, pp.~640--652.
+
+\bibitem{MARC:SPLC13}
+{\sc Murashkin, A., Antkiewicz, M., Rayside, D., and Czarnecki, K.}
+\newblock Visualization and exploration of optimal variants in product line
+  engineering.
+\newblock In {\em Proc. Int'l Software Product Line Conference (SPLC)\/}
+  (2013), ACM, pp.~111--115.
+
+\bibitem{NMSA:Arxive17}
+{\sc Nair, V., Menzies, T., Siegmund, N., and Apel, S.}
+\newblock Faster discovery of faster system configurations with spectral
+  learning.
+\newblock {\em arXiv:1701.08106\/} (2017).
+
+\bibitem{nistor2015caramel}
+{\sc Nistor, A., Chang, P.-C., Radoi, C., and Lu, S.}
+\newblock Caramel: Detecting and fixing performance problems that have
+  non-intrusive fixes.
+\newblock In {\em 2015 IEEE/ACM 37th IEEE International Conference on Software
+  Engineering\/} (2015).
+
+\bibitem{nistor2013discovering}
+{\sc Nistor, A., Jiang, T., and Tan, L.}
+\newblock Discovering, reporting, and fixing performance bugs.
+\newblock In {\em 10th working conference on mining software repositories\/}
+  (2013).
+
+\bibitem{norouzi2012hamming}
+{\sc Norouzi, M., Fleet, D.~J., and Salakhutdinov, R.~R.}
+\newblock Hamming distance metric learning.
+\newblock In {\em Advances in neural information processing systems\/} (2012),
+  pp.~1061--1069.
+
+\bibitem{ogarrio2016hybrid}
+{\sc Ogarrio, J.~M., Spirtes, P., and Ramsey, J.}
+\newblock A hybrid causal search algorithm for latent variable models.
+\newblock In {\em Conference on Probabilistic Graphical Models\/} (2016),
+  pp.~368--379.
+
+\bibitem{ORGC:SPLC14}
+{\sc Olaechea, R., Rayside, D., Guo, J., and Czarnecki, K.}
+\newblock Comparison of exact and approximate multi-objective optimization for
+  software product lines.
+\newblock In {\em Proc. Int'l Software Product Line Conference (SPLC)\/}
+  (2014), ACM, pp.~92--101.
+
+\bibitem{pearl1998graphical}
+{\sc Pearl, J.}
+\newblock Graphical models for probabilistic and causal reasoning.
+\newblock {\em Quantified representation of uncertainty and imprecision\/}
+  (1998), 367--389.
+
+\bibitem{pearl2009causality}
+{\sc Pearl, J.}
+\newblock {\em Causality}.
+\newblock Cambridge university press, 2009.
+
+\bibitem{pearl2018book}
+{\sc Pearl, J., and Mackenzie, D.}
+\newblock {\em The book of why: the new science of cause and effect}.
+\newblock Basic Books, 2018.
+
+\bibitem{pereira2019learning}
+{\sc Pereira, J.~A., Martin, H., Acher, M., J{\'e}z{\'e}quel, J.-M.,
+  Botterweck, G., and Ventresque, A.}
+\newblock Learning software configuration spaces: A systematic literature
+  review.
+\newblock {\em arXiv preprint arXiv:1906.03018\/} (2019).
+
+\bibitem{reddy2016fault}
+{\sc Reddy, C.~M., and Nalini, N.}
+\newblock Fault tolerant cloud software systems using software configurations.
+\newblock In {\em 2016 IEEE International Conference on Cloud Computing in
+  Emerging Markets (CCEM)\/} (2016), IEEE, pp.~61--65.
+
+\bibitem{sanchez2020tandem}
+{\sc S{\'a}nchez, A.~B., Delgado-P{\'e}rez, P., Medina-Bulo, I., and Segura,
+  S.}
+\newblock Tandem: A taxonomy and a dataset of real-world performance bugs.
+\newblock {\em IEEE Access 8\/} (2020), 107214--107228.
+
+\bibitem{scherrer2021learning}
+{\sc Scherrer, N., Bilaniuk, O., Annadani, Y., Goyal, A., Schwab, P.,
+  Sch{\"o}lkopf, B., Mozer, M.~C., Bengio, Y., Bauer, S., and Ke, N.~R.}
+\newblock Learning neural causal models with active interventions.
+\newblock {\em arXiv preprint arXiv:2109.02429\/} (2021).
+
+\bibitem{scholkopf2021toward}
+{\sc Sch{\"o}lkopf, B., Locatello, F., Bauer, S., Ke, N.~R., Kalchbrenner, N.,
+  Goyal, A., and Bengio, Y.}
+\newblock Toward causal representation learning.
+\newblock {\em Proceedings of the IEEE 109}, 5 (2021), 612--634.
+
+\bibitem{SGAK:ESECFSE15}
+{\sc Siegmund, N., Grebhahn, A., Apel, S., and K\"{a}stner, C.}
+\newblock Performance-influence models for highly configurable systems.
+\newblock In {\em Proc. Europ. Software Engineering Conf. Foundations of
+  Software Engineering (ESEC/FSE)\/} (August 2015), ACM, pp.~284--294.
+
+\bibitem{siegmund2015performance}
+{\sc Siegmund, N., Grebhahn, A., Apel, S., and K{\"a}stner, C.}
+\newblock Performance-influence models for highly configurable systems.
+\newblock In {\em Proceedings of the 2015 10th Joint Meeting on Foundations of
+  Software Engineering\/} (2015), pp.~284--294.
+
+\bibitem{siegmund2020dimensions}
+{\sc Siegmund, N., Ruckel, N., and Siegmund, J.}
+\newblock Dimensions of software configuration: on the configuration context in
+  modern software development.
+\newblock In {\em Proceedings of the 28th ESEC/FSE\/} (2020), pp.~338--349.
+
+\bibitem{song2014statistical}
+{\sc Song, L., and Lu, S.}
+\newblock Statistical debugging for real-world performance problems.
+\newblock {\em ACM SIGPLAN Notices 49}, 10 (2014), 561--578.
+
+\bibitem{spirtes2000causation}
+{\sc Spirtes, P., Glymour, C.~N., Scheines, R., and Heckerman, D.}
+\newblock {\em Causation, prediction, and search}.
+\newblock MIT press, 2000.
+
+\bibitem{SHM:LIO}
+{\sc Styles, J., Hoos, H.~H., and M{\"u}ller, M.}
+\newblock Automatically configuring algorithms for scaling performance.
+\newblock In {\em Learning and Intelligent Optimization}. Springer, 2012,
+  pp.~205--219.
+
+\bibitem{tang2015holistic}
+{\sc Tang, C., Kooburat, T., Venkatachalam, P., Chander, A., Wen, Z.,
+  Narayanan, A., Dowell, P., and Karl, R.}
+\newblock Holistic configuration management at facebook.
+\newblock In {\em Proceedings of the 25th Symposium on Operating Systems
+  Principles\/} (2015), pp.~328--343.
+
+\bibitem{tsakiltsidis2016automatic}
+{\sc Tsakiltsidis, S., Miranskyy, A., and Mazzawi, E.}
+\newblock On automatic detection of performance bugs.
+\newblock In {\em 2016 IEEE international symposium on software reliability
+  engineering workshops (ISSREW)\/} (2016), IEEE, pp.~132--139.
+
+\bibitem{VPGFC:ICPE17}
+{\sc Valov, P., Petkovich, J.-C., Guo, J., Fischmeister, S., and Czarnecki, K.}
+\newblock Transferring performance prediction models across different hardware
+  platforms.
+\newblock In {\em Proc. Int'l Conf. on Performance Engineering (ICPE)\/}
+  (2017), ACM, pp.~39--50.
+
+\bibitem{VJSSAK:ASE20}
+{\sc Velez, M., Jamshidi, P., Sattler, F., Siegmund, N., Apel, S., and
+  K{\"a}stner, C.}
+\newblock Configcrusher: Towards white-box performance analysis for
+  configurable systems.
+\newblock {\em Automated Software Engineering 27\/} (2020), 265–300.
+
+\bibitem{velez2021white}
+{\sc Velez, M., Jamshidi, P., Siegmund, N., Apel, S., and K{\"a}stner, C.}
+\newblock White-box analysis over machine learning: Modeling performance of
+  configurable systems.
+\newblock In {\em 2021 IEEE/ACM 43rd International Conference on Software
+  Engineering (ICSE)\/} (2021), IEEE, pp.~1072--1084.
+
+\bibitem{velez2022study}
+{\sc Velez, M., Jamshidi, P., Siegmund, N., Apel, S., and K{\"a}stner, C.}
+\newblock On debugging the performance of configurable software systems:
+  Developer needs and tailored tool support.
+\newblock In {\em 2022 IEEE/ACM 43rd International Conference on Software
+  Engineering (ICSE)\/} (2022).
+
+\bibitem{wang2018understanding}
+{\sc Wang, S., Li, C., Hoffmann, H., Lu, S., Sentosa, W., and Kistijantoro,
+  A.~I.}
+\newblock Understanding and auto-adjusting performance-sensitive
+  configurations.
+\newblock {\em ACM SIGPLAN Notices 53}, 2 (2018).
+
+\bibitem{whitaker2004configuration}
+{\sc Whitaker, A., Cox, R.~S., Gribble, S.~D., et~al.}
+\newblock Configuration debugging as search: Finding the needle in the
+  haystack.
+\newblock In {\em OSDI\/} (2004), vol.~4, pp.~6--6.
+
+\bibitem{WWHJK:GECCO15}
+{\sc Wu, F., Weimer, W., Harman, M., Jia, Y., and Krinke, J.}
+\newblock Deep parameter optimisation.
+\newblock In {\em Proc. of the Annual Conference on Genetic and Evolutionary
+  Computation\/} (2015), ACM, pp.~1375--1382.
+
+\bibitem{xia2021causal}
+{\sc Xia, K., Lee, K.-Z., Bengio, Y., and Bareinboim, E.}
+\newblock The causal-neural connection: Expressiveness, learnability, and
+  inference.
+
+\bibitem{XJHZLJP:OSDI16}
+{\sc Xu, T., Jin, X., Huang, P., Zhou, Y., Lu, S., Jin, L., and Pasupathy, S.}
+\newblock Early detection of configuration errors to reduce failure damage.
+\newblock USENIX Association, pp.~619--634.
+
+\bibitem{zhang2014encore}
+{\sc Zhang, J., Renganarayana, L., Zhang, X., Ge, N., Bala, V., Xu, T., and
+  Zhou, Y.}
+\newblock Encore: Exploiting system environment and correlation information for
+  misconfiguration detection.
+\newblock In {\em Proceedings of the 19th international conference on
+  Architectural support for programming languages and operating systems\/}
+  (2014), pp.~687--700.
+
+\bibitem{zhang2013automated}
+{\sc Zhang, S., and Ernst, M.~D.}
+\newblock Automated diagnosis of software configuration errors.
+\newblock In {\em 2013 35th International Conference on Software Engineering\/}
+  (2013).
+
+\bibitem{zhang2021evolutionary}
+{\sc Zhang, Y., He, H., Legunsen, O., Li, S., Dong, W., and Xu, T.}
+\newblock An evolutionary study of configuration design and implementation in
+  cloud systems.
+\newblock In {\em Proceedings of International Conference on Software
+  Engineering\/} (2021), ICSE'21.
+
+\bibitem{zitzler2007hypervolume}
+{\sc Zitzler, E., Brockhoff, D., and Thiele, L.}
+\newblock The hypervolume indicator revisited: On the design of
+  pareto-compliant indicators via weighted integration.
+\newblock In {\em International Conference on Evolutionary Multi-Criterion
+  Optimization\/} (2007), Springer, pp.~862--876.
+
+\end{thebibliography}

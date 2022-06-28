@@ -1,0 +1,39 @@
+% \begin{table}[t!]
+%     \caption{\small Overview of workloads used in our experiments.}
+%     \label{tab:perf_faults_summary}
+%     \centering
+%     \resizebox{0.9\linewidth}{!}{%
+%     \begin{tabular}{lrrrr}
+%     \hlineB{2}
+%     Workload & Domain & $d$ & $|C|$ & $|H|$\\\hlineB{2}
+%     Xception & Image recognition (DNN) & 13 & 1408 & 4 \\
+%     BERT & Natural language processing (DNN) & 13 & 1376 & 4 \\
+%     DeepSpeech & Speech recognition (DNN) & 13 & 1128 & 4 \\
+%     SQLite & Database & 17 & 1684 & 3 \\
+%     x264& Video encoding & 19 & 1843 & 3 \\ 
+    
+%     \end{tabular}%
+% }
+% \end{table}
+
+\begin{table}[]
+    \centering
+    \caption{\small (RQ2) Efficiency of \tool in detecting and repairing the root-cause of multiple non-functional faults. Cells highlighted in \colorbox[HTML]{C9E7BF}{green} indicate better performance and \colorbox[HTML]{FFCCC9}{red} indicate cases where the performance drops. Note: the results are reported for two kinds of faults in TX2: (1) faults in both latency and energy; and (2) faults in latency, energy, and heat dissipation.}
+    \label{tab:rq2}
+    \resizebox{\linewidth}{!}{
+    \begin{tabular}{l|r|rrrrr|}
+     &  & \multicolumn{1}{r|}{\rotatebox{90}{\tool}} & \rotatebox{90}{Default} & \multicolumn{1}{r|}{\rotatebox{90}{\tool}} & \rotatebox{90}{Default} & \multicolumn{1}{r|}{\rotatebox{90}{\tool}} & \multicolumn{1}{r|}{\rotatebox{90}{Default}} \bigstrut\\ \cline{3-8} 
+     & Software & \multicolumn{2}{r|}{Accuracy} & \multicolumn{2}{r|}{Recall} & \multicolumn{2}{r|}{Precision} \bigstrut\\ \hlineB{2}
+    \multicolumn{1}{l|}{\multirow{6.5}{*}{Latency and Energy}} & DNN Image & \cellcolor[HTML]{C9E7BF}59 & 51 & \cellcolor[HTML]{C9E7BF}44 & 35 & \cellcolor[HTML]{C9E7BF}65 & 56 \bigstrut\\
+    \multicolumn{1}{l|}{} & DNN   Speech & \cellcolor[HTML]{C9E7BF}66 & 49 & \cellcolor[HTML]{C9E7BF}51 & 43 & \cellcolor[HTML]{C9E7BF}74 & 64 \bigstrut\\
+    \multicolumn{1}{l|}{} & DNN NLP & \cellcolor[HTML]{C9E7BF}56 & 53 & \cellcolor[HTML]{C9E7BF}42 & \cellcolor[HTML]{C9E7BF}42 & \cellcolor[HTML]{C9E7BF}66 & 61 \bigstrut\\
+    \multicolumn{1}{l|}{} & x264 & \cellcolor[HTML]{C9E7BF}51 & 48 & \cellcolor[HTML]{C9E7BF}55 & 33 & \cellcolor[HTML]{C9E7BF}64 & 56 \bigstrut\\
+    \multicolumn{1}{l|}{} & SQLite & \cellcolor[HTML]{C9E7BF}60 & 51 & \cellcolor[HTML]{C9E7BF}57 & 37 & \cellcolor[HTML]{C9E7BF}72 & 57 \bigstrut\\ \hlineB{2}
+    \multicolumn{1}{l|}{\multirow{3}{*}{All three}} & DNN Image & \cellcolor[HTML]{C9E7BF}67 & 59 & \cellcolor[HTML]{C9E7BF}69 & 60 & \cellcolor[HTML]{C9E7BF}64 & 60 \bigstrut\\
+    \multicolumn{1}{l|}{} & x264 & \cellcolor[HTML]{C9E7BF}68 & 62 & \cellcolor[HTML]{C9E7BF}79 & 56 & \cellcolor[HTML]{C9E7BF}68 & 58 \bigstrut\\
+    \multicolumn{1}{l|}{} & SQLite & \cellcolor[HTML]{C9E7BF}79 & 63 & \cellcolor[HTML]{C9E7BF}70 & 57 & \cellcolor[HTML]{C9E7BF}84 & 63 \bigstrut\\ \hlineB{2}\multicolumn{1}{l}{}&\multicolumn{1}{l}{}&\multicolumn{1}{l}{}&\multicolumn{1}{l}{}&\multicolumn{1}{l}{}&\multicolumn{1}{l}{}&\multicolumn{1}{l}{}\bigstrut\\[-0.4cm]\hlineB{2}
+    \multicolumn{1}{l}{\multirow{9.5}{*}{Latency and Energy}} & \multicolumn{1}{r|}{$\Delta_{gain}\longrightarrow$} & \multicolumn{2}{c|}{{Latency}} & \multicolumn{2}{c|}{{Energy}} & \multicolumn{2}{c|}{{Thermals}} \bigstrut\\ \hlineB{2} 
+    
+    \end{tabular}
+    }
+    \end{table}

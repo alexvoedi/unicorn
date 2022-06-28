@@ -1,0 +1,149 @@
+\newcommand{\algcauper}{%
+\begingroup
+\removelatexerror% Nullify \@latex@error
+\begin{algorithm}[H]
+    % \SetAlgoLined
+    \footnotesize
+    \SetKwInOut{Input}{Input}
+    \SetKwInOut{Output}{Output}
+    \SetKwFunction{Fframework}{\tool}
+    \SetKwProg{Fn}{Function}{:}{}
+    \Input{%
+            $\mathrm{D}$: ~Observational Data\\
+            $\mathbb{Y}_i$: ~Performance objective $\mathit{i}$\\
+            $\mathrm{X}$: ~Intervenable configurations\\
+            $\mathbb{Y}^{\mathit{fault}}_\mathit{i}$: ~Faulty Performance objective $\mathit{i}$\\
+        %  $\mathrm{Z}$: ~Non-intervenable observable configurations.\\
+            }
+    \Output{%
+        % $\mathcal{I}$:~ Interventions\\
+        $\mathcal{C},~\mathcal{R}$:~ Root causes, Prescribed Changes.\\ 
+    }
+    % \Fn{\Fframework{$\mathbb{D}_\text{train}, \alpha, \beta, \gamma, lr$}}{
+    \Fn{\Fframework}{
+        % $\algvar{c\_paths} \leftarrow \varnothing$ \alginlinecomment{Causal}
+
+        % $\algvar{interventions} \leftarrow \varnothing$ \alginlinecomment{Possible interventions}
+                
+        \algcomment{Contruct Causal Graphs}%\smallskip
+        
+        % \For(\alginlinecomment{Bootstrap resample}){$\mathrm{d} \in D.\mathit{resample()}$}{
+        $\algvar{fci\_pag} \leftarrow \text{FCI}\left(\mathrm{D}\right)$ \alginlinecomment{Partial DAG with FCI.}\label{line:c_graph_0}
+        
+        $\algvar{ntr\_dag} \leftarrow \text{NOTEARS}\left(\mathrm{D}\right)$ \alginlinecomment{DAG with NOTEARS.}
+        
+        \smallskip\algcomment{Orient undirected edges.}
+
+        $\algvar{c\_graph} \leftarrow \text{orient}\left(fci\_pag, ntr\_dag\right)$\label{line:c_graph_1}
+        % }
+
+        \smallskip\algcomment{Causal Path Discovery}%\smallskip
+        
+        \For{$perf\_obj \in \mathbb{Y}_i$}{ \label{line:c_paths_0}
+            % \smallskip\algnestedcomment{All reachable nodes from performance objective.}
+            
+            $\algvar{c\_paths} \leftarrow  \text{get\_causal\_paths}\left(\mathrm{X},~\mathit{perf\_obj}\right)$
+        }
+        
+        \smallskip\algcomment{Compute Average Causal Effect (ACE) of paths.}%\smallskip
+
+        \For{$p \in c\_paths$}{
+            \If{every $X \in p$ is \textsl{identifiable}}{  
+                % \smallskip\algnestedcomment{Get average causal effect of all intervenable configurations in path.}
+                $\algvar{p.ace} \leftarrow \text{average\_causal\_effect}\left(p\right)$
+            }
+        }
+        
+        
+        $\algvar{top\_paths} \leftarrow \text{rank\_paths}\left(c\_paths,~\mathrm{K}\right)$\alginlinecomment{Select top $\mathrm{K}$ paths}\label{line:c_paths_1}\\
+        \smallskip\algcomment{Generate interventions}
+
+        % \For{$\mathit{path} \in \mathit{top\_paths}$}{
+        %     \For{$\mathit{node} \in \mathit{path}$}{
+        %         \algnestedcomment{set node to all permitted values}
+        %     }
+        % }
+        $\algvar{intervene} \leftarrow \text{gen\_interventions}(\algvar{top\_paths},~\mathbb{Y}^{\mathit{fault}}_\mathit{i})$\label{line:intervene}
+        
+
+        \smallskip\algcomment{Find the intervention with maximum treatment effect}%\smallskip
+
+        $\mathcal{I} \leftarrow \algvar{intervene.max(\green{"treatment~effect"})}$
+
+        $\mathcal{C} \leftarrow \text{root\_causes}\left(\mathcal{I}\right)$ \algnestedcomment{Get the root-causes from intervention.}
+        
+        $\mathcal{R} \leftarrow \text{prescriptions}\left(\mathcal{C}\right)$ \algnestedcomment{Get prescriptions for the root-causes.}
+        
+        % \algcomment{Return root-causes and prescriptions.}%\smallskip
+
+        \smallskip\Return $\mathcal{C}, \mathcal{R}$
+    }
+    \caption{\small Algorithmic outline of \tool}
+    \label{alg:overview_psuedocode}    
+\end{algorithm}
+\endgroup}
+
+\newcommand{\algquery}{%
+\begingroup
+\removelatexerror% Nullify \@latex@error
+\begin{algorithm}[H]
+    % \SetAlgoLined
+    \footnotesize
+    \SetKwInOut{Input}{Input}
+    \SetKwInOut{Output}{Output}
+    \SetKwFunction{Fframework}{gen\_interventions}
+    \SetKwFunction{Frecurse}{recurse$\left(node\right)$}
+    \SetKwFunction{FrecurseA}{recurse$\left(node.next(),~lst\right)$}
+    \SetKwProg{Fn}{Function}{:}{}
+    \Input{%
+         $top\_paths$: ~Causal Paths from Performance Objectives\\\vspace{0.25em}
+         $\mathbb{Y}^{\mathit{fault}}_\mathit{i}$: ~Faulty performance objectives\\\vspace{0.25em}
+         $\mathbb{Y}^{\mathit{fixed}}_\mathit{i}$: ~\textsl{(Optional)} Performance objective to keep fixed\\\vspace{0.25em}
+         }
+    \Output{%
+        $\mathit{intervene}$:~ Possible interventions on the provided paths\\
+    }
+    % % \Fn{\Fframework{$\mathbb{D}_\text{train}, \alpha, \beta, \gamma, lr$}}{
+    \Fn{\Fframework} {
+
+        \algcomment{Recursively enumerate all interventions on nodes in a path}
+        \Fn{\Frecurse} {            
+            \lIf(\alginlinecomment{Path end.}){$\text{node is } \mathbb{Y}^{~\mathit{fault}}_\mathit{~i}$}{  
+                $\algvar{intervene} \leftarrow lst$
+            } \Else(\alginlinecomment{Recurse with no change}){
+                
+                $\mathit{lst} \leftarrow node$
+
+                \FrecurseA
+
+                \algcomment{Recurse by changing node to all permitted values}
+
+                \For{$new\_val \in node.allowed\_values$}{
+
+                $\algvar{node.val} \leftarrow new\_val$ \alginlinecomment{Update node value}
+
+                $\mathit{lst} \leftarrow node$ 
+
+                \FrecurseA
+                }
+            }
+        }
+        
+        $\algvar{intervene} \leftarrow \emptyset$
+        
+        \For(\alginlinecomment{Get all possible interventions.}){$\text{path} \in \text{top\_paths}$}{
+            
+            $\algvar{lst} \leftarrow \emptyset$
+            
+            $\algvar{start} \leftarrow \mathit{path.start\_node}$
+
+            \FrecurseA
+        }
+        
+        \Return{$\mathit{intervene}$}
+    }
+     \caption{\small Generating Interventions}
+    \label{alg:interventions}    
+\end{algorithm}
+\endgroup}
+

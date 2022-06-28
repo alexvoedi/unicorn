@@ -1,0 +1,49 @@
+\section{Case Study}
+\label{sec:casestudy}
+
+\begin{figure}[tp!]
+    % \setlength{\belowcaptionskip}{-3em}
+    \centering
+    \includegraphics*[width=\linewidth]{figures-vg/barplot_fault.pdf}
+    \caption{\small {Distribution of 451 single-objective and 43 multi-objective non-functional faults across different software systems used in our study.}}
+    
+    \label{fig:jetson_faults}
+    % \rayb{I have questions about this figure. Let's talk in the morning}
+\end{figure}
+Prior to a systematic evaluation in \S\ref{sec:evaluation}, here, we show how \ourapproach can enable performance debugging in a real-world scenario discussed in \cite{code_transplant:online}, where a developer migrated a real-time scene detection system from NVIDIA \txone to a more powerful hardware, \txtwo. The developer, surprisingly, experienced $4\times$ worse latency in the new environment (from 17 frames/sec in \txone to 4 frames/sec in \txtwo). % The developer expected 40\% improvement in \txtwo, \ie, 24 frames/sec. 
+After two days of discussions, the performance issue was diagnosed with a misconfiguration--an incorrect setting of a compiler option and four hardware options.
+Here, we assess whether and how \ourapproach could facilitate the performance debugging by comparing with (i) the fix suggested by NVIDIA in the forum, and two academic performance debugging approaches--\bugdoc~\cite{lourencco2020bugdoc} and SMAC~\cite{hutter2011sequential}.
+% 
+
+
+\noindent\textbf{Findings.~}~\fig{real_example} illustrates our findings. We find that:
+\begin{itemize}
+    \item \ourapproach could diagnose the root cause of the misconfiguration and recommends a fix within 22 minutes. Using the recommended configuration from \ourapproach, we achieved a throughput of 28 frames/sec ($65\%$ higher than \txone and $7\times$ higher than the fault). This, surprisingly, exceeds the developers' initial expectation of $30-40\%$ improvement. %(or $22-24$ FPS).
+    \item \bugdoc (a diagnosis approach) has the least improvement compared to other approaches ($24\%$ improvement over \txone) while taking 4 hours to suggest the fix. \bugdoc also changed several unrelated options (depicted by \colorbox{orange!12}{\color{gray50}{\faCheck}}) not endorsed by the domain experts. 
+    \item Using SMAC (an optimization approach), we aimed to find a configuration that achieves optimal throughput. However, after converging, SMAC recommended a configuration which achieved 24 frames/sec ($41\%$ better than \txone and $6\times$ better than the fault), however, could not outperform the configuration suggested by \ourapproach and even took 4 hours ($11\times$ longer than \ourapproach to converge). In addition, SMAC changed several unrelated options (\colorbox{orange!12}{\color{gray50}{\faCheck}} in~\fig{real_example}). 
+\end{itemize}
+
+  
+
+
+% SMAC took 
+
+% how cauper models this information
+% what other methods miss
+% what additional information can be gleaned?
+\noindent\textbf{Why \ourapproach works better (and faster)?~}~%
+% what the forum recommends
+% This latency fault was resolved by the forum by using disabling \texttt{CUDA} \texttt{STATIC} and maximizing the clock frequencies of the CPU, GPU, and the EMC controller. This allows the software to leverage \txtwo's faster hardware. 
+\ourapproach discovers the misconfigurations by constructing a causal model that rules out irrelevant configuration options and focuses on the configurations that have the highest (direct or indirect) causal effect on latency, \eg, we found the root-cause \texttt{CUDA} \texttt{STATIC} in the causal graph which indirectly affects latency via \texttt{Context Switches} (an intermediate system event). Using counterfactual queries, \ourapproach can reason about changes to configurations with the highest average causal effect (ACE) (last column in~\fig{real_example}). The counterfactual reasoning occurs no additional measurements, significantly speeding up inference as shown in \fig{real_example}, \ourapproach accurately finds all the configuration options recommended by the forum (depicted by \colorbox{blue!10}{\color{gray50}{\faCheck}} in~\fig{real_example}).
+
+% Together, the causal model and the counterfactual reasoning enable \tool to pinpoint the configuration options that were misconfigured and recommend a fix for them promptly. A Further, \tool recommends fixes to these options that result in $24\%$ better latency than the recommendation by domain experts in the forum. More importantly, \tool takes only 24 minutes (vs. 2 days of forum discussion) without modifying unrelated configurations. 
+% 
+% \subsubsection*{Aside.}~In several cases, especially with network performance faults, developers on the forum often manually inspect trace logs obtained by utilities such as \texttt{iperf} to understand the possible bottlenecks~\cite{HighCPUu7:online}. These traces contain a large volume of information about the current state of the system (\eg, network load, \, etc). Sifting through this log to decipher the source of faults is very cumbersome taking months to resolve in some cases.  
+
+% In the rest of the paper, we perform a detailed evaluation \tool on 
+% Without causal models, 
+% \subsubsection*{Limitations of other methods.~}~%
+% \bisq
+% \item [$circ$] 
+% \item[$\circ$] \textit{Inference time:} SMAC takes up to 4 hours to generate an near-optimal configuration. SMAC explores the configuration space to find a near-optimal. Due to the complexity of the configuration space, SMAC is forced to explore and evaluate several sub-optimal configurations. 
+% \ei

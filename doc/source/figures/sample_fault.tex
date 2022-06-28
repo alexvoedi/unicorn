@@ -1,0 +1,133 @@
+\begin{figure}[tp!]
+    % \setlength{\belowcaptionskip}{-1em}
+    
+ \subfloat[Performance Distribution]{\raisebox{-7.5em}{\includegraphics*[width=0.65\linewidth, valign=b]{fig__spread.pdf}}\label{fig:perf_behavior}} 
+%  \qquad 
+ \subfloat[Misconfiguration]{
+        \resizebox{0.32\linewidth}{!}{\adjustbox{valign=m}{%
+       \begin{tabular}{lV{2.5}rV{2.5}}
+    \clineB{1-2}{2.5}
+    \multicolumn{1}{V{2.5}lV{2.5}}{\textbf{Config. Option}}& {Value} \\ 
+     \clineB{1-2}{2.5}
+    \multicolumn{1}{l}{} & \multicolumn{1}{l}{} \\[-0.3em] \hlineB{2.5}
+     
+    \multicolumn{1}{V{2.5}lV{2.5}}{CPU Cores} & 2 \\
+
+    \multicolumn{1}{V{2.5}lV{2.5}}{CPU Frequency (GHz)} & 0.1 \\
+
+    \multicolumn{1}{V{2.5}lV{2.5}}{EMC Frequency (GHz)} & 1.6\\
+
+    \multicolumn{1}{V{2.5}lV{2.5}}{GPU Frequency (GHz)} & 0.7\\
+
+    \multicolumn{1}{V{2.5}lV{2.5}}{Scheduler Policy} & \textsc{noop}\\
+
+    \multicolumn{1}{V{2.5}lV{2.5}}{Scheduler Runtime ($\mu$s)} &  950k \\
+
+    \multicolumn{1}{V{2.5}lV{2.5}}{Scheduler Child Runs First} & 1 \\
+    
+     \multicolumn{1}{V{2.5}lV{2.5}}{Batched Push Timeout} & 1 \\
+     
+      \multicolumn{1}{V{2.5}lV{2.5}}{Batch Size} & 1 \\
+      
+      \multicolumn{1}{V{2.5}lV{2.5}}{Interval} & 1 \\
+      
+      \multicolumn{1}{V{2.5}lV{2.5}}{Buffer Size} & 6000 \\
+
+    \multicolumn{1}{V{2.5}lV{2.5}}{ Dirty Background Ratio} & 5 \\
+
+    \multicolumn{1}{V{2.5}lV{2.5}}{Dirty Ratio} &  10  \\
+
+    \multicolumn{1}{V{2.5}lV{2.5}}{Drop Caches}  &0  \\
+
+    \multicolumn{1}{V{2.5}lV{2.5}}{Cache Pressure} & 500 \\
+    
+    \multicolumn{1}{V{2.5}lV{2.5}}{Swappiness} & 60  \\
+
+    \multicolumn{1}{V{2.5}lV{2.5}}{Enable Padding} & 1 \\
+
+    \multicolumn{1}{V{2.5}lV{2.5}}{Offset} & 0 \\
+    
+     \multicolumn{1}{V{2.5}lV{2.5}}{Swap Memory (Gb)} & 1 \\
+     
+      \multicolumn{1}{V{2.5}lV{2.5}}{Sched Time Avg (ms)} & 1000 \\
+      
+       \multicolumn{1}{V{2.5}lV{2.5}}{Dirty Bytes} & 30 \\
+       
+        \multicolumn{1}{V{2.5}lV{2.5}}{Overcommit Memory} & 2 \\
+        
+         \multicolumn{1}{V{2.5}lV{2.5}}{Overcommit Hugepages} & 1 \\
+        
+        
+        
+        
+        
+    \hlineB{2.5}
+
+    \multicolumn{1}{l}{} & \multicolumn{1}{l}{}  \\[-0.9em] 
+    \clineB{1-2}{2.5}
+     
+    \multicolumn{1}{V{2.5}lV{2.5}}{Throughput (FPS)} & 6.8 \\
+       
+    \multicolumn{1}{V{2.5}lV{2.5}}{Energy (J)} & 122 \\
+     \clineB{1-2}{2.5}
+        \end{tabular}}}
+        \label{tab:example_fault}}
+
+% %  
+\caption{\small {(a) Performance distribution when \textsc{Deepstream} is deployed on NVIDIA Jetson Xavier (b) Misconfiguration that caused the multi-objective non-functional fault, shown as {\color{orange!60} $\square$} in the performance distribution.}}
+\vspace{-3mm}
+% \rayb{Parts of figure e is not clear. Let's talk in the morning. }
+\label{tab:sample_fault}\end{figure}
+
+% \begin{figure}[t!]
+    
+%     \centering
+%     \resizebox{0.5\linewidth}{!}{%
+%     \begin{tabular}{lV{2.5}r|}
+%     \clineB{1-2}{2.5}
+%     \multicolumn{1}{V{2.5}lV{2.5}}{\textbf{Configuration Options}}& {Values} \\ 
+%      \clineB{1-2}{2.5}
+%     \multicolumn{1}{l}{} & \multicolumn{1}{l}{}  \\[-0.9em] \hlineB{2.5}
+     
+%     \multicolumn{1}{V{2.5}lV{2.5}}{CPU Cores} & 2 \\
+
+%     \multicolumn{1}{V{2.5}lV{2.5}}{CPU Frequency (GHz)} & 0.1 \\
+
+%     \multicolumn{1}{V{2.5}lV{2.5}}{EMC Frequency (GHz)} & 1.6\\
+
+%     \multicolumn{1}{V{2.5}lV{2.5}}{GPU Frequency (GHz)} & 0.7\\
+
+%     \multicolumn{1}{V{2.5}lV{2.5}}{Scheduler Policy} & \textsc{noop}\\
+
+%     \multicolumn{1}{V{2.5}lV{2.5}}{Scheduler Run Time ($\mu$s)} &  950000 \\
+
+%     \multicolumn{1}{V{2.5}lV{2.5}}{Scheduler Child Runs First} & 1 \\
+
+%     \multicolumn{1}{V{2.5}lV{2.5}}{Dirty Background Ratio} & 5 \\
+
+%     \multicolumn{1}{V{2.5}lV{2.5}}{Dirty Ratio} &  10  \\
+
+%     \multicolumn{1}{V{2.5}lV{2.5}}{Drop Caches}  &0  \\
+
+%     \multicolumn{1}{V{2.5}lV{2.5}}{Cache Pressure} & 500 \\
+    
+%     \multicolumn{1}{V{2.5}lV{2.5}}{Swappiness} & 60  \\
+
+%     \multicolumn{1}{V{2.5}lV{2.5}}{GPU Memory Growth} & default  \\
+
+%     \multicolumn{1}{V{2.5}lV{2.5}}{Logical Devices} & 50 \\
+    
+%      \multicolumn{1}{V{2.5}lV{2.5}}{Swap Memory (Gb)} & 1 \\
+%     \hlineB{2.5}
+
+%     \multicolumn{1}{l}{} & \multicolumn{1}{l}{}  \\[-0.9em] 
+%     \clineB{1-2}{2.5}
+     
+%     \multicolumn{1}{V{2.5}lV{2.5}}{Latency (sec)} & 152 \\
+%      \clineB{1-2}{2.5}
+% \end{tabular}}%
+
+
+% \caption{\small \textcolor{blue}{An example of a misocnfiguration that led to a \textsc{nf-fault} due to latency.}}
+% \label{fig:example_fault}
+% \end{figure}

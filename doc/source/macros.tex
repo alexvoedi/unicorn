@@ -1,0 +1,212 @@
+\newcommand\eq[1]{\Cref{eq:#1}\xspace}
+\newcommand\fig[1]{\Cref{fig:#1}\xspace}
+\newcommand\tab[1]{\Cref{tab:#1}\xspace}
+\newcommand\tion[1]{\Cref{sect:#1}\xspace}
+\newcommand\alg[1]{\Cref{alg:#1}\xspace}
+\newcommand\listingref[1]{\cref{line:#1}\xspace}
+
+% --- Shorthands ---
+\newcommand{\etal}{\textit{et al.}\xspace}
+\newcommand{\ie}{i.e.}
+\newcommand{\eg}{e.g.}
+\newcommand{\wrt}{\textit{w.r.t.}\xspace}
+\newcommand{\etc}{\textit{etc}\xspace}
+
+
+\newcommand\motivation{{\noindent\textbf{Motivation.}}\xspace}
+\newcommand\approach{{\noindent\textbf{Setup.}}\xspace}
+\newcommand\observations{{\noindent\textbf{Results.}}\xspace}
+
+\newcommand{\tool}{\textsc{Unicorn}\xspace}
+\newcommand{\ourapproach}{\textsc{Unicorn}\xspace}
+\newcommand{\ourtool}{$\textsc{Unicorn}_{\textsc{Tool}}$\xspace}
+\newcommand{\dd}{$\delta$\textsc{-Debug~}\xspace}
+\newcommand{\encore}{\textsc{EnCore}\xspace}
+\newcommand{\bugdoc}{\textsc{BugDoc}\xspace}
+\newcommand{\cbi}{\textsc{CBI}\xspace}
+\newcommand{\TOOL}{\textsc{CADET}\xspace}
+\newcommand\nano{\textsc{Nano}\xspace}
+\newcommand\txone{\textsc{TX1}\xspace}
+\newcommand\txtwo{\textsc{TX2}\xspace}
+\newcommand\xavier{\textsc{Xavier}\xspace}
+\newcommand\needcitation{\red{[?]}\xspace}
+% \newcommand\gpugrowth{\texttt{GPU} \texttt{memory} \texttt{growth}\xspace}
+\newcommand\gpugrowth{{GPU} {memory} {growth}\xspace}
+% \newcommand\swapmem{\texttt{swap} \texttt{memory}\xspace}
+\newcommand\swapmem{{swap} {memory}\xspace}
+\newcommand\latency{\texttt{latency}\xspace}
+\newcommand{\nfp}{\textsc{nf-fault}\xspace}
+\newcommand{\nfps}{\textsc{nf-faults}\xspace}
+\newcommand\gpufreq{\texttt{GPU} \texttt{frequency}\xspace}
+\newcommand\cpufreq{\texttt{CPU} \texttt{frequency}\xspace}
+\newcommand\emcfreq{\texttt{EMC} \texttt{frequency}\xspace}
+\newcommand\swappiness{\texttt{Swappiness}\xspace}
+\newcommand\contextswitches{\texttt{Context} \texttt{switches}\xspace}
+\newcommand\cpucores{\texttt{CPU} \texttt{cores}\xspace}
+\newcommand\cachepressure{\texttt{Cache} \texttt{Pressure}\xspace}
+\newcommand\schedulerruntime{\texttt{Scheduler} \texttt{run time}\xspace}
+\newcommand\cachemisses{\texttt{Cache} \texttt{misses}\xspace}
+\newcommand\util{\texttt{CPU} \texttt{utilization}\xspace}
+% --- List options ---
+\newcommand{\be}{\begin{enumerate}}
+\newcommand{\smalleq}{\begin{equation}\small}
+\newcommand{\smallereq}{\begin{equation}\footnotesize}
+\newcommand{\eeq}{\end{equation}}
+\newcommand{\beqml}{\begin{multline}}
+\newcommand{\eeqml}{\end{multline}}
+\newcommand{\besq}{\begin{enumerate}[leftmargin=*,wide=0pt,topsep=0pt]}
+\newcommand{\ee}{\end{enumerate}}
+\newcommand{\bi}{\begin{itemize}}
+\newcommand{\bicirc}{\begin{itemize}[leftmargin=*]\renewcommand\labelitemi{$\circ$}}
+\newcommand{\bisq}{\begin{itemize}[leftmargin=*,wide=0pt,topsep=1pt]}
+\newcommand{\ei}{\end{itemize}}
+\newcommand{\ourtitle}{\tool: Debugging Hardware non-functional faults Using Causal Inference}
+\newcommand{\pdftitle}{\tool: Debugging Hardware non-functional faults Using Causal Inference}
+\newcommand{\pdfauthors}{Anonymous Author(s)}
+
+\newcommand\todo[1]{\red{TODO:~#1}\xspace}
+\newcommand\rahul[1]{\red{RAHUL:~#1}}
+\newcommand\pooyan[1]{\red{POOYAN:~#1}}
+\newcommand\rayb[1]{\red{RAYB:~#1}}
+\newcommand\mohammad[1]{\red{MOHAMMAD:~#1}}
+\newcommand\shahriar[1]{\red{SHAHRIAR:~#1}}
+
+
+\makeatletter
+\edef\textFontName{\fontname\csname
+  \f@encoding/\f@family/\f@series/\f@shape/\f@size\endcsname}
+\edef\mathFontName{\fontname\textfont0}
+\edef\mathLetterFontName{\fontname\textfont1}
+\newcommand{\removelatexerror}{\let\@latex@error\@gobble}
+% \renewcommand\paragraph{\@startsection{subsubsection*}{3}{\z@}%
+%                                      {4pt\@plus 0ex}%
+%                                      {0ex \@plus 0ex}%
+%                                      {\normalfont\em}}% from \normalsize
+
+% \renewcommand\subsubsubsection*{\@startsection{subsubsection}{3}{\z@}%
+%                                     {3pt\@plus 0ex}%
+%                                     {0ex \@plus 0ex}%
+%                                     {\sc}}% from \normalsize
+
+\makeatother
+
+% --- TIKZ ARROWS ---
+
+\usepackage{tikz}
+\usetikzlibrary{arrows.meta}
+
+\newcommand\edgezero{
+\begin{tikzpicture}
+  \draw[black,  arrows={-Triangle[angle=90:3pt,black,fill=black]}] (0,0.0) -- (0.5,0.0);
+\end{tikzpicture}}
+
+\newcommand\edgeone{
+\begin{tikzpicture}
+  \draw[black,  arrows={-Triangle[angle=90:3pt,black,fill=black]}] (0,0.0) -- (0.5,0.0);
+\end{tikzpicture}\xspace}
+
+\newcommand\edgetwo{
+\begin{tikzpicture}
+  \draw[black,  arrows={Triangle[angle=90:3pt,black,fill=black]-Triangle[angle=90:3pt,black,fill=black]}] (0,0.0) -- (0.5,0.0);   
+\end{tikzpicture}\xspace}
+
+\newcommand\edgethree{
+\begin{tikzpicture}
+  \draw[black,  arrows={Circle[open]-Triangle[angle=90:3pt,black,fill=black]}] (0,0.0) -- (0.5,0.0);   
+\end{tikzpicture}\xspace}
+
+\newcommand\edgefour{
+\begin{tikzpicture}
+  \draw[black,  arrows={Circle[open]-Circle[open]}] (0,0.0) -- (0.5,0.0);   
+\end{tikzpicture}\xspace}
+
+
+% --- MATH MACROS ---
+\newcommand\norm[1]{\left\lvert#1\right\lvert}
+\usepackage{amsthm}
+\DeclareMathOperator*{\argmax}{argmax}
+\usepackage{thmtools}
+\usepackage{tikz}
+\usetikzlibrary{arrows.meta}
+\declaretheoremstyle[headfont=\scshape]{schead}
+\declaretheoremstyle[headfont=\bf]{bfhead}
+\newcommand\independent{\protect\mathpalette{\protect\independenT}{\perp}}
+\newcommand\notindependent{\not\independent}
+\def\independenT#1#2{\mathrel{\rlap{$#1#2$}\mkern2mu{#1#2}}}
+\declaretheorem[style=schead]{definition}
+\declaretheorem[style=bfhead]{example}
+
+% --- Algorithm ---
+\usepackage[linesnumbered,ruled,vlined, noend]{algorithm2e}
+\newcommand\mycommfont[1]{\footnotesize\ttfamily\textcolor{gray70}{#1}}
+\SetCommentSty{mycommfont}
+\SetAlCapNameFnt{\footnotesize}
+\SetAlCapFnt{\footnotesize}
+\SetAlgorithmName{Pseudocode}{Pseudocode}{Pseudocode of Algorithms}
+\newcommand\algvar[1]{\texttt{#1}\xspace}
+\newcommand\alginlinecomment[1]{\grayline{\hfill$\triangleright$~\textsl{#1}}\xspace}
+\newcommand\algnestedcomment[1]{\javadocblue{$\triangleright$~\textsl{#1}}\xspace}
+\newcommand\algcomment[1]{\javadocblue{$\triangleright$~\text{#1}\xspace}}
+
+% --- Material style Result Box ---
+\usepackage[framemethod=tikz]{mdframed}
+\usetikzlibrary{shadows}
+\usepackage{graphics}
+\newmdenv[
+    tikzsetting= {fill=gray05!0},
+    skipabove=0.33em,
+    skipbelow=0.33em,
+    linewidth=1pt,
+    innerleftmargin=4pt,
+    innerrightmargin=4pt,
+    innertopmargin=2pt,
+    innerbottommargin=2pt,
+    linecolor=gray85,
+    roundcorner=2pt, 
+    shadow=true,
+    shadowsize=4pt,
+    shadowcolor=black
+]{myshadowbox}
+\newmdenv[
+    tikzsetting= {fill=gray05!0},
+    skipabove=0.33em,
+    skipbelow=0.33em,
+    linewidth=1.25pt,
+    innerleftmargin=4pt,
+    innerrightmargin=4pt,
+    innertopmargin=2pt,
+    innerbottommargin=2pt,
+    linecolor=gray85,
+    roundcorner=3pt, 
+    shadow=false,
+    shadowsize=3pt,
+    shadowcolor=black
+]{mygoalbox}
+\usepackage{tikz}
+\newcommand*\circled[1]{\tikz[baseline=(char.base)]{
+            \node[shape=circle,draw,inner sep=0.5pt] (char) {\small #1};}}
+
+\newenvironment{result}
+{\begin{myshadowbox}
+  \besq
+  \item[\faHandORight]
+    % \item[]
+  % \item[{\footnotesize \faPlay}]
+  }
+{\ee\end{myshadowbox}}
+
+\newenvironment{goal}
+{\vspace{0.2em}
+\begin{mygoalbox}
+  \besq
+    % \item[\faHandORight]
+    \item[{\footnotesize \faPlay}]
+}
+{
+  \ee
+  \end{mygoalbox}
+}
+%\renewcommand{\Bbbk}{\mathbb{k}}
+%\setlength{\textfloatsep}{10pt plus 1.0pt minus 2.0pt}
+
+\newcommand\given[1][]{\:#1\vert\:}

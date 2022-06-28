@@ -1,0 +1,43 @@
+% \setlength{\belowcaptionskip}{-10pt}
+% \setlength{\floatsep}{10pt}
+% \setlength{\textfloatsep}{10pt}
+% \setlength{\dbltextfloatsep}{10pt}
+% \setlength{\fboxsep}{.2pt}
+\begin{comment}
+% % \setlength{\multicolsep}{2.0pt}% 50% of original values
+
+
+% % \DeclarePairedDelimiter\abs{\lvert}{\rvert}%
+% ----- Change the spacing before and after equations globally -----
+\makeatletter
+\g@addto@macro\normalsize{%
+  \setlength\abovedisplayskip{2pt}
+  \setlength\belowdisplayskip{2pt}
+  \setlength\abovedisplayshortskip{2pt}
+  \setlength\belowdisplayshortskip{2pt}
+}
+\makeatother
+
+% % \makeatletter
+% % \def\thm@space@setup{%
+% %   \thm@preskip=0cm plus 0cm minus 0cm
+% %   \thm@postskip=\thm@preskip % or whatever, if you don't want them to be equal
+% % }
+% % \makeatother
+
+% % \newtheorem{definition}{Definition}
+
+\titleformat{\subsubsection*}[runin]{\bf\normalsize}{\thesubsubsection*}{0em}{}[\xspace\mbox{}]
+\titlespacing*{\subsubsection*}{0pt}{0ex plus 0ex minus 0ex}{0pt}
+
+% % \titlespacing*{\section}{5pt}{0.3\baselineskip}{0.3\baselineskip}
+% % \titlespacing*{\subsection}{3pt}{0.5\baselineskip}{0.5\baselineskip}
+\titleformat*{\subsubsection}{\em\xspace}
+% % \titlespacing*{\subsubsection}{2pt}{0.1\baselineskip}{0.1\baselineskip}
+\end{comment}
+
+%\titleformat{\subsubsection*}[runin]{\bf\normalsize}{\thesubsubsection*}{0em}{}[\xspace\mbox{}]
+% \titlespacing*{\subsubsection*}{0pt}{0ex plus 0ex minus 0ex}{0pt}
+% \setitemize{noitemsep,topsep=0pt,parsep=0pt,partopsep=0pt,leftmargin=*}%, wide=0pt}
+% \setenumerate{noitemsep,topsep=0pt,parsep=0pt,partopsep=0pt,leftmargin=*}%, wide=0pt}
+% \titlespacing*{\subsection}{3pt}{0.75\baselineskip}{0.75\baselineskip}

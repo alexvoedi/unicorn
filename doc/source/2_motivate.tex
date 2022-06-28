@@ -1,0 +1,138 @@
+\section{Motivating Scenarios}
+\label{sec:motivation}
+\input{figures/sample_fault.tex}
+
+\noindent
+\textbf{Simple motivating scenario.} In this simple scenario, we motivate our work by demonstrating why performance analyses solely based on correlational statistics may lead to an incorrect outcome. Here, the collected performance data indicates that \texttt{Throughput} is positively correlated with increased \texttt{Cache Misses}\footnote{we used a \texttt{distinct font} to indicate variables such as configuration options or performance metrics and events throughout this paper.} (as in  \fig{intro_fig}(a)). A simple ML model built on this data will predict with high confidence that larger \texttt{Cache Misses} leads to higher \texttt{Throughput}---this is misleading as higher \texttt{Cache Misses} should, in theory, lower \texttt{Throughput}. By further investigating the performance data, we noticed that the caching policy was automatically changed during measurement. We then segregated the same data on \texttt{Cache Policy} (as in~ \fig{intro_fig}(b)) and found out that within each group of \texttt{Cache Misses}, as \texttt{Cache Misses} increases, the \texttt{Throughput} decreases. One would expect such behavior, as the more \texttt{Cache Misses} the higher number of access to external memory, and, therefore, the \texttt{Throughput} would be expected to decrease. The system resource manager may change the \texttt{Cache Policy} based on some criteria; this means that for the same number of \texttt{Cache Misses}, the \texttt{Throughput} may be lower or higher; however, in all \texttt{Cache Policies}, the increases of \texttt{Cache Misses} resulting in a decrease in \texttt{Throughput}. Thus, \texttt{Cache Policy} acts as a confounder that explains the relation between \texttt{Cache Misses} and \texttt{Throughout}, which a correlation-based model will not be able to capture. In contrast, a causal performance model, as shown in \fig{intro_fig}(c), finds the relation between \texttt{Cache Misses}, \texttt{Cache Policy}, and \texttt{Throughput} and thus can reason about the observed behavior correctly. 
+
+In reality, performance analysis and debugging of heterogeneous multi-component systems is non-trivial and often compared with finding the needle in the haystack~\cite{whitaker2004configuration}. In particular, the end-to-end performance analysis is not possible by reasoning about individual components in isolation, as components may interact with one another in such a composed system. Below, we use a highly configurable multi-stack system to motivate why causal reasoning is a better choice for understanding the performance behavior of complex systems. 
+
+\noindent
+\textbf{Motivating scenario based on a highly configurable data analytics system.} We deployed a data analytics pipeline, \textsc{Deepstream}~\cite{DeepStream}. \textsc{Deepstream} has many components, and each component has many configuration options, resulting in several variants of the same system as shown in~\fig{deepstream_pipeline}. Specifically, the variability arises from: 
+(i)~the configuration options of each software component in the pipeline, (ii)~configurable low-level libraries that implement functionalities required by different components (e.g., the choice of tracking algorithm in the tracker or different neural network architectures), (iii)~the configuration options associated with each component's deployment stack (e.g., \texttt{CPU Frequency} of \xavier).  Further, there exist many configurable events that can be measured/observed at the OS level by the event tracing system. More specifically, the configuration space of the system includes (i) 27 Software options (Decoder: 6, Stream Muxer: 7, Detector: 10, Tracker: 4), (ii) 22 Kernel options (e.g., \texttt{Swappiness}, \texttt{Scheduler Policy}, etc.), and (iii) 4 Hardware options (\texttt{CPU Frequency}, \texttt{CPU Cores}, etc.). We use 8 camera streams as the workload, x264 as the decoder, TrafficCamNet model that uses ResNet 18 architecture for the detector, and an NvDCF tracker, which uses a correlation filter-based online discriminative learning algorithm for tracking. Such a large space of variability makes performance analysis challenging. This is further exacerbated by the fact that the configuration options among the components \emph{interact} with each other. Additional details about our \textsc{Deepstream} implementation can be found in the \href{https://github.com/softsys4ai/unicorn}{\color{blue!80}supplementary materials}.
+
+To better understand the potential of the proposed approach, we measured (i) application performance metrics including throughput and energy consumption by instrumenting the \textsc{Deepstream} code, and (ii) 288 system-wide performance events (hardware, software, cache, and tracepoint) using $perf$ and measured performance for 2461 configurations of \textsc{Deepstream} in two different hardware environments, \xavier, and \txtwo.  As it is depicted in  \fig{perf_behavior}, performance behavior of \textsc{Deepstream}, like other highly configurable systems, is non-linear, multi-modal, and non-convex~\cite{jamshidi2016uncertainty}. In this work, we focus on two performance tasks: 
+(i) \textit{Performance Debugging}: here, one observes a performance issue (e.g., latency), and the task involves replacing the current configurations in the deployed environment with another that fixes the observed performance issue; 
+(ii) \textit{Performance Optimization}: here, no performance issue is observed; however, one wants to get a near-optimal performance by finding a configuration that enables the best trade-off in the multi-objective space (e.g., throughput vs. energy consumption vs. accuracy in \textsc{Deepstream}).
+
+To show major shortcomings of existing state-of-the-art performance models, we built performance influence models that have extensively been used in the systems' literature~\cite{siegmund2015performance,JSVKPA:ASE17,GCASW:ASE13,GSKA:SPPEXA,kolesnikov2019tradeoffs,kaltenecker2020interplay,muhlbauer2019accurate,grebhahn2019predicting,siegmund2020dimensions} and it is the standard approach in industry~\cite{kolesnikov2019tradeoffs,kaltenecker2020interplay}. Specifically, we built non-linear regression models with forward and backward elimination using a step-wise training method on the \textsc{Deepstream} performance data. We then performed several sensitivity analyses and identified the following issues: 
+\besq
+    \item \textbf{Performance influence models could not reliably predict performance in unseen environments.} 
+    Performance behavior of configurable systems vary across environments, e.g., when we deploy software on new hardware with a different microarchitecture or when the workload changes~\cite{JSVKPA:ASE17,JVKSK:SEAMS17,JVKS:FSE18,iqbal_transfer_2019,VPGFC:ICPE17}. When building a performance model, it is important to capture predictors that transfer well, i.e., remain \emph{stable} across environmental changes. The predictors in performance models are options ($o_i$) and interactions ($\phi(o_i..o_j)$) that appear in the explainable models of form $f(c)=\beta_0+\Sigma_{i}{\phi(o_i)}+\Sigma_{i..j}{\phi(o_i..o_j)}$. The transferability of performance predictors is expected from performance models since they are learned based on one environment (e.g., staging as the source environment) and are desirable to reliably predict performance in another environment (e.g., production as the target environment). 
+    Therefore, if the predictors in a performance model become unstable, even if they produce accurate predictions in the current environment, there is no guarantee that it performs well in other environments, i.e., they become unreliable for performance predictions and performance optimizations due to large prediction errors. 
+    To investigate how transferable performance influence models are across environments, we performed a thorough analysis when learning a performance model for \textsc{DeepStream} deployed on two different hardware platforms that have two different microarchitectures. Note that such environmental changes are common, and it is known that performance behavior changes when, in addition to a change in hardware resources (e.g., higher \texttt{CPU Frequency}), we have major differences in terms of architectural constructs~\cite{ding2021generalizable,curtsinger2013stabilizer}, also supported by a thorough empirical study~\cite{JSVKPA:ASE17}. The results in \fig{barplot_hw_change} (a) indicate that the number of stable predictors is too small for the total number of predictors that appear in the learned regression models. Additionally, the coefficients of the common predictors change across environments as shown in \fig{coeff_across_environments} making them unreliable to be resued in the new scenario.  
+    
+    % ~\rayb{why the prediction is unreliable even after all these things? what evidence do you have for unreliable prediction?}
+    
+% \begin{figure}[h]
+% \small
+%     % \setlength{\belowcaptionskip}{-3em}
+%     \centering
+%     \includegraphics*[width=\linewidth]{figures-vg/reg_eq_noise.pdf}
+%     \caption{\small {Number of total terms, causal terms, and accuracy of regression model under different sample sizes.}}
+%     \label{fig:deepstream_no_of_terms}
+%     \begin{flushleft}
+%   \end{flushleft}
+%     % \rayb{It is not clear that this figure shows baseline results. Can we write the takeaway? }
+% \end{figure}
+    
+
+    
+    \item \textbf{Performance influence models could produce incorrect explanations.} In addition to performance predictions, where developers are interested to know the effect of configuration changes on performance objectives, they are also interested to estimate and explain the effect of a change in particular \emph{configuration options} (e.g., changing \texttt{Cache Policy}) toward performance variations. It is therefore desirable that the strength of the predictors in performance models, determined by their coefficients, remain consistent across environments~\cite{ding2021generalizable,JSVKPA:ASE17}.  
+    In the context of our simple scenario in \fig{intro_fig}, the learned performance influence model indicates that $0.16 \times \texttt{Cache Misses}$ is the most influential term that determines throughput, however, the (causal) model in \fig{intro_fig}(c) show that the interactions between configuration option \texttt{Cache Policy} and system event \texttt{Cache Misses} is a more reliable predictor of the throughput, indicating that the performance influence model, due to relying on superficial correlational statistics, incorrectly explains factors that influence performance behavior of the system. The low Spearman rank correlation between predictors coefficients indicates that a performance model based on regression could be highly unstable and thus would produce unreliable explanations as well as unreliable estimation of the effect of change in specific options for performance debugging or optimization.
+\ee
+
+\begin{figure}[tp!]
+\small
+    \centering
+    \includegraphics*[width=\linewidth]{figures-vg/barplot_hw_change.pdf}
+    \caption{\small {(a) Performance influence models do not generalize well as the number of common terms, total terms and prediction error of these models change from source (\xavier) to target (\txtwo). The rank correlation between source and target is 0.07 (p-value=0.73).} (b) \small {Causal performance models generalize better as the number of common terms, total terms and prediction error of the structural does not change much from source (\xavier) to target (\txtwo). The rank correlation between source and target is 0.49 (p-value=0.76).}}
+    \label{fig:barplot_hw_change}
+\end{figure}
+
+\begin{figure}[tp!]
+\small
+    \centering
+    \includegraphics*[width=\linewidth]{figures-vg/coeff_diff.pdf}
+    \caption{\small {Visualizing co-efficient differences from the source (\xavier) performance influence model to the target (\txtwo) performance influence model for the common terms for both options and interactions (shown by $\otimes$). }}
+    \label{fig:coeff_across_environments}
+    
+\end{figure}
+
+% Note that performance influence models are the most common models for performance analyses due to their simplicity and since they produce explainable models, they have extensively been used in the systems' literature~\cite{siegmund2015performance,JSVKPA:ASE17,GCASW:ASE13,GSKA:SPPEXA,kolesnikov2019tradeoffs,kaltenecker2020interplay,muhlbauer2019accurate,grebhahn2019predicting,siegmund2020dimensions} and it is the standard approach in industry~\cite{kolesnikov2019tradeoffs,kaltenecker2020interplay}. %We set the maximum degree of interactions to the number of options in the deployed system. 
+
+
+
+% \rayb{I think we need to bring back the old GPU vs memory growth example or something similar to show the difference between causality and correlation. After that this whole section will make more sense. Right now this section is mostly about showing baseline does not work, but why they do not work is missing.}
+
+
+% 
+% \begin{itemize}
+%     \item Performance influence models could produce unreliable predictions: (i) adding more data or less (a plot that you show the number of new terms, the disappearance of previous terms, and accuracy when you change the number of observations from 10-50-100-500-1000 by subsampling the current measurements), (ii) measurement noise (adding different levels of noise to signal and measuring the same parameters in the previous plot)
+%     \item Unstable performance models: (i) workload change, (ii) hardware change, (iii) library updates (one plot showing the same plot as the previous one but for hardware, workload, and both changes)
+%     \item Incorrect explanation based on non-causal correlations that affect both the influential options that affect performance behavior or root causes of a perf issue as well as incorrect fixes that are not stable across environments (a table where you list examples of interactions because of confounder, v shape, other scenarios that I discussed with you).
+% \end{itemize}
+
+
+
+
+
+% COMMENTED THINGS
+
+
+%To better understand the scope of our work, we investigate, in the context of our motivating example, the limitations of existing performance approaches that rely on correlation-based methods.
+
+% \rayb{This whole para should go to intro. We already motivate the problem, no need to repeat it again.}
+
+% \rayb{the following two paras should be in intro}
+% \textbf{Performance related challenges.} The exponential size of configuration space and complex constraints among configuration options make it challenging to find a configuration that performs as desired, therefore, many users rely on the default configurations~\cite{siegmund2015performance}, which is suboptimal in many deployment environments~\cite{JSVKPA:ASE17}. Even the developers of configurable systems often do not (fully) understand the performance behavior of such systems because software options typically interact with each other and more importantly with the ones underlying the software layers, making performance behavior very much customized to the user's environments. 
+
+% \textbf{Existing approaches.} Understanding the performance behavior of configurable systems can enable (i) performance debugging~\cite{SGAK:ESECFSE15,GSKA:SPPEXA}, (ii) performance tuning~\cite{H:CACM,SHM:LIO,H:AS,VPGFC:ICPE17,HPHL:ICSE15,WWHJK:GECCO15,NMSA:Arxive17,MARC:SPLC13,ORGC:SPLC14}, and (iii) architecture adaptation~\cite{JGAP:CSMR13,ABDD:VISSOFT13,KK:WSR16,JVKSK:SEAMS17,HSCMAR:SIGPLAN,FHM:FSE15,EEM:TSE,EEM:FSE10}. 
+% A common strategy to build performance influence models in which regression-based models, of the form $f(c)=\beta_0+\Sigma_{i}{\phi(o_i)}+\Sigma_{i..j}{\phi(o_i..o_j)}$~\rayb{what is $\phi$? we need to explain the equation, though I feel like we can remove it. }, are used to generalize a model that explains the influence of individual options and their interactions~\cite{SGAK:ESECFSE15,VPGFC:ICPE17,GCASW:ASE13}.
+
+
+% In particular, we focus on three performance tasks: (i) performance debugging, where it starts with an observed performance issue (e.g., slow execution), and the task is involved replacing the current configurations in the deployed environment with another configuration that fixes the observed performance issue; (ii) performance optimization, where no performance issue is observed, however, one wants to get near-optimal performance by finding a configuration that enables the best tradeoff in the multi-objective space (e.g., throughput vs energy consumption vs accuracy in DeepStream); (iii) performance tuning, where the deployment environment is changed and the previous configuration does not produce the desired performance and one intends to find a configuration that reaches to the desired quality level in the new environment. 
+
+
+%\textbf{Critical issues of correlation-based performance analysis.}
+ 
+% We first illustrate the concept with a simple scenario. We then demonstrate how causal reasoning can benefit different performance tasks for real composite configurable systems. 
+
+% \smallskip
+% \noindent
+% \subsection{Causality vs Correlation} 
+
+%This paper shows how we scale causal reasoning to such composite systems and use the analysis to improve many performance-related tasks.
+
+
+
+
+
+%\textbf{Causal Reasoning for the highly configurable multi-stack system.} 
+
+
+
+
+% \begin{figure}[t!]
+% \small
+%     % \setlength{\belowcaptionskip}{-3em}
+%     \centering
+%     \includegraphics*[width=\linewidth]{figures-vg/spurious_causation.pdf}
+%     \caption{\small {Incorrect interactions identified by performance regression models.}}
+%     \label{fig:spurious_causations}
+    
+%     % \rayb{\\ The font needs to be updated. The text under configuration option shows very limited options per sub-system and does not reflect the complexity}
+% \end{figure}
+
+
+% \begin{figure}[t!]
+% \small
+%     % \setlength{\belowcaptionskip}{-3em}
+%     \centering
+%     \includegraphics*[width=\linewidth]{figures-vg/spurious_causation.pdf}
+%     \caption{\small {Incorrect interactions identified by performance regression models.}}
+%     \label{fig:spurious_causations}
+    
+%     % \rayb{\\ The font needs to be updated. The text under configuration option shows very limited options per sub-system and does not reflect the complexity}
+% \end{figure}
+

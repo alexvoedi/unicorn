@@ -1,0 +1,46 @@
+\begin{abstract}
+
+Modern computer systems are highly configurable, with the total variability space sometimes larger than the number of atoms in the universe. Understanding and reasoning about the performance behavior of highly configurable systems, over a vast and variable space, is challenging. State-of-the-art methods for performance modeling and analyses rely on predictive machine learning models, therefore, they become (i)~\emph{unreliable in unseen environments} (e.g., different hardware, workloads), and (ii)~\emph{may produce incorrect explanations}. To tackle this, we propose a new method, called \ourapproach, which (i)~\emph{captures intricate interactions} between configuration options across the software-hardware stack and (ii)~describes how such interactions can impact \emph{performance variations} via causal inference. We evaluated \ourapproach on six highly configurable systems, including three on-device machine learning systems, a video encoder, a database management system, and a data analytics pipeline. The experimental results indicate that \ourapproach outperforms state-of-the-art performance debugging and optimization methods in finding effective repairs for performance faults and finding configurations with near-optimal performance. Further, unlike the existing methods, the learned causal performance models reliably predict performance for new environments.  
+
+\end{abstract}
+    
+
+
+% Context
+% 
+% Modern computer systems are highly configurable and are composed of heterogeneous components with variability space larger than the number of atoms in the universe. As a result of the ample variability space, the performance behavior of such systems becomes complex and, therefore, downstream performance-related tasks at operation time become challenging.
+
+
+% Given a limited sampling budget, \ourapproach iteratively updates the learned performance model by estimating the causal effects of configuration options on performance objectives, then selecting the highest-impact options to adjust in order to address performance issues by improving the performance objective of interest without deteriorating other objectives in debugging task or recommend a near-optimal configuration. 
+ 
+
+
+% Then, it uses them to \emph{explain} how such interactions impact the variation in performance objectives causally.
+
+% even if they predict performance for the environment where configurations are measured, since they may infer correlations as causation, they typically do not transfer well for predicting system performance behavior in a new environment (e.g., change of hardware from the canary environment to production). 
+
+% %The configuration options interact with each other within and across the system stack, and such interactions typically vary in different deployment environments or workload conditions. So, it becomes almost impossible to track down configuration options that should be set to different values to improve performance if the system's performance shows wide variability during operation time. 
+%to become accurate for performance predictions in an environment, 
+% The main problem here we address is to understand {\em why} the performance degradation is happening and {\em reason} based on a reliable model to improve it. This paper addresses this problem with the causal inference approach---where we try to reason about the interactions among configuration options, systems events, and systems performance. 
+
+% The main problem we address here is to understand {\em why} the performance degradation is happening and {\em reason} based on a reliable model to improve it.
+% To this end, this paper proposes a new methodology, called \ourapproach, which initially learns a Causal Performance Model to reliably \emph{capture intricate interactions} between options across the software-hardware stack by tracing system-level performance events across the stack (hardware, software, cache, and trace point). Then, it uses them to \emph{explain} how such interactions impact the variation in performance objectives causally. Given a limited sampling budget, \ourapproach iteratively updates the learned performance model by estimating the causal effects of configuration options on performance objectives, then selecting the highest-impact options to adjust in order to address performance issues by improving the performance objective of interest without deteriorating other objectives in debugging task or recommend a near-optimal configuration. 
+
+%as intermediate causal mechanisms
+% Leveraging such performance model, \ourapproach further facilitates performance tasks such as tuning, debugging, and optimization by estimating the causal effects of configuration options to performance objectives.
+%Leveraging such performance model, \ourapproach further facilitates performance tasks such as tuning, debugging, and optimization, based on the learned causal performance model via. 
+
+% To this end, we show that we can reliably \emph{capture intricate interactions} between options across software-hardware stack by tracing system-level performance events across the stack (hardware, software, cache, and tracepoint) and used them as intermediate causal mechanisms. 
+
+% that facilitates downstream performance tasks such as performance tuning, debugging, and optimization by employing a unified causal analysis approach. Our methodology first recovers the underlying causal structure that encodes how configuration options and their interactions influence performance objectives from system performance measurements. Then, using the mathematical foundation of causality, \ourapproach derives quantities of interests in the downstream performance tasks. For instance, \ourapproach calculates the causal effects of configuration options to the performance objectives by searching over the learned causal structure, which enables users to not only \emph{identify} the root cause of a performance fault, but also \emph{explain} and \emph{fix} the fault in a principled fashion. 
+
+% We evaluated \ourapproach on six highly configurable systems, including three on-device machine learning systems, a video encoder, a database, and a data analytics pipeline. In addition, we compared the results with state-of-the-art configuration optimization and debugging methods. The experimental results indicate that \ourapproach can find effective repairs for performance faults and find configurations with near-optimal performance. Furthermore, unlike the existing methods, the learned causal performance models reliably predict performance for new environments where it has not been used during the learning process.  
+
+% does not require measuring performance every time the deployment environment, workload, or task changes, as it relies on the learned causal model that remains stable given these frequent changes. 
+
+
+% identifies root causes more accurately compared with statistical debugging approaches and offers competitive repairs compared with performance optimization approaches.
+
+% can find effective repairs for faults in multiple non-functional properties with 21\% more accuracy and15\% higher gain than other ML-based performance debugging methods. Compared to multi-objective optimization approaches, \tool can find repairs $9×$ faster with comparable performance gain.
+
+% We find that \tool can identify root causes more accurately compared to other approaches with $22.16\%$ better accuracy. Compared to optimization methods (SMAC), \tool repairs misconfigurations $85.21\%$ times faster while recommending fixes that perform as well as (or $4.43\%$ better than) the near-optima found by SMAC. \tool also repairs misconfigurations with multiple simultaneous non-functional faults (in latency, energy usage, and thermal output) with $21.65\%$ better accuracy in finding the root cause and repairs with $20.13\%$ better performance than other methods. Our case study of non-functional faults reported in NVIDIA's forum shows that \tool can find $26.56\%$ better repairs than the experts' advice; it does so $12\times$ faster. 

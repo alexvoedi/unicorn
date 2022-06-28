@@ -1,0 +1,22 @@
+% \begin{table}[tbp!]
+%     \caption{\small How FCI transforms a fully connected dense graph $(G)$ to a skeleton graph $(S)$ and to Partial DAG (PAG). %Note, the nodes Y and Z are \textit{not} independent when they are not conditioned on other variables (denoted by $\dagger$); but when conditioned on X, they become independent (denoted by $\ddagger$), thus the edge $Y\text{---}Z$ is removed in the skeleton. 
+%     }
+%     \label{tab:fci_example}
+%     \resizebox*{\linewidth}{!}{
+%     \begin{tabular}{crcc}
+%         \hlineB{2}
+%     Dense G           & Independence & Skeleton $(S)$   & Partial DAG $(PAG)$      \bigstrut\\\hlineB{2}
+
+%     \multirow{7}{*}{\raisebox{-1.25\totalheight}{\includegraphics*[width=0.2\linewidth]{fig__fci_und_full.pdf}}} 
+%     & $X\notindependent Y$     & \multirow{7}{*}{\raisebox{-1.25\totalheight}{\includegraphics*[width=0.2\linewidth]{fig__fci_und_pruned.pdf}}} & \multirow{7}{*}{\raisebox{-1.25\totalheight}{\includegraphics*[width=0.2\linewidth]{fig__fci_und_dir.pdf}}} \bigstrut\\
+%                       & $X\notindependent Z$     &         &          \bigstrut\\
+%                       & $X\independent W$     &         &          \bigstrut\\
+%                       & $Y\notindependent Z^{\dagger}$     &     &              \bigstrut\\
+%                       & $Y\notindependent W$     &               &    \bigstrut\\
+%                       & $Z\notindependent W$     &              &     \bigstrut\\
+%                       & $Y\independent Z~|~X^{\ddagger}$   &  & \\\hlineB{2}               
+%     \end{tabular}}
+% \end{table}
+    
+
+    

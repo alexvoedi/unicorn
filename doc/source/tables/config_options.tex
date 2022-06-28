@@ -1,0 +1,55 @@
+% \begin{table*}[h]
+% \caption{\small Configurations options by each layer.}
+% \small 
+% \resizebox{\linewidth}{!}{\begin{tabular}[t]{p{0.35\linewidth}|p{0.3\linewidth}p{0.2\linewidth}p{0.2\linewidth}p{0.2\linewidth}}
+ 
+% \centering
+% Configuration options& & Layer&\\
+% \midrule
+% \multicolumn{5}{c}{Workload}\\
+% \cmidrule(lr){1-5}\\ 
+% &\multicolumn{4}{c}{DNN}\\
+% \cmidrule(lr){2-5}\\
+% Memory growth & 0, 0.1, 0.5&\\
+% Logical devices & 10, 50\\ 
+% \cmidrule(lr){2-5}\\
+% &\multicolumn{4}{c}{SQLite}\\
+% \cmidrule(lr){2-5}\\
+% Cache size & 0, 0.1, 0.5&\\
+% Buffer size & 10, 50\\ 
+% Synchronous & 0, 1 \\
+% Journal mode & Memory, Disk \\
+% Temporary store & Memory, Disk \\
+
+% \cmidrule(lr){2-5}\\
+% &\multicolumn{4}{c}{x264}\\
+% \cmidrule(lr){2-5}\\
+% CRF & 0, 0.1, 0.5&\\
+% Preset & 10, 50\\
+% Bit rate & 10,100\\
+% Latency & 1,2 \\
+% \hline 
+% \multicolumn{5}{c}{OS/Kernel}\\
+% \cmidrule{1-5}\\
+% Scheduler policy& CFP, NOOP\\
+% Swappiness&10, 60, 100\\
+% Dirty background ratio&10, 80\\
+% Dirty ratio& 5, 50\\
+% Sched child runs first & 0, 1 \\
+% Drop caches & 0, 1, 2, 3\\
+% Cache pressure & 1, 100, 500 \\
+
+% \hline
+% \multicolumn{5}{c}{Hardware}\\
+% \cmidrule{1-5}\\
+% & \multicolumn{1}{l}{\nano}&\multicolumn{1}{l}{\txone} & \multicolumn{1}{l}{\txtwo} & \multicolumn{1}{l}{\xavier}\\
+% \cmidrule{2-2}\cmidrule{3-3}\cmidrule{4-4}\cmidrule{5-5}\\
+% Active CPUs&1 - 4&1 - 4&1 - 4&1 - 4\\
+% CPU freq. (GHz)&0.3 - 2.0&0.3 - 2.0&0.3 - 2.0&0.3 - 2.0\\
+% GPU freq. (GHz)& 0.1 - 1.3&0.3 - 2.0&0.3 - 2.0&0.3 - 2.0\\
+% EMC freq. (GHz)&0.1 - 1.8&0.3 - 2.0&0.3 - 2.0&0.3 - 2.0\\
+
+% \bottomrule
+% \end{tabular}}
+% \label{tab:configurations}
+% \end{table*}%}

@@ -1,0 +1,83 @@
+\section{Related Work}
+\label{sec:related}
+\noindent
+% \textbf{Performance modeling.} Understanding performance behavior is critical to detect root causes of non-functional faults. Black-box performance influence models \cite{siegmund2015performance,krishna2019conex, krishna2020whence,dorn2020generating,dornmastering} as well as white-box performance analysis \cite{velez2019configcrusher} have been employed to understand performance behaviour of systems. Transfer learning strategies had been adopted to alleviate the complexity of learning performance behavior across environments, e.g., model transfer across hardware \cite{jamshidi2017transfer,iqbal2019transfer,javidian2019transfer}. However, these methods cannot be used to diagnose non-functional faults as they cannot be used to answer debugging queries.
+
+\noindent\textbf{Performance faults in configurable systems.} Previous empirical studies have shown that a majority of performance issues are due to misconfigurations~\cite{han2016empirical}, with severe consequences in production environments~\cite{tang2015holistic,maurer2015fail}, and configuration options that cause such performance faults force the users to tune the systems themselves~\cite{zhang2021evolutionary}. Previous works have used static and dynamic program analysis to identify the influence of configuration options on performance~\cite{VJSSAK:ASE20,velez2021white,li2020statically} and to detect and diagnose misconfigurations~\cite{XJHZLJP:OSDI16,attariyan2010automating,zhang2013automated,attariyan2012x}. 
+Unlike \ourapproach, none of the white-box analysis approaches target configuration space across the system stack, where it limits their applicability in identifying the true causes of a performance fault. 
+
+% However, the configuration options keep increasing over time~\cite{xu2015hey} and make the configuration-aware testing a difficult endeavor, where testing can be only practical by evaluating a representative sample of all possible configurations~\cite{qu2008configuration}, by employing sampling strategies to discover potential (performance) faults~\cite{medeiros2016comparison}. 
+
+
+
+
+% Researchers have studied performance degradations due to misconfigurations using different sampling~\cite{medeiros2016comparison} and static empirical approaches~\cite{han2016empirical, mordahl2019empirical, li2020statically}. \textsc{SyncProf}~\cite{yu2016syncprof, yu2018pinpointing} develops an end-to-end technique to detect performance bugs and optimize performance bottlenecks in configurable systems. Several performance analysis and debugging approaches have been proposed for detecting structured workflows using noisy logs \cite{wu2017structural}, anomaly diagnosis \cite{jia2017approach, wang2015data}, and data-driven approaches~\cite{yu2018understanding, curtsinger2012stabilizer,curtsinger2016effective}. Due to heavy reliance on the data, these methods are significantly costly and cannot be used to detect misconfigurations arising due to non-functional faults.
+
+% \noindent\textbf{Performance Modeling and Optimization.}
+% % Performance behavior of configurable systems is complex (non-linear, non-convex, and multi-modal)~\cite{wang2018understanding,jamshidi2016uncertainty}, where such behavior becomes even more intricate when multiple objectives are needed to be traded-off for performance-related tasks~\cite{kolesnikov2019tradeoffs,nardi2019hypermapper,iqbal2020flexibo}. 
+% A common strategy to understand complex performance behavior is to use machine-learning by building a black-box model that characterizes system performance~\cite{siegmund2015performance,valov2017transferring,guo2013variability}. The learned performance model can then be used for performance debugging ~\cite{siegmund2015performance,guo2013variability,wang2018understanding} and tuning~\cite{H:AS}.
+% % While the sheer size of the configuration space and complex performance behavior prohibit any guarantee of finding a globally optimal configuration, 
+% Optimization algorithms attempt to find near-optimal configurations under a limited sampling budget using a clever combination of sampling, model construction, and search. Several methods have been attempted including hill climbing~\cite{XLRXZ:WWW04}, optimization via guessing~\cite{OK:SIGMETRICS07}, Bayesian optimization~\cite{JC:MASCOTS16}, and multi-objective optimization~\cite{wu2015deep,iqbal2020flexibo}. 
+% % However, if one of the contextual/environmental conditions (e.g., hardware, workload) of the system changes, one needs to rerun the optimization approach again~\cite{JVKS:FSE18}, therefore, transfer learning in terms of transferring measurement data or extracting some types of knowledge across environments has been used~\cite{valov2017transferring,JSVKPA:ASE17,JVKSK:SEAMS17,javidian2019transfer,iqbal2019transfer,krishna2019whence,valov2020transferring}. 
+% % For a more comprehensive treatment of the literature, we refer to~\cite{pereira2019learning,siegmund2020dimensions}.
+% Although black-box models have been used extensively for optimization, they cannot diagnose non-functional faults as they are unaware of underlying causal factors due to their blind exploration without having access to the underlying causal relationships.
+
+\noindent\textbf{Statistical and model-based debugging.}
+Debugging approaches such as \textsc{Statistical Debugging}~\cite{song2014statistical}, 
+\textsc{HOLMES}~\cite{chilimbi2009holmes}, \textsc{XTREE}~\cite{krishna2017less}, \bugdoc~\cite{lourencco2020bugdoc}, \encore~\cite{lourencco2020bugdoc}, \textsc{Rex}~\cite{mehta2020rex}, and \textsc{PerfLearner}~\cite{han2018perflearner} have been proposed to detect root causes of system faults. These methods make use of statistical diagnosis and pattern mining to rank the probable causes based on their likelihood of being the root causes of faults. However, these approaches may produce correlated predicates that lead to incorrect explanations.
+
+% cannot provide any contextual information regarding how the root causes lead to faults and are costly as they require running expensive experiments for acquiring reliable performance measurements. 
+
+% Methods like \textsc{Caramel}~\cite{nistor2015caramel} and \textsc{Toddler}~\cite{nistor2013toddler} use similarity analysis to detect performance bugs with non-intrusive fixes. These methods rely on the conditions and loops present in the source code to fix a bug; therefore, cannot be extended to debug misconfigurations. 
+
+\noindent\textbf{Causal testing and profiling.} 
+Causal inference has been used for fault localization \cite{baah2010causal,feyzi2019inforence}, resource allocations in cloud systems~ \cite{geiger2016causal}, and causal effect estimation for advertisement recommendation systems \cite{bottou2013counterfactual}. More recently, \textsc{AID}~\cite{fariha2020causality} detects root causes of an intermittent software failure using fault injection as an intervention. \textsc{Causal Testing} ~\cite{johnson2020causal} modifies the system inputs to observe behavioral changes and utilizes counterfactual reasoning to find the root causes of bugs. Causal profiling approaches like \textsc{CoZ}~\cite{curtsinger2015coz} point to developers where optimizations will improve performance and quantify their potential impact. Causal inference methods like \textsc{X-Ray}~\cite{attariyan2012x} and \textsc{ConfAid}~\cite{attariyan2010automating} had previously been applied to analyze program failures. All approaches above are either orthogonal or complementary to \ourapproach, mostly they focus on functional bugs (e.g., \textsc{Causal Testing}) or if they are performance-related, they are not configuration-aware (e.g., \textsc{CoZ}). 
+
+% \noindent\textbf{Design Space Exploration (Systems and Architecture).} TODO: add references in arch community around DSE
+
+% Both \textsc{AID} and \textsc{Causal Testing} are orthogonal to \tool as they aim to identify intermittent and functional bugs. 
+
+
+% A causal profiler conducts a series of performance experiments to empirically observe the effect of potential optimization. These methods use virtual speedups to mimic the effect of optimizing a specific line of code by a fixed amount. However, to detect and fix misconfigurations as the developers do not have direct access to the source code. Therefore, these methods cannot be used directly to observe the optimization effects. \tool is targeted for highly-configurable systems, and the root causes of misconfigurations result due to complex interactions across the system stack. 
+
+% \textsc{Inforence}~\cite{feyzi2019inforence} have also used statistical causal inference on observational data for software fault localization. These approaches are suitable to detect faults in a program but cannot be applied to detect non-functional faults as the workflow of developing a program dependency graph is absent due to not having access to the program source code. 
+
+
+
+
+
+
+%Therefore, we develop \tool to identify the root causes of non-functional faults in configurable systems. 
+
+%  Researchers have also developed techniques to automate analyses using \textsc{Differential Slicing}~\cite{johnson2011differential}. Differential slicing outputs a causal difference graph that captures the differences of input that triggered the observed difference and the causal path of differences that led from those input differences to the observed difference. These methods aim towards discovering the causal path of execution differences but require a complete program execution trace generated by execution indexing. \textsc{Dual slicing}~\cite{weeratunge2010analyzing} is another program slicing-based technique to discover statement-level causal paths for concurrent program failures. These program slicing-based approaches only consider two executions—one successful and one failed. These approaches are white-box where the developer of the system intends to discover the root cause of the fault. \tool is used in scenarios where the user experiences a performance issue and intends to fix it by changing configuration across the system stack. For performance debugging, it might not be possible to know about the successful executions (more performant configurations) in advance.  
+ %had also been proposed 
+ 
+%  In the context of performance debugging, these temporal relationships are not valid; hence, cannot be used to detect root causes. 
+
+% \noindent\textbf{Explanation-centric approaches.}
+% Explanation-centric approaches like explanation tables \cite{el2014interpretable} and query-based diagnosis \cite{wang2017qfix} are relevant to \tool as they aim at generating explanations for certain outcomes (faults). However, these methods do not allow to perform interventions which makes them less useful for detecting the root cause of performance faults.
+
+ 
+
+
+% \noindent\textbf{Fault Localization and Tuning.} Causal profiling approaches like \textsc{Coz}~\cite{curtsinger2015coz} guides developers to code where optimizations will improve program performance. A causal profiler conducts a
+% series of performance experiments to empirically observe the effect of potential optimization. These methods use virtual speedups to mimic the effect of optimizing a specific line of code by a fixed amount. However, to detect and fix misconfigurations as the developers do not have direct access to the source code. Therefore, these methods cannot be used directly to observe the optimization effects. \tool is targeted for highly-configurable systems, and the root causes of misconfigurations result due to complex interactions across the system stack. Causal inference methods like \textsc{X-Ray}~\cite{attariyan2012x} and \textsc{ConfAid}~\cite{attariyan2010automating} had previously been applied to analyze program failures using run-time control and data flow behavior. \textsc{Inforence}~\cite{feyzi2019inforence} have also used statistical causal inference on observational data for software fault localization. These approaches are suitable to detect faults in a program but cannot be applied to detect non-functional faults as the workflow of developing a program dependency graph is absent due to not having access to the program source code. 
+
+
+% Encore\cite{zhang2014encore}\rayb{???}
+
+% \noindent\textbf{Fault injection}. Fault injection techniques~\cite{alvaro2015lineage,marinescu2009lfi} intervene application runtime behavior with the goal to test if an application can handle
+% the injected faults. In fault injection techniques, faults to be
+% injected are chosen based on whether they can occur in practice.
+% However, in performance debugging faults resulting due to misconfigurations, cannot be known in advance. 
+
+% \noindent\textbf{Group testing}. Group testing~\cite{bai2019adaptive, agarwal2018novel, li2014group}  has been applied for fault diagnosis. Specifically, adaptive group testing is related to the interventions performed in \tool. However, none of
+% the existing works consider the scenario where a group test might
+% reveal additional information and thus offers an inefficient solution
+% for causal path discovery.
+
+% \noindent\textbf{Control flow graph}. Control flow graph-based techniques~\cite{cheng2009identifying, jiang2007context} aims at identifying bug signatures for sequential programs using discriminative
+% subgraphs within the program’s control flow graph; or generating
+% faulty control flow paths that link many bug predictors. But these
+% approaches cannot be extended to detect misconfigurations as they do not consider causal connection among and program failure.
+

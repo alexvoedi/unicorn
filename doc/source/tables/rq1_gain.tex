@@ -1,0 +1,26 @@
+\begin{table}[t!]
+    \centering
+    \caption{\small (RQ1) Performance gain (\eq{gain}) up on applying repairs prescribed by respective approaches. Larger gains (in \colorbox[HTML]{C9E7BF}{green}) are considered better. \tool achieves better $\Delta_{gain}$ overall.}
+    \label{tab:rq1_2}
+    \resizebox{\linewidth}{!}{%
+    \begin{tabular}{ll|lll|lll|lll|}
+     &  & \multicolumn{3}{c|}{TX1} & \multicolumn{3}{c|}{TX2} & \multicolumn{3}{c|}{\xavier} \bigstrut\\ \clineB{3-11}{2} 
+     & Software & \rotatebox{90}{\tool} & \rotatebox{90}{CBI~\cite{song2014statistical}~} & \rotatebox{90}{Default~} & \rotatebox{90}{\tool} & \rotatebox{90}{CBI~\cite{song2014statistical}~} & \rotatebox{90}{Default~} & \rotatebox{90}{\tool} & \rotatebox{90}{CBI~\cite{song2014statistical}~} & \rotatebox{90}{Default~} \bigstrut\\ \hlineB{2}
+    \multicolumn{1}{l|}{\multirow{5}{*}{Latency}} & DNN Image & \cellcolor[HTML]{C9E7BF}78 & 75 & 71 & \cellcolor[HTML]{C9E7BF}75 & 53 & 46 & \cellcolor[HTML]{C9E7BF}89 & \cellcolor[HTML]{C9E7BF}89 & 61 \bigstrut\\
+    \multicolumn{1}{l|}{} & DNN Speech & \cellcolor[HTML]{C9E7BF}86 & 70 & 60 & \cellcolor[HTML]{C9E7BF}79 & 51 & 34 & \cellcolor[HTML]{C9E7BF}89 & 67 & 80 \bigstrut\\
+    \multicolumn{1}{l|}{} & DNN NLP & \cellcolor[HTML]{C9E7BF}76 & 72 & 66 & \cellcolor[HTML]{C9E7BF}94 & 76 & 54 & \cellcolor[HTML]{C9E7BF}90 & 77 & 64 \bigstrut\\
+    \multicolumn{1}{l|}{} & x264 & \cellcolor[HTML]{C9E7BF}29 & 27 & 10 & \cellcolor[HTML]{C9E7BF}28 & 13 & 5 & \cellcolor[HTML]{C9E7BF}35 & \cellcolor[HTML]{C9E7BF}35 & 20 \bigstrut\\
+    \multicolumn{1}{l|}{} & SQLite & \cellcolor[HTML]{C9E7BF}32 & 20 & 10 & \cellcolor[HTML]{C9E7BF}32 & 10 & 11 & \cellcolor[HTML]{C9E7BF}29 & 11 & 13 \bigstrut\\ \hlineB{2}
+    \multicolumn{1}{l|}{\multirow{5}{*}{Energy}} & DNN Image & \cellcolor[HTML]{C9E7BF}77 & 41 & 18 & \cellcolor[HTML]{C9E7BF}89 & 51 & 30 & \cellcolor[HTML]{C9E7BF}79 & 53 & 41 \bigstrut\\
+    \multicolumn{1}{l|}{} & DNN Speech & \cellcolor[HTML]{C9E7BF}76 & 51 & 9 & 67 & \cellcolor[HTML]{C9E7BF}77 & 40 & \cellcolor[HTML]{C9E7BF}69 & 47 & 30 \bigstrut\\
+    \multicolumn{1}{l|}{} & DNN NLP & \cellcolor[HTML]{C9E7BF}71 & 42 & 19 & \cellcolor[HTML]{C9E7BF}76 & 66 & 42 & \cellcolor[HTML]{C9E7BF}76 & 47 & 35 \bigstrut\\
+    \multicolumn{1}{l|}{} & x264 & \cellcolor[HTML]{C9E7BF}32 & 16 & 9 & \cellcolor[HTML]{C9E7BF}24 & 13 & 6 & \cellcolor[HTML]{C9E7BF}32 & 20 & 5 \bigstrut\\
+    \multicolumn{1}{l|}{} & SQLite & \cellcolor[HTML]{C9E7BF}25 & 13 & 12 & \cellcolor[HTML]{C9E7BF}23 & 10 & 7 & \cellcolor[HTML]{C9E7BF}26 & 19 & 6 \bigstrut\\ \hlineB{2}
+    \multicolumn{1}{l|}{\multirow{5}{*}{Thermals}} & DNN Image & \cellcolor[HTML]{C9E7BF}5 & \cellcolor[HTML]{C9E7BF}5 & 3 & \cellcolor[HTML]{C9E7BF}5 & \cellcolor[HTML]{C9E7BF}5 & 3 & \cellcolor[HTML]{C9E7BF}8 & 1 & 2 \bigstrut\\
+    \multicolumn{1}{l|}{} & DNN Speech & \cellcolor[HTML]{C9E7BF}4 & 3 & 3 & \cellcolor[HTML]{C9E7BF}7 & 5 & 2 & \cellcolor[HTML]{C9E7BF}3 & 2 & 3 \bigstrut\\
+    \multicolumn{1}{l|}{} & DNN NLP & \cellcolor[HTML]{C9E7BF}7 & 3 & 4 & \cellcolor[HTML]{C9E7BF}7 & 4 & 2 & \cellcolor[HTML]{C9E7BF}5 & \cellcolor[HTML]{C9E7BF}5 & 2 \bigstrut\\
+    \multicolumn{1}{l|}{} & x264 & \cellcolor[HTML]{C9E7BF}8 & 2 & 1 & \cellcolor[HTML]{C9E7BF}5 & \cellcolor[HTML]{C9E7BF}5 & 1 & \cellcolor[HTML]{C9E7BF}8 & 3 & 2 \bigstrut\\
+    \multicolumn{1}{l|}{} & SQLite & \cellcolor[HTML]{C9E7BF}6 & 5 & 2 & \cellcolor[HTML]{C9E7BF}5 & 3 & 2 & \cellcolor[HTML]{C9E7BF}3 & 1 & 1 \bigstrut\\ \hlineB{2}
+    \end{tabular}%
+    }
+    \end{table}

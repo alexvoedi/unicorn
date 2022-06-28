@@ -1,0 +1,31 @@
+\begin{figure*}[tbp!]
+    % \setlength{\belowcaptionskip}{-1em}
+    \subfloat[Sample Observational Data]{
+        \resizebox{0.24\linewidth}{!}{\adjustbox{valign=b}{%
+        \begin{tabular}{@{}c|ccc@{}cc|r|}
+            \clineB{2-7}{2}
+        \multicolumn{1}{c|}{} & \multicolumn{3}{c}{\textit{(Configurable Options)}} & &  \multicolumn{1}{c|}{\textit{(Sys. Events)}} & Latency \bigstrut[t]\\
+        \multicolumn{1}{c|}{} & GPU Growth &$\vdots$ &Swap Mem & &Resource Use &  \etc. \\ \hlineB{2}
+        $c_1$ & $0.25$ &$\vdots$& $2~Gb$ & & $10\%$ & \cellcolor{gray05}1 sec, \dots \\
+        $c_2$ & $0.5$ &$\vdots$& $1~Gb$ & & $20\%$ & \cellcolor{gray05}2 sec, \dots \\
+        $c_3$ & $0.66$ &$\vdots$& $1.5~Gb$ & & $40\%$ & \cellcolor{gray05}1.5 sec, \dots \\
+        $c_4$ & $0.75$ &$\vdots$& $3~Gb$ & & $60\%$ & \cellcolor{gray05}3 sec, \dots \\
+        $\vdots$ & $\vdots$ & $\vdots$& $\vdots$ & \multicolumn{1}{@{}c@{}}{$\ddots$} & $\vdots$ & \multicolumn{1}{c|}{\cellcolor{gray05}$\vdots$} \\
+        $c_n$ & $1.0$ &$\vdots$& $4~Gb$ & & $40\%$ & \cellcolor{gray05}0.1 sec, \dots \\ \hlineB{2}
+        \end{tabular}}}
+        \label{tab:fci_samp_a}}
+ \qquad\subfloat[Dense Graph]{\includegraphics*[width=0.2\linewidth, valign=b]{dense_graph.pdf}\label{fig:fci_samp_b}} 
+ \qquad
+ \subfloat[SCM Skeleton]{\includegraphics*[width=0.28\linewidth, valign=b]{final_admg.pdf}\label{fig:fci_samp_c}}
+ \qquad
+ \subfloat[Partial Ancestral Graph (PAG) from FCI]{\includegraphics*[width=0.28\linewidth]{final_admg.pdf}\label{fig:fci_samp_d}}
+ \vspace{-.45cm}
+ \subfloat[Orienting partially directed edges from \protect\fig{fci_samp_d} using entropy]{\includegraphics*[width=0.35\linewidth, valign=b]{fig__fci_entropy_flow.pdf}\label{fig:fci_samp_e}}
+\qquad
+ \subfloat[Final ADMG]{\includegraphics*[width=0.28\linewidth, valign=b]{final_admg.pdf}\label{fig:fci_samp_f}}
+% %  
+\caption{\small {From observational data to a fully connected graph, a skeleton graph, and finally an acyclic directed mixed graph (ADMG).}}
+
+% \rayb{Parts of figure e is not clear. Let's talk in the morning. }
+\label{tab:fci_example}\end{figure*}
+

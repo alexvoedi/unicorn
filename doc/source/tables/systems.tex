@@ -1,0 +1,46 @@
+\begin{table}
+ \caption{\small Summary of hardware systems, software systems, and configuration options. Note: Some configuration options do not apply to certain software systems (we highlight these with $\cdot$). We also include 17 non-intervenable systems events.}
+ \label{tab:systems}
+    \centering
+    \resizebox{\linewidth}{!}{
+    \begin{tabular}{@{}ll|ccc|@{}c|c@{}}
+        \hlineB{2}
+       
+
+        & \multicolumn{1}{l|}{} & \multicolumn{3}{c|}{Deep Neural Network} & \multicolumn{1}{c|}{Database} & \multicolumn{1}{c}{Encoder}
+        
+        \\ \clineB{3-7}{1.5}
+        
+        &  Config Options &{\rotatebox[origin=c]{0}{Image}~\textsuperscript{\red{a}}} & {\rotatebox[origin=c]{0}{NLP}}~\textsuperscript{\red{b}} & {\rotatebox[origin=c]{0}{Speech}}~\textsuperscript{\red{c}} & SQLite &x264  \\ \hlineB{2}       
+
+    \multicolumn{1}{l|}{\multirow{4}{-1em}{\rotatebox{90}{Hardware}}} & Cpu cores  & {\footnotesize\color{gray50} $\checkmark$} & {\footnotesize\color{gray50} $\checkmark$}    & {\footnotesize\color{gray50} $\checkmark$}   & {\footnotesize\color{gray50} $\checkmark$}   & {\footnotesize\color{gray50} $\checkmark$}  \\
+    \multicolumn{1}{l|}{} & EMC freq      & {\footnotesize\color{gray50} $\checkmark$}                                 & {\footnotesize\color{gray50} $\checkmark$}    & {\footnotesize\color{gray50} $\checkmark$}   & {\footnotesize\color{gray50} $\checkmark$}                     & {\footnotesize\color{gray50} $\checkmark$}     \\
+    \multicolumn{1}{l|}{} & CPU freq                                      & {\footnotesize\color{gray50} $\checkmark$}                                 & {\footnotesize\color{gray50} $\checkmark$}    & {\footnotesize\color{gray50} $\checkmark$}   & {\footnotesize\color{gray50} $\checkmark$}    & {\footnotesize\color{gray50} $\checkmark$}   \\
+    \multicolumn{1}{l|}{} & GPU freq                                    & {\footnotesize\color{gray50} $\checkmark$}                                 & {\footnotesize\color{gray50} $\checkmark$}    & {\footnotesize\color{gray50} $\checkmark$}   & {\footnotesize\color{gray50} $\checkmark$}                     & {\footnotesize\color{gray50} $\checkmark$}     \\ \hlineB{2}
+   
+    \multicolumn{1}{l|}{\multirow{8}{*}{\rotatebox{90}{OS/Kernel}}} & Scheduler policy                                     & {\footnotesize\color{gray50} $\checkmark$}                                 & {\footnotesize\color{gray50} $\checkmark$}    & {\footnotesize\color{gray50} $\checkmark$}   & {\footnotesize\color{gray50} $\checkmark$}                     & {\footnotesize\color{gray50} $\checkmark$}   \\
+    \multicolumn{1}{l|}{} & Sched child runs first                                  & {\footnotesize\color{gray50} $\checkmark$}                                 & {\footnotesize\color{gray50} $\checkmark$}    & {\footnotesize\color{gray50} $\checkmark$}   & {\footnotesize\color{gray50} $\checkmark$}                     & {\footnotesize\color{gray50} $\checkmark$}   \\
+    \multicolumn{1}{l|}{} & Sched rt runtime                     & {\footnotesize\color{gray50} $\checkmark$}                                 & {\footnotesize\color{gray50} $\checkmark$}    & {\footnotesize\color{gray50} $\checkmark$}   & {\footnotesize\color{gray50} $\checkmark$}                     & {\footnotesize\color{gray50} $\checkmark$} \\
+    \multicolumn{1}{l|}{} & Drop caches                                           & {\footnotesize\color{gray50} $\checkmark$}                                 & {\footnotesize\color{gray50} $\checkmark$}    & {\footnotesize\color{gray50} $\checkmark$}   & {\footnotesize\color{gray50} $\checkmark$}                     & {\footnotesize\color{gray50} $\checkmark$}   \\
+    \multicolumn{1}{l|}{} & Dirty background ratio                               & {\footnotesize\color{gray50} $\checkmark$}                                 & {\footnotesize\color{gray50} $\checkmark$}    & {\footnotesize\color{gray50} $\checkmark$}   & {\footnotesize\color{gray50} $\checkmark$}         & {\footnotesize\color{gray50} $\checkmark$}   \\ 
+     \multicolumn{1}{l|}{} & Dirty ratio                                         & {\footnotesize\color{gray50} $\checkmark$}                                 & {\footnotesize\color{gray50} $\checkmark$}    & {\footnotesize\color{gray50} $\checkmark$}   & {\footnotesize\color{gray50} $\checkmark$}                     & {\footnotesize\color{gray50} $\checkmark$}  \\
+          \multicolumn{1}{l|}{}&VFS cache pressure                               & {\footnotesize\color{gray50} $\checkmark$}                                 & {\footnotesize\color{gray50} $\checkmark$}    & {\footnotesize\color{gray50} $\checkmark$}   & {\footnotesize\color{gray50} $\checkmark$}                     & {\footnotesize\color{gray50} $\checkmark$}                      \\
+      \multicolumn{1}{l|}{}&Swappiness                                      & {\footnotesize\color{gray50} $\checkmark$}                                 & {\footnotesize\color{gray50} $\checkmark$}    & {\footnotesize\color{gray50} $\checkmark$}   & {\footnotesize\color{gray50} $\checkmark$}                     & {\footnotesize\color{gray50} $\checkmark$}  \\ \hlineB{2}
+    \multicolumn{1}{l|}{\multirow{9}{*}{\rotatebox{90}{Application}}} & GPU Memory growth                               & {\footnotesize\color{gray50} $\checkmark$}                                 & {\footnotesize\color{gray50} $\checkmark$}    & {\footnotesize\color{gray50} $\checkmark$}   & {$\cdot$} & {$\cdot$} \\
+    
+    \multicolumn{1}{l|}{} & Clear session                & {\footnotesize\color{gray50} $\checkmark$}                                 & {\footnotesize\color{gray50} $\checkmark$}    & {\footnotesize\color{gray50} $\checkmark$}   & {$\cdot$} & {$\cdot$} \\
+               
+     \multicolumn{1}{l|}{}& Preset                       & {\footnotesize\color{gray50} $\cdot$}                                 & {\footnotesize\color{gray50} $\cdot$}    & {\footnotesize\color{gray50} $\cdot$}   & {\footnotesize\color{gray50} $\cdot$}                     & {\footnotesize\color{gray50} $\checkmark$}                   \\ 
+    \multicolumn{1}{l|}{} & Filter& {\footnotesize\color{gray50} $\cdot$}             & {\footnotesize\color{gray50} $\cdot$}    & {\footnotesize\color{gray50} $\cdot$}   & {\footnotesize\color{gray50} $\cdot$}                     & {\footnotesize\color{gray50} $\checkmark$}\\ 
+    
+     \multicolumn{1}{l|}{} & Bit rate    & {\footnotesize\color{gray50} $\cdot$}                                 & {\footnotesize\color{gray50} $\cdot$}    & {\footnotesize\color{gray50} $\cdot$}   & {\footnotesize\color{gray50} $\cdot$}                     & {\footnotesize\color{gray50} $\checkmark$}               \\
+    \multicolumn{1}{l|}{} & Pragma journal mode                        & {\footnotesize\color{gray50} $\cdot$}                                 & {\footnotesize\color{gray50} $\cdot$}    & {\footnotesize\color{gray50} $\cdot$}   & {\footnotesize\color{gray50} $\checkmark$}                     & {\footnotesize\color{gray50} $\cdot$}                   \\ 
+    \multicolumn{1}{l|}{} & Pragma synchronous          & {\footnotesize\color{gray50} $\cdot$}                                 & {\footnotesize\color{gray50} $\cdot$}    & {\footnotesize\color{gray50} $\cdot$}   & {\footnotesize\color{gray50} $\checkmark$}                     & {\footnotesize\color{gray50} $\cdot$}  \\ 
+     \multicolumn{1}{l|}{}& Pragma cache size                     & {\footnotesize\color{gray50} $\cdot$}                                 & {\footnotesize\color{gray50} $\cdot$}    & {\footnotesize\color{gray50} $\cdot$}   & {\footnotesize\color{gray50} $\checkmark$}                     & {\footnotesize\color{gray50} $\cdot$}                    \\ 
+    
+    \multicolumn{1}{l|}{}  &Pragma page size                       & {\footnotesize\color{gray50} $\cdot$}                                 & {\footnotesize\color{gray50} $\cdot$}    & {\footnotesize\color{gray50} $\cdot$}   & {\footnotesize\color{gray50} $\checkmark$}                     & {\footnotesize\color{gray50} $\cdot$}                  \\ \hlineB{2}  
+    \end{tabular}
+    }
+    {\scriptsize \textsuperscript{\red{a}} Xception+CIFAR10~\cite{chollet2017xception, cifar10} \textsuperscript{\red{b}} BERT+IMDb~\cite{devlin2018bert, maas-EtAl:2011:ACL-HLT2011} \textsuperscript{\red{c}} DeepSpeech~\cite{hannun2014deep}}
+    \end{table}
+    
