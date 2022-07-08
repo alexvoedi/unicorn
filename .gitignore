@@ -4,3 +4,6 @@ doc/paper/main.aux
 doc/paper/main.synctex.gz
 doc/paper/main.log
 log
+
+.cache
+.keras
